@@ -1,5 +1,5 @@
 ---
-title: "Guide to SEO Marketing & Social Media Marketing "
+title: "Chess Clubs"
 image: { src: "../../data/images/blog/4.jpg", alt: "Rankings" }
 # date: "2022-03-21"
 author: "Roderick"
