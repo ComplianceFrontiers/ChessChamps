@@ -2,6 +2,7 @@
 module.exports = `
     type Article implements Node {
         id: ID!
+        link: String!
         title: String!
         slug: String!
         date: Date @dateformat
@@ -14,7 +15,6 @@ module.exports = `
         excerpt: String @mdpassthrough(fieldName: "excerpt") 
         content: String @mdpassthrough(fieldName: "html")
         buttons: [Button]
-        link: Link
     }
     
     type Item {
