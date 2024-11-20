@@ -78,11 +78,11 @@
                     "id": "brand-1",
                     "images": [
                         {
-                            "src": "../../data/images/brand-logo/1.png",
+                            "src": "../../data/images/brand-logo/11.png",
                             "alt": "Brand One"
                         },
                         {
-                            "src": "../../data/images/brand-logo/1.1.png",
+                            "src": "../../data/images/brand-logo/11.png",
                             "alt": "Brand One"
                         }
                     ]
@@ -91,11 +91,11 @@
                     "id": "brand-2",
                     "images": [
                         {
-                            "src": "../../data/images/brand-logo/2.png",
+                            "src": "../../data/images/brand-logo/22.png",
                             "alt": "Brand Two"
                         },
                         {
-                            "src": "../../data/images/brand-logo/2.1.png",
+                            "src": "../../data/images/brand-logo/22.png",
                             "alt": "Brand Two"
                         }
                     ]
@@ -104,134 +104,12 @@
                     "id": "brand-3",
                     "images": [
                         {
-                            "src": "../../data/images/brand-logo/3.png",
+                            "src": "../../data/images/brand-logo/33.png",
                             "alt": "Brand Three"
                         },
                         {
-                            "src": "../../data/images/brand-logo/3.1.png",
+                            "src": "../../data/images/brand-logo/33.png",
                             "alt": "Brand Three"
-                        }
-                    ]
-                },
-                {
-                    "id": "brand-4",
-                    "images": [
-                        {
-                            "src": "../../data/images/brand-logo/4.png",
-                            "alt": "Brand Four"
-                        },
-                        {
-                            "src": "../../data/images/brand-logo/4.1.png",
-                            "alt": "Brand Four"
-                        }
-                    ]
-                },
-                {
-                    "id": "brand-5",
-                    "images": [
-                        {
-                            "src": "../../data/images/brand-logo/5.png",
-                            "alt": "Brand Five"
-                        },
-                        {
-                            "src": "../../data/images/brand-logo/5.1.png",
-                            "alt": "Brand Five"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "home-services-section",
-            "section": "services-section",
-            "section_title": {
-                "showIcon": true,
-                "title": "What We Offer",
-                "icon": {
-                    "src": "../../data/images/icons/sharing.png",
-                    "alt": "What We Offer"
-                }
-            }
-        },
-        {
-            "id": "home-working-process",
-            "section": "working-process",
-            "section_title": {
-                "showIcon": true,
-                "title": "Upcoming Events",
-                "icon": {
-                    "src": "../../data/images/icons/pencile.png",
-                    "alt": "Working Process"
-                },
-                "color": "white",
-                "iconBg": "primary"
-            },
-            "items": [
-                {
-                    "id": "working-1",
-                    "headings": [
-                        {
-                            "level": "h3",
-                            "content": "Idea Generation"
-                        }
-                    ],
-                    "images": [
-                        {
-                            "src": "../../data/images/working/1.png"
-                        },
-                        {
-                            "src": "../../data/images/working/arrow-shape1.png"
-                        }
-                    ]
-                },
-                {
-                    "id": "working-2",
-                    "headings": [
-                        {
-                            "level": "h3",
-                            "content": "Working Plan"
-                        }
-                    ],
-                    "images": [
-                        {
-                            "src": "../../data/images/working/2.png"
-                        },
-                        {
-                            "src": "../../data/images/working/arrow-shape2.png"
-                        }
-                    ]
-                },
-                {
-                    "id": "working-3",
-                    "headings": [
-                        {
-                            "level": "h3",
-                            "content": "SEO Research"
-                        }
-                    ],
-                    "images": [
-                        {
-                            "src": "../../data/images/working/2.png"
-                        },
-                        {
-                            "src": "../../data/images/working/arrow-shape1.png"
-                        }
-                    ]
-                },
-                {
-                    "id": "working-4",
-                    "headings": [
-                        {
-                            "level": "h3",
-                            "content": "Launch Project"
-                        }
-                    ],
-                    "images": [
-                        {
-                            "src": "../../data/images/working/2.png"
-                        },
-                        {
-                            "src": "../../data/images/working/arrow-shape2.png"
                         }
                     ]
                 }
