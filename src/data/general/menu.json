@@ -9,17 +9,17 @@
         },
         {
             "id": "menu-2",
-            "text": "Services",
+            "text": "About Us",
             "link": "/services"
         },
         {
             "id": "menu-3",
-            "text": "Case Studies",
+            "text": "Programs",
             "link": "/case-studies"
         },
         {
             "id": "menu-5",
-            "text": "Blog",
+            "text": "Gallery",
             "link": "/blog-grid",
             "submenu": [
                 {
@@ -41,7 +41,7 @@
         },
         {
             "id": "menu-6",
-            "text": "Pages",
+            "text": "Online Store",
             "link": "/faq",
             "submenu": [
                 {

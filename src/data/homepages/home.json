@@ -158,7 +158,7 @@
             "section": "working-process",
             "section_title": {
                 "showIcon": true,
-                "title": "Working Process",
+                "title": "Upcoming Events",
                 "icon": {
                     "src": "../../data/images/icons/pencile.png",
                     "alt": "Working Process"
@@ -243,13 +243,13 @@
             "section_title": {
                 "showShortDec": true,
                 "showSubTitle": true,
-                "subtitle": "// WHAY CHOOSE US?",
-                "title": "We Are Trusted Digital Marketing Company.",
+                "subtitle": "About Us",
+                "title": "Empowering Young Minds Through Chess",
                 "icon": {
                     "src": "../../data/images/icons/pencile.png",
                     "alt": "Working Process"
                 },
-                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type scrambled.",
+                "description": "At Chess Champs, we are committed to nurturing young minds through the fascinating world of chess. Our programs not only teach the game but also instill critical life skills such as strategic thinking, problem-solving, and resilience. Join us on a journey where fun meets learning, and every move brings a new challenge.",
                 "dividerBg": "secondary"
             },
             "items": [
@@ -263,10 +263,10 @@
                     "headings": [
                         {
                             "level": "h5",
-                            "content": "High Customer Retention Rate"
+                            "content": "Chess Club for Kids"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
+                    "description": "Unlock a world of fun, learning, and strategy! Where young minds grow through every move they make."
                 },
                 {
                     "id": "choose-us-2",
@@ -278,10 +278,10 @@
                     "headings": [
                         {
                             "level": "h5",
-                            "content": "Dedicated Customer Support"
+                            "content": "Chess Tournaments for Kids"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
+                    "description": "Fun and engaging way to introduce young players to the excitement of competition!."
                 },
                 {
                     "id": "choose-us-3",
@@ -293,10 +293,10 @@
                     "headings": [
                         {
                             "level": "h5",
-                            "content": "Professional Team Member"
+                            "content": "Community Outreach"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
+                    "description": "Empowering underserved communities through chess, fostering inclusion, teamwork, and lifelong learning."
                 }
             ]
         },
@@ -305,7 +305,7 @@
             "section": "case-studies-section",
             "section_title": {
                 "showIcon": true,
-                "title": "Some Case Studies",
+                "title": "Chess Superheroes",
                 "icon": {
                     "src": "../../data/images/icons/pencile.png",
                     "alt": "Some Case Studies"
@@ -318,7 +318,7 @@
             "section": "team-members-section",
             "section_title": {
                 "showIcon": true,
-                "title": "Amazing Team Members",
+                "title": "Official training partner of Delaware Junior Chess Team",
                 "icon": {
                     "src": "../../data/images/icons/team.png",
                     "alt": "Amazing Team Members"
@@ -537,7 +537,7 @@
             "section_title": {
                 "showIcon": true,
                 "iconBg": "primary",
-                "title": "From Happy Customer",
+                "title": "Voices of Chess Parent Endorsements",
                 "icon": {
                     "src": "../../data/images/icons/testimonial.png",
                     "alt": "Working Process"

@@ -15,7 +15,7 @@ const NewsLetter = () => {
                     path="/"
                     className="btn-absolute"
                 >
-                    Subscribe Now{" "}
+                    Join Us{" "}
                     <i className="icofont-rounded-double-right"></i>
                 </Button>
             </Form>
