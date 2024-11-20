@@ -1,17 +1,15 @@
+/* eslint-disable prettier/prettier */
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import {
     BlogCardBox,
     BlogThumb,
-    BlogContent,
-    BlogMeta,
-    Author,
-    Date,
-    Category,
+    TitleBox, // Add a styled component for the title box
     Title,
 } from "./style";
-const BlogCard = ({ variant, title, author, date, slug, image }) => {
+
+const BlogCard = ({ variant, title, slug, image }) => {
     return (
         <BlogCardBox variant={variant}>
             <BlogThumb className="blog-thumb">
@@ -19,34 +17,21 @@ const BlogCard = ({ variant, title, author, date, slug, image }) => {
                     <GatsbyImage image={getImage(image)} alt={title} />
                 </Link>
             </BlogThumb>
-            <BlogContent>
-                <BlogMeta className="meta-hover">
-                    <Author>
-                        By <Link to="/">{author}</Link>
-                    </Author>
-                    <Date>
-                        <Link to="/">{date}</Link>
-                    </Date>
-                    <Category>
-                        <Link to="/">Digital Marketing</Link>
-                    </Category>
-                </BlogMeta>
-                <Title>
-                    <Link to={`/${slug}`}>{title}</Link>
-                </Title>
-            </BlogContent>
+            {/* Title Box */}
+            <TitleBox className="title-box">
+                <Title>{title}</Title>
+            </TitleBox>
         </BlogCardBox>
     );
 };
+
 BlogCard.propTypes = {
-    variant: PropTypes.oneOf(["horizontal", "vertical"]),
+    variant: PropTypes.oneOf(["vertical"]),
     title: PropTypes.string,
     author: PropTypes.string,
     date: PropTypes.string,
     slug: PropTypes.string,
     image: PropTypes.object,
 };
-BlogCard.defaultProps = {
-    variant: "horizontal",
-};
+
 export default BlogCard;

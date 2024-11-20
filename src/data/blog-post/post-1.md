@@ -1,9 +1,10 @@
 ---
 title: "The Step-by-Step Guide to Improving Your Google Rankings."
-image: { src: "../../data/images/blog/1.jpg", alt: "Rankings" }
+image: { src: "../../data/images/blog/4.jpg", alt: "Rankings" }
 date: "2021-01-21"
 author: "Marion"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
+link: "https://chesschamps.us/programs/"
 categories:
     - Digital Marketing
     - Seo Optimization

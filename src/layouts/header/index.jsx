@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import PropTypes from "prop-types";

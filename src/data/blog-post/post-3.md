@@ -4,6 +4,8 @@ image: { src: "../../data/images/blog/3.jpg", alt: "Rankings" }
 date: "2021-01-21"
 author: "Roderick"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
+link: "https://chesschamps.us/programs/"
+
 categories:
     - App Devolepmanet
 tags:

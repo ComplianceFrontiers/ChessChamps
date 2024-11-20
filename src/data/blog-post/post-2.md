@@ -4,6 +4,8 @@ image: { src: "../../data/images/blog/2.jpg", alt: "Hello" }
 date: "2021-02-21"
 author: "Marion"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
+link: "https://chesschamps.us/programs/"
+
 categories:
     - Digital Marketing
     - Pay Per Click

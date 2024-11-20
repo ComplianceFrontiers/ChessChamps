@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const { slugify } = require("../utils/functions");
 
 module.exports = ({ node, actions, createNodeId }) => {
@@ -94,6 +95,7 @@ module.exports = ({ node, actions, createNodeId }) => {
             excerpt: node.excerpt,
             author: node.frontmatter.author,
             quote_text: node.frontmatter.quote_text,
+            link:node.frontmatter.link,
             categories: node.frontmatter.categories,
             tags: node.frontmatter.tags,
             //content: node.rawMarkdownBody,

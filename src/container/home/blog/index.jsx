@@ -20,7 +20,7 @@ const LatestBlogArea = ({ data }) => {
                                 return (
                                     <BlogCard
                                         key={i}
-                                        variant="horizontal"
+                                        variant="vertical"
                                         title={item.title}
                                         author={item.author}
                                         date={item.date}
@@ -60,21 +60,21 @@ LatestBlogArea.propTypes = {
         itemsone: PropTypes.arrayOf(
             PropTypes.shape({
                 id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-                fields: PropTypes.shape({
-                    slug: PropTypes.string,
-                }),
+                // fields: PropTypes.shape({
+                //     slug: PropTypes.string,
+                // }),
                 image: PropTypes.shape({
                     src: PropTypes.oneOfType([
                         PropTypes.string,
                         PropTypes.shape({}),
                     ]).isRequired,
-                    alt: PropTypes.string,
+                    // alt: PropTypes.string,
                 }),
-                alt: PropTypes.string,
-                title: PropTypes.string,
-                author: PropTypes.string,
-                date: PropTypes.string,
-                slug: PropTypes.string,
+                // alt: PropTypes.string,
+                // title: PropTypes.string,
+                // author: PropTypes.string,
+                // date: PropTypes.string,
+                // slug: PropTypes.string,
             })
         ),
         itemstwo: PropTypes.arrayOf(
