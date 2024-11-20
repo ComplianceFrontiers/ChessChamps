@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 module.exports = `
     type Article implements Node {
         id: ID!
@@ -13,6 +14,7 @@ module.exports = `
         excerpt: String @mdpassthrough(fieldName: "excerpt") 
         content: String @mdpassthrough(fieldName: "html")
         buttons: [Button]
+        link: Link
     }
     
     type Item {

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 import Layout from "@layout";
@@ -118,7 +119,7 @@ export const query = graphql`
             }
         }
         featuredPosts: allArticle(
-            limit: 1
+            limit: 2
             sort: { order: DESC, fields: date }
         ) {
             nodes {

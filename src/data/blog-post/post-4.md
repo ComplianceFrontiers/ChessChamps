@@ -1,9 +1,11 @@
 ---
 title: "Guide to SEO Marketing & Social Media Marketing "
 image: { src: "../../data/images/blog/4.jpg", alt: "Rankings" }
-date: "2022-03-21"
+# date: "2022-03-21"
 author: "Roderick"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
+link: "https://chesschamps.us/programs/"
+
 is_featured: true
 categories:
     - Email Marketing

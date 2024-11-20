@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { themeGet, css, device } from "@theme/utils";
 export const BlogCardBox = styled.div`
     margin-bottom: 30px;
@@ -57,6 +58,16 @@ export const BlogThumb = styled.div`
     margin-bottom: 20px;
     border-radius: 15px;
 `;
+ 
+export const TitleBox = styled.div`
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    text-align: center;
+`;
+
+
 export const BlogContent = styled.div``;
 export const BlogMeta = styled.div`
     color: #747785;
