@@ -1,208 +1,101 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import HeartIcon from "@assets/images/svg/heart.svg";
-import { Col, Container, Row } from "react-bootstrap";
-import Logo from "@components/logo";
-import { graphql, useStaticQuery, Link } from "gatsby";
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
+import HeartIcon from "@assets/images/svg/footer.svg";
+import PropTypes from "prop-types";
+import { Container } from "react-bootstrap";
+import TextWidget from "../../components/widget/footer-text-widget";
+import ServiceMenuWidget from "../../components/widget/footer-service-menu-widget";
+import InformationMenuWidget from "../../components/widget/footer-information-menu-widget";
+import FollowUsWidget from "../../components/widget/footer-follow-us-widget";
+import { StaticImage } from "gatsby-plugin-image";
+import NewsletterWidget from "../../components/widget/newsletter-widget";
 import {
     FooterWrap,
-    FooterMain,
-    WidgetItem,
-    AboutWidget,
-    AboutWidgetText,
-    WidgetTotalRaised,
-    RaisedTitle,
+    FooterTop,
+    FooterRow,
+    FooterCol,
+    FooterWidget,
+    FooterBottom,
     CopyrightText,
-    TaisedAmount,
-    WidgetTitle,
-    WidgetGallery,
-    GalleryItem,
-    WidgetMenuWrap,
-    NavMenu,
-    NavItem,
-    FooterShapeLayer,
 } from "./style";
 
-const Footer = () => {
-    const footerQuery = useStaticQuery(graphql`
-        query FooterQuery {
-            footerJson {
-                id
-                quickLink {
-                    path
-                    text
-                }
-                quickLinkTwo {
-                    path
-                    text
-                }
-                gallery {
-                    galleryitem {
-                        childImageSharp {
-                            gatsbyImageData
-                        }
-                    }
-                    path
-                }
-                footerShapeImage {
-                    childImageSharp {
-                        gatsbyImageData
-                    }
-                }
-                footerAbout
-                raisedAmount
-                menuTitle
-                galleryTitle
-            }
-        }
-    `);
-    const {
-        footerAbout,
-        raisedAmount,
-        menuTitle,
-        galleryTitle,
-        gallery,
-        quickLink,
-        quickLinkTwo,
-        footerShapeImage,
-    } = footerQuery.footerJson;
-    const footerimage = getImage(footerShapeImage);
+const Footer = ({ data }) => {
     return (
         <FooterWrap>
-            <FooterMain>
+            <FooterTop>
+                <div className="footer-bg-shape">
+                    <StaticImage
+                        src="../../data/images/footer/shape.png"
+                        alt=""
+                    />
+                </div>
+                <div className="path-shape">
+                    <StaticImage
+                        src="../../data/images/footer/path-shape.png"
+                        alt=""
+                    />
+                </div>
+                <div className="path-svg">
+                    <HeartIcon />
+                </div>
                 <Container>
-                    <Row>
-                        <Col sm={12} md={6} lg={4} xl={4}>
-                            <WidgetItem>
-                                <AboutWidget>
-                                    <Logo className="footer-logo" />
-                                    <AboutWidgetText>
-                                        {footerAbout}
-                                    </AboutWidgetText>
-                                    <WidgetTotalRaised>
-                                        <RaisedTitle>Total Raised:</RaisedTitle>
-                                        <TaisedAmount>
-                                            {raisedAmount}
-                                        </TaisedAmount>
-                                    </WidgetTotalRaised>
-                                </AboutWidget>
-                            </WidgetItem>
-                        </Col>
-                        <Col sm={6} md={6} lg={4} xl={4}>
-                            <WidgetItem>
-                                <WidgetTitle>{galleryTitle}</WidgetTitle>
-                                <WidgetGallery>
-                                    <Row className="row-cols-3 row-gutter-10">
-                                        {gallery.map((item, i) => {
-                                            const imageGallery = getImage(
-                                                item.galleryitem
-                                            );
-                                            return (
-                                                <Col key={`gallery-${i}`}>
-                                                    <GalleryItem>
-                                                        <GatsbyImage
-                                                            image={imageGallery}
-                                                            alt="Givest-HasTech"
-                                                        />
-                                                        <a
-                                                            className="icon"
-                                                            href="#!"
-                                                        >
-                                                            <i className="icofont-instagram"></i>
-                                                        </a>
-                                                    </GalleryItem>
-                                                </Col>
-                                            );
-                                        })}
-                                    </Row>
-                                </WidgetGallery>
-                            </WidgetItem>
-                        </Col>
-                        <Col sm={6} md={6} lg={4} xl={4}>
-                            <WidgetItem className="menu-wrap-two-column">
-                                <WidgetTitle>{menuTitle}</WidgetTitle>
-                                <WidgetMenuWrap>
-                                    <Row>
-                                        <Col
-                                            xs={6}
-                                            sm={6}
-                                            md={6}
-                                            className="pr-sm-5"
-                                        >
-                                            <NavMenu>
-                                                {quickLink.map(
-                                                    (linkItem, i) => (
-                                                        <NavItem
-                                                            key={`id-${i}-one`}
-                                                        >
-                                                            <Link
-                                                                to={
-                                                                    linkItem.path
-                                                                }
-                                                            >
-                                                                {linkItem.text}
-                                                            </Link>
-                                                        </NavItem>
-                                                    )
-                                                )}
-                                            </NavMenu>
-                                        </Col>
-
-                                        <Col
-                                            xs={6}
-                                            sm={6}
-                                            md={6}
-                                            className="col-6 pl-sm-5"
-                                        >
-                                            <NavMenu className="align-right">
-                                                {quickLinkTwo.map(
-                                                    (linkItem, i) => (
-                                                        <NavItem
-                                                            key={`id-${i}`}
-                                                        >
-                                                            <Link
-                                                                to={
-                                                                    linkItem.path
-                                                                }
-                                                            >
-                                                                {linkItem.text}
-                                                            </Link>
-                                                        </NavItem>
-                                                    )
-                                                )}
-                                            </NavMenu>
-                                        </Col>
-                                    </Row>
-                                </WidgetMenuWrap>
-                            </WidgetItem>
-                        </Col>
-                    </Row>
+                    <NewsletterWidget />
+                    <FooterRow>
+                        <FooterCol>
+                            <FooterWidget>
+                                <TextWidget infoData={data.footer[0]} />
+                            </FooterWidget>
+                        </FooterCol>
+                        <FooterCol>
+                            <FooterWidget>
+                                <ServiceMenuWidget
+                                    allServicesData={data.footer[1]}
+                                />
+                            </FooterWidget>
+                        </FooterCol>
+                        <FooterCol>
+                            <FooterWidget>
+                                <InformationMenuWidget
+                                    informationData={data.footer[2]}
+                                />
+                            </FooterWidget>
+                        </FooterCol>
+                        <FooterCol>
+                            <FooterWidget>
+                                <FollowUsWidget followData={data.footer[3]} />
+                            </FooterWidget>
+                        </FooterCol>
+                    </FooterRow>
                 </Container>
-                {/* <div className="scroll-to-top"><img src="assets/img/icons/arrow-up-line.png" alt="Icon-Image" /></div> */}
-            </FooterMain>
-            <Container>
-                <Row>
-                    <Col sx={{ textAlign: "center" }}>
-                        <CopyrightText>
-                            &copy; {new Date().getFullYear()} Givest. Made with{" "}
-                            <HeartIcon /> by{" "}
-                            <a
-                                href="https://hasthemes.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                HasThemes
-                            </a>
-                        </CopyrightText>
-                    </Col>
-                </Row>
-            </Container>
-            <FooterShapeLayer>
-                <GatsbyImage image={footerimage} alt="Image-Givest" />
-            </FooterShapeLayer>
+            </FooterTop>
+
+            <FooterBottom>
+                <Container sx={{ textAlign: "center" }}>
+                    <CopyrightText>
+                        Copyright &copy; {new Date().getFullYear()} Made with{" "}
+                        <i className="icofont-heart"></i> by{" "}
+                        <a
+                            href={data.footer[4].link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {data.footer[4].title}
+                        </a>{" "}
+                        All Rights Reserved
+                    </CopyrightText>
+                </Container>
+            </FooterBottom>
         </FooterWrap>
     );
 };
-
+Footer.propTypes = {
+    data: PropTypes.shape({
+        footer: PropTypes.arrayOf(
+            PropTypes.shape({
+                link: PropTypes.string,
+                title: PropTypes.string,
+            })
+        ),
+    }),
+};
 export default Footer;

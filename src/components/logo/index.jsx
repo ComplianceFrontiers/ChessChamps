@@ -1,21 +1,23 @@
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
-import React from "react";
-import LiteLogo from "@assets/images/logo/logo.png";
-import { HeaderLogoArea } from "./style";
+import { LogoImg } from "./style";
 
-const Logo = ({ className }) => {
+const Logo = ({ logo, classCName }) => {
     return (
-        <HeaderLogoArea className={className}>
+        <LogoImg>
             <Link to="/">
-                <img className="logo-main" src={LiteLogo} alt="Logo" />
+                <StaticImage
+                    src="../../data/images/logo/logo.png"
+                    alt="Pringo Logo Image"
+                    title="Logo"
+                />
             </Link>
-        </HeaderLogoArea>
+        </LogoImg>
     );
 };
-
 Logo.propTypes = {
-    className: PropTypes.string,
+    logo: PropTypes.string,
+    classCName: PropTypes.string,
 };
-
 export default Logo;

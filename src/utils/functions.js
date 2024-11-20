@@ -126,6 +126,32 @@ function slideToggle(element, duration = 500) {
     }
 }
 
+function normalizedData(data) {
+    let allContetnt;
+
+    data.forEach((item) => {
+        const newObj = Object.entries(item).reduce((acc, cur) => {
+            const [key, property] = cur;
+            if (property === null) {
+                return acc;
+            }
+            return {
+                ...acc,
+                [key]: property,
+            };
+        }, {});
+
+        allContetnt = {
+            ...allContetnt,
+            [newObj.section]: {
+                ...newObj,
+            },
+        };
+    });
+
+    return allContetnt;
+}
+
 function containsObject(obj, list) {
     var i;
     for (i = 0; i < list.length; i++) {
@@ -136,7 +162,6 @@ function containsObject(obj, list) {
 
     return -1;
 }
-
 module.exports = {
     slugify,
     getSiblings,
@@ -147,5 +172,6 @@ module.exports = {
     slideUp,
     slideDown,
     slideToggle,
+    normalizedData,
     containsObject,
 };

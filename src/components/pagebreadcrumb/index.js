@@ -2,8 +2,9 @@ import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 import { Col, Container, Row } from "react-bootstrap";
 import PropTypes from "prop-types";
 import { PageBreadcrumbWrap, PageTitleContent } from "./style";
+import { StaticImage } from "gatsby-plugin-image";
 
-const PageBreadcrumb = ({ crumbLabel, location, title, pageContext }) => {
+const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
     const {
         breadcrumb: { crumbs },
     } = pageContext;
@@ -25,19 +26,21 @@ const PageBreadcrumb = ({ crumbLabel, location, title, pageContext }) => {
     ];
     return (
         <PageBreadcrumbWrap>
+            <div className="shape shape1">
+                <StaticImage src="../../data/images/bread/1.png" alt="" />
+            </div>
+            <div className="shape shape2">
+                <StaticImage src="../../data/images/bread/2.png" alt="" />
+            </div>
             <Container>
-                <Row>
-                    <Col>
-                        <PageTitleContent>
-                            <Breadcrumb
-                                title={title}
-                                crumbs={crumbs}
-                                crumbLabel={labelArr.join(" ")}
-                                disableLinks={disableLinks}
-                            />
-                        </PageTitleContent>
-                    </Col>
-                </Row>
+                <PageTitleContent>
+                    <Breadcrumb
+                        title={title}
+                        crumbs={crumbs}
+                        crumbLabel={labelArr.join(" ")}
+                        disableLinks={disableLinks}
+                    />
+                </PageTitleContent>
             </Container>
         </PageBreadcrumbWrap>
     );

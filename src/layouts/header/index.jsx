@@ -1,68 +1,25 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { useEffect, useState, Fragment } from "react";
 import PropTypes from "prop-types";
-import "../../assets/css/bootstrap.css";
-import "../../assets/css/flaticon.css";
-import "../../assets/css/elegantIcons.css";
-import "../../assets/css/modal-video.min.css";
-import { Col, Container, Row } from "react-bootstrap";
-import Logo from "@components/logo";
-import MainMenu from "@components/menu/main-menu";
-import { graphql, useStaticQuery } from "gatsby";
-import Button from "@components/ui/button";
-import MobileNavMenu from "@components/menu/mobile-menu";
+import HeaderTopArea from "../../components/header-top";
+import React, { Fragment, useState } from "react";
+import { Container } from "react-bootstrap";
+import Logo from "../../components/logo";
+import MainMenu from "../../components/menu/main-menu";
+import Button from "../../components/shared/button";
+import MobileNavMenu from "../../components/menu/mobile-menu";
+import { useSticky } from "../../hooks";
 import {
-    HeaderTop,
-    HeaderMenuArea,
-    HeaderActionArea,
-    MobileMenuArea,
-    OffCanvasInner,
+    HeaderWrap,
+    HeaderBottomArea,
+    ManimenuWrap,
+    Menu,
     MobileMenuBtn,
-    ButtonBoxArea,
-    OffCanvasContent,
-    OffCanvasHeader,
-    CloseAction,
-    ButtonClose,
 } from "./style";
 
-const Header = () => {
-    const allmenuData = useStaticQuery(graphql`
-        query AllmenuQuery {
-            allMenuJson {
-                edges {
-                    node {
-                        id
-                        text
-                        link
-                        isSubmenu
-                        submenu {
-                            link
-                            text
-                        }
-                    }
-                }
-            }
-        }
-    `);
-    const menuData = allmenuData.allMenuJson.edges;
-
-    // Sticky Menu
-    const [scroll, setScroll] = useState(0);
-    const [headerTop, setHeaderTop] = useState(0);
-
-    useEffect(() => {
-        const header = document.querySelector(".header-section");
-        setHeaderTop(header.offsetTop);
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
-    const handleScroll = () => {
-        setScroll(window.scrollY);
-    };
+const Header = ({ data }) => {
+    // Sticky Header
+    const { sticky, headerRef, fixedRef } = useSticky();
 
     // OfCanvas Menu
     const [ofcanvasOpen, setOfcanvasOpen] = useState(false);
@@ -72,85 +29,52 @@ const Header = () => {
         setOfcanvasOpen((prev) => !prev);
     };
 
-    const SearchHandaler = () => {
-        setOfcanvasSearchOpen((prev) => !prev);
-    };
-
     return (
-        <Fragment>
-            <HeaderTop
-                className={`header-section ${
-                    scroll > headerTop ? "is-sticky" : ""
-                }`}
-            >
-                <Container>
-                    <Row className="align-items-center">
-                        <Col lg={2} md={3} sm={3} xs={5}>
-                            <Logo />
-                        </Col>
-                        <Col lg={10} md={9} sm={9} xs={7}>
-                            <HeaderMenuArea>
-                                <MainMenu allmenuData={menuData} />
-
-                                <HeaderActionArea>
-                                    <MobileMenuBtn
-                                        onClick={ofcanvasHandaler}
-                                        onKeyDown={SearchHandaler}
-                                    >
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </MobileMenuBtn>
-                                    <ButtonBoxArea>
-                                        <Button
-                                            sx={{ ml: "15px" }}
-                                            type="button"
-                                            path="/contact-us"
-                                            color="gradient"
-                                        >
-                                            Give Support{" "}
-                                            <i className="flaticon-right-arrow"></i>
-                                        </Button>
-                                    </ButtonBoxArea>
-                                </HeaderActionArea>
-                            </HeaderMenuArea>
-                        </Col>
-                    </Row>
+        <HeaderWrap ref={headerRef}>
+            <HeaderTopArea />
+            <HeaderBottomArea ref={fixedRef} isSticky={sticky}>
+                <Container className="container-max">
+                    <ManimenuWrap>
+                        <Logo />
+                        <Menu>
+                            <MainMenu allmenuData={data.menu} />
+                            <Button
+                                sx={{
+                                    ml: ["0px", "0px", "0px", "40px", "80px"],
+                                    display: ["none", "block", "block"],
+                                }}
+                                size="large"
+                                shape="rounded10"
+                                path="/"
+                            >
+                                Analyze Your Site
+                                <i className="icofont-arrow-right"></i>
+                            </Button>
+                            <MobileMenuBtn
+                                onClick={ofcanvasHandaler}
+                                onKeyDown={ofcanvasHandaler}
+                            >
+                                <span className="line"></span>
+                                <span className="line"></span>
+                                <span className="line"></span>
+                            </MobileMenuBtn>
+                            <MobileNavMenu
+                                MobilemenuData={data.menu}
+                                ofcanvasOpen={ofcanvasOpen}
+                                ofcanvasHandaler={ofcanvasHandaler}
+                            />
+                        </Menu>
+                    </ManimenuWrap>
                 </Container>
-            </HeaderTop>
-            <MobileMenuArea
-                className={`${ofcanvasOpen ? "mobile-menu-open" : ""}`}
-            >
-                <OffCanvasInner>
-                    <div
-                        className="OffCanvasContent"
-                        onClick={ofcanvasHandaler}
-                        onKeyDown={SearchHandaler}
-                        role="button"
-                        tabIndex={0}
-                    ></div>
-                    <OffCanvasContent>
-                        <OffCanvasHeader>
-                            <Logo />
-                            <CloseAction>
-                                <ButtonClose
-                                    onClick={ofcanvasHandaler}
-                                    onKeyDown={SearchHandaler}
-                                >
-                                    <i className="icofont-close"></i>
-                                </ButtonClose>
-                            </CloseAction>
-                        </OffCanvasHeader>
-
-                        <MobileNavMenu MobilemenuData={menuData} />
-                    </OffCanvasContent>
-                </OffCanvasInner>
-            </MobileMenuArea>
-        </Fragment>
+            </HeaderBottomArea>
+        </HeaderWrap>
     );
 };
 
 Header.propTypes = {
-    headerTop: PropTypes.object,
+    data: PropTypes.shape({
+        menu: PropTypes.arrayOf(PropTypes.shape({})),
+    }),
 };
+
 export default Header;

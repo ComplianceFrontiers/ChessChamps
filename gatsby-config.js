@@ -28,7 +28,6 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-image`,
         `gatsby-plugin-emotion`,
-        `gatsby-plugin-theme-ui`,
         `gatsby-transformer-json`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
@@ -46,19 +45,19 @@ module.exports = {
             },
         },
         {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "data",
+                path: `${__dirname}/src/data/`,
+            },
+        },
+        {
             resolve: `gatsby-plugin-breadcrumb`,
             options: {
                 useAutoGen: true,
                 autoGenHomeLabel: `Home`,
                 exclude: [`/dev-404-page`, `/404`, `/404.html`],
                 useClassNames: true,
-            },
-        },
-        {
-            resolve: "gatsby-source-filesystem",
-            options: {
-                name: "data",
-                path: `${__dirname}/src/data/`,
             },
         },
         {
@@ -76,8 +75,7 @@ module.exports = {
                 },
             },
         },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
+
         {
             resolve: "gatsby-plugin-manifest",
             options: {

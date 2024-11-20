@@ -1,168 +1,150 @@
-import styled, { device, themeGet } from "@theme/utils";
+import styled, { themeGet, device, keyframes } from "@theme/utils";
+const offset = keyframes`
+    0% {
+        stroke-dashoffset: 800;
+    }
+    80% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #2647c8;
+    }
+`;
+const move = keyframes`
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 
-export const FooterWrap = styled.footer`
-    background-color: #001d23;
-    padding: 0 15px 33px;
-    position: relative;
-`;
-export const FooterMain = styled.div`
-    background-color: #f7f7f7;
-    margin: 0px auto -170px;
-    padding: 50px 0 40px;
-    max-width: 1555px;
-    position: relative;
-    z-index: 1;
-    transform: translate(0, -240px);
-    ${device.medium} {
-        padding: 50px 0 40px;
-        margin: 0px auto -175px;
-    }
-    ${device.large} {
-        padding: 102px 0 30px;
-        margin: 0px auto -175px;
-    }
-    ${device.xlarge} {
-        padding: 152px 0 80px;
-        margin: 0px auto -175px;
+    100% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
     }
 `;
+export const FooterWrap = styled.footer``;
 
-export const WidgetItem = styled.div`
+// Footer Top Css
+export const FooterTop = styled.div`
+    padding: 80px 0px;
     position: relative;
-    z-index: 1;
-    margin-bottom: 40px;
-    & .menu-wrap-two-column {
-        padding-left: 0px;
-        ${device.large} {
-            padding-left: 37px;
-        }
-    }
-    ${device.large} {
-        margin-bottom: 62px;
-    }
-`;
-export const AboutWidget = styled.div`
-    padding-right: 0px;
-    ${device.medium} {
-        padding-right: 70px;
-    }
-    .footer-logo {
-        display: block;
-        margin-bottom: 36px;
-    }
-`;
-export const AboutWidgetText = styled.p`
-    margin-bottom: 25px;
-`;
-
-export const WidgetTotalRaised = styled.div`
-    margin-bottom: 25px;
-`;
-export const RaisedTitle = styled.h4`
-    font-size: 25px;
-    margin-bottom: 18px;
-`;
-export const TaisedAmount = styled.div`
-    font-family: ${themeGet("fonts.heading")};
-    font-size: 30px;
-    ${device.medium} {
-        font-size: 40px;
-    }
-    ${device.large} {
-        font-size: 50px;
-    }
-    ${device.xlarge} {
-        font-size: 60px;
-    }
-    line-height: 1;
-    background: #fea444;
-    background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-`;
-export const WidgetTitle = styled.h4`
-    padding-left: 75px;
-    position: relative;
-    color: #001d23;
-    font-size: 20px;
-    line-height: 1;
-    margin-bottom: 34px;
-    margin-top: 17px;
-    &:before {
-        background-color: #fc6539;
-        content: "";
-        height: 4px;
-        left: 0;
-        position: absolute;
-        top: 50%;
-        width: 55px;
-    }
-    ${device.large} {
-        margin-bottom: 54px;
-        font-size: 30px;
-    }
-`;
-export const WidgetGallery = styled.div`
-    padding-left: 5px;
-    padding-right: 15px;
-    ${device.large} {
-        padding-right: 45px;
-    }
-`;
-export const GalleryItem = styled.div`
-    margin-bottom: 10px;
-    position: relative;
-    display: flex;
-    img,
-    svg {
-        vertical-align: middle;
-    }
-    .icon {
-        color: #fff;
-        height: 100%;
-        opacity: 0;
+    background: #0a196f;
+    .footer-bg-shape {
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
-        background: #fea444;
-        background: linear-gradient(to right, #fea444 0%, #fc6539 100%);
-        transition: 0.3s;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-
-        & i {
-            font-size: 24px;
-            left: 50%;
+        height: 100%;
+        object-fit: fill;
+        z-index: 0;
+    }
+    .path-shape {
+        position: absolute;
+        top: 165px;
+        left: 40px;
+        z-index: 0;
+        animation: ${move} 1s infinite alternate;
+    }
+    .path-svg {
+        svg {
+            max-width: 127px;
+            max-height: 305px;
             position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            transition: 0.3s;
-            -webkit-transition: 0.3s;
-            -moz-transition: 0.3s;
-            -ms-transition: 0.3s;
-            -o-transition: 0.3s;
+            right: 80px;
+            bottom: 60px;
         }
     }
-    &:hover .icon {
-        opacity: 0.9;
+
+    .footer_svg__cls-1 {
+        isolation: isolate;
+    }
+    .footer_svg__cls-2 {
+        mix-blend-mode: multiply;
+        fill: #fff;
+    }
+    .footer_svg__cls-3 {
+        fill: #ddd;
+    }
+    .footer_svg__cls-4 {
+        fill: url(#linear-gradient-2);
+    }
+    .footer_svg__cls-5 {
+        fill: #e2e9fa;
+    }
+    .footer_svg__cls-6 {
+        fill: #f0f4fc;
+    }
+    .footer_svg__cls-7 {
+        fill: #6e8fe4;
+    }
+
+    .footer_svg__cls-8 {
+        stroke: #2647c8;
+        fill: none;
+        stroke-width: 2;
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        animation: ${offset} linear 5s forwards infinite;
     }
 `;
-export const WidgetMenuWrap = styled.nav``;
 
-export const NavMenu = styled.ul``;
+export const FooterRow = styled.div`
+    display: flex;
+    background: #02126a;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    margin: 0px 0px;
 
-export const NavItem = styled.li`
-    margin-bottom: 8px;
     position: relative;
+    ${device.large} {
+        flex-wrap: no-wrap;
+    }
+`;
+export const FooterCol = styled.div`
+    width: 100%;
+    ${device.small} {
+        width: 50%;
+    }
+    ${device.large} {
+        flex: 1 0;
+        border-right: 1px solid #273581;
+        &:nth-of-type(1) {
+            max-width: 300px;
+            flex: 1 0 100%;
+        }
+    }
+    ${device.xlarge} {
+        flex: 1 0;
+        &:nth-of-type(1) {
+            max-width: 390px;
+            flex: 1 0 100%;
+        }
+    }
+    &:last-child {
+        border-right: 0px;
+    }
+`;
+export const FooterWidget = styled.div`
+    padding: 15px 15px 15px;
+    ${device.medium} {
+        padding: 50px 30px 0px 20px;
+    }
+    ${device.large} {
+        padding: 50px 30px 40px 20px;
+    }
+    ${device.xlarge} {
+        padding: 50px 30px 70px 50px;
+    }
 `;
 
+// Footer Bottom Css
+export const FooterBottom = styled.div`
+    padding: 20px 0px;
+    background: #111f73;
+    position: relative;
+`;
 export const CopyrightText = styled.p`
-    color: #f4faff;
-    font-size: 16px;
-    padding-bottom: 15px;
+    color: white;
     & > svg {
         width: 15px;
         height: 15px;
@@ -170,26 +152,18 @@ export const CopyrightText = styled.p`
             fill: red;
         }
     }
-    ${device.medium} {
-        padding: 0;
+    i {
+        background: ${themeGet("colors.gradient")};
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     a {
-        color: ${themeGet("colors.primary")};
+        font-weight: 900;
+        background: ${themeGet("colors.gradient")};
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-`;
-
-export const FooterShapeLayer = styled.div`
-    bottom: -15px;
-    left: 50%;
-    pointer-events: none;
-    position: absolute;
-    width: 110%;
-    transform: translate(-50%, 0px);
-    -webkit-transform: translate(-50%, 0px);
-    -moz-transform: translate(-50%, 0px);
-    -ms-transform: translate(-50%, 0px);
-    -o-transform: translate(-50%, 0px);
-    & img {
-        max-width: none;
+    ${device.medium} {
+        padding: 0;
     }
 `;
