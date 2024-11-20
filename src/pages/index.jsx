@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
             }}
         >
             <SEO title="Home" pathname="/" />
-            <Hero data={content["hero-section"]} />
+            <Hero  />
             <BrandArea data={content["brand-section"]} />
             <ServicesArea
                 data={{
