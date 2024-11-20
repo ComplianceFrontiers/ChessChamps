@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
+import { Container, Row, Col } from "react-bootstrap";
+import ServicesItem from "../../components/services";
 import { ServicesSection } from "./style";
 const ServicsArea = ({ data }) => {
     return (
         <ServicesSection>
-            {/* <Container>
+            <Container>
                 <Row className="gx-5">
                     {data?.items &&
                         data?.items.map((item, i) => {
@@ -22,7 +24,7 @@ const ServicsArea = ({ data }) => {
                             );
                         })}
                 </Row>
-            </Container> */}
+            </Container>
         </ServicesSection>
     );
 };
