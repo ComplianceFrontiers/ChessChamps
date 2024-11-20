@@ -1,19 +1,18 @@
 import React from "react";
 import { Global, css, device, useTheme } from "@theme/utils";
-
+import slelectimg from "@data/images/icons/arrow-down-white.png";
 export const GlobalCSS = () => {
     const theme = useTheme();
     return (
         <Global
             styles={css`
-                * {
+                @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ruda:wght@400;500;600;700;800;900&display=swap");
+
+                *,
+                *::before,
+                *::after {
                     -webkit-box-sizing: border-box;
                     -moz-box-sizing: border-box;
-                    box-sizing: border-box;
-                }
-                *,
-                ::after,
-                ::before {
                     box-sizing: border-box;
                 }
                 html {
@@ -22,11 +21,11 @@ export const GlobalCSS = () => {
                     scroll-behavior: smooth;
                     // Default
                     height: 100%;
-                    font-size: 37.5%; // 1rem = 6px
+                    font-size: 70.5%; // 1rem = 6px
 
                     // Medium Device >=768
                     ${device.medium} {
-                        font-size: 43.75%; // 1rem = 7px
+                        font-size: 73.75%; // 1rem = 7px
                     }
 
                     // Large Device >=992
@@ -41,7 +40,7 @@ export const GlobalCSS = () => {
 
                     // Extra Large Device >=1367
                     ${device.xxlarge} {
-                        font-size: 62.5%; // 1rem = 10px
+                        font-size: 82.5%; // 1rem = 10px
                     }
                 }
                 article,
@@ -81,7 +80,6 @@ export const GlobalCSS = () => {
                 a:active,
                 a:hover {
                     outline: 0;
-                    color: ${theme.colors.primary};
                 }
                 b,
                 strong {
@@ -128,13 +126,6 @@ export const GlobalCSS = () => {
                 }
                 form {
                     margin: 0;
-                }
-
-                textarea:focus,
-                textarea:active,
-                input:focus,
-                input:active {
-                    outline: none;
                 }
                 button,
                 input,
@@ -215,7 +206,7 @@ export const GlobalCSS = () => {
                     font-weight: ${theme.fontWeights.body};
                     color: ${theme.colors.text};
                     font-size: ${theme.fontSize.body};
-                    background: ${theme.colors.white};
+                    background: ${theme.colors.background};
                 }
                 a {
                     transition: ${theme.transition};
@@ -223,6 +214,7 @@ export const GlobalCSS = () => {
                     text-decoration: none;
                     &:hover {
                         text-decoration: none;
+                        color: ${theme.colors.hover};
                     }
                 }
                 ul {
@@ -251,63 +243,27 @@ export const GlobalCSS = () => {
                 }
                 h1,
                 .h1 {
-                    font-size: ${theme.fontSize.h1[0]};
-                    ${device.small} {
-                        font-size: ${theme.fontSize.h1[1]};
-                    }
-                    ${device.medium} {
-                        font-size: ${theme.fontSize.h1[2]};
-                    }
-                    ${device.large} {
-                        font-size: ${theme.fontSize.h1[3]};
-                    }
+                    font-size: clamp(32px, 4.1vw, 75px);
                 }
                 h2,
                 .h2 {
-                    font-size: ${theme.fontSize.h2[0]};
-                    ${device.medium} {
-                        font-size: ${theme.fontSize.h2[1]};
-                    }
-                    ${device.large} {
-                        font-size: ${theme.fontSize.h2[2]};
-                    }
+                    font-size: clamp(26px, 4.1vw, 55px);
                 }
                 h3,
                 .h3 {
-                    font-size: ${theme.fontSize.h3[0]};
-                    ${device.large} {
-                        font-size: ${theme.fontSize.h3[1]};
-                    }
-                    ${device.xlarge} {
-                        font-size: ${theme.fontSize.h3[2]};
-                    }
+                    font-size: clamp(22px, 2.1vw, 30px);
                 }
                 h4,
                 .h4 {
-                    font-size: ${theme.fontSize.h4[0]};
-                    ${device.large} {
-                        font-size: ${theme.fontSize.h4[1]};
-                    }
-                    ${device.xlarge} {
-                        font-size: ${theme.fontSize.h4[2]};
-                    }
+                    font-size: clamp(20px, 2.1vw, 25px);
                 }
                 h5,
                 .h5 {
-                    font-size: ${theme.fontSize.h5[0]};
-                    ${device.large} {
-                        font-size: ${theme.fontSize.h5[1]};
-                    }
-                    ${device.xlarge} {
-                        font-size: ${theme.fontSize.h5[2]};
-                    }
+                    font-size: clamp(18px, 2.1vw, 22px);
                 }
                 h6,
                 .h6 {
-                    font-size: ${theme.fontSize.h6[0]};
-                    ${device.large} {
-                        font-size: ${theme.fontSize.h6[1]};
-                    }
+                    font-size: clamp(16px, 3.1vw, 20px);
                 }
                 p {
                     margin: 0 0 15px;
@@ -338,32 +294,66 @@ export const GlobalCSS = () => {
                 select,
                 textarea {
                     width: 100%;
-                    font-size: 14px;
                 }
                 input,
                 select {
                     height: 40px;
                     padding: 0 15px;
                 }
+                .form-select {
+                    padding: 0px 20px 0 10px;
+                    font-size: 16px;
+                    max-width: 100%;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    color: #333;
+                    border-radius: 5px;
+                    // background: transparent url(${slelectimg}) no-repeat center
+                    //     right 5px;
+                    background-color: #ddd;
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
                 .wrapper {
                     position: relative;
                 }
                 .container {
                     max-width: 100%;
+                    padding-right: var(--bs-gutter-x, 2.5rem);
+                    padding-left: var(--bs-gutter-x, 2.5rem);
                     ${device.medium} {
-                        max-width: 720px;
+                        padding-right: var(--bs-gutter-x, 0.9375rem);
+                        padding-left: var(--bs-gutter-x, 0.9375rem);
+                        // max-width: 720px;
+                        &.container-max {
+                            max-width: 100%;
+                        }
+                        .container-max-lg {
+                            max-width: 100%;
+                        }
                     }
                     ${device.large} {
                         max-width: 960px;
+                        &.container-max {
+                            max-width: 1370px;
+                        }
+                        &.container-max-lg {
+                            max-width: 1500px;
+                        }
                     }
                     ${device.xlarge} {
                         max-width: 1200px;
                     }
+                    @media (min-width: 1600px) {
+                        &.container-max {
+                            max-width: 1370px;
+                        }
+                    }
                 }
-                .row > [class*="col-"] {
-                    padding-right: 15px;
-                    padding-left: 15px;
-                }
+
                 .link-overlay {
                     position: absolute;
                     left: 0;
@@ -371,9 +361,6 @@ export const GlobalCSS = () => {
                     width: 100%;
                     height: 100%;
                     text-indent: -99999px;
-                }
-                .gatsby-image-wrapper-constrained {
-                    vertical-align: baseline !important;
                 }
             `}
         />

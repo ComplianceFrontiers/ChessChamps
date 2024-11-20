@@ -2,79 +2,94 @@ import styled, { themeGet, device } from "@theme/utils";
 
 export const HeaderNavigationArea = styled.div`
     display: none;
-    ${device.xlarge} {
+    ${device.large} {
         display: block;
     }
 `;
 export const Navbar = styled.ul`
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
 `;
 export const Navitem = styled.li`
+    position: relative;
+    text-align: left;
     display: inline-block;
-    padding: 3px 0;
     &:first-of-type {
-        padding-left: 0;
+        margin-left: 0;
+    }
+
+    ${device.large} {
+        margin: 0 12px;
+    }
+    ${device.xlarge} {
+        margin: 0 25px;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
     }
     a {
-        padding: 7px 34px;
-        color: #001d23;
         display: block;
-        font-size: 17px;
-        font-weight: 500;
-        line-height: 22px;
-        padding: 7px 25px;
+        color: #000000;
+        padding: 30px 2px;
         position: relative;
-        &:hover {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.18;
+        transition: all 0s ease-in-out;
+        &:hover,
+        &.active {
             color: ${themeGet("colors.primary")};
+        }
+        &[aria-current="page"] {
+            color: ${themeGet("colors.primary")} !important;
         }
     }
 
     &.has-submenu {
         padding-right: 10px;
         position: relative;
+        > a {
+            position: relative;
+            &::after {
+                position: static;
+                margin-left: 5px;
+                font-family: IcoFont !important;
+                content: "\\ea99";
+                font-size: 16px;
+                vertical-align: middle;
+                transition: all 0.3s ease-in-out;
+            }
+        }
         > .submenu-nav {
-            padding: 15px 0 15px;
             position: absolute;
             top: 100%;
+            left: -20px;
+            box-shadow: 0 2px 29px rgba(0 0 0 / 5%);
+            border-bottom: 3px solid ${themeGet("colors.primary")};
+            background-color: #ffffff;
             transform: translateY(50px);
-            transition: 0.4s;
-            opacity: 0;
+            transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition-delay: 0.2s;
+            transition-duration: 0.4s;
             visibility: hidden;
-            min-width: 250px;
-            margin-top: 42px;
-            z-index: 3;
-            background-color: #fff;
-            border: none;
-            border-radius: 0 0 5px 5px;
-            box-shadow: 0px 20px 80px 0px rgb(171 181 189 / 35%);
-            left: -10px;
-            margin-top: 25px;
-            min-width: 195px;
-
-            &:before {
-                content: "";
-                position: absolute;
-                height: 56px;
-                width: 100%;
-                left: 0;
-                bottom: 100%;
-                height: 40px;
-            }
-            > li {
-                padding: 9px 25px;
-                > a {
-                    color: #0e0e0e;
+            opacity: 0;
+            min-width: 200px;
+            padding: 15px 0;
+            z-index: 9;
+            & > li {
+                position: relative;
+                & > a {
                     display: block;
-                    font-weight: 400;
-                    font-size: 14px;
-                    letter-spacing: inherit;
-                    text-transform: capitalize;
-                    padding: 0;
+                    padding: 5px 20px;
+                    margin: 0;
+                    color: #000000;
+                    font-weight: 500;
+                    transition: 0s;
                     &:hover {
                         color: ${themeGet("colors.primary")};
                     }

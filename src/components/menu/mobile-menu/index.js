@@ -1,15 +1,25 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui";
 import { Link } from "gatsby";
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import PropTypes from "prop-types";
-import { MobileMenuContent, Navbar, MobileNavitem } from "./style";
+import Button from "../../shared/button";
+import Social, { SocialLink } from "../../shared/social/index";
 import {
     getClosest,
     getSiblings,
     slideToggle,
     slideUp,
 } from "../../../utils/mobile-nav-utils";
+import {
+    MobileMenuContent,
+    Navbar,
+    NavMunuUl,
+    MobileNavitem,
+    ButtonClose,
+} from "./style";
 
-const MobileNavMenu = ({ MobilemenuData }) => {
+const MobileNavMenu = ({ MobilemenuData, ofcanvasOpen, ofcanvasHandaler }) => {
     const MobileMenuArr = MobilemenuData;
 
     const onClickHandler = (e) => {
@@ -43,26 +53,38 @@ const MobileNavMenu = ({ MobilemenuData }) => {
     };
 
     return (
-        <MobileMenuContent>
+        <MobileMenuContent
+            className={`${ofcanvasOpen ? "mobile-menu-open" : ""}`}
+        >
+            <div
+                className="OffCanvasContent"
+                onClick={ofcanvasHandaler}
+                onKeyDown={ofcanvasHandaler}
+                role="button"
+                tabIndex={0}
+            />
+
             <Navbar className="site-mobile-menu">
-                <ul>
+                <ButtonClose
+                    onClick={ofcanvasHandaler}
+                    onKeyDown={ofcanvasHandaler}
+                >
+                    Close <i className="icofont-close"></i>
+                </ButtonClose>
+                <NavMunuUl>
                     {MobileMenuArr.map((menu) => {
-                        const hasSubmenu = menu.node.isSubmenu ? true : false;
-                        const submenu = menu.node.submenu;
+                        const submenu = menu.submenu;
                         return (
                             <MobileNavitem
-                                key={`menu-${menu.node.id}`}
+                                key={`menu-${menu.id}`}
                                 className={`${
-                                    hasSubmenu ? "has-submenu-dropdown" : ""
+                                    !!submenu ? "has-submenu-dropdown" : ""
                                 }`}
                             >
-                                <Link
-                                    activeClassName="active"
-                                    to={menu.node.link}
-                                >
-                                    {menu.node.text}
+                                <Link activeClassName="active" to={menu.link}>
+                                    {menu.text}
                                 </Link>
-                                {submenu && (
+                                {!!submenu && (
                                     <Fragment>
                                         <button
                                             className="menu-toggle menu-expand"
@@ -89,7 +111,34 @@ const MobileNavMenu = ({ MobilemenuData }) => {
                             </MobileNavitem>
                         );
                     })}
-                </ul>
+                </NavMunuUl>
+
+                <Social sx={{ mt: "30px" }} space={10} size="md" shape="square">
+                    <SocialLink href="https://www.facebook.com/">
+                        <i className="icofont-facebook"></i>
+                    </SocialLink>
+                    <SocialLink href="https://twitter.com/home/">
+                        <i className="icofont-twitter"></i>
+                    </SocialLink>
+                    <SocialLink href="https://www.skype.com/">
+                        <i className="icofont-skype"></i>
+                    </SocialLink>
+                    <SocialLink href="https://www.linkedin.com/">
+                        <i className="icofont-linkedin"></i>
+                    </SocialLink>
+                </Social>
+
+                <Button
+                    sx={{
+                        mt: "30px",
+                    }}
+                    size="large"
+                    shape="rounded10"
+                    path="/"
+                >
+                    Analyze Your Site
+                    <i className="icofont-arrow-right"></i>
+                </Button>
             </Navbar>
         </MobileMenuContent>
     );
@@ -97,6 +146,8 @@ const MobileNavMenu = ({ MobilemenuData }) => {
 
 MobileNavMenu.propTypes = {
     MobilemenuData: PropTypes.array,
+    ofcanvasOpen: PropTypes.bool,
+    ofcanvasHandaler: PropTypes.func,
 };
 
 export default MobileNavMenu;
