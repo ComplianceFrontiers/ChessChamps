@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import PropTypes from "prop-types";
@@ -25,6 +26,7 @@ const LatestBlogArea = ({ data }) => {
                                         author={item.author}
                                         date={item.date}
                                         slug={item.slug}
+                                        link={item.link}
                                         image={item.image.src}
                                     />
                                 );
@@ -38,6 +40,7 @@ const LatestBlogArea = ({ data }) => {
                                         key={i}
                                         variant="vertical"
                                         title={item.title}
+                                        link={item.link}
                                         author={item.author}
                                         date={item.date}
                                         slug={item.slug}
@@ -74,7 +77,7 @@ LatestBlogArea.propTypes = {
                 // title: PropTypes.string,
                 // author: PropTypes.string,
                 // date: PropTypes.string,
-                // slug: PropTypes.string,
+                link: PropTypes.string,
             })
         ),
         itemstwo: PropTypes.arrayOf(
@@ -95,6 +98,7 @@ LatestBlogArea.propTypes = {
                 author: PropTypes.string,
                 date: PropTypes.string,
                 slug: PropTypes.string,
+                link: PropTypes.string,
             })
         ),
     }),

@@ -1,10 +1,12 @@
 ---
-title: "Web Analytics Job Market For Seo Professionals1"
-image: { src: "../../data/images/blog/5.jpg", alt: "Rankings" }
-date: "2021-11-21"
+title: "Chess Tournaments"
+image: { src: "../../data/images/blog/2.jpg", alt: "Rankings" }
+# date: "2022-03-21"
 author: "Roderick"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 link: "https://chesschamps.us/programs/"
+
+is_featured: true
 categories:
     - Email Marketing
 tags:
