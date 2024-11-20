@@ -6,7 +6,7 @@ const NewsletterWidget = () => {
     return (
         <NewsletterWidgetBox>
             <SectionTitle
-                headingTitle="Subscribe To Our Newsletter"
+                headingTitle="Join our Club"
                 color="white"
                 iconBg="primary"
             />
