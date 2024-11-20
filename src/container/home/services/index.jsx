@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Col, Container, Row } from "react-bootstrap";
+import ServicesItem from "../../../components/services";
 import SectionTitle from "../../../components/title";
 import { ServicesSeaction } from "./style";
 const ServicesArea = ({ data }) => {
@@ -13,7 +14,7 @@ const ServicesArea = ({ data }) => {
                     />
                 )}
 
-                {/* <Row className="gx-5">
+                <Row className="gx-5">
                     {data?.items &&
                         data.items?.map((item, i) => {
                             return (
@@ -30,7 +31,7 @@ const ServicesArea = ({ data }) => {
                                 </Col>
                             );
                         })}
-                </Row> */}
+                </Row>
             </Container>
         </ServicesSeaction>
     );

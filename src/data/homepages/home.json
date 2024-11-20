@@ -112,7 +112,104 @@
                             "alt": "Brand Three"
                         }
                     ]
+                },
+                {
+                    "id": "home-services-section",
+                    "section": "services-section",
+                    "section_title": {
+                        "showIcon": true,
+                        "title": "What We Offer",
+                        "icon": {
+                            "src": "../../data/images/icons/sharing.png",
+                            "alt": "What We Offer"
+                        }
+                    }
+                },
+                {
+                    "id": "home-working-process",
+                    "section": "working-process",
+                    "section_title": {
+                        "showIcon": true,
+                        "title": "Upcoming Events",
+                        "icon": {
+                            "src": "../../data/images/icons/pencile.png",
+                            "alt": "Working Process"
+                        },
+                        "color": "white",
+                        "iconBg": "primary"
+                    },
+                    "items": [
+                        {
+                            "id": "working-1",
+                            "headings": [
+                                {
+                                    "level": "h3",
+                                    "content": "Idea Generation"
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "src": "../../data/images/working/1.png"
+                                },
+                                {
+                                    "src": "../../data/images/working/arrow-shape1.png"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "working-2",
+                            "headings": [
+                                {
+                                    "level": "h3",
+                                    "content": "Working Plan"
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "src": "../../data/images/working/2.png"
+                                },
+                                {
+                                    "src": "../../data/images/working/arrow-shape2.png"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "working-3",
+                            "headings": [
+                                {
+                                    "level": "h3",
+                                    "content": "SEO Research"
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "src": "../../data/images/working/2.png"
+                                },
+                                {
+                                    "src": "../../data/images/working/arrow-shape1.png"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "working-4",
+                            "headings": [
+                                {
+                                    "level": "h3",
+                                    "content": "Launch Project"
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "src": "../../data/images/working/2.png"
+                                },
+                                {
+                                    "src": "../../data/images/working/arrow-shape2.png"
+                                }
+                            ]
+                        }
+                    ]
                 }
+                            
             ]
         },
         {
