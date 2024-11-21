@@ -1,9 +1,11 @@
 /* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/title";
-import WorkingProcess from "../../../components/working-process";
 import { WorkingProcessSection } from "./style";
+import Swiper, { SwiperSlide } from "@components/shared/swiper";
+import SingleBrand from "../../../components/brand";
+
 const WorkingProcessArea = ({ data }) => {
     return (
         <WorkingProcessSection>
@@ -14,41 +16,60 @@ const WorkingProcessArea = ({ data }) => {
                         {...data.section_title}
                     />
                 )}
-
-                <Row className="working-process">
-                    {data?.items &&
-                        data?.items.map((item, i) => {
-                            return (
-                                <Col
-                                    lg={3}
-                                    md={6}
-                                    sm={6}
-                                    key={i}
-                                    className="working-process-list"
-                                >
-                                    <WorkingProcess
-                                        working_arrow={item.images?.[1].src}
-                                        icon={item.images?.[0].src}
-                                        title={item.headings[0].content}
-                                        level={item.headings[0].level}
-                                    />
-                                </Col>
-                            );
-                        })}
-                </Row>
+                 <Swiper
+                                layout={{
+                                    nav: "brand-navigation",
+                                    dots: "brand-dots-style",
+                                }}
+                                navigation={{
+                                    nextEl: ".brand-slider-button-next",
+                                    prevEl: ".brand-slider-button-prev",
+                                }}
+                                slidesPerView={3}
+                                spaceBetween={0}
+                                breakpoints={{
+                                    320: {
+                                        slidesPerView: 1,
+                                    },
+                                    480: {
+                                        slidesPerView: 2,
+                                    },
+                                    768: {
+                                        slidesPerView: 3,
+                                    },
+                                    992: {
+                                        slidesPerView: 3,
+                                    },
+                                }}
+                            >
+                                {data?.items &&
+                                    data?.items?.map((item, i) => {
+                                        return (
+                                            <SwiperSlide key={i}>
+                                                <SingleBrand
+                                                    brnadAffterImage={
+                                                        item.images?.[0].src
+                                                    }
+                                                    brnadBeforeImage={
+                                                        item.images?.[1].src
+                                                    }
+                                                    alt={item.images?.[0].alt}
+                                                />
+                                            </SwiperSlide>
+                                        );
+                                    })}
+                            </Swiper>
             </Container>
         </WorkingProcessSection>
     );
 };
+
 WorkingProcessArea.propTypes = {
     data: PropTypes.shape({
         section_title: PropTypes.shape({
             title: PropTypes.string,
             icon: PropTypes.shape({
-                src: PropTypes.oneOfType([
-                    PropTypes.string,
-                    PropTypes.shape({}),
-                ]).isRequired,
+                src: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
                 alt: PropTypes.string,
             }),
         }),
@@ -64,9 +85,15 @@ WorkingProcessArea.propTypes = {
                 fields: PropTypes.shape({
                     slug: PropTypes.string,
                 }),
-                alt: PropTypes.string,
+                images: PropTypes.arrayOf(
+                    PropTypes.shape({
+                        src: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
+                        alt: PropTypes.string,
+                    })
+                ),
             })
         ),
     }),
 };
+
 export default WorkingProcessArea;

@@ -41,12 +41,12 @@ const Footer = ({ data }) => {
                 <Container>
                     <NewsletterWidget />
                     <FooterRow>
-                        <FooterCol>
+                        <FooterRow>
                             <FooterWidget>
                                 <TextWidget infoData={data.footer[0]} />
                             </FooterWidget>
-                        </FooterCol>
-                        <FooterCol>
+                        </FooterRow>
+                        {/* <FooterCol>
                             <FooterWidget>
                                 <ServiceMenuWidget
                                     allServicesData={data.footer[1]}
@@ -64,7 +64,7 @@ const Footer = ({ data }) => {
                             <FooterWidget>
                                 <FollowUsWidget followData={data.footer[3]} />
                             </FooterWidget>
-                        </FooterCol>
+                        </FooterCol> */}
                     </FooterRow>
                 </Container>
             </FooterTop>

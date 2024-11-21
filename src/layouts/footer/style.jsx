@@ -88,18 +88,30 @@ export const FooterTop = styled.div`
     }
 `;
 
+
+
 export const FooterRow = styled.div`
     display: flex;
+    flex-wrap: wrap; // Ensures wrapping for smaller screens
+    justify-content: space-between; // Align items with spacing
+    align-items: center; // Vertically align items
     background: #02126a;
     border-radius: 15px;
-    flex-wrap: wrap;
-    margin: 0px 0px;
-
+    margin: 0;
     position: relative;
+
     ${device.large} {
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap; // Ensure single row on large screens
+    }
+
+    & > .FooterRow { // Target nested FooterRow
+        display: flex;
+        flex-wrap: nowrap; // Prevent wrapping for inner row
+        gap: 16px; // Optional: Add spacing between items
+        width: 100%; // Ensure full width
     }
 `;
+
 export const FooterCol = styled.div`
     width: 100%;
     ${device.small} {
