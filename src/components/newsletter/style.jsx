@@ -18,19 +18,19 @@ export const Form = styled.form`
     }
 `;
 export const Input = styled.input`
-    background-color: transparent;
+    background-color: #ffffff;
     height: 70px;
     border: 1px solid #1b2979;
     padding-left: 30px;
     padding-right: 200px;
     border-radius: 8px;
     font-size: 14px;
-    color: #fff;
+    color: #000;
     &: focus {
-        background-color: transparent;
+        background-color: #ffffff;
     }
     &::placeholder {
-        color: white;
+        color: black;
     }
     ${device.medium} {
         height: 75px;

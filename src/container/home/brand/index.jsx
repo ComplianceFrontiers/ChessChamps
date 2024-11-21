@@ -1,66 +1,39 @@
-/* eslint-disable prettier/prettier */
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Col, Container, Row } from "react-bootstrap";
-import Swiper, { SwiperSlide } from "@components/shared/swiper";
-import SingleBrand from "../../../components/brand";
-import { BrandSection, BrandBox, BrandTitle } from "./style";
+import { BrandSection, BrandBox } from "./style";
+
 const BrandArea = ({ data }) => {
+    const stats = [
+        { id: 1, value: 1000, label: "Tournament Experience" },
+        { id: 2, value: 200, label: "Club Members" },
+        { id: 3, value: 50, label: "Years of Experience" },
+        { id: 4, value: 10, label: "Coaches" },
+    ];
+
     return (
         <BrandSection>
             <Container className="container-max">
                 <Row>
                     <Col>
                         <BrandBox>
-                            {data?.headings?.[0] && (
-                                <BrandTitle
-                                    dangerouslySetInnerHTML={{
-                                        __html: data.headings[0].content,
-                                    }}
-                                />
-                            )}
-                            <Swiper
-                                layout={{
-                                    nav: "brand-navigation",
-                                    dots: "brand-dots-style",
-                                }}
-                                navigation={{
-                                    nextEl: ".brand-slider-button-next",
-                                    prevEl: ".brand-slider-button-prev",
-                                }}
-                                slidesPerView={3}
-                                spaceBetween={0}
-                                breakpoints={{
-                                    320: {
-                                        slidesPerView: 1,
-                                    },
-                                    480: {
-                                        slidesPerView: 2,
-                                    },
-                                    768: {
-                                        slidesPerView: 3,
-                                    },
-                                    992: {
-                                        slidesPerView: 3,
-                                    },
-                                }}
-                            >
-                                {data?.items &&
-                                    data?.items?.map((item, i) => {
-                                        return (
-                                            <SwiperSlide key={i}>
-                                                <SingleBrand
-                                                    brnadAffterImage={
-                                                        item.images?.[0].src
-                                                    }
-                                                    brnadBeforeImage={
-                                                        item.images?.[1].src
-                                                    }
-                                                    alt={item.images?.[0].alt}
-                                                />
-                                            </SwiperSlide>
-                                        );
-                                    })}
-                            </Swiper>
+                            <div className="brand-stats">
+                                <Row>
+                                    {stats.map((stat) => (
+                                        <Col
+                                            key={stat.id}
+                                            className="stat-item"
+                                            lg={3}
+                                            md={6}
+                                        >
+                                            <AnimatedCounter
+                                                targetValue={stat.value}
+                                            />
+                                            <p>{stat.label}</p>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            </div>
                         </BrandBox>
                     </Col>
                 </Row>
@@ -68,6 +41,34 @@ const BrandArea = ({ data }) => {
         </BrandSection>
     );
 };
+
+const AnimatedCounter = ({ targetValue }) => {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        let start = 0;
+        const duration = 2000; // Animation duration in ms
+        const stepTime = Math.abs(Math.floor(duration / targetValue));
+
+        const timer = setInterval(() => {
+            start += 1;
+            if (start > targetValue) {
+                clearInterval(timer);
+            } else {
+                setCount(start);
+            }
+        }, stepTime);
+
+        return () => clearInterval(timer);
+    }, [targetValue]);
+
+    return <h2>{count}+</h2>;
+};
+
+AnimatedCounter.propTypes = {
+    targetValue: PropTypes.number.isRequired,
+};
+
 BrandArea.propTypes = {
     data: PropTypes.shape({
         headings: PropTypes.arrayOf(
@@ -96,4 +97,5 @@ BrandArea.propTypes = {
         ),
     }),
 };
+
 export default BrandArea;
