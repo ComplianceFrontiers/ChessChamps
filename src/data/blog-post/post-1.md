@@ -6,7 +6,7 @@ author: "Marion"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 link: "https://chesschamps.us/programs/"
 categories:
-    - Digital Marketing
+    - ChessChamps
     - Seo Optimization
 tags:
     - Marketing

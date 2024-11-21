@@ -7,7 +7,7 @@ quote_text: "The use of apps in investment ideas is a great way to enjoy the con
 link: "https://chesschamps.us/programs/"
 
 categories:
-    - Digital Marketing
+    - ChessChamps
     - Pay Per Click
 tags:
     - Education

@@ -1,18 +1,11 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
     title: "Pringo",
-    titleTemplate: "Digital Marketing React Gatsby Template",
+    titleTemplate: "ChessChamps React Gatsby Template",
     description: "React Gatsby",
     author: "pringo",
     twitterUsername: "@pringo",
-    keywords: [
-        "bootstrap",
-        "html",
-        "react",
-        "gatsby",
-        "Pringo",
-        "Digital Marketing",
-    ],
+    keywords: ["bootstrap", "html", "react", "gatsby", "Pringo", "ChessChamps"],
     image: "",
     siteUrl: "https://pringo.com",
     pathPrefix: "/",
