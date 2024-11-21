@@ -32,7 +32,6 @@ const Header = ({ data }) => {
 
     return (
         <HeaderWrap ref={headerRef}>
-            <HeaderTopArea />
             <HeaderBottomArea ref={fixedRef} isSticky={sticky}>
                 <Container className="container-max">
                     <ManimenuWrap>

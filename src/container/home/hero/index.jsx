@@ -8,12 +8,10 @@ import vedio from "../../../assets/vedios/mpesvedio.mp4"; // Adjust the path if 
 
 const Hero = () => {
     return (
-        <Container>
             <video width="100%" height="auto" autoPlay muted controls>
                 <source src={vedio} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-        </Container>
     );
 };
 
