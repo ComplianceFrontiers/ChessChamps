@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
     title: "Pringo",
-    titleTemplate: "ChessChamps React Gatsby Template",
+    titleTemplate: "ChessChamps",
     description: "React Gatsby",
     author: "pringo",
     twitterUsername: "@pringo",
