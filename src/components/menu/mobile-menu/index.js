@@ -136,7 +136,7 @@ const MobileNavMenu = ({ MobilemenuData, ofcanvasOpen, ofcanvasHandaler }) => {
                     shape="rounded10"
                     path="/"
                 >
-                    Analyze Your Site
+                    Chess Champs Academy
                     <i className="icofont-arrow-right"></i>
                 </Button>
             </Navbar>

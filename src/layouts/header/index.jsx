@@ -48,7 +48,7 @@ const Header = ({ data }) => {
                                 shape="rounded10"
                                 path="/"
                             >
-                                Analyze Your Site
+                                Chess Champs Academy
                                 <i className="icofont-arrow-right"></i>
                             </Button>
                             <MobileMenuBtn

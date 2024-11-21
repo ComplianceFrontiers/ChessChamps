@@ -61,16 +61,17 @@ export const BlogThumb = styled.div`
  
 export const TitleBox = styled.div`
     padding: 10px;
-    background-color: #f5f5f5;
+    background-color: #007aff;
     border: 1px solid #ddd;
     margin-top: 10px;
     text-align: center;
+    
 `;
 
 
 export const BlogContent = styled.div``;
 export const BlogMeta = styled.div`
-    color: #747785;
+    color: #f5f5f5;
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -91,11 +92,12 @@ export const BlogMeta = styled.div`
 export const Author = styled.span``;
 export const Date = styled.span``;
 export const Category = styled.span`
-    background: ${themeGet("colors.gradient")};
+    background: #007aff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 `;
 export const Title = styled.h5`
+
     margin-bottom: 0px;
     a {
         color: ${themeGet("colors.primary")};
