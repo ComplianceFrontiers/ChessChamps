@@ -139,7 +139,7 @@ export const query = graphql`
                     src {
                         childImageSharp {
                             gatsbyImageData(
-                                height: 200
+                                height: 300
                                 quality: 100
                                 width: 520
                             )
