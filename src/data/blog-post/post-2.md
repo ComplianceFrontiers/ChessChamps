@@ -1,7 +1,7 @@
 ---
-title: "What's The Current Job Market For Seo Professionals Like?"
+title: "Club Tournaments"
 image: { src: "../../data/images/blog/2.jpg", alt: "Hello" }
-date: "2022-03-01"
+date: "2022-03-02"
 author: "Marion"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 link: "https://chesschamps.us/programs/"
