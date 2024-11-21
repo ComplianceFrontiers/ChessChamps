@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
@@ -5,8 +6,7 @@ import { CaseCard, Thumb, CaseCardContent, Title, Desination } from "./style";
 const CaseStudiesItem = ({ title, thumbImg, category, slug }) => {
     const image = getImage(thumbImg);
     return (
-        <CaseCard>
-            <Thumb>
+            // <Thumb>
                 <Link to={`/case-studies/${slug}`}>
                     <GatsbyImage
                         className="case-shap"
@@ -14,14 +14,7 @@ const CaseStudiesItem = ({ title, thumbImg, category, slug }) => {
                         alt={title}
                     />
                 </Link>
-            </Thumb>
-            <CaseCardContent className="content-text">
-                <Title>
-                    <Link to={`/case-studies/${slug}`}>{title}</Link>
-                </Title>
-                <Desination>{category}</Desination>
-            </CaseCardContent>
-        </CaseCard>
+            // </Thumb>
     );
 };
 CaseStudiesItem.propTypes = {
