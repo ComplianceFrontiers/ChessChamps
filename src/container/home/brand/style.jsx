@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { device, themeGet } from "@theme/utils";
 import BrandBg from "../../../data/images/brand-logo/bg.png";
 export const BrandSection = styled.section``;
