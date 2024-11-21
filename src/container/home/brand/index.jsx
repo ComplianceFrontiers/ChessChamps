@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { Col, Container, Row } from "react-bootstrap";
 import Swiper, { SwiperSlide } from "@components/shared/swiper";
@@ -26,20 +27,20 @@ const BrandArea = ({ data }) => {
                                     nextEl: ".brand-slider-button-next",
                                     prevEl: ".brand-slider-button-prev",
                                 }}
-                                slidesPerView={5}
+                                slidesPerView={3}
                                 spaceBetween={0}
                                 breakpoints={{
                                     320: {
-                                        slidesPerView: 2,
+                                        slidesPerView: 1,
                                     },
                                     480: {
-                                        slidesPerView: 3,
+                                        slidesPerView: 2,
                                     },
                                     768: {
-                                        slidesPerView: 4,
+                                        slidesPerView: 3,
                                     },
                                     992: {
-                                        slidesPerView: 5,
+                                        slidesPerView: 3,
                                     },
                                 }}
                             >
