@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { StaticImage } from "gatsby-plugin-image";
 import { Col, Container, Row } from "react-bootstrap";
@@ -14,10 +15,17 @@ const TeamArea = ({ data }) => {
             />
             <Container>
                 {data?.section_title && (
-                    <SectionTitle
-                        headingTitle={data?.section_title.title}
-                        {...data.section_title}
-                    />
+                   <SectionTitle
+                   headingTitle={
+                       <div>
+                           <span style={{ fontSize: "1.2em" }}>Official training partner of</span>
+                           <br />
+                           <span style={{ fontSize: "1.8em" }}>Delaware Junior Chess Team</span>
+                       </div>
+                   }
+                   {...data.section_title}
+               />
+               
                 )}
                 <Row>
                     {data?.items &&
