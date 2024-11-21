@@ -1,9 +1,12 @@
 /* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
-import BlogCard from "../../../components/blog/blog-card";
-import { LatestBlogSection } from "./style";
+import { Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { LatestBlogSection,BlogCardBox,
+    BlogThumb, } from "./style";
 import SectionTitleTwo from "../../../components/title-two";
+
 
 const LatestBlogArea = ({ data }) => {
     return (
@@ -16,22 +19,26 @@ const LatestBlogArea = ({ data }) => {
                             {...data.section_title}
                         />
                         {data?.itemsone?.map((item, i) => (
-                            <BlogCard
-                                key={i}
-                                variant="vertical"
-                                link={item.link}
-                                image={item.image.src}
-                            />
+                            <Link key={i} to={item.link}>
+                                <BlogThumb>
+                                    <GatsbyImage
+                                        image={getImage(item.image.src)}
+                                        alt={`Blog image ${i}`}
+                                    />
+                                </BlogThumb>
+                            </Link>
                         ))}
                     </Col>
                     <Col lg={6} md={12}>
                         {data?.itemstwo?.map((item, i) => (
-                            <BlogCard
-                                key={i}
-                                variant="vertical"
-                                link={item.link}
-                                image={item.image.src}
-                            />
+                            <Link key={i} to={item.link}>
+                                 <BlogThumb>
+                                    <GatsbyImage
+                                        image={getImage(item.image.src)}
+                                        alt={`Blog image ${i}`}
+                                    />
+                                 </BlogThumb>
+                            </Link>
                         ))}
                     </Col>
                 </Row>
@@ -47,7 +54,7 @@ LatestBlogArea.propTypes = {
         }),
         itemsone: PropTypes.arrayOf(
             PropTypes.shape({
-                link: PropTypes.string,
+                link: PropTypes.string.isRequired,
                 image: PropTypes.shape({
                     src: PropTypes.string.isRequired,
                 }).isRequired,
@@ -55,7 +62,7 @@ LatestBlogArea.propTypes = {
         ),
         itemstwo: PropTypes.arrayOf(
             PropTypes.shape({
-                link: PropTypes.string,
+                link: PropTypes.string.isRequired,
                 image: PropTypes.shape({
                     src: PropTypes.string.isRequired,
                 }).isRequired,
