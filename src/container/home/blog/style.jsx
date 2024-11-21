@@ -36,8 +36,8 @@ export const BlogThumb1 = styled.div`
     margin-bottom: 20px;
 
     img {
-        width: 100%; /* Ensures the image scales horizontally */
-        height: 70%; /* Maintain aspect ratio */
+        width: 63%; /* Ensures the image scales horizontally */
+        height: 60%; /* Maintain aspect ratio */
         object-fit: cover; /* Ensures images are cropped to fill */
         border-radius: 8px; /* Optional, for rounded corners */
     }
