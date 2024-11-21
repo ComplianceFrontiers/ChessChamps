@@ -27,12 +27,19 @@ const IndexPage = ({ data }) => {
         >
             <Hero  />
             <BrandArea data={content["brand-section"]} />
-            <ServicesArea
+            <LatestBlogArea
+                data={{
+                    ...content["blog-section"],
+                    itemsone: data.featuredPosts.nodes,
+                    itemstwo: data.latestPosts.nodes,
+                }}
+            />
+            {/* <ServicesArea
                 data={{
                     ...content["services-section"],
                     items: data.allServices.nodes,
                 }}
-            />
+            /> */}
             <WorkingProcessArea data={content["working-process"]} />
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
             <CaseStudiesArea
@@ -42,15 +49,9 @@ const IndexPage = ({ data }) => {
                 }}
             />
             <TeamArea data={content["team-members-section"]} />
-            <FAQArea data={content["frequiently-asked-question-section"]} />
+            {/* <FAQArea data={content["frequiently-asked-question-section"]} /> */}
             <TestimonialArea data={content["happy-customer-section"]} />
-            <LatestBlogArea
-                data={{
-                    ...content["blog-section"],
-                    itemsone: data.featuredPosts.nodes,
-                    itemstwo: data.latestPosts.nodes,
-                }}
-            />
+            
         </Layout>
     );
 };

@@ -1,9 +1,11 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { Container } from "react-bootstrap";
 import Swiper, { SwiperSlide } from "@components/shared/swiper";
 import SectionTitle from "../../../components/title";
 import CaseStudiesItem from "../../../components/case-studies-item";
 import { CaseStudiesSection } from "./style";
+
 const CaseStudiesArea = ({ data }) => {
     return (
         <CaseStudiesSection>
@@ -23,9 +25,13 @@ const CaseStudiesArea = ({ data }) => {
                         nextEl: ".case-studies-slider-button-next",
                         prevEl: ".case-studies-slider-button-prev",
                     }}
-                    slidesPerView={3}
+                    slidesPerView={6}
                     spaceBetween={30}
                     centeredSlides={true}
+                    autoplay={{
+                        delay: 1000, // Auto-slide every 1 second
+                        disableOnInteraction: false, // Continue autoplay after interaction
+                    }}
                     breakpoints={{
                         320: {
                             slidesPerView: 1,
@@ -55,27 +61,17 @@ const CaseStudiesArea = ({ data }) => {
                             );
                         })}
                 </Swiper>
-                <div className="case-studies-slider-button">
-                    <div className="case-studies-slider-button-prev">
-                        <i className="icofont-rounded-double-left"></i>
-                    </div>
-                    <div className="case-studies-slider-button-next">
-                        <i className="icofont-rounded-double-right"></i>
-                    </div>
-                </div>
             </Container>
         </CaseStudiesSection>
     );
 };
+
 CaseStudiesArea.propTypes = {
     data: PropTypes.shape({
         section_title: PropTypes.shape({
             title: PropTypes.string,
             icon: PropTypes.shape({
-                src: PropTypes.oneOfType([
-                    PropTypes.string,
-                    PropTypes.shape({}),
-                ]).isRequired,
+                src: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]).isRequired,
                 alt: PropTypes.string,
             }),
         }),
