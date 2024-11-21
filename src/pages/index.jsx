@@ -40,8 +40,9 @@ const IndexPage = ({ data }) => {
                     items: data.allServices.nodes,
                 }}
             /> */}
-            <WorkingProcessArea data={content["working-process"]} />
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
+            <WorkingProcessArea data={content["working-process"]} />
+
             <CaseStudiesArea
                 data={{
                     ...content["case-studies-section"],
