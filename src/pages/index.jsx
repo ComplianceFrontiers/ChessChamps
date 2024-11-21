@@ -25,7 +25,6 @@ const IndexPage = ({ data }) => {
                 ...globalContent["footer"],
             }}
         >
-            {/* <SEO title="Home" pathname="/" /> */}
             <Hero  />
             <BrandArea data={content["brand-section"]} />
             <ServicesArea

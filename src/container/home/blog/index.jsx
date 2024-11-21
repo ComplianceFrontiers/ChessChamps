@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { LatestBlogSection,BlogCardBox,
+import { LatestBlogSection,BlogThumb1,
     BlogThumb, } from "./style";
 import SectionTitleTwo from "../../../components/title-two";
 
@@ -20,12 +20,12 @@ const LatestBlogArea = ({ data }) => {
                         />
                         {data?.itemsone?.map((item, i) => (
                             <Link key={i} to={item.link}>
-                                <BlogThumb>
+                                <BlogThumb1>
                                     <GatsbyImage
                                         image={getImage(item.image.src)}
                                         alt={`Blog image ${i}`}
                                     />
-                                </BlogThumb>
+                                </BlogThumb1>
                             </Link>
                         ))}
                     </Col>
