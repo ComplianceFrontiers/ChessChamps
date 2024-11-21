@@ -8,12 +8,6 @@ export const BlogCardBox = styled.div`
     transition: all 0.3s ease-in-out;
 
     ${({ variant }) =>
-        variant === "horizontal" &&
-        css`
-            display: flex;
-            flex-direction: column;
-        `};
-    ${({ variant }) =>
         variant === "vertical" &&
         css`
             display: flex;
@@ -22,6 +16,12 @@ export const BlogCardBox = styled.div`
                 max-width: 100%;
                 margin-right: 0px;
                 margin-bottom: 20px;
+                img {
+                    width: 100%; /* Ensures the image scales horizontally */
+                    height: auto; /* Maintain aspect ratio */
+                    object-fit: cover; /* Ensures images are cropped to fill */
+                    border-radius: 8px; /* Optional, for rounded corners */
+                }
             }
             ${device.small} {
                 flex-direction: row;
@@ -29,9 +29,14 @@ export const BlogCardBox = styled.div`
                     max-width: 140px;
                     margin-right: 20px;
                     margin-bottom: 0;
+                    img {
+                        height: 100px; /* Set a consistent height for rectangular look */
+                        object-fit: cover;
+                    }
                 }
             }
         `}
+    
 
     &:hover {
         background-image: -webkit-linear-gradient(
@@ -52,23 +57,7 @@ export const BlogCardBox = styled.div`
         }
     }
 `;
-export const BlogThumb = styled.div`
-    background-color: #f7faff;
-    overflow: hidden;
-    margin-bottom: 20px;
-    border-radius: 15px;
-`;
  
-export const TitleBox = styled.div`
-    padding: 10px;
-    background-color: #007aff;
-    border: 1px solid #ddd;
-    margin-top: 10px;
-    text-align: center;
-    
-`;
-
-
 export const BlogContent = styled.div``;
 export const BlogMeta = styled.div`
     color: #f5f5f5;
@@ -96,10 +85,4 @@ export const Category = styled.span`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 `;
-export const Title = styled.h5`
 
-    margin-bottom: 0px;
-    a {
-        color: ${themeGet("colors.primary")};
-    }
-`;
