@@ -36,16 +36,12 @@ export const BlogThumb1 = styled.div`
     margin-bottom: 20px;
 
     img {
-        width: 63%; /* Ensures the image scales horizontally */
+        width: auto; /* Ensures the image scales horizontally */
         height: auto; /* Maintain aspect ratio */
         object-fit: cover; /* Ensures images are cropped to fill */
         border-radius: 8px; /* Optional, for rounded corners */
     }
 
-    @media (max-width: 768px) {
-        img {
-            width: 100%; /* Set width to 100% for mobile */
-        }
     }
 
 
