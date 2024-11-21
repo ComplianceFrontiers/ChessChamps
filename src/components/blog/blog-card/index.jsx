@@ -5,25 +5,21 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import {
     BlogCardBox,
     BlogThumb,
-    TitleBox, // Add a styled component for the title box
-    Title,
 } from "./style";
 
 const BlogCard = ({ variant, title, slug, image }) => {
     return (
         <BlogCardBox variant={variant}>
-            <BlogThumb className="blog-thumb">
-                <Link to={`/${slug}`}>
+            <Link to={`/${slug}`}>
+                <div className="blog-thumb">
                     <GatsbyImage image={getImage(image)} alt={title} />
+                </div>
                 </Link>
-            </BlogThumb>
-            {/* Title Box */}
-            <TitleBox className="title-box">
-                <Title>{title}</Title>
-            </TitleBox>
+         
         </BlogCardBox>
     );
 };
+
 
 BlogCard.propTypes = {
     variant: PropTypes.oneOf(["vertical"]),
