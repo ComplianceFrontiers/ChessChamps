@@ -1,6 +1,6 @@
 ---
 title: "Chess in Schools"
-image: { src: "../../data/images/blog/5.jpg", alt: "Rankings" }
+image: { src: "../../data/images/blog/5.png", alt: "Rankings" }
 date: "2022-03-05"
 author: "Roderick"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."

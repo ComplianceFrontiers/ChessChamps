@@ -1,6 +1,6 @@
 ---
 title: "Club Tournaments"
-image: { src: "../../data/images/blog/2.jpg", alt: "Hello" }
+image: { src: "../../data/images/blog/2.png", alt: "Hello" }
 date: "2022-03-02"
 author: "Marion"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
