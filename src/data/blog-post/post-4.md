@@ -1,7 +1,7 @@
 ---
 title: "Chess Clubs"
 image: { src: "../../data/images/blog/4.jpg", alt: "Rankings" }
-# date: "2022-03-21"
+date: "2022-03-02"
 author: "Roderick"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 link: "https://chesschamps.us/programs/"
