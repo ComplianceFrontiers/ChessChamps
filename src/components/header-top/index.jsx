@@ -59,7 +59,7 @@ const HeaderTopArea = () => {
                             </CallToAction>
                             <SelectLanguage>
                                 <FormSelect>
-                                    <NavItem>
+                                    {/* <NavItem>
                                         <Link to="/">English</Link>
                                         <FormSelectList className="language-ul">
                                             <NavItem>
@@ -69,7 +69,7 @@ const HeaderTopArea = () => {
                                                 <Link to="/">Français</Link>
                                             </NavItem>
                                         </FormSelectList>
-                                    </NavItem>
+                                    </NavItem> */}
                                 </FormSelect>
                             </SelectLanguage>
                         </HeaderTopRight>
