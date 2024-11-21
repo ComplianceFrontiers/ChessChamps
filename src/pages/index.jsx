@@ -120,7 +120,7 @@ export const query = graphql`
         }
         featuredPosts: allArticle(
             limit: 2
-            sort: { order: DESC, fields: date }
+            sort: { order: ASC, fields: date }
         ) {
             nodes {
                 tags {

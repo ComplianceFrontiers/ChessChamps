@@ -1,7 +1,7 @@
 ---
-title: "Web Analytics Job Market For Seo Professionals"
+title: "Chess in Schools"
 image: { src: "../../data/images/blog/5.jpg", alt: "Rankings" }
-date: "2022-03-01"
+date: "2022-03-05"
 author: "Roderick"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 link: "https://chesschamps.us/programs/"

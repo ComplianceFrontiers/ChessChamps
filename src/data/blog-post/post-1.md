@@ -1,7 +1,7 @@
 ---
-title: "The Step-by-Step Guide to Improving Your Google Rankings."
+title: "Chess Clubs"
 image: { src: "../../data/images/blog/4.jpg", alt: "Rankings" }
-date: "2022-03-03"
+date: "2022-03-01"
 author: "Marion"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 link: "https://chesschamps.us/programs/"
