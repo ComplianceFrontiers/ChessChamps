@@ -209,7 +209,6 @@
                         }
                     ]
                 }
-                            
             ]
         },
         {
@@ -512,7 +511,7 @@
             "section_title": {
                 "showIcon": true,
                 "iconBg": "primary",
-                "title": "Chess Parent Endorsements",
+                "title": "What Chess Parents Say",
                 "icon": {
                     "src": "../../data/images/icons/testimonial.png",
                     "alt": "Working Process"
