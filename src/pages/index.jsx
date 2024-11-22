@@ -34,7 +34,6 @@ const IndexPage = ({ data }) => {
             <LatestBlogArea
                 data={{
                     ...content["blog-section"],
-                    itemsone: data.featuredPosts.nodes,
                     itemstwo: data.latestPosts.nodes,
                 }}
             />
@@ -128,7 +127,7 @@ export const query = graphql`
             }
             
         }
-        latestPosts: allArticle(limit: 3, sort: { order: DESC, fields: date }) {
+        latestPosts: allArticle(limit: 6, sort: { order: DESC, fields: date }) {
             nodes {
                 ...Articles
             }
