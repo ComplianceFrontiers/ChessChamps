@@ -232,7 +232,7 @@
                     "id": "choose-us-1",
                     "images": [
                         {
-                            "src": "../../data/images/icons/1.png"
+                            "src": "../../data/images/icons/11.png"
                         }
                     ],
                     "headings": [
@@ -247,7 +247,7 @@
                     "id": "choose-us-2",
                     "images": [
                         {
-                            "src": "../../data/images/icons/2.png"
+                            "src": "../../data/images/icons/22.png"
                         }
                     ],
                     "headings": [
@@ -262,7 +262,7 @@
                     "id": "choose-us-3",
                     "images": [
                         {
-                            "src": "../../data/images/icons/3.png"
+                            "src": "../../data/images/icons/33.png"
                         }
                     ],
                     "headings": [
