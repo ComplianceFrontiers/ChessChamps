@@ -37,20 +37,13 @@ const IndexPage = ({ data }) => {
                     itemstwo: data.latestPosts.nodes,
                 }}
             />
-            {/* <ServicesArea
-                data={{
-                    ...content["services-section"],
-                    items: data.allServices.nodes,
-                }}
-            /> */}
-
+           
             <CaseStudiesArea
                 data={{
                     ...content["case-studies-section"],
                     items: data.allCaseStudies.nodes,
                 }}
             />
-            {/* <FAQArea data={content["frequiently-asked-question-section"]} /> */}
             <TestimonialArea data={content["happy-customer-section"]} />
             
         </Layout>
