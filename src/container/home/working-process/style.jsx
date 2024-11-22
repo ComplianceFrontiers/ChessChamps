@@ -13,6 +13,7 @@ const rotation = keyframes`
 
 export const WorkingProcessSection = styled.section`
     background-image: url(${WorkingProcessSectionBg});
+    margin-top: 70px;
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
