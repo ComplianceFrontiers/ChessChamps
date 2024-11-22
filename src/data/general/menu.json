@@ -58,13 +58,14 @@
                     "id": "menu-63",
                     "text": "404 not found!",
                     "link": "/404"
+                },
+                {
+                    "id": "menu-7",
+                    "text": "Contact",
+                    "link": "/contact-us"
                 }
             ]
-        },
-        {
-            "id": "menu-7",
-            "text": "Contact",
-            "link": "/contact-us"
         }
+        
     ]
 }
