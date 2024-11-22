@@ -121,7 +121,7 @@ export const query = graphql`
             }
         }
         featuredPosts: allArticle(
-            limit: 2
+            limit: 3
             sort: { order: ASC, fields: date }
         ) {
             nodes {

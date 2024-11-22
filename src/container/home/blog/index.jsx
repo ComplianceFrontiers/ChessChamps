@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { LatestBlogSection,BlogThumb1,
+import { LatestBlogSection,
     BlogThumb, } from "./style";
 import SectionTitleTwo from "../../../components/title-two";
 
@@ -14,18 +14,14 @@ const LatestBlogArea = ({ data }) => {
             <Container>
                 <Row className="gx-5">
                     <Col lg={6} md={12}>
-                        <SectionTitleTwo
-                            headingTitle={data?.section_title.title}
-                            {...data.section_title}
-                        />
                         {data?.itemsone?.map((item, i) => (
                             <Link key={i} to={item.link}>
-                                <BlogThumb1>
+                                <BlogThumb>
                                     <GatsbyImage
                                         image={getImage(item.image.src)}
                                         alt={`Blog image ${i}`}
                                     />
-                                </BlogThumb1>
+                                </BlogThumb>
                             </Link>
                         ))}
                     </Col>
