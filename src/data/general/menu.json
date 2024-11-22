@@ -18,6 +18,11 @@
             "link": "/blog-grid"
         },
         {
+            "id": "menu-4",
+            "text": "Events",
+            "link": "/blog-grid"
+        },
+        {
             "id": "menu-5",
             "text": "Gallery",
             "link": "/case-studies",
