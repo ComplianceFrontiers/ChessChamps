@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => {
                 }}
             /> */}
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
-            <WorkingProcessArea data={content["working-process"]} />
+            <WorkingProcessArea data={content["brand-section"]} />
 
             <CaseStudiesArea
                 data={{
