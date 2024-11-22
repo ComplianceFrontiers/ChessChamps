@@ -1,7 +1,7 @@
 ---
 title: "Online Courses"
 image: { src: "../../data/images/blog/6.png", alt: "Rankings" }
-date: "2022-03-06"
+date: "2022-03-01"
 author: "Roderick"
 quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
 link: "https://chesschamps.us/programs/"
