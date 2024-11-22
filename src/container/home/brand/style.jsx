@@ -37,13 +37,13 @@ export const BrandBox = styled.div`
 
         .stat-item {
             h2 {
-                font-size: 2rem;
+                font-size: 3rem;
                 font-weight: bold;
                 color: #c6aa68; /* Gold color */
                 margin-bottom: 5px;
             }
             p {
-                font-size: 1rem;
+                font-size: 3rem;
                 font-weight: 600;
                 text-transform: uppercase;
                 color: #fff; /* White text for contrast */
@@ -57,10 +57,10 @@ export const BrandBox = styled.div`
 
         ${device.medium} {
             .stat-item h2 {
-                font-size: 2.8rem; /* Adjust for medium screens */
+                font-size: 5rem; /* Adjust for medium screens */
             }
             .stat-item p {
-                font-size: 0.9rem;
+                font-size: 1.5rem;
             }
         }
 
