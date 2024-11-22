@@ -27,6 +27,10 @@ const IndexPage = ({ data }) => {
         >
             <Hero  />
             <BrandArea data={content["brand-section"]} />
+            <WhyChooseUsArea data={content["why-choose-us-section"]} />
+            <TeamArea data={content["team-members-section"]} />
+            <WorkingProcessArea data={content["brand-section"]} />
+
             <LatestBlogArea
                 data={{
                     ...content["blog-section"],
@@ -40,8 +44,6 @@ const IndexPage = ({ data }) => {
                     items: data.allServices.nodes,
                 }}
             /> */}
-            <WhyChooseUsArea data={content["why-choose-us-section"]} />
-            <WorkingProcessArea data={content["brand-section"]} />
 
             <CaseStudiesArea
                 data={{
@@ -49,7 +51,6 @@ const IndexPage = ({ data }) => {
                     items: data.allCaseStudies.nodes,
                 }}
             />
-            <TeamArea data={content["team-members-section"]} />
             {/* <FAQArea data={content["frequiently-asked-question-section"]} /> */}
             <TestimonialArea data={content["happy-customer-section"]} />
             
