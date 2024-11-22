@@ -29,20 +29,3 @@ export const BlogThumb = styled.div`
         border-radius: 8px; /* Optional, for rounded corners */
     }
 `;
-
-export const BlogThumb1 = styled.div`
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-
-    img {
-        width: auto; /* Ensures the image scales horizontally */
-        height: auto; /* Maintain aspect ratio */
-        object-fit: cover; /* Ensures images are cropped to fill */
-        border-radius: 8px; /* Optional, for rounded corners */
-    }
-
-    }
-
-
-`;
