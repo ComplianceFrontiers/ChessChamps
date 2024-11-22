@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { device } from "@theme/utils";
 import BeforeImge from "../../../data/images/team/shape-bottom.png";
 import AfterImge from "../../../data/images/team/shape-top.png";
