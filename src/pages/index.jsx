@@ -28,22 +28,25 @@ const IndexPage = ({ data }) => {
             <Hero  />
             <BrandArea data={content["brand-section"]} />
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
-            <TeamArea data={content["team-members-section"]} />
-            <WorkingProcessArea data={content["brand-section"]} />
-
             <LatestBlogArea
                 data={{
                     ...content["blog-section"],
                     itemstwo: data.latestPosts.nodes,
                 }}
             />
-           
+            <TeamArea data={content["team-members-section"]} />
             <CaseStudiesArea
                 data={{
                     ...content["case-studies-section"],
                     items: data.allCaseStudies.nodes,
                 }}
             />
+            
+            <WorkingProcessArea data={content["brand-section"]} />
+
+          
+           
+            
             <TestimonialArea data={content["happy-customer-section"]} />
             
         </Layout>

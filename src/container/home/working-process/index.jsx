@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/title";
 import { WorkingProcessSection } from "./style";
-import Swiper, { SwiperSlide } from "@components/shared/swiper";
 import SingleBrand from "../../../components/brand";
 
 const WorkingProcessArea = ({ data }) => {
@@ -16,49 +15,17 @@ const WorkingProcessArea = ({ data }) => {
                         {...data.section_title}
                     />
                 )}
-                 <Swiper
-                                layout={{
-                                    nav: "brand-navigation",
-                                    dots: "brand-dots-style",
-                                }}
-                                navigation={{
-                                    nextEl: ".brand-slider-button-next",
-                                    prevEl: ".brand-slider-button-prev",
-                                }}
-                                slidesPerView={3}
-                                spaceBetween={0}
-                                breakpoints={{
-                                    320: {
-                                        slidesPerView: 1,
-                                    },
-                                    480: {
-                                        slidesPerView: 2,
-                                    },
-                                    768: {
-                                        slidesPerView: 3,
-                                    },
-                                    992: {
-                                        slidesPerView: 3,
-                                    },
-                                }}
-                            >
-                                {data?.items &&
-                                    data?.items?.map((item, i) => {
-                                        return (
-                                            <SwiperSlide key={i}>
-                                                <SingleBrand
-                                                    brnadAffterImage={
-                                                        item.images?.[0].src
-                                                    }
-                                                    brnadBeforeImage={
-                                                        item.images?.[1].src
-                                                    }
-                                                    alt={item.images?.[0].alt}
-                                                />
-                                            </SwiperSlide>
-                                        );
-                                    })}
-                            </Swiper>
+                <div className="image-container">
+                    {data?.items &&
+                        data?.items.map((item, i) => (
+                            <div key={i} className="image-wrapper">
+                                <SingleBrand
+                                    brnadAffterImage={item.images?.[0].src}
+                                     alt={item.images?.[0].alt}
+                                />
+                            </div>
+                        ))}
+                </div>
             </Container>
         </WorkingProcessSection>
     );
