@@ -61,10 +61,14 @@ const CaseStudiesArea = ({ data }) => {
                             );
                         })}
                 </Swiper>
+                <div className="button-wrapper">
+                    <button className="shop-now-button">Shop Now</button>
+                </div>
             </Container>
         </CaseStudiesSection>
     );
 };
+
 
 CaseStudiesArea.propTypes = {
     data: PropTypes.shape({
