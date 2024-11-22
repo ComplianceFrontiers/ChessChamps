@@ -15,17 +15,17 @@
         {
             "id": "menu-3",
             "text": "Programs",
-            "link": "/case-studies"
+            "link": "/blog-grid"
         },
         {
             "id": "menu-5",
             "text": "Gallery",
-            "link": "/blog-grid",
+            "link": "/case-studies",
             "submenu": [
                 {
                     "id": "menu-51",
                     "text": "Blog Grid Post",
-                    "link": "/blog-grid"
+                    "link": "/case-studies"
                 },
                 {
                     "id": "menu-52",
