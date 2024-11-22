@@ -3,37 +3,41 @@ import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { LatestBlogSection,
-    BlogThumb, } from "./style";
-import SectionTitleTwo from "../../../components/title-two";
-
+import { LatestBlogSection, BlogThumb } from "./style";
 
 const LatestBlogArea = ({ data }) => {
+    // Split the itemstwo array into two parts
+    const firstThreeItems = data?.itemstwo?.slice(0, 3);
+    const nextThreeItems = data?.itemstwo?.slice(3, 6);
+
     return (
         <LatestBlogSection>
             <Container>
                 <Row>
+                    {/* First Column with the first three images */}
                     <Col lg={6} md={12}>
-                        {data?.itemsone?.map((item, i) => (
+                        {firstThreeItems?.map((item, i) => (
                             <Link key={i} to={item.link}>
                                 <BlogThumb>
                                     <GatsbyImage
                                         image={getImage(item.image.src)}
-                                        alt={`Blog image ${i}`}
+                                        alt={`Blog image ${i + 1}`}
                                     />
                                 </BlogThumb>
                             </Link>
                         ))}
                     </Col>
+
+                    {/* Second Column with the next three images */}
                     <Col lg={6} md={12}>
-                        {data?.itemstwo?.map((item, i) => (
+                        {nextThreeItems?.map((item, i) => (
                             <Link key={i} to={item.link}>
-                                 <BlogThumb>
+                                <BlogThumb>
                                     <GatsbyImage
                                         image={getImage(item.image.src)}
-                                        alt={`Blog image ${i}`}
+                                        alt={`Blog image ${i + 4}`}
                                     />
-                                 </BlogThumb>
+                                </BlogThumb>
                             </Link>
                         ))}
                     </Col>
