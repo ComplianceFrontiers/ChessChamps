@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
@@ -5,6 +6,7 @@ import { graphql } from "gatsby";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import ServicsArea from "../container/services";
 import { normalizedData } from "@utils/functions";
+import WhyChooseUsArea from "../container/home/whay-choose-us";
 
 const ServicesPages = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -22,6 +24,9 @@ const ServicesPages = ({ data, location, pageContext }) => {
                 location={location}
                 title="Services Page"
             />
+            <WhyChooseUsArea data={content["why-choose-us-section1"]} />
+
+           
             <ServicsArea
                 data={{
                     ...content["services-section"],
