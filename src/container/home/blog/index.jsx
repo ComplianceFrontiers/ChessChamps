@@ -12,7 +12,7 @@ const LatestBlogArea = ({ data }) => {
     return (
         <LatestBlogSection>
             <Container>
-                <Row className="gx-5">
+                <Row>
                     <Col lg={6} md={12}>
                         {data?.itemsone?.map((item, i) => (
                             <Link key={i} to={item.link}>

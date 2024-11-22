@@ -123,32 +123,10 @@ export const query = graphql`
         featuredPosts: allArticle(
             limit: 3
             sort: { order: ASC, fields: date }
-        ) {
-            nodes {
-                tags {
-                    title
-                    slug
-                }
-                slug
-                title
-                date(formatString: "D MMMM, YYYY")
-                categories {
-                    title
-                    slug
-                }
-                image {
-                    alt
-                    src {
-                        childImageSharp {
-                            gatsbyImageData(
-                                height: 300
-                                quality: 100
-                                width: 520
-                            )
-                        }
-                    }
-                }
+        ){ nodes {
+                ...Articles
             }
+            
         }
         latestPosts: allArticle(limit: 3, sort: { order: DESC, fields: date }) {
             nodes {
