@@ -76,6 +76,69 @@
                     "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
                 }
             ]
+        },
+        {
+            "id": "services-why-choose-us-section1",
+            "section": "why-choose-us-section1",
+            "section_title": {
+                "showShortDec": true,
+                "showSubTitle": true,
+                "subtitle": "// WHAY CHOOSE US?1",
+                "title": "We Are Trusted ChessChamps Company1.",
+                "icon": {
+                    "src": "../../data/images/icons/pencile.png",
+                    "alt": "Working Process"
+                },
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type scrambled.",
+                "dividerBg": "secondary"
+            },
+            "items": [
+                {
+                    "id": "choose-us-1",
+                    "images": [
+                        {
+                            "src": "../../data/images/icons/1.png"
+                        }
+                    ],
+                    "headings": [
+                        {
+                            "level": "h5",
+                            "content": "High Customer Retention Rate"
+                        }
+                    ],
+                    "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
+                },
+                {
+                    "id": "choose-us-2",
+                    "images": [
+                        {
+                            "src": "../../data/images/icons/2.png"
+                        }
+                    ],
+                    "headings": [
+                        {
+                            "level": "h5",
+                            "content": "Dedicated Customer Support"
+                        }
+                    ],
+                    "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
+                },
+                {
+                    "id": "choose-us-3",
+                    "images": [
+                        {
+                            "src": "../../data/images/icons/3.png"
+                        }
+                    ],
+                    "headings": [
+                        {
+                            "level": "h5",
+                            "content": "Professional Team Member"
+                        }
+                    ],
+                    "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
+                }
+            ]
         }
     ]
 }
