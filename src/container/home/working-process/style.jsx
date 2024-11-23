@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { device, keyframes } from "@theme/utils";
 import WorkingProcessSectionBg from "../../../data/images/working/bg.png";
 import circleImage from "../../../data/images/working/circle.png";
@@ -39,4 +40,30 @@ export const WorkingProcessSection = styled.section`
             text-align: center;
         }
     }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        padding: 60px 0px 50px;
+
+        .image-wrapper {
+            max-width: 120px; /* Reduce size for smaller devices */
+        }
+
+        .image-container {
+            gap: 15px; /* Reduce space between images */
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 40px 0px 30px;
+
+        .image-wrapper {
+            max-width: 100px; /* Further reduce size for very small devices */
+        }
+
+        .image-container {
+            gap: 10px; /* Further reduce space between images */
+        }
+    }
 `;
+
