@@ -9,7 +9,6 @@ const BrandArea = ({ data }) => {
         { id: 1, value: 1000, label: "Tournament Experience" },
         { id: 2, value: 200, label: "Club Members" },
         { id: 3, value: 50, label: "Years of Experience" },
-        { id: 4, value: 10, label: "Coaches" },
     ];
 
     return (
@@ -24,7 +23,7 @@ const BrandArea = ({ data }) => {
                                         <Col
                                             key={stat.id}
                                             className="stat-item"
-                                            lg={3}
+                                            lg={4}
                                             md={6}
                                         >
                                             <AnimatedCounter
