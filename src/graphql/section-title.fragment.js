@@ -5,7 +5,6 @@ export const query = graphql`
         title
         subtitle
         description
-        iconBg
         align
         iconAlign
         dividerBg
