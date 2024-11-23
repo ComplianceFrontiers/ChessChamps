@@ -8,6 +8,7 @@ export const BrandTitle = styled.h6`
     text-align: center;
     color: #fff;
     margin-bottom: 30px;
+    margin-top: 80px;
     span {
         font-weight: 900;
         line-height: 2.428;
@@ -19,6 +20,7 @@ export const BrandTitle = styled.h6`
 `;
 
 export const BrandBox = styled.div`
+margin-top: 30px;
     background-color: #02126a;
     background-image: url(${BrandBg});
     padding: 20px 20px 20px;
