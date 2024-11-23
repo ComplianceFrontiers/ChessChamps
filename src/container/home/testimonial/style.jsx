@@ -9,7 +9,7 @@ const zoomin = keyframes`
       }
 `;
 export const TestimonialSection = styled.section`
-    padding-bottom: 140px;
+    padding-bottom: 10px;
 `;
 export const TestimonialContentBox = styled.div`
     position: relative;
