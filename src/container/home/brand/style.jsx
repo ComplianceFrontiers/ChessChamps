@@ -28,28 +28,59 @@ export const BrandBox = styled.div`
     border-radius: 35px;
 
     ${device.large} {
-        padding: 25px 50px 30px;
+        padding: 20px 0px 0px;
     }
     
     .brand-stats {
-        text-align: center;
-        padding: 20px 0;
+    text-align: center;
+    padding: 20px 0;
 
-        .stat-item {
-            h2 {
-                font-size: 3rem;
-                font-weight: bold;
-                color: #c6aa68; /* Gold color */
-                margin-bottom: 5px;
-            }
-            p {
-                font-size: 3rem;
-                font-weight: 600;
-                text-transform: uppercase;
-                color: #fff; /* White text for contrast */
-            }
-            border-right: 1px solid rgba(255, 255, 255, 0.3); /* Divider with opacity */
+    .stat-item {
+        position: relative;
+        h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #c6aa68; /* Gold color */
+            margin-bottom: 5px;
         }
+        p {
+            font-size: 3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #fff; /* White text for contrast */
+        }
+
+        &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 10%;
+            right: 0;
+            height: 80%;
+            width: 1px;
+            background-color: #fff; /* White divider line */
+            opacity: 0.5; /* Optional: slightly transparent */
+        }
+    }
+
+    ${device.medium} {
+        .stat-item h2 {
+            font-size: 5rem; /* Adjust for medium screens */
+        }
+        .stat-item p {
+            font-size: 1.5rem;
+        }
+    }
+
+    ${device.small} {
+        .stat-item {
+            &:not(:last-child)::after {
+                display: none; /* Remove divider for small screens */
+            }
+            margin-bottom: 15px;
+        }
+    }
+}
+
 
         .stat-item:last-child {
             border-right: none; /* Remove border for the last column */
