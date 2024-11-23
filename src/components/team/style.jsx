@@ -84,31 +84,4 @@ export const TeamSocialLink = styled.a`
 `;
 export const SingleTeam = styled.div`
     margin-bottom: 30px;
-    &:hover {
-        .social-hover {
-            opacity: 1;
-            visibility: visible;
-        }
-        .socail-icon-hover {
-            opacity: 1;
-            visibility: visible;
-        }
-        .team-social-item {
-            &:nth-of-type(1) {
-                top: 85px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            &:nth-of-type(2) {
-                top: 130px;
-                left: 40%;
-                transform: translateX(-50%);
-            }
-            &:nth-of-type(3) {
-                top: 130px;
-                left: 60%;
-                transform: translateX(-50%);
-            }
-        }
-    }
 `;
