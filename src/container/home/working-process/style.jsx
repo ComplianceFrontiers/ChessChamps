@@ -13,11 +13,11 @@ const rotation = keyframes`
 
 export const WorkingProcessSection = styled.section`
     background-image: url(${WorkingProcessSectionBg});
-    margin-top: 70px;
+    margin-top: 20px;
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 130px 0px 115px;
+    padding: 100px 0px 95px;
 
     .image-container {
         display: flex;
