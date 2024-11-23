@@ -43,9 +43,6 @@ const IndexPage = ({ data }) => {
             />
             
             <WorkingProcessArea data={content["brand-section"]} />
-
-          
-           
             
             <TestimonialArea data={content["happy-customer-section"]} />
             
