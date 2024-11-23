@@ -10,6 +10,8 @@ const zoomin = keyframes`
 `;
 export const TestimonialSection = styled.section`
     padding-bottom: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
 `;
 export const TestimonialContentBox = styled.div`
     position: relative;
@@ -18,8 +20,10 @@ export const TestimonialContentBox = styled.div`
     text-align: center;
     position: relative;
     padding: 0px 15px 55px;
+    padding-top: 20px;
+    margin-top: 20px;
     ${device.medium} {
-        padding: 0px 70px 85px;
+        padding: 20px 70px 85px;
     }
 `;
 export const ShapBgImg = styled.div`
