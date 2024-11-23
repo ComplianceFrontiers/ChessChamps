@@ -40,13 +40,13 @@ margin-top: 30px;
     .stat-item {
         position: relative;
         h2 {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: bold;
             color: #c6aa68; /* Gold color */
-            margin-bottom: 5px;
+            // margin-bottom: 5px;
         }
         p {
-            font-size: 3rem;
+            font-size: 1rem;
             font-weight: 600;
             text-transform: uppercase;
             color: #fff; /* White text for contrast */
