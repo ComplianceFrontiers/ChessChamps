@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
 import { graphql } from "gatsby";
+import TeamArea from "../container/home/team";
 import PageBreadcrumb from "../components/pagebreadcrumb";
-import ServicsArea from "../container/services";
+import TestimonialArea from "../container/home/testimonial";
 import { normalizedData } from "@utils/functions";
 import WhyChooseUsArea from "../container/home/whay-choose-us";
 
@@ -26,13 +27,8 @@ const ServicesPages = ({ data, location, pageContext }) => {
             />
             <WhyChooseUsArea data={content["why-choose-us-section1"]} />
 
-           
-            <ServicsArea
-                data={{
-                    ...content["services-section"],
-                    items: data.allServices.nodes,
-                }}
-            />
+            <TeamArea data={content["team-members-section1"]} />
+            <TestimonialArea data={content["happy-customer-section1"]} />
         </Layout>
     );
 };
