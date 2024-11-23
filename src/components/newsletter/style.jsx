@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { device } from "@theme/utils";
 export const NewsLetterBox = styled.div`
     max-width: 970px;
@@ -5,16 +6,16 @@ export const NewsLetterBox = styled.div`
     position: relative;
 `;
 export const Form = styled.form`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
     .btn-absolute {
         margin-top: 20px;
     }
-    ${device.small} {
-        .btn-absolute {
-            position: absolute;
-            top: 9px;
-            right: 10px;
-            margin-top: 0px;
-        }
+
     }
 `;
 export const Input = styled.input`
