@@ -83,13 +83,13 @@
             "section_title": {
                 "showShortDec": true,
                 "showSubTitle": true,
-                "subtitle": "// WHAY CHOOSE US?1",
-                "title": "We Are Trusted ChessChamps Company1.",
+                "subtitle": "Our Journey",
+                "title": "From a Young Dream to a thriving Chess Community",
                 "icon": {
                     "src": "../../data/images/icons/pencile.png",
                     "alt": "Working Process"
                 },
-                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type scrambled.",
+                "description": "Siddharth Bose (Sid), our founder and lead coach, discovered his passion for chess at age five in India, quickly achieving success in state and national tournaments. Nurtured by a vibrant chess ecosystem with access to clubs, coaching, and youth competitions, Sid flourished. However, after relocating to Delaware, he faced a significant lack of resources for young chess enthusiasts—coaching opportunities were scarce, and youth-focused programs were nonexistent. Determined to continue his journey, Sid traveled to neighboring states for quality chess education and playing opportunities, often being the only young participant in predominantly adult competitions. These challenges deepened his resolve to make chess accessible to Delaware’s youth. Recognizing its power to foster critical thinking, focus, and resilience, Sid was determined to bring the game to his community. A turning point came when a chance meeting with a Delaware senator connected him to Daniel Elkins, Executive Director of Bellevue Community Center. With their support, Sid founded Chess Champs in Delaware on January 11, 2024, starting with just 11 members. Since its inception, Chess Champs has grown into a vibrant 200-member community, serving Delaware, New Jersey, and Pennsylvania as a premier hub for youth chess. It provides club facilities, school programs, tournaments, and personalized coaching for young players. Under Sid’s visionary leadership, Chess Champs is poised to inspire and empower the next generation of thinkers and strategists.",
                 "dividerBg": "secondary"
             },
             "items": [
@@ -103,10 +103,10 @@
                     "headings": [
                         {
                             "level": "h5",
-                            "content": "High Customer Retention Rate"
+                            "content": "Our Vision"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
+                    "description": "Chess Champs envisions a world where chess opens doors for all children, nurturing critical thinkers and confident leaders ready to make a positive impact on their communities and beyond."
                 },
                 {
                     "id": "choose-us-2",
@@ -118,10 +118,10 @@
                     "headings": [
                         {
                             "level": "h5",
-                            "content": "Dedicated Customer Support"
+                            "content": "Our Mission"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
+                    "description": "Nurture young minds through chess, cultivating critical thinking, creativity, and sportsmanship in a supportive and inclusive environment."
                 },
                 {
                     "id": "choose-us-3",
@@ -133,10 +133,10 @@
                     "headings": [
                         {
                             "level": "h5",
-                            "content": "Professional Team Member"
+                            "content": "Our Motto"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industry's standard dummy."
+                    "description": "Every child deserves the opportunity to experience the transformative benefits of chess during their formative years."
                 }
             ]
         },
@@ -184,7 +184,7 @@
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "Willie Mckenzie1"
+                            "content": "Bellevue Community Center"
                         }
                     ],
                     "designation": "DIGITAL STRATEGIST"
@@ -302,7 +302,7 @@
             "section_title": {
                 "showIcon": true,
                 "iconBg": "primary1",
-                "title": "What Chess Parents Say1111111",
+                "title": "Our Partners",
                 "icon": {
                     "src": "../../data/images/icons/testimonial.png",
                     "alt": "Working Process"
@@ -333,14 +333,14 @@
                             "src": "../../data/images/testimonial/lg-2.png"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type scrambled.",
+                    "description": "The Bellevue Community Center has provided us with a welcoming space to host our chess clubs and events. Their partnership allows us to engage local children and families, making chess accessible and enjoyable for all members of the community.",
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "Willie Mckenzie"
+                            "content": "Bellevue Community Center"
                         }
                     ],
-                    "designation": "DIGITAL STRATEGIST"
+                    "designation": "Fostering Community Engagement and Learning"
                 }
             ]
         }
