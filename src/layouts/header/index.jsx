@@ -9,13 +9,16 @@ import Logo from "../../components/logo";
 import MainMenu from "../../components/menu/main-menu";
 import Button from "../../components/shared/button";
 import MobileNavMenu from "../../components/menu/mobile-menu";
+import vedio from "../../assets/vedios/mpesvedio.mp4";
 import { useSticky } from "../../hooks";
 import {
+    VideoWrapper,
     HeaderWrap,
     HeaderBottomArea,
     ManimenuWrap,
     Menu,
     MobileMenuBtn,
+    VideoHeaderOverlay,
 } from "./style";
 
 const Header = ({ data }) => {
@@ -31,7 +34,10 @@ const Header = ({ data }) => {
     };
 
     return (
-        <HeaderWrap ref={headerRef}>
+<HeaderWrap ref={headerRef}>
+    {/* <VideoWrapper> */}
+        {/* Header Overlay Inside Video */}
+        <VideoHeaderOverlay>
             <HeaderBottomArea ref={fixedRef} isSticky={sticky}>
                 <Container className="container-max">
                     <ManimenuWrap>
@@ -72,7 +78,12 @@ const Header = ({ data }) => {
                     </ManimenuWrap>
                 </Container>
             </HeaderBottomArea>
-        </HeaderWrap>
+        </VideoHeaderOverlay>
+ 
+    {/* </VideoWrapper> */}
+</HeaderWrap>
+
+    
     );
 };
 
