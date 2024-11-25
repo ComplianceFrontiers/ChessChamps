@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { flatDeep, slugify, containsObject } from "@utils/functions";
 import PropTypes from "prop-types";
@@ -40,7 +41,7 @@ const Categories = ({ data }) => {
         }
     });
 
-    const firstCategoryTitle = data.length > 0 ? data[0].title : "Default Title";
+    const firstCategoryTitle = Array.isArray(data) && data.length > 0 ? data[0].title : "Default Title";
 
     return (
         <SidebarWidget>
