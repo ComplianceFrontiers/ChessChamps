@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import {
@@ -15,10 +16,11 @@ const Testimonial1 = ({ image, description, name, designation }) => {
                 <GatsbyImage image={getImage(image)} alt={name} />
                 <Quote>“</Quote>
             </ClientProfile>
-
-            <DescriptionText>{description}</DescriptionText>
             <ClientName>{name}</ClientName>
             <Designation>{designation}</Designation>
+
+            <DescriptionText>{description}</DescriptionText>
+            
         </TestimonialItem>
     );
 };
