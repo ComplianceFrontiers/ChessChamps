@@ -20,6 +20,7 @@ export const ServiceCard = styled.div`
     }
     .line {
         position: absolute !important;
+        color: #f7faff;
         bottom: 0;
         left: 0;
         z-index: 1;

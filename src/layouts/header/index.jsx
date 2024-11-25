@@ -39,17 +39,22 @@ const Header = ({ data }) => {
                         <Menu>
                             <MainMenu allmenuData={data.menu} />
                             <Button
-                                sx={{
-                                    ml: ["0px", "0px", "0px", "40px", "80px"],
-                                    display: ["none", "block", "block"],
-                                }}
-                                size="large"
-                                shape="rounded10"
-                                path="/"
-                            >
-                                Chess Champs Academy
-                                <i className="icofont-arrow-right"></i>
-                            </Button>
+                                    sx={{
+                                        ml: ["0px", "0px", "0px", "40px", "80px"],
+                                        display: ["none", "block", "block"],
+                                    }}
+                                    size="large"
+                                    shape="rounded10"
+                                >
+                                    <a 
+                                        href="https://chess-in-school.vercel.app/portalhome" 
+                                        style={{ textDecoration: "none", color: "inherit" }}
+                                    >
+                                        Chess Champs Academy
+                                        <i className="icofont-arrow-right"></i>
+                                    </a>
+                                </Button>
+
                             <MobileMenuBtn
                                 onClick={ofcanvasHandaler}
                                 onKeyDown={ofcanvasHandaler}

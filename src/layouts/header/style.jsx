@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { css, device, themeGet } from "@theme/utils";
 
 export const HeaderWrap = styled.header`
@@ -32,7 +33,7 @@ export const Menu = styled.div`
 export const MobileMenuBtn = styled.button`
     border: none;
     text-align: center;
-    background: ${themeGet("colors.gradient")};
+    // background: ${themeGet("colors.gradient")};
     padding: 0px !important;
     width: 50px;
     height: 50px;
@@ -51,7 +52,7 @@ export const MobileMenuBtn = styled.button`
         display: block;
         width: 25px;
         height: 2px;
-        background: #fff;
+        background: #000;
         margin-left: auto;
         margin-right: auto;
         transition: all 0.3s;
