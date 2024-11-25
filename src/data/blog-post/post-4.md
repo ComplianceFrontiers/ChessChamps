@@ -10,7 +10,6 @@ exercises, empowering young
 players to learn and grow in
 chess at their own pace."
 link: "https://chesschamps.us/programs/"
-title1: "Classroom!"
 is_featured: true
 categories:
     - Email Marketing

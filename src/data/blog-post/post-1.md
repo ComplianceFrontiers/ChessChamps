@@ -7,8 +7,7 @@ quote_text: "Our
 Chess Clubs inspire young minds to
 learn, play, and grow together in a
 vibrant and supportive community."
-link: "https://chesschamps.us/programs/"
-title1: "Classroom!"
+link: "https://chesschamps.us/programs/" 
 categories:
     - Casual Play
     - Casual Play
@@ -49,8 +48,6 @@ At Chess Champs, we believe that chess should be accessible to everyone. That’
 
 
 #### Why Chess Champs?
-
-
 
 
 > Chess Champs isn’t just a chess club; it’s a community dedicated to fostering a love for chess in a positive and inspiring atmosphere. With dedicated coaching, continuous practice opportunities, and a strong support system, our club empowers each member to explore the depths of their chess potential while enjoying the camaraderie of fellow chess enthusiasts.

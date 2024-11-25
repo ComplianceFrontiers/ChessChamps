@@ -10,8 +10,7 @@ programs, we unite kids and
 mentors, fostering growth,
 learning, and community
 through chess."
-link: "https://chesschamps.us/programs/"
-title1: "Classroom!"
+link: "https://chesschamps.us/programs/" 
 categories:
     - Program Benefits for School
     - Casual Play
