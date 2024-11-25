@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import HeartIcon from "@assets/images/svg/footer.svg";
@@ -23,51 +24,13 @@ const Footer = ({ data }) => {
     return (
         <FooterWrap>
             <FooterTop>
-                <div className="footer-bg-shape">
-                    <StaticImage
-                        src="../../data/images/footer/shape.png"
-                        alt=""
-                    />
-                </div>
-                <div className="path-shape">
-                    <StaticImage
-                        src="../../data/images/footer/path-shape.png"
-                        alt=""
-                    />
-                </div>
-                <div className="path-svg">
-                    <HeartIcon />
-                </div>
-                <Container>
+                
+                 <Container>
                     <NewsletterWidget />
-                    <FooterRow>
-                        <FooterRow>
-                            <FooterWidget>
-                                <TextWidget infoData={data.footer[0]} />
-                            </FooterWidget>
-                        </FooterRow>
-                        {/* <FooterCol>
-                            <FooterWidget>
-                                <ServiceMenuWidget
-                                    allServicesData={data.footer[1]}
-                                />
-                            </FooterWidget>
-                        </FooterCol>
-                        <FooterCol>
-                            <FooterWidget>
-                                <InformationMenuWidget
-                                    informationData={data.footer[2]}
-                                />
-                            </FooterWidget>
-                        </FooterCol>
-                        <FooterCol>
-                            <FooterWidget>
-                                <FollowUsWidget followData={data.footer[3]} />
-                            </FooterWidget>
-                        </FooterCol> */}
-                    </FooterRow>
-                </Container>
-            </FooterTop>
+                                 <TextWidget infoData={data.footer[0]} />
+             
+                 </Container>
+             </FooterTop>
 
             <FooterBottom>
                 <Container sx={{ textAlign: "center" }}>

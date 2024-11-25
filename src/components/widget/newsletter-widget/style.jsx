@@ -1,8 +1,8 @@
 import styled, { device } from "@theme/utils";
 export const NewsletterWidgetBox = styled.div`
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     ${device.large} {
-        padding-bottom: 80px;
+        padding-bottom: 10px;
     }
 `;

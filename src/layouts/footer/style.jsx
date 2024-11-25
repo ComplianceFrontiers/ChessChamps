@@ -26,7 +26,7 @@ export const FooterWrap = styled.footer``;
 
 // Footer Top Css
 export const FooterTop = styled.div`
-    padding: 80px 0px;
+    padding: 20px 0px;
     position: relative;
     background: #0a196f;
     .footer-bg-shape {
@@ -48,7 +48,7 @@ export const FooterTop = styled.div`
     .path-svg {
         svg {
             max-width: 127px;
-            max-height: 305px;
+            max-height: 205px;
             position: absolute;
             right: 80px;
             bottom: 60px;
