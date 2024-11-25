@@ -95,3 +95,21 @@ export const CommentArea = styled.div`
     margin-top: 30px;
 `;
 export const CommentTitle = styled.h4``;
+export const BottomImages = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+    img {
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+`;

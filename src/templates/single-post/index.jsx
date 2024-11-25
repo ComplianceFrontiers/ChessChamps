@@ -1,9 +1,12 @@
+/* eslint-disable prettier/prettier */
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
 import PageBreadcrumb from "@components/pagebreadcrumb";
+import image1 from "../../data/images/blog/1.png"
+import { StaticImage } from "gatsby-plugin-image";
 import { graphql, Link } from "gatsby";
 import { Row, Container, Col } from "react-bootstrap";
 import Social, { SocialLink } from "../../components/shared/social/index";
@@ -25,7 +28,7 @@ import {
     Title,
     MetaBox,
     CommentArea,
-    CommentTitle,
+    CommentTitle,BottomImages
 } from "./style";
 
 const SinglePosts = ({ data, location, pageContext }) => {
@@ -55,126 +58,49 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 title="Blog Details"
             />
             <BlogDetailsArea>
-                <Container>
-                    <Row>
-                        <Col lg={4} md={4}>
-                            <Aside>
-                                <Author author={data?.article?.author} />
-                                <Categories data={data?.article?.categories} />
-                                <Tags data={data?.article?.tags}/>
-                            </Aside>
-                        </Col>
-                        <Col lg={8} md={8}>
-                            <PostDetailsContentWrap>
-                                <PostDetailsBody>
-                                    <Thumb>
-                                        <GatsbyImage
-                                            image={getImage(
-                                                data?.article?.image?.src
-                                            )}
-                                            alt={data?.article?.title}
-                                        />
-                                    </Thumb>
-                                    {/* <SocialShareCard>
-                                        <ul>
-                                            <li className="social-share-item">
-                                                <i className="icofont-calendar"></i>
-                                                <span>
-                                                    {data?.article?.date}
-                                                </span>
-                                            </li>
-                                            <li className="social-share-item">
-                                                <i className="icofont-user-alt-7"></i>
-                                                <span>
-                                                    {
-                                                        data?.article?.author
-                                                            ?.name
-                                                    }
-                                                </span>
-                                            </li>
-                                        </ul>
-                                        <div className="social-share-wrap">
-                                            <span className="share mb-2">
-                                                Share:
-                                            </span>
-                                            <Social
-                                                sx={{
-                                                    mt: "10px",
-                                                }}
-                                                space={10}
-                                                size="sm"
-                                                bgColor="bgWhite"
-                                                border="border"
-                                                shape="square"
-                                            >
-                                                <SocialLink
-                                                    href={
-                                                        "https://www.facebook.com/sharer/sharer.php?u=" +
-                                                        baseUrl +
-                                                        pageContext.slug
-                                                    }
-                                                >
-                                                    <i className="icofont-facebook"></i>
-                                                </SocialLink>
-                                                <SocialLink
-                                                    href={
-                                                        "https://twitter.com/share?url=" +
-                                                        baseUrl +
-                                                        pageContext.slug +
-                                                        "&text=" +
-                                                        data?.article?.title +
-                                                        "&via" +
-                                                        "twitterHandle"
-                                                    }
-                                                >
-                                                    <i className="icofont-twitter"></i>
-                                                </SocialLink>
-                                                <SocialLink href="https://www.linkedin.com/">
-                                                    <i className="icofont-linkedin"></i>
-                                                </SocialLink>
-                                            </Social>
-                                        </div>
-                                    </SocialShareCard> */}
-                                    <Content>
-                                        {/* <Title>{data?.article?.title}</Title> */}
-                                        <SingleBlogContent
-                                            dangerouslySetInnerHTML={{
-                                                __html: data?.article?.content,
-                                            }}
-                                        />
-                                        <MetaBox>
-                                            <span className="meta-title">
-                                                Tag:
-                                            </span>
-                                            {data?.article?.tags.map(
-                                                (tag, i) => (
-                                                    <Link
-                                                        key={`tags-${tag.slug}`}
-                                                        to={`/tags/${tag.slug}`}
-                                                    >
-                                                        {tag.title}
-                                                        {i !==
-                                                            data?.article?.tags
-                                                                .length -
-                                                                1 && ", "}
-                                                    </Link>
-                                                )
-                                            )}
-                                        </MetaBox>
-                                    </Content>
-                                    <CommentArea>
-                                        <CommentTitle>Comments</CommentTitle>
-                                        <DiscussionEmbed
-                                            shortname={disqusShorttname}
-                                            config={disquscConfig}
-                                        />
-                                    </CommentArea>
-                                </PostDetailsBody>
-                            </PostDetailsContentWrap>
-                        </Col>
-                    </Row>
-                </Container>
-            </BlogDetailsArea>
+    <Container>
+        <Row>
+            <Col lg={4} md={4}>
+                <Aside>
+                    <Author author={data?.article?.author} />
+                    <Categories data={data?.article?.categories} />
+                    <Tags data={data?.article?.tags} />
+                </Aside>
+            </Col>
+            <Col lg={8} md={8}>
+                <PostDetailsContentWrap>
+                    <PostDetailsBody>
+                        <Thumb>
+                            <GatsbyImage
+                                image={getImage(data?.article?.image?.src)}
+                                alt={data?.article?.title}
+                            />
+                        </Thumb>
+                        <Content>
+                            <SingleBlogContent
+                                dangerouslySetInnerHTML={{
+                                    __html: data?.article?.content,
+                                }}
+                            />
+                        </Content>
+                    </PostDetailsBody>
+                </PostDetailsContentWrap>
+            </Col>
+           
+        <BottomImages>
+        <StaticImage src="../../data/images/blog/image1.png" alt="Image 1" />
+        <StaticImage src="../../data/images/blog/image2.png" alt="Image 2" />
+        <StaticImage src="../../data/images/blog/image3.png" alt="Image 3" />
+        <StaticImage src="../../data/images/blog/image4.png" alt="Image 4" />
+        </BottomImages>
+  
+        </Row>
+        {/* New Section for Images */}
+   
+    </Container>
+    
+</BlogDetailsArea>
+
         </Layout>
     );
 };

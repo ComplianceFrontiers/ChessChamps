@@ -42,7 +42,7 @@ const Tags = () => {
     });
     return (
         <SidebarWidget>
-            <Title>Post Tags</Title>
+            <Title>Other programs</Title>
             <WidgetTags>
                 {cats.map((cat) => (
                     <Link key={cat.slug} to={`/tags/${cat.slug}`}>
