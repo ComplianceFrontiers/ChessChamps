@@ -156,6 +156,7 @@ CaseStudiesPosts.propTypes = {
             category: PropTypes.string,
             clients: PropTypes.string,
             budget: PropTypes.string,
+            quote_text: PropTypes.string,
             date: PropTypes.string,
             location: PropTypes.string,
             content: PropTypes.arrayOf(PropTypes.shape({})),

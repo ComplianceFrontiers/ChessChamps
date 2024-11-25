@@ -10,12 +10,14 @@ const BlogGrid = ({ data }) => {
                 <Row className="gx-5">
                     {data?.items &&
                         data?.items.map((blog, i) => {
+                            // Add console.log here
+                            console.log(blog);
                             return (
                                 <Col lg={4} md={6} key={i}>
                                     <BlogCardTwo
                                         title={blog.title}
                                         thume_image={blog?.image?.src}
-                                        body={blog.excerpt}
+                                        quote_text={blog.quote_text}
                                         date={blog.date}
                                         slug={blog.slug}
                                     />
@@ -27,6 +29,7 @@ const BlogGrid = ({ data }) => {
         </BlogGridSection>
     );
 };
+
 BlogGrid.propTypes = {
     data: PropTypes.shape({
         items: PropTypes.arrayOf(
@@ -40,4 +43,5 @@ BlogGrid.propTypes = {
         ),
     }),
 };
+
 export default BlogGrid;

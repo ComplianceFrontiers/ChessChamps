@@ -6,6 +6,7 @@ module.exports = `
         excerpt: String!
         is_featured: Boolean
         clients: String
+        quote_text: String
         date: String
         budget: String
         location: String

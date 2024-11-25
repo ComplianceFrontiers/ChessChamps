@@ -5,6 +5,7 @@ module.exports = `
         link: String!
         title: String!
         slug: String!
+        quote_text: String
         date: Date @dateformat
         is_featured: Boolean
         quote_text: String

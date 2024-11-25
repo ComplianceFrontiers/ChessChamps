@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
@@ -12,8 +13,9 @@ import {
     LinkShare,
     Title,
     DescriptionText,
+    Quote_text
 } from "./style";
-const BlogCardTwo = ({ date, title, body, slug, thume_image }) => {
+const BlogCardTwo = ({ date, title, quote_text, slug, thume_image }) => {
     const image = getImage(thume_image);
     return (
         <BlogGridCard>
@@ -21,25 +23,10 @@ const BlogCardTwo = ({ date, title, body, slug, thume_image }) => {
                 <GatsbyImage image={image} alt={title} />
             </Link>
             <BlogGridContent>
-                <MetaTag>
-                    <MetaDate>
-                        <i className="icofont-ui-calendar"></i>{" "}
-                        <Link to="/">{date}</Link>
-                    </MetaDate>
-                    <MetaComments>
-                        <Comments>
-                            <Link to="/">2 Comments</Link>
-                        </Comments>
-                        <LinkShare>
-                            <Link to="/">Share</Link>
-                        </LinkShare>
-                    </MetaComments>
-                </MetaTag>
-
                 <Title>
                     <Link to={`/${slug}`}>{title}</Link>
                 </Title>
-                <DescriptionText>{body}</DescriptionText>
+                <Quote_text>{quote_text}{title}</Quote_text>
                 <Button size="medium" path={`/${slug}`} shape="rounded5">
                     Read More
                 </Button>
@@ -51,7 +38,7 @@ BlogCardTwo.propTypes = {
     date: PropTypes.string,
     thume_image: PropTypes.object,
     title: PropTypes.string,
-    body: PropTypes.string,
+    quote_text: PropTypes.string,
     slug: PropTypes.string,
 };
 

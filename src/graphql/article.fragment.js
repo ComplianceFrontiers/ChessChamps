@@ -5,6 +5,8 @@ export const query = graphql`
         title
         slug
         excerpt
+        quote_text
+        link
         date(formatString: "D MMMM, YYYY")
         tags {
             title

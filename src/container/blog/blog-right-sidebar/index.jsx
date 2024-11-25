@@ -19,7 +19,7 @@ const BlogRightSidebar = ({ data }) => {
                                             <BlogCardTwo
                                                 title={blog.title}
                                                 thume_image={blog?.image?.src}
-                                                body={blog.excerpt}
+                                                quote_text={blog?.quote_text}
                                                 date={blog.date}
                                                 slug={blog.slug}
                                             />
@@ -47,6 +47,7 @@ BlogRightSidebar.propTypes = {
                 id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
                 fields: PropTypes.shape({
                     slug: PropTypes.string,
+                    quote_text: PropTypes.string,
                 }),
                 alt: PropTypes.string,
             })
