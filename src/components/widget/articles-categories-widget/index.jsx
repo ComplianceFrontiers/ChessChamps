@@ -41,21 +41,26 @@ const Categories = ({ data }) => {
         }
     });
 
-    const firstCategoryTitle = Array.isArray(data) && data.length > 0 ? data[0].title : "Default Title";
+    // Ensure `data` is an array or provide a fallback default
+    const safeData = Array.isArray(data) ? data : [];
+    const firstCategoryTitle = safeData.length > 0 ? safeData[0].title : "Default Title";
 
     return (
         <SidebarWidget>
             <Title>{firstCategoryTitle}</Title>
             <Widgetcategory>
-                {data.slice(1).map((cat) => ( // Skip the first element
-                    <li key={cat.slug}>
-                        <Link to={`/category/${cat.slug}`}>
-                            <i className="icofont-rounded-double-right"></i>{" "}
-                            {cat.title}
-                        </Link>
-                        {/* <span>({cat.count})</span> */}
-                    </li>
-                ))}
+                {safeData.length > 1 ? (
+                    safeData.slice(1).map((cat) => (
+                        <li key={cat.slug}>
+                            <Link to={`/category/${cat.slug}`}>
+                                <i className="icofont-rounded-double-right"></i>{" "}
+                                {cat.title}
+                            </Link>
+                        </li>
+                    ))
+                ) : (
+                    <p>No categories available.</p>
+                )}
             </Widgetcategory>
         </SidebarWidget>
     );
@@ -67,8 +72,12 @@ Categories.propTypes = {
             title: PropTypes.string.isRequired,
             slug: PropTypes.string.isRequired,
         })
-    ).isRequired,
+    ),
+};
+
+// Provide a default value for the `data` prop
+Categories.defaultProps = {
+    data: [],
 };
 
 export default Categories;
-    
