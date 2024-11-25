@@ -10,7 +10,6 @@ into classrooms, fostering
 critical thinking, strategy, and
 lifelong learning."
 link: "https://chesschamps.us/programs/"
-title1: "Classroom!"
 categories:
     - Enhanced School Reputation
     - Improved Academic Performance

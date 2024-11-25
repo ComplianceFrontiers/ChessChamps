@@ -133,7 +133,6 @@ SinglePosts.propTypes = {
             alt: PropTypes.string,
             id: PropTypes.string,
             title: PropTypes.string,
-            title1: PropTypes.string,
             date: PropTypes.string,
             quote_text: PropTypes.string,
             slug: PropTypes.string,
@@ -163,7 +162,6 @@ export const postQuery = graphql`
         article(slug: { eq: $slug }) {
             id
             title
-            title1
             slug
             title
             tags {
