@@ -60,8 +60,8 @@ const SinglePosts = ({ data, location, pageContext }) => {
                         <Col lg={4} md={4}>
                             <Aside>
                                 <Author author={data?.article?.author} />
-                                <Categories />
-                                <Tags />
+                                <Categories data={data?.article?.categories} />
+                                <Tags data={data?.article?.tags}/>
                             </Aside>
                         </Col>
                         <Col lg={8} md={8}>
@@ -136,7 +136,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                                         </div>
                                     </SocialShareCard> */}
                                     <Content>
-                                        <Title>{data?.article?.title}</Title>
+                                        {/* <Title>{data?.article?.title}</Title> */}
                                         <SingleBlogContent
                                             dangerouslySetInnerHTML={{
                                                 __html: data?.article?.content,
@@ -207,6 +207,7 @@ SinglePosts.propTypes = {
             alt: PropTypes.string,
             id: PropTypes.string,
             title: PropTypes.string,
+            title1: PropTypes.string,
             date: PropTypes.string,
             quote_text: PropTypes.string,
             slug: PropTypes.string,
@@ -236,6 +237,7 @@ export const postQuery = graphql`
         article(slug: { eq: $slug }) {
             id
             title
+            title1
             slug
             title
             tags {
