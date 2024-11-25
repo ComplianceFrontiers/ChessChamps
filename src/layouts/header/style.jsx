@@ -14,11 +14,32 @@ export const HeaderBottomArea = styled.div`
             top: 0;
             width: 100%;
             z-index: 999;
-            background: #fff;
+            background: transprent;
             z-index: 99;
             box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
         `};
 `;
+export const VideoWrapper = styled.div`
+    position: relative;
+    width: 100%;
+    video {
+        width: 100%;
+        height: auto;
+    }
+`;
+
+export const VideoHeaderOverlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Ensure it appears above the video */
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+`;
+
 export const ManimenuWrap = styled.div`
     display: flex;
     justify-content: space-between;
@@ -33,7 +54,6 @@ export const Menu = styled.div`
 export const MobileMenuBtn = styled.button`
     border: none;
     text-align: center;
-    // background: ${themeGet("colors.gradient")};
     padding: 0px !important;
     width: 50px;
     height: 50px;
