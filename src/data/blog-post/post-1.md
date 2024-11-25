@@ -1,9 +1,9 @@
 ---
-title: "Chess Clubs"
+title: "Bringing Strategy and Fun to Every Classroom!"
 image: { src: "../../data/images/blog/1.png", alt: "Rankings" }
 date: "2022-03-06"
-author: "Marion"
-quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
+author: "MPE Chess Program"
+quote_text: "Our Chess in Schools program brings the joy of chess into classrooms, fostering critical thinking, strategy, and lifelong learning."
 link: "https://chesschamps.us/programs/"
 categories:
     - ChessChamps

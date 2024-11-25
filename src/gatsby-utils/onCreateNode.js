@@ -48,6 +48,7 @@ module.exports = ({ node, actions, createNodeId }) => {
             category: node.category,
             clients: node.clients,
             date: node.date,
+            quote_text: node.quote_text,
             budget: node.budget,
             location: node.location,
             excerpt: node.excerpt,

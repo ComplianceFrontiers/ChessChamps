@@ -57,7 +57,7 @@ export const query = graphql`
                 }
             }
         }
-        allArticle {
+        allArticle(sort: { order: DESC, fields: date }) {
             nodes {
                 ...Articles
             }

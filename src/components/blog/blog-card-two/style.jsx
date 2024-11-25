@@ -46,3 +46,6 @@ export const Title = styled.h6`
 export const DescriptionText = styled.p`
     font-size: 14px;
 `;
+export const Quote_text = styled.p`
+    font-size: 14px;
+`;

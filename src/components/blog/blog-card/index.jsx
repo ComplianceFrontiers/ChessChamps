@@ -26,6 +26,7 @@ BlogCard.propTypes = {
     title: PropTypes.string,
     author: PropTypes.string,
     date: PropTypes.string,
+    quote_text: PropTypes.string,
     slug: PropTypes.string,
     image: PropTypes.object,
 };

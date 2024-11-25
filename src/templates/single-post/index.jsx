@@ -75,7 +75,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                                             alt={data?.article?.title}
                                         />
                                     </Thumb>
-                                    <SocialShareCard>
+                                    {/* <SocialShareCard>
                                         <ul>
                                             <li className="social-share-item">
                                                 <i className="icofont-calendar"></i>
@@ -134,7 +134,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                                                 </SocialLink>
                                             </Social>
                                         </div>
-                                    </SocialShareCard>
+                                    </SocialShareCard> */}
                                     <Content>
                                         <Title>{data?.article?.title}</Title>
                                         <SingleBlogContent
@@ -208,6 +208,7 @@ SinglePosts.propTypes = {
             id: PropTypes.string,
             title: PropTypes.string,
             date: PropTypes.string,
+            quote_text: PropTypes.string,
             slug: PropTypes.string,
             content: PropTypes.string,
             author: PropTypes.shape({
@@ -270,6 +271,7 @@ export const postQuery = graphql`
                 }
             }
             date
+            quote_text
             image {
                 src {
                     childImageSharp {
