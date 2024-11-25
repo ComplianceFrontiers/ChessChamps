@@ -3,14 +3,13 @@ import { flatDeep, slugify, containsObject } from "@utils/functions";
 import PropTypes from "prop-types";
 import { SidebarWidget, Title, Widgetcategory } from "./style";
 
-const Categories = () => {
+const Categories = ({ data }) => {
     const categoriesQuery = useStaticQuery(graphql`
         query CategoriesQuery {
             allArticle {
                 edges {
                     node {
                         categories {
-                            slug
                             title
                         }
                     }
@@ -35,24 +34,25 @@ const Categories = () => {
             const prevCount = cats[objIndex].count;
             cats[objIndex] = {
                 title: cat.title,
-                slug: cat.slug,
-                count: prevCount + 1,
             };
         } else {
             cats.push(obj);
         }
     });
+
+    const firstCategoryTitle = data.length > 0 ? data[0].title : "Default Title";
+
     return (
         <SidebarWidget>
-            <Title>Post Category</Title>
+            <Title>{firstCategoryTitle}</Title>
             <Widgetcategory>
-                {cats.map((cat) => (
+                {data.slice(1).map((cat) => ( // Skip the first element
                     <li key={cat.slug}>
                         <Link to={`/category/${cat.slug}`}>
                             <i className="icofont-rounded-double-right"></i>{" "}
                             {cat.title}
                         </Link>
-                        <span>({cat.count})</span>
+                        {/* <span>({cat.count})</span> */}
                     </li>
                 ))}
             </Widgetcategory>
@@ -61,7 +61,13 @@ const Categories = () => {
 };
 
 Categories.propTypes = {
-    categories: PropTypes.shape({}),
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            slug: PropTypes.string.isRequired,
+        })
+    ).isRequired,
 };
 
 export default Categories;
+    
