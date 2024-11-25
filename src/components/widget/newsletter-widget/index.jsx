@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 import NewsLetter from "../../newsletter";
 import SectionTitle from "../../../components/title";

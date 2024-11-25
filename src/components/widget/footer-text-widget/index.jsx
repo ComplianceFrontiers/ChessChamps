@@ -3,10 +3,11 @@ import { jsx } from "theme-ui";
 import PropTypes from "prop-types";
 import LogoWhite from "../../logo-white";
 import { TextWidgetBox, AddressUl, InfoList, Icon, InfoLink } from "./style";
+import { Container } from "react-bootstrap";
 
 const TextWidget = ({ infoData }) => {
     return (
-        <TextWidgetBox>
+        <Container>
             <LogoWhite />
             <AddressUl sx={{ mt: "30px" }}>
                 {infoData.list.map((item) => (
@@ -18,7 +19,7 @@ const TextWidget = ({ infoData }) => {
                     </InfoList>
                 ))}
             </AddressUl>
-        </TextWidgetBox>
+        </Container>
     );
 };
 TextWidget.propTypes = {
