@@ -1,9 +1,14 @@
 ---
-title: "Chess Merchendise"
+title: "Master Chess
+Anytime, Anywhere!"
 image: { src: "../../data/images/blog/4.png", alt: "Rankings" }
 date: "2022-03-03"
 author: "Roderick"
-quote_text: "Our Online Courses offer interactive lessons and exercises, empowering young players to learn and grow in chess at their own pace."
+quote_text: "Our Online Courses offer
+interactive lessons and
+exercises, empowering young
+players to learn and grow in
+chess at their own pace."
 link: "https://chesschamps.us/programs/"
 title1: "Classroom!"
 is_featured: true

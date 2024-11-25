@@ -1,9 +1,14 @@
 ---
-title: "Social Marketing to improving your Web site rankings.3"
+title: "Bringing Strategy
+and Fun to Every Classroom!"
 image: { src: "../../data/images/blog/3.png", alt: "Rankings" }
 date: "2022-03-04"
 author: "Roderick"
-quote_text: "Through outreach programs, we unite kids and mentors, fostering growth, learning, and community through chess."
+quote_text: "Our Chess in Schools
+program brings the joy of chess
+into classrooms, fostering
+critical thinking, strategy, and
+lifelong learning."
 link: "https://chesschamps.us/programs/"
 title1: "Classroom!"
 categories:

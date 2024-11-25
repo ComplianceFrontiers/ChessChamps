@@ -1,9 +1,15 @@
 ---
-title: "Online Courses"
+title: "Gear Up for Success:
+Explore Our Exclusive Chess
+Store!"
 image: { src: "../../data/images/blog/6.png", alt: "Rankings" }
 date: "2022-03-01"
 author: "Roderick"
-quote_text: "The use of apps in investment ideas is a great way to enjoy the convenience."
+quote_text: "Our Chess Online Store
+features exclusive merchandise
+designed to make chess
+engaging and enjoyable for
+players of all levels."
 link: "https://chesschamps.us/programs/"
 title1: "Classroom!"
 categories:
