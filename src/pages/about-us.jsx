@@ -3,7 +3,7 @@ import Layout from "@layout";
 import SEO from "@components/seo";
 import { graphql } from "gatsby";
 import PageBreadcrumb from "../components/pagebreadcrumb";
-import TestimonialArea from "../container/about-us/testimonial";
+import TestimonialArea1 from "../container/about-us/testimonial";
 import TeamArea from "../container/about-us/team";
 import WhyChooseUsArea from "../container/about-us/whay-choose-us";
 import AboutMoreArea from "../container/about-us/about-more";
@@ -28,7 +28,7 @@ const AboutUsPage = ({ data, location, pageContext }) => {
             <AboutMoreArea data={content["about-more-section"]} />
             <WhyChooseUsArea data={content["about-us-why-choose-section"]} />
             <TeamArea data={content["about-team-members-section"]} />
-            <TestimonialArea data={content["happy-customer-section"]} />
+            <TestimonialArea1 data={content["happy-customer-section1"]} />
         </Layout>
     );
 };
