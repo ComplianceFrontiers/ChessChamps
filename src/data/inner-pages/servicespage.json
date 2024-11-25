@@ -317,14 +317,14 @@
                             "src": "../../data/images/testimonial/lg-1.png"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text the printing and typesetting as been the industry's standard dummy text ever since the 1500s when unknown printer took a galley of type and scrambled it to make specimen book has survived not only five centuries",
+                    "description": "Lions International has joined us in combining the strategic elements of chess with valuable life lessons in leadership, discipline, and service. Together, we’re working to develop tomorrow’s leaders by integrating the intellectual and personal growth aspects of chess into youth programs.",
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "Georgia Jones"
+                            "content": "Building Leadership and Character Through Chess"
                         }
                     ],
-                    "designation": "Ui/Ux designer"
+                    "designation": "Lions International"
                 },
                 {
                     "id": "testimonial-2",
@@ -341,6 +341,70 @@
                         }
                     ],
                     "designation": "Fostering Community Engagement and Learning"
+                },
+                {
+                    "id": "testimonial-3",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg-2.png"
+                        }
+                    ],
+                    "description": "Partnering with the Delaware Chess Association has helped us organize competitive tournaments and expand chess opportunities across the state. With their support, we’re able to offer rated tournaments, foster chess talent, and create a thriving chess culture in Delaware.",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Promoting Chess Excellence Across Delaware!"
+                        }
+                    ],
+                    "designation": "Delaware"
+                },
+                {
+                    "id": "testimonial-4",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg-2.png"
+                        }
+                    ],
+                    "description": "Through our partnership with the Jewish Community Center, we’re able to reach a diverse community and offer inclusive chess programs. This collaboration allows us to provide enrichment opportunities that help students connect with each other while improving critical thinking and problem-solving skills.",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Inclusive Learning and Cultural Enrichment"
+                        }
+                    ],
+                    "designation": "Fostering Community Engagement and Learning"
+                },
+                {
+                    "id": "testimonial-5",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg-2.png"
+                        }
+                    ],
+                    "description": "Mount Pleasant Elementary School is a proud partner in our mission to introduce chess to young minds. Through this collaboration, we bring chess lessons into classrooms, helping students develop academic and personal skills such as focus, strategy, and patience.",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Bringing Chess into the Classroom for Young Learners"
+                        }
+                    ],
+                    "designation": "Mount Pleasant Elementary School"
+                },
+                {
+                    "id": "testimonial-5",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg-2.png"
+                        }
+                    ],
+                    "description": "At Lombardy Elementary, we’re introducing chess to students in a supportive, dynamic environment. This partnership allows us to offer chess programs that foster creativity, enhance cognitive development, and build essential life skills in students during their formative years.",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Shaping Future Thinkers Through Chess"
+                        }
+                    ],
+                    "designation": "At Lombardy Elementary School"
                 }
             ]
         }

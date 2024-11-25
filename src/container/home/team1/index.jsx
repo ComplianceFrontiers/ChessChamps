@@ -19,7 +19,7 @@ const TeamArea1 = ({ data }) => {
                 {data?.section_title && (
                     <SectionTitle
                         headingTitle={
-                            <div>
+                            <div style={{ textAlign: "center" }}>
                                 <span style={{ fontSize: "0.8em" }}>
                                     Chess is more than a game; it’s a mental fitness regime, just like any sport or physical
                                     fitness program.
@@ -30,12 +30,15 @@ const TeamArea1 = ({ data }) => {
                                     decision-making skills. Just like physical training shapes the body, chess hones the mind for
                                     life’s challenges.
                                 </span>
+                                <div style={{ marginTop: "1rem" }}>
+                                    {/* Add the button */}
+                                    <Button variant="primary">Our Programs</Button>
+                                </div>
                             </div>
                         }
                         {...data.section_title}
                     />
                 )}
-              
             </Container>
         </TeamSection>
     );
