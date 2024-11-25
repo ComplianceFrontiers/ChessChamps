@@ -8,7 +8,7 @@ import {
     ClientName,
     Designation,
 } from "./style";
-const Testimonial1 = ({ image, description, name, designation }) => {
+const Testimonial = ({ image, description, name, designation }) => {
     return (
         <TestimonialItem>
             <ClientProfile>
@@ -22,10 +22,10 @@ const Testimonial1 = ({ image, description, name, designation }) => {
         </TestimonialItem>
     );
 };
-Testimonial1.propTypes = {
+Testimonial.propTypes = {
     image: PropTypes.object,
     description: PropTypes.string,
     name: PropTypes.string,
     designation: PropTypes.string,
 };
-export default Testimonial1;
+export default Testimonial;
