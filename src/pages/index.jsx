@@ -25,9 +25,10 @@ const IndexPage = ({ data }) => {
                 ...globalContent["footer"],
             }}
         >
-            <Hero  />
-            <BrandArea data={content["brand-section"]} />
+            {/* <Hero  /> */}
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
+
+            <BrandArea data={content["brand-section"]} />
             <LatestBlogArea
                 data={{
                     ...content["blog-section"],
