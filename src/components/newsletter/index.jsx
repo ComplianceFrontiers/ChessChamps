@@ -10,14 +10,13 @@ const NewsLetter = () => {
                     placeholder="Enter Your Email Address"
                 />
                 <Button
-                    size="large"
+                    // size="large"
                     shape="rounded10"
                     path="/"
                     className="btn-absolute"
                 >
-                    Join Us{" "}
-                    <i className="icofont-rounded-double-right"></i>
-                </Button>
+                    Join Us
+                 </Button>
             </Form>
         </NewsLetterBox>
     );
