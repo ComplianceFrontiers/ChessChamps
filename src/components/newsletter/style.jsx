@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled from "@theme/utils";
 
 export const NewsLetterBox = styled.div`

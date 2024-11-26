@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import Button from "../../components/shared/button";
 import { NewsLetterBox, Form, Input } from "./style";
 const NewsLetter = () => {
