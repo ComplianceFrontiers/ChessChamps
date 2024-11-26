@@ -1,20 +1,39 @@
 import PropTypes from "prop-types";
-import { Col, Container, Row } from "react-bootstrap";
+import { useState } from "react";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import CaseStudiesGrid from "../../components/case-studies-grid";
 import { CaseStudiesSection } from "./style";
+
 const CaseStudiesArea = ({ data }) => {
+    const [visibleItems, setVisibleItems] = useState(6); // Show first 6 items initially
+
+    const handleShowMore = () => {
+        setVisibleItems(prev => prev + 6); // Load 6 more items
+    };
+
     return (
         <CaseStudiesSection>
             <Container>
+                <div className="show-more-buttons">
+                    <Button onClick={handleShowMore} className="me-2">
+                        Show More
+                    </Button>
+                    <Button onClick={handleShowMore} className="me-2">
+                        Show More
+                    </Button>
+                    <Button onClick={handleShowMore}>
+                        Show More
+                    </Button>
+                </div>
+
                 <Row className="gx-5">
                     {data?.items &&
-                        data?.items.map((post, i) => {
+                        data?.items.slice(0, visibleItems).map((post, i) => {
                             return (
                                 <Col lg={4} md={4} sm={6} key={i}>
                                     <CaseStudiesGrid
                                         title={post.title}
                                         thumbImg={post.images[0].src}
-                                        // category={post.category}
                                         slug={post.slug}
                                     />
                                 </Col>
@@ -25,6 +44,7 @@ const CaseStudiesArea = ({ data }) => {
         </CaseStudiesSection>
     );
 };
+
 CaseStudiesArea.propTypes = {
     data: PropTypes.shape({
         items: PropTypes.arrayOf(
@@ -38,4 +58,5 @@ CaseStudiesArea.propTypes = {
         ),
     }),
 };
+
 export default CaseStudiesArea;
