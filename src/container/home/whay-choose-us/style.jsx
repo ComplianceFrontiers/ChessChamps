@@ -16,7 +16,7 @@ const move = keyframes`
 `;
 export const WhyChooseUsSection = styled.section`
     position: relative;
-    padding: 150px 0px;
+    padding: 180px 0px;
     .about-bg {
         position: absolute !important;
         top: 0;
