@@ -29,7 +29,7 @@ export const WhyChooseUsSection = styled.section`
         padding: 200px 0px;
     }
     ${device.xxlarge} {
-        padding: 50px 0px;
+        padding: 150px 0px;
     }
 `;
 
