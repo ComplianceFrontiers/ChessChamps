@@ -3,7 +3,7 @@ export const BlogGridCard = styled.div`
     background-color: #f7faff;
     overflow: hidden;
     border-radius: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     .blog-grid-thumb {
         display: block;
         border-radius: 15px;
@@ -22,8 +22,8 @@ export const BlogGridCard = styled.div`
     }
 `;
 export const BlogGridContent = styled.div`
-    padding: 30px 30px;
-    margin: 0 auto;
+    padding: 10px 0px;
+    margin: 30 auto;
 `;
 export const MetaTag = styled.ul`
     display: flex;
