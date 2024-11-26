@@ -20,7 +20,7 @@ const BlogGridPage = ({ data, location, pageContext }) => {
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="Blog Grid Page"
+                title="Programs"
             />
             <BlogGrid
                 data={{
