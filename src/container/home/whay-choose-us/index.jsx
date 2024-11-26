@@ -13,11 +13,11 @@ import {
 const WhyChooseUsArea = ({ data }) => {
     return (
         <WhyChooseUsSection>
-            <StaticImage
+            {/* <StaticImage
                 src="../../../data/images/bg/bg.png"
                 alt=""
                 className="about-bg"
-            />
+            /> */}
             <Container className="container-max">
                 <Row className="align-items-center">
                     <Col lg={6}>
