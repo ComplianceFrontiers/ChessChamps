@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Col } from "react-bootstrap";
 import { Form, Input, Textarea } from "./style";
 import Button from "../../components/shared/button";
@@ -21,14 +22,12 @@ const MessageFrom = () => {
                 />
             </Col>
             <Col sm={12}>
-                <select id="inputState" className="form-select">
-                    <option value="DEFAULT" selected>
-                        Choose Topic
-                    </option>
-                    <option value="1">Choose 1</option>
-                    <option value="2">Choose 2</option>
-                    <option value="3">Choose 3</option>
-                </select>
+            <Input
+                    className="form-control"
+                    placeholder="Subject"
+                    type="text"
+                    name="subject"
+                />
             </Col>
             <Col sm={12}>
                 <Textarea
