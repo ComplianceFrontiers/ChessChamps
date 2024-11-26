@@ -5,13 +5,13 @@ import AfterImge from "../../../data/images/team/shape-top.png";
 export const TeamSection = styled.section`
     padding: 0px 0px;
     ${device.medium} {
-        padding: 150px 0px;
+        padding: 50px 0px;
     }
     ${device.large} {
-        padding: 150px 0px;
+        padding: 50px 0px;
     }
     ${device.xlarge} {
-        padding: 150px 0px;
+        padding: 50px 0px;
     }
     position: relative;
     background-image: linear-gradient(

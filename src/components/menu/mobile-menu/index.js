@@ -117,14 +117,14 @@ const MobileNavMenu = ({ MobilemenuData, ofcanvasOpen, ofcanvasHandaler }) => {
                     <SocialLink href="https://www.facebook.com/">
                         <i className="icofont-facebook"></i>
                     </SocialLink>
-                    <SocialLink href="https://twitter.com/home/">
-                        <i className="icofont-twitter"></i>
+                    <SocialLink href="https://www.youtube.com/">
+                        <i className="icofont-youtube"></i>
                     </SocialLink>
-                    <SocialLink href="https://www.skype.com/">
-                        <i className="icofont-skype"></i>
+                    <SocialLink href="https://www.instagram.com/">
+                        <i className="icofont-instagram"></i>
                     </SocialLink>
-                    <SocialLink href="https://www.linkedin.com/">
-                        <i className="icofont-linkedin"></i>
+                    <SocialLink href="/contact-us">
+                        <i className="icofont-letter"></i>
                     </SocialLink>
                 </Social>
 
