@@ -311,22 +311,6 @@
             },
             "items": [
                 {
-                    "id": "testimonial-1",
-                    "images": [
-                        {
-                            "src": "../../data/images/testimonial/lg-1.png"
-                        }
-                    ],
-                    "description": "Lions International has joined us in combining the strategic elements of chess with valuable life lessons in leadership, discipline, and service. Together, we’re working to develop tomorrow’s leaders by integrating the intellectual and personal growth aspects of chess into youth programs.",
-                    "headings": [
-                        {
-                            "level": "h4",
-                            "content": "Building Leadership and Character Through Chess"
-                        }
-                    ],
-                    "designation": "Lions International"
-                },
-                {
                     "id": "testimonial-2",
                     "images": [
                         {
