@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Col, Container, Row } from "react-bootstrap";
-import { BrandSection, BrandBox } from "./style";
+import { BrandBox } from "./style";
 
 const BrandArea = () => {
     const stats = [
@@ -12,7 +12,6 @@ const BrandArea = () => {
     ];
 
     return (
-        <BrandSection>
             <Container className="container-max">
                 <Row>
                     <Col>
@@ -36,7 +35,6 @@ const BrandArea = () => {
                     </Col>
                 </Row>
             </Container>
-        </BrandSection>
     );
 };
 

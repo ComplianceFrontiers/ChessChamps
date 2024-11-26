@@ -7,8 +7,6 @@ export const BrandSection = styled.section``;
 export const BrandTitle = styled.h6`
     text-align: center;
     color: #fff;
-    margin-bottom: 30px;
-    margin-top: 80px;
     span {
         font-weight: 900;
         line-height: 2.428;
