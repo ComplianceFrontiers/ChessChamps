@@ -34,7 +34,7 @@ export const WhyChooseUsSection = styled.section`
 `;
 
 export const ChooseUsImage = styled.div`
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     animation: ${move} 0.8s infinite alternate;
     text-align: center;
 `;
