@@ -557,11 +557,13 @@
             "id": "home-blog-section",
             "section": "blog-section",
             "section_title": {
-                "showIcon": false,
-                "iconBg": "primary",
-                "title": "Latest News From Our Blog.",
-                "dividerBg": "secondary",
-                "align": "left"
+                "showIcon": true,
+                "title": "Our Programs",
+                "icon": {
+                    "src": "../../data/images/icons/pencile.png",
+                    "alt": "Some Case Studies"
+                },
+                "iconBg": "primary"
             }
         }
     ]

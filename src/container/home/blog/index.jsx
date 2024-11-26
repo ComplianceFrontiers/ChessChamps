@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { LatestBlogSection, BlogThumb } from "./style";
+import SectionTitle from "../../../components/title";
 
 const LatestBlogArea = ({ data }) => {
     // Split the itemstwo array into two parts
@@ -12,8 +13,14 @@ const LatestBlogArea = ({ data }) => {
 
     return (
         <LatestBlogSection>
-            <Container>
-                <Row>
+            <Container >
+             {data?.section_title && (
+                    <SectionTitle
+                        headingTitle={data?.section_title.title}
+                        {...data.section_title}
+                    />
+                )}
+                 <Row>
                     {/* First Column with the first three images */}
                     <Col lg={6} md={12}>
                         {firstThreeItems?.map((item, i) => (

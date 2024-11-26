@@ -3,7 +3,7 @@ import styled from "@theme/utils";
 import blogSectionBg from "../../../data/images/blog/bg.png";
 
 export const LatestBlogSection = styled.section`
-    padding: 145px 0;
+    padding: 20px 0;
     background: #f7faff;
     background-image: url(${blogSectionBg});
     background-position: center center;

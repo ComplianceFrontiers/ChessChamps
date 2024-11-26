@@ -8,8 +8,8 @@ import { Container } from "react-bootstrap";
 const TextWidget = ({ infoData }) => {
     return (
         <Container>
-            <LogoWhite />
-            <AddressUl sx={{ mt: "30px" }}>
+            {/* <LogoWhite /> */}
+            {/* <AddressUl sx={{ mt: "30px" }}>
                 {infoData.list.map((item) => (
                     <InfoList key={item.id}>
                         <Icon>
@@ -18,7 +18,7 @@ const TextWidget = ({ infoData }) => {
                         <InfoLink href={item.link}>{item.text}</InfoLink>
                     </InfoList>
                 ))}
-            </AddressUl>
+            </AddressUl> */}
         </Container>
     );
 };
