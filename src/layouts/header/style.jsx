@@ -29,7 +29,6 @@ export const VideoWrapper = styled.div`
 `;
 
 export const VideoHeaderOverlay = styled.div`
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,7 +36,6 @@ export const VideoHeaderOverlay = styled.div`
     color: #fff;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
 `;
 
 export const ManimenuWrap = styled.div`

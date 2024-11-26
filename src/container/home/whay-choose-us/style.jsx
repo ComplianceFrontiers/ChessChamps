@@ -16,7 +16,7 @@ const move = keyframes`
 `;
 export const WhyChooseUsSection = styled.section`
     position: relative;
-    padding: 180px 0px;
+    padding: 20px 0px;
     .about-bg {
         position: absolute !important;
         top: 0;
@@ -29,7 +29,7 @@ export const WhyChooseUsSection = styled.section`
         padding: 200px 0px;
     }
     ${device.xxlarge} {
-        padding: 150px 0px;
+        padding: 10px 0px;
     }
 `;
 
