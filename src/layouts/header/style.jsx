@@ -14,7 +14,7 @@ export const HeaderBottomArea = styled.div`
             top: 0;
             width: 100%;
             z-index: 999;
-            background: transprent;
+            background: #fff;
             z-index: 99;
             box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
         `};
