@@ -29,7 +29,7 @@ export const WhyChooseUsSection = styled.section`
         padding: 200px 0px;
     }
     ${device.xxlarge} {
-        padding: 200px 0px;
+        padding: 50px 0px;
     }
 `;
 
@@ -45,6 +45,6 @@ export const ChooseListWrpa = styled.div`
 export const WhyChooseUsOffset = styled.div`
     position: relative;
     ${device.large} {
-        margin-left: 70px;
+        margin-left: 80px;
     }
 `;

@@ -14,7 +14,7 @@ const CaseStudiesArea = ({ data }) => {
                                     <CaseStudiesGrid
                                         title={post.title}
                                         thumbImg={post.images[0].src}
-                                        category={post.category}
+                                        // category={post.category}
                                         slug={post.slug}
                                     />
                                 </Col>
