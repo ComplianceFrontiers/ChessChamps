@@ -1,39 +1,49 @@
-/* eslint-disable prettier/prettier */
-import styled, { device } from "@theme/utils";
+import styled from "@theme/utils";
+
 export const NewsLetterBox = styled.div`
     max-width: 970px;
     margin: 0 auto;
     position: relative;
 `;
+
 export const Form = styled.form`
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Default for larger screens */
     align-items: center;
     justify-content: center;
     position: relative;
+    gap: 10px; /* Add some spacing between input and button */
 
     .btn-absolute {
         margin-top: 20px;
     }
 
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        flex-direction: column; /* Stack input and button vertically */
+        align-items: center; /* Center align items */
     }
 `;
+
 export const Input = styled.input`
     background-color: #ffffff;
-    height: 70px;
+    height: 60px;
+    margin-top: 20px;
     border: 1px solid #1b2979;
-    padding-left: 30px;
-    padding-right: 200px;
     border-radius: 8px;
     font-size: 14px;
     color: #000;
-    &: focus {
+
+    &:focus {
         background-color: #ffffff;
     }
+
     &::placeholder {
         color: black;
     }
-    ${device.medium} {
-        height: 75px;
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        width: 100%; /* Take full width on mobile */
     }
 `;
