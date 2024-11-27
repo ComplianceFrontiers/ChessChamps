@@ -47,7 +47,7 @@
         {
             "id": "menu-6",
             "text": "Online Store",
-            "link": "/faq",
+            "link": "/online-store",
             "submenu": [
                 {
                     "id": "menu-61",
