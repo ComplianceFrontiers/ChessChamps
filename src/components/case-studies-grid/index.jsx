@@ -16,10 +16,10 @@ const CaseStudiesGrid = ({ title, thumbImg, category, slug }) => {
                 </Link>
             </Thumb>
             <CaseCardContent>
-                <Title>
+                {/* <Title>
                     <Link to={`/case-studies/${slug}`}>{title}</Link>
-                </Title>
-                <Desination>{category}</Desination>
+                </Title> */}
+                {/* <Desination>{category}</Desination> */}
             </CaseCardContent>
         </CaseCard>
     );
