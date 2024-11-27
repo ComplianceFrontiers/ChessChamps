@@ -31,7 +31,7 @@ export const DescriptionText = styled.p`
 `;
 export const ClientName = styled.h5``;
 export const Designation = styled.span`
-    color: #fc7418;
+    color: #9f8460;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     margin-top: 5px;

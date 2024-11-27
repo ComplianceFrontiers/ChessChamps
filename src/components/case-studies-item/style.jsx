@@ -18,5 +18,5 @@ export const Title = styled.h4`
     }
 `;
 export const Desination = styled.p`
-    color: #fc7418;
+    color: #9f8460;
 `;

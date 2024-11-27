@@ -7,7 +7,7 @@ const theme = {
         secondary: "#feb423",
         gradient: "#9f8460",
         background: "#fff",
-        hover: "#fc7418",
+        hover: "#9f8460",
         shark: "#929496",
         silver: "#ababab",
         nevada: "#63696a",

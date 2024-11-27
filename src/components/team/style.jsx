@@ -47,7 +47,7 @@ export const Designation = styled.p`
     line-height: 2.076;
     font-size: 13px;
     text-transform: uppercase;
-    color: #fc7418;
+    color: #9f8460;
 `;
 export const TeamSocial = styled.ul`
     width: 100%;
