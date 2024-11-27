@@ -4,7 +4,7 @@ export const PageBreadcrumbWrap = styled.div`
     background-color: #fafafa;
     position: relative;
     margin-bottom: 50px;
-    padding: 60px 0px;
+    padding: 20px 0px;
     background-image: url(${BreadcrumbBg});
     background-position: center center;
     background-repeat: no-repeat;

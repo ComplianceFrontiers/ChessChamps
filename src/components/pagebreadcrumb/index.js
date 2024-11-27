@@ -32,17 +32,19 @@ const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
             <div className="shape shape2">
                 <StaticImage src="../../data/images/bread/2.png" alt="" />
             </div>
-            <Container>
-                <PageTitleContent>
-                    <Breadcrumb
-                        title={title}
-                        crumbs={crumbs}
-                        crumbLabel={labelArr.join(" ")}
-                        disableLinks={disableLinks}
-                    />
-                </PageTitleContent>
-            </Container>
-        </PageBreadcrumbWrap>
+                  <Container
+    style={{
+        color: 'white',
+        fontSize: '50px',
+        fontWeight: 'bold',
+        textAlign: 'center'
+    }}
+>
+    {title}
+</Container>
+
+
+         </PageBreadcrumbWrap>
     );
 };
 PageBreadcrumb.propTypes = {
