@@ -42,13 +42,14 @@ export const ManimenuWrap = styled.div`
     a {
         font-size: inherit; /* Ensure links inherit the font size */
         text-decoration: none;
-        color: #000; /* Adjust color if needed */
+        // color: #000; /* Adjust color if needed */
     }
     display: flex;
     justify-content: space-between;
     align-items: center;
 `;
 export const Menu = styled.div`
+    color:#fff;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -26,7 +26,14 @@ const Footer = ({ data }) => {
             <FooterTop>
                 
                  <Container>
-                    <NewsletterWidget />
+                 <div
+      style={{
+        padding: "25px", // Add padding around the widget
+       
+      }}
+    >
+      <NewsletterWidget />
+    </div>
                                  <TextWidget infoData={data.footer[0]} />
              
                  </Container>
