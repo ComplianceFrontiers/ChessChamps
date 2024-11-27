@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Accordion } from "react-bootstrap";
 import { FaqListItem } from "./style";
-const FaqList = ({ numberItem, title, description }) => {
+const OnlineStoreList = ({ numberItem, title, description }) => {
     return (
         <FaqListItem>
             <Accordion.Item eventKey={`${numberItem}`}>
@@ -22,4 +22,4 @@ FaqList.propTypes = {
     numberItem: PropTypes.number,
     description: PropTypes.string,
 };
-export default FaqList;
+export default OnlineStoreList;
