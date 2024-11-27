@@ -2,7 +2,7 @@
 import styled from "@theme/utils";
 
 export const NewsLetterBox = styled.div`
-    max-width: 970px;
+    max-width: 500px;
     margin: 0 auto;
     position: relative;
 `;
