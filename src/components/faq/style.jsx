@@ -40,7 +40,7 @@ export const FaqListItem = styled.div`
             color: #feb423;
         }
         &:not(.collapsed) span {
-            background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+            background: #9f8460;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }

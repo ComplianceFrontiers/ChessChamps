@@ -16,7 +16,7 @@ export const SubTitle = styled.h5`
     );
     background: -webkit-linear-gradient(left, #fc7318 0%, #feb423 100%);
     background: -o-linear-gradient(left, #fc7318 0%, #feb423 100%);
-    background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+    background: #9f8460;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
