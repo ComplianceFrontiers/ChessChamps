@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
+import PageBreadcrumb from "../components/pagebreadcrumb";
 import Hero from "../container/home/hero";
 import BrandArea from "../container/home/brand";
 import ServicesArea from "../container/home/services";
@@ -15,7 +16,7 @@ import TestimonialArea from "../container/home/testimonial";
 import LatestBlogArea from "../container/home/blog";
 import { normalizedData } from "@utils/functions";
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page.content || []);
     return (
@@ -26,8 +27,12 @@ const IndexPage = ({ data }) => {
             }}
         >
             {/* <Hero  /> */}
-            <SEO title="Case Studies Page" pathname="/" />
-
+            <SEO title="Home page" pathname="/" />
+            <PageBreadcrumb
+                pageContext={pageContext}
+                location={location}
+                title="Home page"
+            />
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
 
             <BrandArea data={content["brand-section"]} />
@@ -54,6 +59,8 @@ const IndexPage = ({ data }) => {
 };
 
 IndexPage.propTypes = {
+    location: PropTypes.object,
+    pageContext: PropTypes.object,
     data: PropTypes.shape({
         allGeneral: PropTypes.shape({
             nodes: PropTypes.arrayOf(PropTypes.shape({})),

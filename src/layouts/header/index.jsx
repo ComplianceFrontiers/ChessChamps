@@ -54,7 +54,7 @@ const Header = ({ data }) => {
                                 >
                                     <a 
                                         href="https://chess-in-school.vercel.app/portalhome" 
-                                        style={{ textDecoration: "none", color: "inherit" }}
+                                        style={{ textDecoration: "none", color: "#102a45"}}
                                     >
                                         Chess Champs Academy
                                         <i className="icofont-arrow-right"></i>

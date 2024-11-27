@@ -234,7 +234,7 @@ export const Input = styled.input`
     }
 `;
 export const DecText = styled.p`
-    color: #5c6179;
+    // color: #5c6179;
     line-height: 1.473;
     font-size: 19px;
     position: relative;
@@ -247,7 +247,7 @@ export const DecText = styled.p`
         left: 0;
         width: 50px;
         height: 3px;
-        background: var(--theme-ui-colors-gradient);
+        background: #9f8460;
         top: 50%;
         display: none;
     }

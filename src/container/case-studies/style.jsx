@@ -1,7 +1,7 @@
 import styled, { device } from "@theme/utils";
 
 export const CaseStudiesSection = styled.section`
-    padding: 80px 0 60px;
+    padding: 10px 0 60px;
 
     .show-more-buttons {
         display: flex;
@@ -27,6 +27,6 @@ export const CaseStudiesSection = styled.section`
     }
 
     ${device.large} {
-        padding: 120px 0 90px;
+        padding: 10px 0 90px;
     }
 `;

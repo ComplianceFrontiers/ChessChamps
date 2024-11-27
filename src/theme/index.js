@@ -5,7 +5,7 @@ const theme = {
         heading: "#02126a",
         border: "#E0E0E0",
         secondary: "#feb423",
-        gradient: "linear-gradient(to right, #fc7318 0%, #feb423 100%)",
+        gradient: "#9f8460",
         background: "#fff",
         hover: "#fc7418",
         shark: "#929496",
