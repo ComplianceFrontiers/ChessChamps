@@ -37,6 +37,13 @@ export const VideoHeaderOverlay = styled.div`
 `;
 
 export const ManimenuWrap = styled.div`
+
+    font-size: 19px; /* Adjust as needed */
+    a {
+        font-size: inherit; /* Ensure links inherit the font size */
+        text-decoration: none;
+        color: #000; /* Adjust color if needed */
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;

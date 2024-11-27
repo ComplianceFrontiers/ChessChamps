@@ -13,7 +13,7 @@ export const LatestBlogSection = styled.section`
     /* Example for responsive design, you can modify these breakpoints as needed */
     /* Add mobile responsiveness for the padding */
     @media (max-width: 768px) {
-        padding: 10px 0;
+        padding: 30px 0;
     }
 `;
 
