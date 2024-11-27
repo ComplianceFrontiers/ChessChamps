@@ -11,13 +11,19 @@ const CaseStudiesArea = ({ data }) => {
         setVisibleItems(prev => prev + 6); // Load 6 more items
     };
 
+    const handleFirstButtonRedirect = () => {
+        window.open("https://photos.app.goo.gl/9dXrw3e2BXKL2PJfA", "_blank");
+    };
+
     return (
         <CaseStudiesSection>
             <Container>
                 <div className="show-more-buttons">
-                    <Button onClick={handleShowMore} className="me-2">
-                        Show More
+                    {/* Redirect button opens link in a new tab */}
+                    <Button onClick={handleFirstButtonRedirect} className="me-2">
+                    Tournament
                     </Button>
+                    {/* Load more items */}
                     <Button onClick={handleShowMore} className="me-2">
                         Show More
                     </Button>

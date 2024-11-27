@@ -26,6 +26,8 @@ const IndexPage = ({ data }) => {
             }}
         >
             {/* <Hero  /> */}
+            <SEO title="Case Studies Page" pathname="/" />
+
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
 
             <BrandArea data={content["brand-section"]} />
