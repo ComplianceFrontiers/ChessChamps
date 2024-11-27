@@ -16,7 +16,7 @@ export const WidgetAuthor = styled.div`
 export const Title = styled.h5`
     text-transform: capitalize;
     font-weight: 700;
-    color: #02126a;
+    color: #102a45;
     line-height: 1.25;
     font-size: 20px;
     margin-bottom: 5px;
@@ -39,7 +39,7 @@ export const Socials = styled.div`
         text-align: center;
         background-color: white;
         box-shadow: 0px 15px 30px 0px rgb(2 18 106 / 5%);
-        color: #02126a;
+        color: #102a45;
         width: 50px;
         height: 50px;
         line-height: 50px;

@@ -55,14 +55,14 @@ export const SocialShareCard = styled.div`
         border-radius: 12px;
         i {
             display: block;
-            color: #02126a;
+            color: #102a45;
             font-size: 20px;
             margin-bottom: 10px;
         }
     }
     .social-share-wrap {
         display: inline-block;
-        color: #02126a;
+        color: #102a45;
         font-weight: 700;
         line-height: 1;
         margin-right: 10px;
@@ -78,7 +78,7 @@ export const MetaBox = styled.div`
     .meta-title {
         font-weight: bold;
         margin-right: 10px;
-        color: #02126a;
+        color: #102a45;
         font-size: 14px;
     }
 `;
