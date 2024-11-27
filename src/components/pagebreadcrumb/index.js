@@ -1,8 +1,29 @@
-import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Breadcrumb } from "gatsby-plugin-breadcrumb";
+import { Col, Container, Row } from "react-bootstrap";
+import PropTypes from "prop-types";
+import { PageBreadcrumbWrap, PageTitleContent } from "./style";
 import { StaticImage } from "gatsby-plugin-image";
 
 const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
+    const {
+        breadcrumb: { crumbs },
+    } = pageContext;
+    const customCrumbLabel = location.pathname.toLowerCase();
+    const crumbLabelArr = customCrumbLabel.split("/");
+    const label = crumbLabelArr[crumbLabelArr.length - 1];
+    const labelArr = label.split("-");
+    const disableLinks = [
+        "/events",
+        "/category",
+        "/profile",
+        "/date",
+        "/tag",
+        "/page",
+        "/blog",
+        "/blog/page",
+        "/blogs",
+        "/services",
+    ];
     const [fontSize, setFontSize] = useState('20px'); // Default font size for mobile
 
     useEffect(() => {
@@ -29,21 +50,22 @@ const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
             <div className="shape shape2">
                 <StaticImage src="../../data/images/bread/2.png" alt="" />
             </div>
+                  <Container
+    style={{
+        color: 'white',
+        fontSize: window.innerWidth >= 768 ? '50px' : '20px',
+        fontWeight: 'bold',
+        textAlign: 'center'
+    }}
+>
+    {title}
+</Container>
 
-            <Container
-                style={{
-                    color: 'white',
-                    fontSize: fontSize, // Apply dynamic font size
-                    fontWeight: 'bold',
-                    textAlign: 'center'
-                }}
-            >
-                {title}
-            </Container>
-        </PageBreadcrumbWrap>
+
+
+         </PageBreadcrumbWrap>
     );
 };
-
 PageBreadcrumb.propTypes = {
     title: PropTypes.string,
     crumbLabel: PropTypes.string,
