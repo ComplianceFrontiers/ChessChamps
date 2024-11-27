@@ -62,7 +62,7 @@ export const DividerBar = styled.span`
             background-image: linear-gradient(0deg, #fc7318 0%, #feb423 100%);
             &::before,
             &::after {
-                background: #02126a;
+                background: #102a45;
             }
         `};
 `;

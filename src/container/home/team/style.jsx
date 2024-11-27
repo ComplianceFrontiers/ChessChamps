@@ -16,11 +16,11 @@ export const TeamSection = styled.section`
     position: relative;
     background-image: linear-gradient(
         to right,
-        #03136b,
-        #0d1e7f,
-        #162993,
-        #1c35a8,
-        #2241be
+        #102a45,
+        #102a45,
+        #102a45,
+       #102a45,
+        #102a45
     );
     background-position: left center;
     background-repeat: no-repeat;

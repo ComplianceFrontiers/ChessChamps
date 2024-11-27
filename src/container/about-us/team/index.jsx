@@ -12,7 +12,7 @@ const TeamArea = ({ data }) => {
                 src="../../../data/images/team/pattern.png"
                 alt=""
             />
-            <Container>
+            {/* <Container>
                 {data?.section_title && (
                     <SectionTitle
                         headingTitle={data?.section_title.title}
@@ -35,7 +35,7 @@ const TeamArea = ({ data }) => {
                             );
                         })}
                 </Row>
-            </Container>
+            </Container> */}
         </TeamSection>
     );
 };

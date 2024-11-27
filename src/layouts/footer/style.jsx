@@ -28,7 +28,7 @@ export const FooterWrap = styled.footer``;
 export const FooterTop = styled.div`
     padding: 20px 0px;
     position: relative;
-    background: #0a196f;
+    background: #102a45;
     .footer-bg-shape {
         position: absolute;
         left: 0;
@@ -38,64 +38,20 @@ export const FooterTop = styled.div`
         object-fit: fill;
         z-index: 0;
     }
-    .path-shape {
-        position: absolute;
-        top: 165px;
-        left: 40px;
-        z-index: 0;
-        animation: ${move} 1s infinite alternate;
-    }
-    .path-svg {
-        svg {
-            max-width: 127px;
-            max-height: 205px;
-            position: absolute;
-            right: 80px;
-            bottom: 60px;
-        }
-    }
+    
+    
+ 
+    
 
-    .footer_svg__cls-1 {
-        isolation: isolate;
-    }
-    .footer_svg__cls-2 {
-        mix-blend-mode: multiply;
-        fill: #fff;
-    }
-    .footer_svg__cls-3 {
-        fill: #ddd;
-    }
-    .footer_svg__cls-4 {
-        fill: url(#linear-gradient-2);
-    }
-    .footer_svg__cls-5 {
-        fill: #e2e9fa;
-    }
-    .footer_svg__cls-6 {
-        fill: #f0f4fc;
-    }
-    .footer_svg__cls-7 {
-        fill: #6e8fe4;
-    }
-
-    .footer_svg__cls-8 {
-        stroke: #2647c8;
-        fill: none;
-        stroke-width: 2;
-        stroke-dasharray: 800;
-        stroke-dashoffset: 800;
-        animation: ${offset} linear 5s forwards infinite;
-    }
+     
 `;
-
-
 
 export const FooterRow = styled.div`
     display: flex;
     flex-wrap: wrap; // Ensures wrapping for smaller screens
     justify-content: space-between; // Align items with spacing
     align-items: center; // Vertically align items
-    background: #02126a;
+    background: #102a45;
     border-radius: 15px;
     margin: 0;
     position: relative;
@@ -104,7 +60,8 @@ export const FooterRow = styled.div`
         flex-wrap: nowrap; // Ensure single row on large screens
     }
 
-    & > .FooterRow { // Target nested FooterRow
+    & > .FooterRow {
+        // Target nested FooterRow
         display: flex;
         flex-wrap: nowrap; // Prevent wrapping for inner row
         gap: 16px; // Optional: Add spacing between items
@@ -152,7 +109,7 @@ export const FooterWidget = styled.div`
 // Footer Bottom Css
 export const FooterBottom = styled.div`
     padding: 20px 0px;
-    background: #111f73;
+    background: #102a45;
     position: relative;
 `;
 export const CopyrightText = styled.p`

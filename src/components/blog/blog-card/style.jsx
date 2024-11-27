@@ -36,12 +36,11 @@ export const BlogCardBox = styled.div`
                 }
             }
         `}
-    
 
     &:hover {
         background-image: -webkit-linear-gradient(
             0deg,
-            #02126a 0%,
+            #102a45 0%,
             #2647c8 100%
         );
         .meta-hover {
@@ -57,7 +56,7 @@ export const BlogCardBox = styled.div`
         }
     }
 `;
- 
+
 export const BlogContent = styled.div``;
 export const BlogMeta = styled.div`
     color: #f5f5f5;
@@ -85,4 +84,3 @@ export const Category = styled.span`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 `;
-

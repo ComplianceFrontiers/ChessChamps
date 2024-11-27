@@ -23,10 +23,10 @@ export const AboutBanner = styled.div`
         border-radius: inherit;
         background-image: -webkit-linear-gradient(
             90deg,
-            #02126a 0%,
+            #102a45 0%,
             #2647c8 100%
         );
-        background-image: -ms-linear-gradient(90deg, #02126a 0%, #2647c8 100%);
+        background-image: -ms-linear-gradient(90deg, #102a45 0%, #2647c8 100%);
         opacity: 0.9;
         z-index: -1;
     }

@@ -19,8 +19,8 @@ export const BrandTitle = styled.h6`
 
 export const BrandBox = styled.div`
 margin-top: 30px;
-    background-color: #02126a;
-    background-image: url(${BrandBg});
+    background-color: #102a45;
+    // background-image: url(${BrandBg});
     padding: 20px 20px 20px;
     background-position: center center;
     background-size: cover;
