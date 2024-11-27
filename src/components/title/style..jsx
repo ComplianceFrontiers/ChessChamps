@@ -1,15 +1,15 @@
 import styled, { device, css } from "@theme/utils";
 
 export const SectionBox = styled.div`
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     ${device.medium} {
         margin-bottom: 60px;
     }
     ${device.large} {
-        margin-bottom: 80px;
+        // margin-bottom: 80px;
     }
     ${device.xlarge} {
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
     }
     ${({ align }) =>
         align === "center" &&
