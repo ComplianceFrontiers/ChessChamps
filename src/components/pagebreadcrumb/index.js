@@ -24,24 +24,6 @@ const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
         "/blogs",
         "/services",
     ];
-    const [fontSize, setFontSize] = useState('20px'); // Default font size for mobile
-
-    useEffect(() => {
-        // Check window size only in the browser after the component mounts
-        const handleResize = () => {
-            setFontSize(window.innerWidth >= 768 ? '50px' : '20px');
-        };
-
-        handleResize(); // Initialize font size based on the current window width
-
-        window.addEventListener("resize", handleResize); // Update font size on window resize
-
-        // Cleanup listener on component unmount
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-
     return (
         <PageBreadcrumbWrap>
             <div className="shape shape1">
@@ -50,20 +32,14 @@ const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
             <div className="shape shape2">
                 <StaticImage src="../../data/images/bread/2.png" alt="" />
             </div>
-                  <Container
-    style={{
-        color: 'white',
-        fontSize: window.innerWidth >= 768 ? '50px' : '20px',
-        fontWeight: 'bold',
-        textAlign: 'center'
-    }}
->
+            <Container className="page-breadcrumb-title">
     {title}
 </Container>
 
 
 
-         </PageBreadcrumbWrap>
+
+        </PageBreadcrumbWrap>
     );
 };
 PageBreadcrumb.propTypes = {
