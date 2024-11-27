@@ -32,16 +32,17 @@ const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
             <div className="shape shape2">
                 <StaticImage src="../../data/images/bread/2.png" alt="" />
             </div>
-                  <Container
+            <Container
     style={{
         color: 'white',
-        fontSize: '50px',
+        fontSize: window.innerWidth >= 768 ? '50px' : '20px',
         fontWeight: 'bold',
         textAlign: 'center'
     }}
 >
     {title}
 </Container>
+
 
 
          </PageBreadcrumbWrap>
