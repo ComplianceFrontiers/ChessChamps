@@ -14,6 +14,7 @@ const rotation = keyframes`
 
 export const WorkingProcessSection = styled.section`
     background-image: url(${WorkingProcessSectionBg});
+    background-color :#102a45;
     margin-top: 20px;
     background-position: bottom center;
     background-size: cover;

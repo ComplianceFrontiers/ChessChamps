@@ -40,7 +40,7 @@ export const LinkShare = styled.span`
 export const Title = styled.h6`
     font-weight: 700;
     a {
-        color: #02126a;
+        color: #102a45;
     }
 `;
 export const DescriptionText = styled.p`
