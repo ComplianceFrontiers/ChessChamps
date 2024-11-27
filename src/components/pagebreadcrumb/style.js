@@ -36,6 +36,18 @@ export const PageBreadcrumbWrap = styled.div`
             right: 0;
         }
     }
+        .page-breadcrumb-title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+
+    // For laptops (adjust based on your breakpoint)
+    @media (min-width: 1024px) {
+        font-size: 50px;
+    }
+}
+
 `;
 
 export const PageTitleContent = styled.div`
