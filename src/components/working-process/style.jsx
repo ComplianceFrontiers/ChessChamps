@@ -6,7 +6,7 @@ export const Icon = styled.div`
     position: relative;
     border: 5px solid #132580;
     border-radius: 50%;
-    background-color: #02126a;
+    background-color: #102a45;
     width: 140px;
     height: 140px;
     display: flex;

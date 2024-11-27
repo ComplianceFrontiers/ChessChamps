@@ -50,7 +50,7 @@ export const ContactMediaList = styled.div`
         .number {
             line-height: 1;
             font-weight: 700;
-            color: #02126a;
+            color: #102a45;
             font-size: 16px;
             ${device.medium} {
                 font-size: 20px;

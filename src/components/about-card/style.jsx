@@ -19,7 +19,7 @@ export const SubTitle = styled.h6`
 `;
 export const Title = styled.h4`
     font-weight: 700;
-    color: #02126a;
+    color: #102a45;
     margin-bottom: 20px;
 `;
 export const DesText = styled.p``;

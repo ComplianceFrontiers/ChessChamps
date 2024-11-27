@@ -18,7 +18,7 @@ export const WidgetTags = styled.ul`
     margin-bottom: -10px;
     display: inline-block;
     a {
-        color: #02126a;
+        color: #102a45;
         display: inline-block;
         padding: 9px 20px;
         margin-bottom: 10px;
