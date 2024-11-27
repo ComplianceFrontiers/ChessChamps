@@ -4,7 +4,8 @@ export const CaseStudiesSection = styled.section`
     .button-wrapper {
         display: flex;
         justify-content: center;
-        margin-top: 20px; // Adjust as needed
+        margin-top: 40px; // Adjust as needed
+        margin-bottom: 50px;
     }
 
     .shop-now-button {

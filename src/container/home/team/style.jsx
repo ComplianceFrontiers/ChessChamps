@@ -11,7 +11,7 @@ export const TeamSection = styled.section`
         padding: 50px 0px;
     }
     ${device.xlarge} {
-        padding: 50px 0px;
+        padding: 150px 0px;
     }
     position: relative;
     background-image: linear-gradient(
