@@ -51,7 +51,7 @@ export const TeamSection = styled.section`
     }
 
     .shop-now-button {
-    background-color: #fc7418; /* Button background color */
+    background-color: #9f8460; /* Button background color */
     color: #fff; /* Text color */
     font-size: 16px; /* Text size */
     width: 160px; /* Explicit width */

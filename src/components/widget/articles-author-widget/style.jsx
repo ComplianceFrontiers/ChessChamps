@@ -23,7 +23,7 @@ export const Title = styled.h5`
 `;
 export const Description = styled.p`
     font-weight: 700;
-    color: #fc7418;
+    color: #9f8460;
     text-transform: uppercase;
     font-size: 13px;
     margin-bottom: 35px;

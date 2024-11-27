@@ -41,7 +41,7 @@ export const Title = styled.h3`
     margin-bottom: 20px;
 `;
 export const DescriptionText = styled.p`
-    color: #fc7418;
+    color: #9f8460;
     a {
         color: #fff;
     }
