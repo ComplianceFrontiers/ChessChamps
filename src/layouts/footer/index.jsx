@@ -39,64 +39,7 @@ const Footer = ({ data }) => {
              
                  </Container>
              </FooterTop>
-            {/* Line with Terms and Conditions */}
-<div
-    style={{
-        textAlign: "center",
-        padding: "10px 0",
-        background: "#0d1b2a",
-        position: "relative",
-        overflow: "hidden",
-    }}
->
-    {/* Decorative Line Animation */}
-    <div
-        style={{
-            position: "absolute",
-            height: "2px",
-            background: "linear-gradient(to right, #fff, #0d1b2a, #fff)",
-            width: "100%",
-            top: "50%",
-            left: 0,
-            animation: "move-line 3s infinite linear",
-            transform: "translateY(-50%)",
-            zIndex: -1,
-        }}
-    ></div>
-
-    <span
-        className="terms-link"
-        onMouseOver={(e) => {
-            e.currentTarget.style.transform = "scale(1.1)";
-            e.currentTarget.style.color = "#00e0ff";
-        }}
-        onMouseOut={(e) => {
-            e.currentTarget.style.transform = "scale(1)";
-            e.currentTarget.style.color = "#fff";
-        }}
-    >
-        <span
-            style={{
-                marginRight: "5px",
-                color: "#00e0ff",
-                fontWeight: "bold",
-                animation: "pulse-star 1.5s infinite",
-            }}
-        >
-            *
-        </span>
-        <Link
-            to="/terms-and-conditions"
-            style={{
-                color: "inherit",
-                textDecoration: "none",
-                position: "relative",
-            }}
-        >
-            Terms and Conditions
-        </Link>
-    </span>
-</div>
+ 
 
 <style jsx>{`
     @keyframes move-line {
@@ -154,7 +97,7 @@ const Footer = ({ data }) => {
                         >
                             {data.footer[4].title}
                         </a>{" "}
-                        All Rights Reserved
+                        All Rights Reserved. Privacy Policy
                     </CopyrightText>
                 </Container>
             </FooterBottom>

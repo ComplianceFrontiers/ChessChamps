@@ -153,148 +153,359 @@
                 "iconBg": "primary",
                 "color": "white"
             },
-            "items": [
-                {
-                    "id": "team-members-1",
-                    "images": [
-                        {
-                            "src": "../../data/images/team/1.png"
-                        }
-                    ],
-                    "socials": [
-                        {
-                            "id": 1,
-                            "icon": "icofont-facebook",
-                            "link": "https://www.facebook.com",
-                            "title": "Facebook"
-                        },
-                        {
-                            "id": 2,
-                            "icon": "icofont-twitter",
-                            "link": "https://www.twitter.com",
-                            "title": "Twitter"
-                        },
-                        {
-                            "id": 3,
-                            "icon": "icofont-skype",
-                            "link": "https://www.skpe.com",
-                            "title": "Instagram"
-                        }
-                    ],
-                    "headings": [
-                        {
-                            "level": "h4",
-                            "content": "Bellevue Community Center"
-                        }
-                    ],
-                    "designation": "DIGITAL STRATEGIST"
-                },
-                {
-                    "id": "team-members-2",
-                    "images": [
-                        {
-                            "src": "../../data/images/team/2.png"
-                        }
-                    ],
-                    "socials": [
-                        {
-                            "id": 1,
-                            "icon": "icofont-facebook",
-                            "link": "https://www.facebook.com",
-                            "title": "Facebook"
-                        },
-                        {
-                            "id": 2,
-                            "icon": "icofont-twitter",
-                            "link": "https://www.twitter.com",
-                            "title": "Twitter"
-                        },
-                        {
-                            "id": 3,
-                            "icon": "icofont-skype",
-                            "link": "https://www.skpe.com",
-                            "title": "Instagram"
-                        }
-                    ],
-                    "headings": [
-                        {
-                            "level": "h4",
-                            "content": "Rosie Greene"
-                        }
-                    ],
-                    "designation": "PROJECT MANAGER"
-                },
-                {
-                    "id": "team-members-3",
-                    "images": [
-                        {
-                            "src": "../../data/images/team/3.png"
-                        }
-                    ],
-                    "socials": [
-                        {
-                            "id": 1,
-                            "icon": "icofont-facebook",
-                            "link": "https://www.facebook.com",
-                            "title": "Facebook"
-                        },
-                        {
-                            "id": 2,
-                            "icon": "icofont-twitter",
-                            "link": "https://www.twitter.com",
-                            "title": "Twitter"
-                        },
-                        {
-                            "id": 3,
-                            "icon": "icofont-skype",
-                            "link": "https://www.skpe.com",
-                            "title": "Instagram"
-                        }
-                    ],
-                    "headings": [
-                        {
-                            "level": "h4",
-                            "content": "Stacey Evans"
-                        }
-                    ],
-                    "designation": "UI/UX DESIGNER"
-                },
-                {
-                    "id": "team-members-4",
-                    "images": [
-                        {
-                            "src": "../../data/images/team/4.png"
-                        }
-                    ],
-                    "socials": [
-                        {
-                            "id": 1,
-                            "icon": "icofont-facebook",
-                            "link": "https://www.facebook.com",
-                            "title": "Facebook"
-                        },
-                        {
-                            "id": 2,
-                            "icon": "icofont-twitter",
-                            "link": "https://www.twitter.com",
-                            "title": "Twitter"
-                        },
-                        {
-                            "id": 3,
-                            "icon": "icofont-skype",
-                            "link": "https://www.skpe.com",
-                            "title": "Instagram"
-                        }
-                    ],
-                    "headings": [
-                        {
-                            "level": "h4",
-                            "content": "Marian Adams"
-                        }
-                    ],
-                    "designation": "SEO SPECIALIST"
-                }
-            ]
+           "items": [
+    {
+        "id": "team-members-1",
+        "images": [
+            {
+                "src": "../../data/images/team/1.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Willie Mckenzie"
+            }
+        ],
+        "designation": "DIGITAL STRATEGIST"
+    },
+    {
+        "id": "team-members-2",
+        "images": [
+            {
+                "src": "../../data/images/team/2.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Rosie Greene"
+            }
+        ],
+        "designation": "PROJECT MANAGER"
+    },
+    {
+        "id": "team-members-3",
+        "images": [
+            {
+                "src": "../../data/images/team/3.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Stacey Evans"
+            }
+        ],
+        "designation": "UI/UX DESIGNER"
+    },
+    {
+        "id": "team-members-4",
+        "images": [
+            {
+                "src": "../../data/images/team/4.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Marian Adams"
+            }
+        ],
+        "designation": "SEO SPECIALIST"
+    },
+    {
+        "id": "team-members-5",
+        "images": [
+            {
+                "src": "../../data/images/team/5.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Jamie Collins"
+            }
+        ],
+        "designation": "CONTENT WRITER"
+    },
+    {
+        "id": "team-members-6",
+        "images": [
+            {
+                "src": "../../data/images/team/6.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Taylor Brooks"
+            }
+        ],
+        "designation": "DATA ANALYST"
+    },
+    {
+        "id": "team-members-7",
+        "images": [
+            {
+                "src": "../../data/images/team/7.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Morgan James"
+            }
+        ],
+        "designation": "FRONT-END DEVELOPER"
+    },
+    {
+        "id": "team-members-8",
+        "images": [
+            {
+                "src": "../../data/images/team/8.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Riley Carter"
+            }
+        ],
+        "designation": "MARKETING SPECIALIST"
+    },
+    {
+        "id": "team-members-9",
+        "images": [
+            {
+                "src": "../../data/images/team/9.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Harper Reed"
+            }
+        ],
+        "designation": "SOFTWARE ENGINEER"
+    },
+    {
+        "id": "team-members-10",
+        "images": [
+            {
+                "src": "../../data/images/team/10.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Charlie West"
+            }
+        ],
+        "designation": "BACK-END DEVELOPER"
+    }
+]
+
         },
         {
             "id": "home-happy-customer-section1",
