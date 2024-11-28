@@ -70,7 +70,12 @@
                     "link": "/contact-us"
                 }
             ]
+        },
+        {
+            "id": "menu-6",
+            "text": "Contact Us",
+            "link": "/contact-us"
+           
         }
-        
     ]
 }

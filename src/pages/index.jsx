@@ -42,6 +42,11 @@ const IndexPage = ({ data, location, pageContext }) => {
                 }}
             />
             <TeamArea data={content["team-members-section"]} />
+            <TestimonialArea data={content["happy-customer-section"]} />
+
+           
+            
+            <WorkingProcessArea data={content["brand-section"]} />
             <CaseStudiesArea
                 data={{
                     ...content["case-studies-section"],
@@ -49,9 +54,6 @@ const IndexPage = ({ data, location, pageContext }) => {
                 }}
             />
             
-            <WorkingProcessArea data={content["brand-section"]} />
-            
-            <TestimonialArea data={content["happy-customer-section"]} />
             
         </Layout>
     );
