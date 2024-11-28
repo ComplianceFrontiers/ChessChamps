@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 import { Col, Container, Row } from "react-bootstrap";
 import PropTypes from "prop-types";
@@ -26,12 +27,7 @@ const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
     ];
     return (
         <PageBreadcrumbWrap>
-            <div className="shape shape1">
-                <StaticImage src="../../data/images/bread/1.png" alt="" />
-            </div>
-            <div className="shape shape2">
-                <StaticImage src="../../data/images/bread/2.png" alt="" />
-            </div>
+           
             <Container className="page-breadcrumb-title">
     {title}
 </Container>

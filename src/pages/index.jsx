@@ -15,6 +15,7 @@ import FAQArea from "../container/home/faq-section";
 import TestimonialArea from "../container/home/testimonial";
 import LatestBlogArea from "../container/home/blog";
 import { normalizedData } from "@utils/functions";
+import PageBreadcrumbHome from "../components/pagebreadcrumbhome";
 
 const IndexPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -28,9 +29,7 @@ const IndexPage = ({ data, location, pageContext }) => {
         >
             {/* <Hero  /> */}
             <SEO title="Home page" pathname="/" />
-            <PageBreadcrumb
-                pageContext={pageContext}
-                location={location}
+            <PageBreadcrumbHome
                 title="Home page"
             />
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
