@@ -34,6 +34,5 @@ export const Designation = styled.span`
     color: #9f8460;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
-    margin-top: 5px;
     display: inline-block;
 `;
