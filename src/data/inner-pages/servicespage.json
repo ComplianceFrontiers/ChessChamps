@@ -153,7 +153,7 @@
                 "iconBg": "primary",
                 "color": "white"
             },
-           "items": [
+          "items": [
     {
         "id": "team-members-1",
         "images": [
@@ -503,6 +503,251 @@
             }
         ],
         "designation": "BACK-END DEVELOPER"
+    },
+    {
+        "id": "team-members-11",
+        "images": [
+            {
+                "src": "../../data/images/team/11.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Avery Hayes"
+            }
+        ],
+        "designation": "DATA SCIENTIST"
+    },
+    {
+        "id": "team-members-12",
+        "images": [
+            {
+                "src": "../../data/images/team/12.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Jordan Gray"
+            }
+        ],
+        "designation": "MACHINE LEARNING ENGINEER"
+    },
+    {
+        "id": "team-members-13",
+        "images": [
+            {
+                "src": "../../data/images/team/13.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Dakota Green"
+            }
+        ],
+        "designation": "SYSTEM ARCHITECT"
+    },
+    {
+        "id": "team-members-14",
+        "images": [
+            {
+                "src": "../../data/images/team/14.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Reagan Walker"
+            }
+        ],
+        "designation": "DATABASE ADMINISTRATOR"
+    },
+    {
+        "id": "team-members-15",
+        "images": [
+            {
+                "src": "../../data/images/team/15.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Quinn Scott"
+            }
+        ],
+        "designation": "DEVOPS ENGINEER"
+    },
+    {
+        "id": "team-members-16",
+        "images": [
+            {
+                "src": "../../data/images/team/16.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Emerson Cooper"
+            }
+        ],
+        "designation": "CYBERSECURITY ANALYST"
+    },
+    {
+        "id": "team-members-17",
+        "images": [
+            {
+                "src": "../../data/images/team/17.png"
+            }
+        ],
+        "socials": [
+            {
+                "id": 1,
+                "icon": "icofont-facebook",
+                "link": "https://www.facebook.com",
+                "title": "Facebook"
+            },
+            {
+                "id": 2,
+                "icon": "icofont-twitter",
+                "link": "https://www.twitter.com",
+                "title": "Twitter"
+            },
+            {
+                "id": 3,
+                "icon": "icofont-skype",
+                "link": "https://www.skype.com",
+                "title": "Instagram"
+            }
+        ],
+        "headings": [
+            {
+                "level": "h4",
+                "content": "Casey Morgan"
+            }
+        ],
+        "designation": "BLOCKCHAIN DEVELOPER"
     }
 ]
 

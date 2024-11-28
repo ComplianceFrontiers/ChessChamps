@@ -4,6 +4,7 @@ import FaqList from "../../components/faq";
 import Categories from "../../components/widget/articles-categories-widget";
 import { FaqSection, FaqContentBox } from "./style";
 const FAQArea = ({ data }) => {
+    console.log(data)
     return (
         <FaqSection>
             <Container>
@@ -11,6 +12,7 @@ const FAQArea = ({ data }) => {
                     <Col lg={8}>
                         <FaqContentBox>
                             <Accordion defaultActiveKey="1">
+                                
                                 {data?.items &&
                                     data?.items.map((item, i) => {
                                         return (
@@ -19,6 +21,7 @@ const FAQArea = ({ data }) => {
                                                 title={item.headings[0].content}
                                                 numberItem={i + 1}
                                                 description={item.description}
+                                                imageSrc={item.designation}
                                             />
                                         );
                                     })}
@@ -39,6 +42,7 @@ FAQArea.propTypes = {
             title: PropTypes.string,
             subtitle: PropTypes.string,
             description: PropTypes.string,
+            imageSrc:PropTypes.string,
             icon: PropTypes.shape({
                 src: PropTypes.oneOfType([
                     PropTypes.string,

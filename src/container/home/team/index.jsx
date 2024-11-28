@@ -8,6 +8,7 @@ import SectionTitle from "../../../components/title";
 import { TeamSection } from "./style";
 
 const TeamArea = ({ data }) => {
+    console.log(data)
     return (
         <TeamSection>
             <StaticImage
@@ -39,6 +40,7 @@ const TeamArea = ({ data }) => {
                     }}
                     slidesPerView={4}
                     spaceBetween={30}
+                    loop={true}
                     autoplay={{
                         delay: 1000,
                         disableOnInteraction: false,
