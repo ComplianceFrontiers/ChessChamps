@@ -19,11 +19,11 @@ const ServicesPages = ({ data, location, pageContext }) => {
                 ...globalContent["footer"],
             }}
         >
-            <SEO title="Services Page" pathname="/" />
+            <SEO title="About Us" pathname="/" />
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="Services Page"
+                title="About Us"
             />
             <WhyChooseUsArea data={content["why-choose-us-section1"]} />
 
