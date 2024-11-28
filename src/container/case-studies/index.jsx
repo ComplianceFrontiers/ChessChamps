@@ -8,20 +8,20 @@ const CaseStudiesArea = ({ data }) => {
     const [visibleItems, setVisibleItems] = useState(6); // Show first 6 items initially
 
     const handleShowMore = () => {
-        setVisibleItems(prev => prev + 6); // Load 6 more items
+        setVisibleItems((prev) => prev + 6); // Load 6 more items
     };
 
     const handleFirstButtonRedirect = () => {
-        window.open("https://photos.app.goo.gl/9dXrw3e2BXKL2PJfA", "_blank");
+        window.location.href = "https://photos.app.goo.gl/9dXrw3e2BXKL2PJfA"; // Redirects to the link in the same tab
     };
 
     return (
         <CaseStudiesSection>
             <Container>
                 <div className="show-more-buttons">
-                    {/* Redirect button opens link in a new tab */}
+                    {/* Redirect button opens link in the same tab */}
                     <Button onClick={handleFirstButtonRedirect} className="me-2">
-                    Tournament
+                        Tournament
                     </Button>
                     {/* Load more items */}
                     <Button onClick={handleShowMore} className="me-2">
