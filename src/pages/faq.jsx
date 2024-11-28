@@ -16,11 +16,11 @@ const FAQPage = ({ data, location, pageContext }) => {
                 ...globalContent["footer"],
             }}
         >
-            <SEO title="FAQ" pathname="/" />
+            <SEO title="Events" pathname="/" />
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="FAQ"
+                title="Events"
             />
             <FAQArea data={content["FAQ-section"]} />
         </Layout>
