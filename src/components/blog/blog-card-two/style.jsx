@@ -22,7 +22,7 @@ export const BlogGridCard = styled.div`
     }
 `;
 export const BlogGridContent = styled.div`
-    padding: 10px 0px;
+    padding: 30px 0px;
     margin: 30 auto;
 `;
 export const MetaTag = styled.ul`
