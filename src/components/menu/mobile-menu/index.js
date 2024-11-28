@@ -128,17 +128,7 @@ const MobileNavMenu = ({ MobilemenuData, ofcanvasOpen, ofcanvasHandaler }) => {
                     </SocialLink>
                 </Social>
 
-                <Button
-    sx={{
-        mt: "30px",
-    }}
-    size="large"
-    shape="rounded10"
-    path="/contact-us"
->
-    Contact Us
-    <i className="icofont-envelope"></i>
-</Button>
+                
 
                 <Button
                     sx={{
@@ -149,8 +139,7 @@ const MobileNavMenu = ({ MobilemenuData, ofcanvasOpen, ofcanvasHandaler }) => {
                     path="/"
                 >
                     Chess Champs Academy
-                    <i className="icofont-arrow-right"></i>
-                </Button>
+                 </Button>
             </Navbar>
         </MobileMenuContent>
     );
