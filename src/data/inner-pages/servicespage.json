@@ -337,10 +337,10 @@
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "Promoting Chess Excellence Across Delaware!"
+                            "content": "Delaware Chess Association"
                         }
                     ],
-                    "designation": "Delaware"
+                    "designation": "Promoting Chess Excellence Across Delaware!"
                 },
                 {
                     "id": "testimonial-4",
@@ -353,10 +353,10 @@
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "Inclusive Learning and Cultural Enrichment"
+                            "content": "Lions International"
                         }
                     ],
-                    "designation": "Fostering Community Engagement and Learning"
+                    "designation": "Building Leadership and Character Through Chess"
                 },
                 {
                     "id": "testimonial-5",
@@ -369,10 +369,10 @@
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "Bringing Chess into the Classroom for Young Learners"
+                            "content": "Seigel JCC Delaware"
                         }
                     ],
-                    "designation": "Mount Pleasant Elementary School"
+                    "designation": "Inclusive Learning and Cultural Enrichment"
                 },
                 {
                     "id": "testimonial-5",
@@ -385,10 +385,26 @@
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "Shaping Future Thinkers Through Chess"
+                            "content": "Mount Pleasant Elementary"
                         }
                     ],
-                    "designation": "At Lombardy Elementary School"
+                    "designation": "Bringing Chess into the Classroom for Young Learners"
+                },
+                {
+                    "id": "testimonial-5",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg-2.png"
+                        }
+                    ],
+                    "description": "At Lombardy Elementary, we’re introducing chess to students in a supportive, dynamic environment. This partnership allows us to offer chess programs that foster creativity, enhance cognitive development, and build essential life skills in students during their formative years.",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Lombardy Elementary School"
+                        }
+                    ],
+                    "designation": "Shaping Future Thinkers Through Chess"
                 }
             ]
         }

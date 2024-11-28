@@ -129,6 +129,18 @@ const MobileNavMenu = ({ MobilemenuData, ofcanvasOpen, ofcanvasHandaler }) => {
                 </Social>
 
                 <Button
+    sx={{
+        mt: "30px",
+    }}
+    size="large"
+    shape="rounded10"
+    path="/contact-us"
+>
+    Contact Us
+    <i className="icofont-envelope"></i>
+</Button>
+
+                <Button
                     sx={{
                         mt: "30px",
                     }}

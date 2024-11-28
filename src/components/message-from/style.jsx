@@ -14,6 +14,9 @@ export const Form = styled.form`
         font-size: 15px;
         border-radius: 10px;
     }
+        .button-container {
+        text-align: center; /* Center aligns content horizontally */
+    }
 `;
 export const Input = styled.input`
     background-color: white;

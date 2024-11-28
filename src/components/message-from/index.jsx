@@ -39,7 +39,7 @@ const MessageFrom = () => {
                     rows="10"
                 ></Textarea>
             </Col>
-            <Col sm={12}>
+            <Col sm={12} className="button-container">
                 <Button
                     size="large"
                     shape="rounded5"
