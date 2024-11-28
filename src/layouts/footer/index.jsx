@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 /** @jsx jsx */
+import { Link } from "gatsby";
 import { jsx } from "theme-ui";
 import HeartIcon from "@assets/images/svg/footer.svg";
 import PropTypes from "prop-types";
@@ -38,6 +39,108 @@ const Footer = ({ data }) => {
              
                  </Container>
              </FooterTop>
+            {/* Line with Terms and Conditions */}
+<div
+    style={{
+        textAlign: "center",
+        padding: "10px 0",
+        background: "#0d1b2a",
+        position: "relative",
+        overflow: "hidden",
+    }}
+>
+    {/* Decorative Line Animation */}
+    <div
+        style={{
+            position: "absolute",
+            height: "2px",
+            background: "linear-gradient(to right, #fff, #0d1b2a, #fff)",
+            width: "100%",
+            top: "50%",
+            left: 0,
+            animation: "move-line 3s infinite linear",
+            transform: "translateY(-50%)",
+            zIndex: -1,
+        }}
+    ></div>
+
+    <span
+        className="terms-link"
+        onMouseOver={(e) => {
+            e.currentTarget.style.transform = "scale(1.1)";
+            e.currentTarget.style.color = "#00e0ff";
+        }}
+        onMouseOut={(e) => {
+            e.currentTarget.style.transform = "scale(1)";
+            e.currentTarget.style.color = "#fff";
+        }}
+    >
+        <span
+            style={{
+                marginRight: "5px",
+                color: "#00e0ff",
+                fontWeight: "bold",
+                animation: "pulse-star 1.5s infinite",
+            }}
+        >
+            *
+        </span>
+        <Link
+            to="/terms-and-conditions"
+            style={{
+                color: "inherit",
+                textDecoration: "none",
+                position: "relative",
+            }}
+        >
+            Terms and Conditions
+        </Link>
+    </span>
+</div>
+
+<style jsx>{`
+    @keyframes move-line {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+    @keyframes pulse-star {
+        0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.5);
+            opacity: 0.5;
+        }
+    }
+
+    .terms-link {
+        font-size: 13px;
+        display: inline-block;
+        border-bottom: 1px solid white;
+        padding: 8px 12px;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* Mobile View Styling */
+    @media (max-width: 768px) {
+        .terms-link {
+            font-size: 8px; /* Reduce font size for smaller screens */
+        }
+    }
+`}</style>
+
 
             <FooterBottom>
                 <Container sx={{ textAlign: "center" }}>

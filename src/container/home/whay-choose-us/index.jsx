@@ -10,21 +10,28 @@ import {
     WhyChooseUsOffset,
     ChooseListWrpa,
 } from "./style";
+
 const WhyChooseUsArea = ({ data }) => {
+    const renderDescription = (description) => {
+        if (!description) return null;
+
+        // Split the description by double newlines to separate into paragraphs
+        const paragraphs = description.split('\n\n').map((para, index) => {
+            return <p key={index}>{para}</p>; // Render each paragraph separately
+        });
+
+        return paragraphs;
+    };
+
     return (
         <WhyChooseUsSection>
-            {/* <StaticImage
-                src="../../../data/images/bg/bg.png"
-                alt=""
-                className="about-bg"
-            /> */}
             <Container className="container-max">
                 <Row className="align-items-center">
                     <Col lg={6}>
                         <ChooseUsImage>
                             <StaticImage
                                 src="../../../data/images/about/1.png"
-                                alt=""
+                                alt="Chess Community Image"
                                 className="choose-us-img"
                             />
                         </ChooseUsImage>
@@ -44,7 +51,7 @@ const WhyChooseUsArea = ({ data }) => {
                                             <ChooseUsList
                                                 icon={item.images?.[0].src}
                                                 title={item.headings[0].content}
-                                                description={item.description}
+                                                description={renderDescription(item.description)}
                                             />
                                         </ChooseListWrpa>
                                     );
@@ -56,6 +63,7 @@ const WhyChooseUsArea = ({ data }) => {
         </WhyChooseUsSection>
     );
 };
+
 WhyChooseUsArea.propTypes = {
     data: PropTypes.shape({
         section_title: PropTypes.shape({
@@ -63,28 +71,27 @@ WhyChooseUsArea.propTypes = {
             subtitle: PropTypes.string,
             description: PropTypes.string,
             icon: PropTypes.shape({
-                src: PropTypes.oneOfType([
-                    PropTypes.string,
-                    PropTypes.shape({}),
-                ]).isRequired,
+                src: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
                 alt: PropTypes.string,
             }),
         }),
-        headings: PropTypes.arrayOf(
-            PropTypes.shape({
-                level: PropTypes.string,
-                content: PropTypes.string,
-            })
-        ),
         items: PropTypes.arrayOf(
             PropTypes.shape({
                 id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-                fields: PropTypes.shape({
-                    slug: PropTypes.string,
-                }),
-                alt: PropTypes.string,
+                images: PropTypes.arrayOf(
+                    PropTypes.shape({
+                        src: PropTypes.string,
+                    })
+                ),
+                headings: PropTypes.arrayOf(
+                    PropTypes.shape({
+                        content: PropTypes.string,
+                    })
+                ),
+                description: PropTypes.string,
             })
         ),
     }),
 };
+
 export default WhyChooseUsArea;
