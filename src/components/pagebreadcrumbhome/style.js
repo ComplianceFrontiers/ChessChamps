@@ -6,7 +6,6 @@ import BreadcrumbBg from "../../data/images/bread/bg.jpg";
 export const PageBreadcrumbWrap = styled.div`
     margin-bottom: 30px;
     background-image: url(${BreadcrumbBg});
-    // border-radius:100px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +82,7 @@ export const PageTitleContent = styled.div`
 `;
 
 export const BrandBox = styled.div`
-    margin-top: 30px;
+    // margin-top: 30px;
     
     padding: 10px 10px 10px;
     background-position: center center;
@@ -92,6 +91,7 @@ export const BrandBox = styled.div`
     border-radius: 35px;
 
     ${device.large} {
+    margin-top: 5px;
         padding: 20px 0px 0px;
     }
     
