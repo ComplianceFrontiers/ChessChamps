@@ -1,25 +1,10 @@
 import styled, { device } from "@theme/utils";
 export const TestimonialItem = styled.div``;
 export const ClientProfile = styled.div`
-    margin-bottom: 45px;
+    margin-bottom: 10px;
     ${device.medium} {
-        margin-bottom: 75px;
+        margin-bottom: 10px;
     }
-`;
-export const Quote = styled.span`
-    font-weight: 700;
-    line-height: 1;
-    font-size: 190px;
-    background: #9f8460;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    display: block;
-    margin: 0 auto;
-    z-index: 1;
 `;
 export const DescriptionText = styled.p`
     font-size: 16px;
