@@ -1,10 +1,13 @@
 import styled, { device } from "@theme/utils";
 export const ContactUsSection = styled.section`
-    padding: 100px 0;
+    padding: 0px 0;
+    ${device.large} {
+        padding: 10px 0;
+    }
 `;
 export const ContactUsCard = styled.div`
     background-color: #f7faff;
-    padding: 30px;
+    padding: 5px;
     border-radius: 15px;
     ${device.large} {
         padding: 80px;
