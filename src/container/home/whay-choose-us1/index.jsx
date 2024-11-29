@@ -31,7 +31,7 @@ const WhyChooseUsArea = ({ data }) => {
                     <Col lg={6}>
                         <ChooseUsImage>
                             <StaticImage
-                                src="../../../data/images/about/1.png"
+                                src="../../../data/images/about/12.jpg"
                                 alt="Chess Community Image"
                                 className="choose-us-img"
                             />

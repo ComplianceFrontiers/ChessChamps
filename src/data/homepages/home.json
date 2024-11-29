@@ -979,33 +979,79 @@
                     "id": "testimonial-1",
                     "images": [
                         {
-                            "src": "../../data/images/testimonial/lg-1.png"
+                            "src": "../../data/images/testimonial/lg1.png"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text the printing and typesetting as been the industry's standard dummy text ever since the 1500s when unknown printer took a galley of type and scrambled it to make specimen book has survived not only five centuries",
+                    "description": "My child has grown so much in focus and problem-solving since joining Chess Champs. The coaches make learning fun and engaging!",
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "Georgia Jones"
+                            "content": "Pinki B."
                         }
                     ],
-                    "designation": "Ui/Ux designer"
+                    "designation": "Parent of a 5th Grader"
                 },
                 {
                     "id": "testimonial-2",
                     "images": [
                         {
-                            "src": "../../data/images/testimonial/lg-2.png"
+                            "src": "../../data/images/testimonial/lg2.png"
                         }
                     ],
-                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type scrambled.",
+                    "description": "Chess Champs has been an incredible experience for my son. Not only has his confidence improved, but he’s also excelling academically!",
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "iiiiiiiiiiii iiiiiiii Centiiiiiiiiiiier"
+                            "content": "Kaushik G"
                         }
                     ],
-                    "designation": "DIGITAL STRATEGIST"
+                    "designation": "Parent of a 3rd Grader"
+                },{
+                    "id": "testimonial-3",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg3.png"
+                        }
+                    ],
+                    "description": "We love the supportive and inclusive environment at Delaware Chess Champs. My daughter looks forward to every session!",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Ruchira B"
+                        }
+                    ],
+                    "designation": "Parent of a 2nd Grader"
+                },
+                {
+                    "id": "testimonial-4",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg4.png"
+                        }
+                    ],
+                    "description": "The tournaments and coaching sessions are well-organized, and the entire team is so dedicated. Thank you for creating such a wonderful program!",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Sunil K"
+                        }
+                    ],
+                    "designation": "Parent of a 3rd Grader"
+                },{
+                    "id": "testimonial-5",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg5.png"
+                        }
+                    ],
+                    "description": "Chess Champs has made a big difference in my child’s ability to think critically and handle challenges with confidence.",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Priya S"
+                        }
+                    ],
+                    "designation": "Parent of a 4th Grader"
                 }
             ]
         },
