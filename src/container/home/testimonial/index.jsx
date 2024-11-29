@@ -25,49 +25,49 @@ const TestimonialArea = ({ data }) => {
                 <ClientsImageBox>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/2.png"
+                            src="../../../data/images/testimonial/lg1.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/3.png"
+                            src="../../../data/images/testimonial/lg8.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/4.png"
+                            src="../../../data/images/testimonial/lg4.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/5.png"
+                            src="../../../data/images/testimonial/lg5.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/6.png"
+                            src="../../../data/images/testimonial/lg6.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/7.png"
+                            src="../../../data/images/testimonial/lg3.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                 </ClientsImageBox>
                 <TestimonialContentBox>
-                    {/* <ShapBgImg>
+                    <ShapBgImg>
                         <StaticImage
                             className="shape"
                             src="../../../data/images/testimonial/shape.png"
                             alt="images-not_found"
                         />
-                    </ShapBgImg> */}
+                    </ShapBgImg>
                     <Swiper
                         layout={{
                             nav: "testimonial-navigation",
