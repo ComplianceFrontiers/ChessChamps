@@ -763,7 +763,7 @@
             },
             "items": [
                 {
-                    "id": "testimonial-2",
+                    "id": "testimonial-1",
                     "images": [
                         {
                             "src": "../../data/images/testimonial/lg9.png"
@@ -795,13 +795,13 @@
                     "designation": "Promoting Chess Excellence Across Delaware!"
                 },
                 {
-                    "id": "testimonial-4",
+                    "id": "testimonial-2",
                     "images": [
                         {
                             "src": "../../data/images/testimonial/lg11.png"
                         }
                     ],
-                    "description": "Through our partnership with the Jewish Community Center, we’re able to reach a diverse community and offer inclusive chess programs. This collaboration allows us to provide enrichment opportunities that help students connect with each other while improving critical thinking and problem-solving skills.",
+                    "description": "Lions International has joined us in combining the strategic elements of chess with valuable life lessons in leadership, discipline, and service. Together, we’re working to develop tomorrow’s leaders by integrating the intellectual and personal growth aspects of chess into youth programs.",
                     "headings": [
                         {
                             "level": "h4",
@@ -809,6 +809,38 @@
                         }
                     ],
                     "designation": "Building Leadership and Character Through Chess"
+                },
+                {
+                    "id": "testimonial-4",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg14.png"
+                        }
+                    ],
+                    "description": "Through our partnership with the Jewish Community Center, we’re able to reach a diverse community and offer inclusive chess programs. This collaboration allows us to provide enrichment opportunities that help students connect with each other while improving critical thinking and problem-solving skills.",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Seigel JCC Delaware"
+                        }
+                    ],
+                    "designation": "Inclusive Learning and Cultural Enrichment"
+                },
+                {
+                    "id": "testimonial-6",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/lg13.png"
+                        }
+                    ],
+                    "description": "At Lombardy Elementary, we’re introducing chess to students in a supportive, dynamic environment. This partnership allows us to offer chess programs that foster creativity, enhance cognitive development, and build essential life skills in students during their formative years.",
+                    "headings": [
+                        {
+                            "level": "h4",
+                            "content": "Lombardy Elementary School"
+                        }
+                    ],
+                    "designation": "Shaping Future Thinkers Through Chess"
                 },
                 {
                     "id": "testimonial-5",
@@ -821,42 +853,10 @@
                     "headings": [
                         {
                             "level": "h4",
-                            "content": "Seigel JCC Delaware"
-                        }
-                    ],
-                    "designation": "Inclusive Learning and Cultural Enrichment"
-                },
-                {
-                    "id": "testimonial-5",
-                    "images": [
-                        {
-                            "src": "../../data/images/testimonial/lg13.png"
-                        }
-                    ],
-                    "description": "At Lombardy Elementary, we’re introducing chess to students in a supportive, dynamic environment. This partnership allows us to offer chess programs that foster creativity, enhance cognitive development, and build essential life skills in students during their formative years.",
-                    "headings": [
-                        {
-                            "level": "h4",
-                            "content": "Mount Pleasant Elementary"
+                            "content": "Mount Pleasant Elementary School"
                         }
                     ],
                     "designation": "Bringing Chess into the Classroom for Young Learners"
-                },
-                {
-                    "id": "testimonial-5",
-                    "images": [
-                        {
-                            "src": "../../data/images/testimonial/lg14.png"
-                        }
-                    ],
-                    "description": "At Lombardy Elementary, we’re introducing chess to students in a supportive, dynamic environment. This partnership allows us to offer chess programs that foster creativity, enhance cognitive development, and build essential life skills in students during their formative years.",
-                    "headings": [
-                        {
-                            "level": "h4",
-                            "content": "Lombardy Elementary School"
-                        }
-                    ],
-                    "designation": "Shaping Future Thinkers Through Chess"
                 }
             ]
         }
