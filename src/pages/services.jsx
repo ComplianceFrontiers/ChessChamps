@@ -7,7 +7,7 @@ import TeamArea1 from "../container/home/team1";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import TestimonialArea1 from "../container/home/testimonial1";
 import { normalizedData } from "@utils/functions";
-import WhyChooseUsArea from "../container/home/whay-choose-us";
+import WhyChooseUsArea1 from "../container/home/whay-choose-us1";
 
 const ServicesPages = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -25,7 +25,7 @@ const ServicesPages = ({ data, location, pageContext }) => {
                 location={location}
                 title="About Us"
             />
-            <WhyChooseUsArea data={content["why-choose-us-section1"]} />
+            <WhyChooseUsArea1 data={content["why-choose-us-section1"]} />
 
             <TeamArea1 data={content["team-members-section1"]} />
             <TestimonialArea1 data={content["happy-customer-section1"]} />
