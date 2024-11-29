@@ -25,37 +25,37 @@ const TestimonialArea = ({ data }) => {
                 <ClientsImageBox>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/2.png"
+                            src="../../../data/images/testimonial/lg9.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/3.png"
+                            src="../../../data/images/testimonial/lg12.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/4.png"
+                            src="../../../data/images/testimonial/lg11.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/5.png"
+                            src="../../../data/images/testimonial/lg14.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/6.png"
+                            src="../../../data/images/testimonial/lg13.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
                     <ClientsImage>
                         <StaticImage
-                            src="../../../data/images/testimonial/7.png"
+                            src="../../../data/images/testimonial/lg10.png"
                             alt="images-not_found"
                         />
                     </ClientsImage>
