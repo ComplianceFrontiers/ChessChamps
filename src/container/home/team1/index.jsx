@@ -12,10 +12,11 @@ const TeamArea1 = ({ data }) => {
         <TeamSection>
             <StaticImage
                 className="pattern"
-                src="../../../data/images/team/pattern.png"
+                src="../../../data/images/team/pattern1.png"
                 alt=""
             />
             <Container>
+            
                 {data?.section_title && (
                     <SectionTitle
                         headingTitle={
@@ -25,6 +26,7 @@ const TeamArea1 = ({ data }) => {
                                     fitness program.
                                 </span>
                                 <br />
+                                
                                 
                                 <div className="button-wrapper">
                     <button className="shop-now-button">Our Programs</button>

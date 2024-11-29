@@ -146,10 +146,6 @@
             "section_title": {
                 "showIcon": true,
                 "title": "Official1 training partner of Delaware Junior Chess Team",
-                "icon": {
-                    "src": "../../data/images/icons/team.png",
-                    "alt": "Amazing Team Members"
-                },
                 "iconBg": "primary",
                 "color": "white"
             },
