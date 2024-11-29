@@ -34,7 +34,7 @@ const IndexPage = ({ data, location, pageContext }) => {
             />
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
 
-            <BrandArea data={content["brand-section"]} />
+            {/* <BrandArea data={content["brand-section"]} /> */}
             <LatestBlogArea
                 data={{
                     ...content["blog-section"],

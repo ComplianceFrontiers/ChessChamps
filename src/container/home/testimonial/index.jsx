@@ -61,13 +61,13 @@ const TestimonialArea = ({ data }) => {
                     </ClientsImage>
                 </ClientsImageBox>
                 <TestimonialContentBox>
-                    <ShapBgImg>
+                    {/* <ShapBgImg>
                         <StaticImage
                             className="shape"
                             src="../../../data/images/testimonial/shape.png"
                             alt="images-not_found"
                         />
-                    </ShapBgImg>
+                    </ShapBgImg> */}
                     <Swiper
                         layout={{
                             nav: "testimonial-navigation",

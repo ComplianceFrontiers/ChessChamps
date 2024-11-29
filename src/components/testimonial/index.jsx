@@ -14,7 +14,7 @@ const Testimonial1 = ({ image, description, name, designation }) => {
         <TestimonialItem>
             <ClientProfile>
                 <GatsbyImage image={getImage(image)} alt={name} />
-                <Quote>“</Quote>
+                {/* <Quote>“</Quote> */}
             </ClientProfile>
             <ClientName>{name}</ClientName>
             <Designation>{designation}</Designation>
