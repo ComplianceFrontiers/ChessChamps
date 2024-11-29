@@ -10,12 +10,12 @@ const zoomin = keyframes`
 `;
 export const TestimonialSection = styled.section`
     padding-bottom: 10px;
-    padding-top: 20px;
-    margin-top: 20px;
+    // padding-top: 20px;
+    // margin-top: 20px;
 `;
 export const TestimonialContentBox = styled.div`
     position: relative;
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
     position: relative;
