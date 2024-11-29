@@ -1,9 +1,10 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
 import { graphql } from "gatsby";
 import PageBreadcrumb from "../components/pagebreadcrumb";
-import FAQArea from "../container/faq";
+import BlogGrid1 from "../container/blog/blog-grid1";
 import { normalizedData } from "@utils/functions";
 
 const FAQPage = ({ data, location, pageContext }) => {
@@ -22,8 +23,11 @@ const FAQPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="Events"
             />
-            <FAQArea data={content["FAQ-section"]} />
-        </Layout>
+ <BlogGrid1
+                data={ 
+                    ["tring","tring"]
+                }
+            />        </Layout>
     );
 };
 
