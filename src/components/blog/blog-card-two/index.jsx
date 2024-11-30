@@ -27,9 +27,12 @@ const BlogCardTwo = ({ date, title, quote_text, slug, thume_image }) => {
                     <Link to={`/${slug}`}>{title}</Link>
                 </Title>
                 <Quote_text>{quote_text}</Quote_text>
-                <Button size="medium" path={`/${slug}`} shape="rounded5">
-                    Read More
-                </Button>
+                <div style={{ textAlign: "center" }}>
+    <Button size="medium" path={`/${slug}`} shape="rounded5">
+        Read More
+    </Button>
+</div>
+
             </BlogGridContent>
         </BlogGridCard>
     );
