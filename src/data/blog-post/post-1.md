@@ -1,5 +1,5 @@
 ---
-title: "chess club"
+title: "Chess Club"
 image: { src: "../../data/images/blog/1.png", alt: "Rankings" }
 date: "2022-03-06"
 author: "MPE Chess Program"

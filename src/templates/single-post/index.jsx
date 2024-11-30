@@ -53,7 +53,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
         >
             <SEO title={data?.article?.title} pathname="/" />
             <PageBreadcrumb
-                pageContext={pageContext}
+                pageContext={pageContext}         
                 location={location}
                 title= {data?.article?.title}
             />
