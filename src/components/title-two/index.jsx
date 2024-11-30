@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 import PropTypes from "prop-types";
 import {
@@ -21,16 +22,24 @@ const SectionTitleTwo = ({
         dividerBg: dividerBg || "secondary",
         showSubTitle: showSubTitle || false,
     };
-    return (
-        <TitleBox>
-            {variantdata.showSubTitle && <SubTitle>{subTitle}</SubTitle>}
-            <Title>{title}</Title>
-            {variantdata.showShortDec && <ShortDec>{shortDec}</ShortDec>}
-            {variantdata.dividerBg && (
-                <DividerBar dividerBg={variantdata.dividerBg}></DividerBar>
-            )}
-        </TitleBox>
-    );
+    const d1 = `
+    Founded by <strong> Siddharth Bose (Sid)</strong>, a passionate middle-schooler, <strong> Chess Champs </strong> started as a small chess club in Delaware in January 2024 with just 11 members. The goal was to create a safe and engaging environment for kids to learn and enjoy chess, starting with the community outreach initiative ‘Chess for Kids.‘ Since then, we’ve grown into a thriving community of over 200 members. Our programs now encompass comprehensive chess training, afterschool activities, and tournaments spanning multiple states. Our mission remains simple yet impactful: to empower young minds through the game of chess.
+`;
+ 
+
+return (
+  <TitleBox>
+      {variantdata.showSubTitle && <SubTitle>{subTitle}</SubTitle>}
+      <Title>{title}</Title>
+      {variantdata.showShortDec && (
+          <ShortDec dangerouslySetInnerHTML={{ __html: d1 }}></ShortDec>
+      )}
+      {variantdata.dividerBg && (
+          <DividerBar dividerBg={variantdata.dividerBg}></DividerBar>
+      )}
+  </TitleBox>
+);
+
 };
 SectionTitleTwo.propTypes = {
     subTitle: PropTypes.string,
