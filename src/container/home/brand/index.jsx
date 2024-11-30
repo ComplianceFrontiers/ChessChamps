@@ -12,57 +12,59 @@ const BrandArea = () => {
     ];
 
     return (
-            <Container className="container-max">
-                <Row>
-                    <Col>
-                        <BrandBox>
-                            <div className="brand-stats">
-                                <Row>
-                                    {stats.map((stat) => (
-                                        <Col
-                                            key={stat.id}
-                                            className="stat-item"
-                                        >
-                                            <AnimatedCounter
-                                                targetValue={stat.value}
-                                            />
-                                            <p>{stat.label}</p>
-                                        </Col>
-                                    ))}
-                                </Row>
-                            </div>
-                        </BrandBox>
-                    </Col>
-                </Row>
-            </Container>
+        <Container className="container-max">
+            <Row>
+                <Col>
+                    <BrandBox>
+                        <div className="brand-stats">
+                            <Row>
+                                {stats.map((stat) => (
+                                    <Col
+                                        key={stat.id}
+                                        className="stat-item"
+                                    >
+                                        <AnimatedCounter
+                                            targetValue={stat.value}
+                                            startValue={stat.id === 1 ? 750 : 0}
+                                        />
+                                        <p>{stat.label}</p>
+                                    </Col>
+                                ))}
+                            </Row>
+                        </div>
+                    </BrandBox>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 
-const AnimatedCounter = ({ targetValue }) => {
-    const [count, setCount] = useState(0);
+const AnimatedCounter = ({ targetValue, startValue = 0 }) => {
+    const [count, setCount] = useState(startValue);
 
     useEffect(() => {
-        let start = 0;
+        let current = startValue;
         const duration = 2000; // Animation duration in ms
-        const stepTime = Math.abs(Math.floor(duration / targetValue));
+        const stepTime = Math.abs(Math.floor(duration / (targetValue - startValue)));
 
         const timer = setInterval(() => {
-            start += 1;
-            if (start > targetValue) {
+            current += 1;
+            if (current > targetValue) {
                 clearInterval(timer);
             } else {
-                setCount(start);
+                setCount(current);
             }
         }, stepTime);
 
         return () => clearInterval(timer);
-    }, [targetValue]);
+    }, [targetValue, startValue]);
 
     return <h2>{count}+</h2>;
 };
 
 AnimatedCounter.propTypes = {
     targetValue: PropTypes.number.isRequired,
+    startValue: PropTypes.number,
 };
 
 BrandArea.propTypes = {
