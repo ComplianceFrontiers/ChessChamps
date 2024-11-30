@@ -45,6 +45,11 @@ export const WorkingProcessSection = styled.section`
     /* Responsive styles */
     @media (max-width: 768px) {
         padding: 60px 0px 50px;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Space between images */
+        flex-wrap: wrap; /* Allows images to wrap on smaller screens */
 
         .image-wrapper {
             max-width: 120px; /* Reduce size for smaller devices */
@@ -57,6 +62,11 @@ export const WorkingProcessSection = styled.section`
 
     @media (max-width: 480px) {
         padding: 40px 0px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Space between images */
+        flex-wrap: wrap; /* Allows images to wrap on smaller screens */
 
         .image-wrapper {
             max-width: 100px; /* Further reduce size for very small devices */

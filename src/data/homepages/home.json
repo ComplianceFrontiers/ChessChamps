@@ -75,19 +75,6 @@
             ],
             "items": [
                 {
-                    "id": "brand-1",
-                    "images": [
-                        {
-                            "src": "../../data/images/brand-logo/11.png",
-                            "alt": "Brand One"
-                        },
-                        {
-                            "src": "../../data/images/brand-logo/11.png",
-                            "alt": "Brand One"
-                        }
-                    ]
-                },
-                {
                     "id": "brand-2",
                     "images": [
                         {
