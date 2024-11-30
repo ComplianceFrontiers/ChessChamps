@@ -7,6 +7,7 @@ export const SubTitle = styled.h5`
     line-height: 1.292;
     text-transform: uppercase;
     font-size: 20px;
+    margin-top:20px;
     background: -webkit-gradient(
         linear,
         left top,
@@ -30,6 +31,7 @@ export const DividerBar = styled.span`
     display: inline-block;
     border-radius: 5px;
     margin-left: 30px;
+    
     &::before,
     &::after {
         width: 15px;
