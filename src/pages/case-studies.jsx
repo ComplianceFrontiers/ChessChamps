@@ -19,7 +19,7 @@ const CaseStudiesPage = ({ data, location, pageContext }) => {
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="Case Studies Page"
+                title="Gallery"
             />
             <CaseStudiesArea
                 data={{
