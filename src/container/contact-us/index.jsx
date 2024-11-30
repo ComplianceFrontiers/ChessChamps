@@ -13,8 +13,8 @@ const ContactUsArea = ({ data }) => {
                         <Col lg={6}>
                             {data?.section_title && (
                                 <SectionTitle
-                                    headingTitle={data?.section_title.title}
-                                    {...data.section_title}
+                                    // headingTitle={data?.section_title.title}
+                                    // {...data.section_title}
                                 />
                             )}
                             <ContactUsinfoList>
@@ -37,7 +37,7 @@ const ContactUsArea = ({ data }) => {
                             <SectionTitle
                                 headingTitle="Send Us A Message"
                                 showIcon={false}
-                                align="left"
+                                align="center"
                             />
                             <MessageFrom />
                         </Col>

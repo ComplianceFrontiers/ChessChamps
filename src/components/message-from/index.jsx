@@ -46,7 +46,7 @@ const MessageFrom = () => {
                     path="/"
                     className="btn-absolute"
                 >
-                    Submit Comment
+                    Submit
                     <i className="icofont-rounded-double-right"></i>
                 </Button>
             </Col>
