@@ -107,8 +107,8 @@ export const BrandBox = styled.div`
             color: #c6aa68; /* Gold color */
             // margin-bottom: 5px;
         }
-        p {
-            font-size: 1rem;
+        div {
+            font-size: 1.5rem;
             font-weight: 600;
             text-transform: uppercase;
             color: #fff; /* White text for contrast */

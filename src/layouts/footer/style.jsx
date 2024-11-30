@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { themeGet, device, keyframes } from "@theme/utils";
 
 
@@ -114,7 +115,7 @@ export const FooterBottom = styled.div`
     background: #102a45;
     position: relative;
 `;
-export const CopyrightText = styled.p`
+export const CopyrightText = styled.div`
     color: white;
     & > svg {
         width: 15px;
