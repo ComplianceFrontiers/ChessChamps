@@ -1,15 +1,15 @@
 import styled, { themeGet, device } from "@theme/utils";
 
 export const BlogDetailsArea = styled.section`
-    padding: 60px 0;
+    padding: 0px 0;
     ${device.medium} {
-        padding: 80px 0;
+        padding: 0px 0;
     }
     ${device.large} {
-        padding: 100px 0;
+        padding: 0px 0;
     }
     ${device.xlarge} {
-        padding: 120px 0;
+        padding: 0px 0;
     }
 `;
 
