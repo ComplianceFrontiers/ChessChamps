@@ -1,7 +1,5 @@
 ---
-title: "Connecting Through
-Chess, Strengthening Our
-Community."
+title: "Community Outreach"
 image: { src: "../../data/images/blog/5.png", alt: "Rankings" }
 date: "2022-03-02"
 author: "Roderick"
@@ -10,7 +8,7 @@ programs, we unite kids and
 mentors, fostering growth,
 learning, and community
 through chess."
-link: "https://chesschamps.us/programs/" 
+link: "/community-outreach" 
 categories:
     - Program Benefits for School
     - Casual Play

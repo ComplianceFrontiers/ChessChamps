@@ -1,7 +1,5 @@
 ---
-title: "Gear Up for Success:
-Explore Our Exclusive Chess
-Store!"
+title: "Chess Store"
 image: { src: "../../data/images/blog/6.png", alt: "Rankings" }
 date: "2022-03-01"
 author: "Roderick"
@@ -10,7 +8,7 @@ features exclusive merchandise
 designed to make chess
 engaging and enjoyable for
 players of all levels."
-link: "https://chesschamps.us/programs/"
+link: "/chess-store"
 categories:
     - Email Marketing
 tags:
