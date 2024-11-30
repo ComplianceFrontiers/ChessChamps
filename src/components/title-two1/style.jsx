@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { device, css } from "@theme/utils";
 export const TitleBox = styled.div`
     margin-bottom: 40px;
@@ -23,7 +24,8 @@ export const SubTitle = styled.h5`
     position: relative;
 `;
 export const Title = styled.h2``;
-export const ShortDec = styled.p``;
+export const ShortDec = styled.p`
+font-size:1rem`;
 export const DividerBar = styled.span`
     position: relative;
     width: 30px;
