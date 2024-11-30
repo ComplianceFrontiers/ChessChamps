@@ -85,22 +85,31 @@ const Footer = ({ data }) => {
 `}</style>
 
 
-            <FooterBottom>
-                <Container sx={{ textAlign: "center" }}>
-                    <CopyrightText>
-                        Copyright &copy; {new Date().getFullYear()} Made with{" "}
-                        <i className="icofont-heart"></i> by{" "}
-                        <a
-                            href={data.footer[4].link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {data.footer[4].title}
-                        </a>{" "}
-                        All Rights Reserved. Privacy Policy
-                    </CopyrightText>
-                </Container>
-            </FooterBottom>
+<FooterBottom>
+    <Container sx={{ textAlign: "center" }}>
+        <CopyrightText>
+            Copyright &copy; {new Date().getFullYear()} Made with{" "}
+            <i className="icofont-heart"></i> by{" "}
+            <a
+                href={data.footer[4].link}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                {data.footer[4].title}
+            </a>{" "}
+            All Rights Reserved.{" "}
+            <a
+                href="https://hotel-booking-website-chi.vercel.app/tandc" // Replace with the actual URL of your privacy policy
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "underline", color: "inherit" }}
+            >
+                Privacy Policy
+            </a>
+        </CopyrightText>
+    </Container>
+</FooterBottom>
+
         </FooterWrap>
     );
 };
