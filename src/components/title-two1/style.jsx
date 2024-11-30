@@ -26,7 +26,7 @@ export const SubTitle = styled.h5`
 export const Title = styled.h2``;
 export const ShortDec = styled.p`
 font-size:1.5rem;
-line-height: 1;
+line-height: 1.5;
 
 `;
 export const DividerBar = styled.span`
