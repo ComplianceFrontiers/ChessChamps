@@ -5,6 +5,7 @@ import Swiper, { SwiperSlide } from "@components/shared/swiper";
 import SectionTitle from "../../../components/title";
 import CaseStudiesItem from "../../../components/case-studies-item";
 import { CaseStudiesSection } from "./style";
+import { Link } from "gatsby"; // Importing Gatsby's Link component
 
 const CaseStudiesArea = ({ data }) => {
     return (
@@ -62,7 +63,9 @@ const CaseStudiesArea = ({ data }) => {
                         })}
                 </Swiper>
                 <div className="button-wrapper">
-                    <button className="shop-now-button">Shop Now</button>
+                     <Link to="/online-store" className="shop-now-button">
+                        Shop Now
+                    </Link>
                 </div>
             </Container>
         </CaseStudiesSection>
