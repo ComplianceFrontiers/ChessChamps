@@ -99,7 +99,7 @@ const Footer = ({ data }) => {
             </a>{" "}
             All Rights Reserved.{" "}
             <a
-                href="/privacy-policy" // Replace with the actual URL of your privacy policy
+                href="https://hotel-booking-website-chi.vercel.app/tandc" // Replace with the actual URL of your privacy policy
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "underline", color: "inherit" }}
