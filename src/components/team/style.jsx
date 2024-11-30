@@ -44,7 +44,7 @@ export const Title = styled.h4`
 `;
 export const Designation = styled.p`
     font-weight: 700;
-    line-height: 2.076;
+    line-height: 0.8;
     font-size: 13px;
     text-transform: uppercase;
     color: #9f8460;
