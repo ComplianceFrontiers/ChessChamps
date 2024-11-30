@@ -9,10 +9,11 @@ export const CaseStudiesSection = styled.section`
     }
 
     .shop-now-button {
+    justify-content: center;
         background-color: #9f8460; /* Button background color */
         color: #fff; /* Text color */
         font-size: 16px; /* Text size */
-        width: 160px; /* Explicit width */
+        width: 120px; /* Explicit width */
         height: 50px; /* Explicit height */
         padding: 10px 20px; /* Adjust padding for internal spacing */
         border: none; /* No border */
