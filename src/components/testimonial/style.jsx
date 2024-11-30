@@ -2,9 +2,9 @@
 import styled, { device } from "@theme/utils";
 export const TestimonialItem = styled.div``;
 export const ClientProfile = styled.div`
-    // margin-bottom: 10px;
+    margin-bottom: 15px;
     ${device.medium} {
-        // margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 `;
 export const DescriptionText = styled.p`
