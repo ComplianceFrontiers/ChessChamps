@@ -30,7 +30,7 @@ const PageBreadcrumbHome = ({ title }) => {
                                                 targetValue={stat.value}
                                                 startValue={stat.id === 1 ? 750 : 0}
                                             />
-                                            <p>{stat.label}</p>
+                                            <div>{stat.label}</div>
                                         </Col>
                                     ))}
                                 </Row>
