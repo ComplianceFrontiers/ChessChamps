@@ -108,7 +108,7 @@ export const BrandBox = styled.div`
             // margin-bottom: 5px;
         }
         div {
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-weight: 600;
             text-transform: uppercase;
             color: #fff; /* White text for contrast */
