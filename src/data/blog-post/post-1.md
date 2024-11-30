@@ -9,7 +9,7 @@ learn, play, and grow together in a
 vibrant and supportive community."
 link: "/chess-club" 
 categories:
-    - Casual Play
+    - Club Activities
     - Casual Play
     - Chess Puzzle Showdown
     - Simultaneous Exhibitions
@@ -17,7 +17,12 @@ categories:
     - Chess Tournaments
 
 tags:
-    - Other programs
+    - Our Programs
+    - Tournaments
+    - Chess in School
+    - Online Courses
+    - Community Outreach
+    - Chess Store
 ---
 
 ### Chess Club

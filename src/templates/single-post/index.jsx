@@ -93,7 +93,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
         {/* Center-aligned button using Gatsby's Link */}
         <div style={{ textAlign: "center", marginBottom: "20px" }}>
             <Link
-                to="/gallery"
+                to="/case-studies"
                 style={{
                     display: "inline-block",
                     padding: "10px 20px",
@@ -112,7 +112,6 @@ const SinglePosts = ({ data, location, pageContext }) => {
         </div>
         </Col>
         </Row>
-        {/* New Section for Images */}
    
     </Container>
     

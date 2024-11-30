@@ -52,7 +52,7 @@ const Categories = ({ data }) => {
                 {safeData.length > 1 ? (
                     safeData.slice(1).map((cat) => (
                         <li key={cat.slug}>
-                            <Link to={`/category/${cat.slug}`}>
+                            <Link>
                                 <i className="icofont-rounded-double-right"></i>{" "}
                                 {cat.title}
                             </Link>
