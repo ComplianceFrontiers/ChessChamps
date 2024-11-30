@@ -1,5 +1,5 @@
 ---
-title: "Header: Compete, Learn, and Rise with Every Game!"
+title: "Tournaments"
 image: 
   src: "../../data/images/blog/2.png"
   alt: "Hello"
@@ -7,7 +7,7 @@ date: "2022-03-05"
 author: "Marion"
 quote_text: >
   From beginner competitions to USCF-rated tournaments, our events offer players of all ages an exciting and enriching chess experience.
-link: "https://chesschamps.us/programs/"
+link: "/tournaments"
 categories:
   - ChessChamps
   - Pay Per Click

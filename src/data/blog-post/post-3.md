@@ -1,6 +1,5 @@
 ---
-title: "Bringing Strategy
-and Fun to Every Classroom!"
+title: "Chess in School"
 image: { src: "../../data/images/blog/3.png", alt: "Rankings" }
 date: "2022-03-04"
 author: "Roderick"
@@ -9,7 +8,7 @@ program brings the joy of chess
 into classrooms, fostering
 critical thinking, strategy, and
 lifelong learning."
-link: "https://chesschamps.us/programs/"
+link: "/chess-in-school"
 categories:
     - Enhanced School Reputation
     - Improved Academic Performance

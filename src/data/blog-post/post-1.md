@@ -1,5 +1,5 @@
 ---
-title: "Where Young Minds Meet to Master the Game!"
+title: "chess club"
 image: { src: "../../data/images/blog/1.png", alt: "Rankings" }
 date: "2022-03-06"
 author: "MPE Chess Program"
@@ -7,7 +7,7 @@ quote_text: "Our
 Chess Clubs inspire young minds to
 learn, play, and grow together in a
 vibrant and supportive community."
-link: "https://chesschamps.us/programs/" 
+link: "/chess-club" 
 categories:
     - Casual Play
     - Casual Play

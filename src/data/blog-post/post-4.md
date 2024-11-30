@@ -1,6 +1,5 @@
 ---
-title: "Master Chess
-Anytime, Anywhere!"
+title: "Online Courses"
 image: { src: "../../data/images/blog/4.png", alt: "Rankings" }
 date: "2022-03-03"
 author: "Roderick"
@@ -9,7 +8,7 @@ interactive lessons and
 exercises, empowering young
 players to learn and grow in
 chess at their own pace."
-link: "https://chesschamps.us/programs/"
+link: "/online-courses"
 is_featured: true
 categories:
     - Email Marketing
