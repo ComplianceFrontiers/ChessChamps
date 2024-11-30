@@ -3,7 +3,7 @@ import styled, { device } from "@theme/utils";
 import BeforeImge from "../../../data/images/team/shape-bottom.png";
 import AfterImge from "../../../data/images/team/shape-top.png";
 export const TeamSection = styled.section`
-margin-top:100px;
+margin-top:150px;
     padding: 50px 0px;
     ${device.medium} {
         padding: 150px 0px;
@@ -39,7 +39,7 @@ margin-top:100px;
     @media (max-width: 480px) { /* For even smaller devices */
     transform: translate(-50%, -50%);    
     top: -10%;
-    width: 20%; /* Adjust width as needed */
+    width: 40%; /* Adjust width as needed */
         height: 50%; /* Maintain aspect ratio */
     }
     }
