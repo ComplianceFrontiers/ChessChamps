@@ -15,6 +15,7 @@ export const Form = styled.form`
         border-radius: 10px;
     }
         .button-container {
+        margin-bottom: 20px;
         text-align: center; /* Center aligns content horizontally */
     }
 `;
