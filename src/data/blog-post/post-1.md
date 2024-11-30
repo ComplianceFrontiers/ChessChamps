@@ -52,9 +52,3 @@ We meet weekly at the Bellevue Community Center in Delaware. Our accessible loca
 At Chess Champs, we believe that chess should be accessible to everyone. That’s why our club membership is completely free! Join us without any fees or financial commitment and enjoy full access to our sessions, coaching support, resources, and community events. Whether you’re here to play casually, learn from coaches, or compete in tournaments, our club is open to all who share a passion for the game.
 
 
-#### Why Chess Champs?
-
-
-> Chess Champs isn’t just a chess club; it’s a community dedicated to fostering a love for chess in a positive and inspiring atmosphere. With dedicated coaching, continuous practice opportunities, and a strong support system, our club empowers each member to explore the depths of their chess potential while enjoying the camaraderie of fellow chess enthusiasts.
-
-
