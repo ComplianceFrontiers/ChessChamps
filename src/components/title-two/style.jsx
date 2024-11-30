@@ -1,5 +1,7 @@
+/* eslint-disable prettier/prettier */
 import styled, { device, css } from "@theme/utils";
 export const TitleBox = styled.div`
+margin-top: 20px;
     margin-bottom: 40px;
 `;
 export const SubTitle = styled.h5`
