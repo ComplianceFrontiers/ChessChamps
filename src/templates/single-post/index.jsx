@@ -87,12 +87,32 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 </PostDetailsContentWrap>
             </Col>
            
-        <BottomImages>
-        <StaticImage src="../../data/images/blog/image1.png" alt="Image 1" />
-        <StaticImage src="../../data/images/blog/image2.png" alt="Image 2" />
-        <StaticImage src="../../data/images/blog/image3.png" alt="Image 3" />
-        <StaticImage src="../../data/images/blog/image4.png" alt="Image 4" />
+            <BottomImages>
+            <StaticImage src="../../data/images/blog/image1.png" alt="Image 1" />
+            <StaticImage src="../../data/images/blog/image2.png" alt="Image 2" />
+            <StaticImage src="../../data/images/blog/image3.png" alt="Image 3" />
+            <StaticImage src="../../data/images/blog/image4.png" alt="Image 4" />
         </BottomImages>
+        {/* Center-aligned button using Gatsby's Link */}
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
+            <Link
+                to="/gallery"
+                style={{
+                    display: "inline-block",
+                    padding: "10px 20px",
+                    fontSize: "16px",
+                    color: "#fff",
+                    backgroundColor: "#007BFF",
+                    borderRadius: "5px",
+                    textDecoration: "none",
+                    transition: "background-color 0.3s ease",
+                }}
+                onMouseOver={(e) => (e.target.style.backgroundColor = "#0056b3")}
+                onMouseOut={(e) => (e.target.style.backgroundColor = "#007BFF")}
+            >
+                Visit Gallery
+            </Link>
+        </div>
   
         </Row>
         {/* New Section for Images */}

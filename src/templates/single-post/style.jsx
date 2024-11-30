@@ -95,21 +95,26 @@ export const CommentArea = styled.div`
     margin-top: 30px;
 `;
 export const CommentTitle = styled.h4``;
+
 export const BottomImages = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Add space between images */
     align-items: center;
     margin-top: 20px;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
 
     img {
         width: 300px;
         height: auto;
         border-radius: 8px;
+        margin: 0 10px; /* Add spacing between images */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
 
-        &:hover {
-            transform: scale(1.1);
-        }
+       
+
+    /* Mobile view adjustments */
+    @media (max-width: 768px) {
+        justify-content: center; /* Center the images on small screens */
     }
 `;
