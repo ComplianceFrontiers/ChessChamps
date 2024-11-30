@@ -42,7 +42,7 @@ export const Title = styled.h4`
     text-transform: capitalize;
     line-height: 0.8;
 `;
-export const Designation = styled.p`
+export const Designation = styled.div`
     font-weight: 700;
     line-height: 0.8;
     font-size: 13px;
