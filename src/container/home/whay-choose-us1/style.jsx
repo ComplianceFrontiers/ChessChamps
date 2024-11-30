@@ -16,17 +16,17 @@ const move = keyframes`
 `;
 export const WhyChooseUsSection = styled.section`
     position: relative;
-    padding: 20px 0px;
+    padding: 0px 0px;
     .about-bg {
         position: absolute !important;
         top: 0;
         left: 0;
     }
     ${device.large} {
-        padding: 100px 0px;
+        padding: 50px 0px;
     }
     ${device.xlarge} {
-        padding: 200px 0px;
+        padding: 100px 0px;
     }
     ${device.xxlarge} {
         padding: 10px 0px;
