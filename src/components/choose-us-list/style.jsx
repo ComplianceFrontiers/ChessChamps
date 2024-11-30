@@ -1,6 +1,8 @@
+/* eslint-disable prettier/prettier */
 import styled, { device } from "@theme/utils";
 export const ChooseList = styled.div`
-    margin-bottom: 25px;
+    line-height: 1.5;
+    margin-bottom: 35px;
     display: flex;
     &:last-child {
         margin-bottom: 0;
@@ -26,4 +28,5 @@ export const ChooseListContent = styled.div`
     flex: 1;
 `;
 export const Title = styled.h5``;
-export const DesText = styled.p``;
+export const DesText = styled.p`
+line-height: 1.5;`;
