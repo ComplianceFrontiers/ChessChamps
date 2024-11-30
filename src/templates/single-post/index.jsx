@@ -6,6 +6,7 @@ import Layout from "@layout";
 import SEO from "@components/seo";
 import PageBreadcrumb from "@components/pagebreadcrumb";
 import image1 from "../../data/images/blog/1.png"
+import TeamArea2 from "../../container/home/team2";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql, Link } from "gatsby";
 import { Row, Container, Col } from "react-bootstrap";
@@ -85,16 +86,12 @@ const SinglePosts = ({ data, location, pageContext }) => {
                         </Content>
                     </PostDetailsBody>
                 </PostDetailsContentWrap>
-            </Col>
            
-            <BottomImages>
-            <StaticImage src="../../data/images/blog/image1.png" alt="Image 1" />
-            <StaticImage src="../../data/images/blog/image2.png" alt="Image 2" />
-            <StaticImage src="../../data/images/blog/image3.png" alt="Image 3" />
-            <StaticImage src="../../data/images/blog/image4.png" alt="Image 4" />
-        </BottomImages>
+                       <TeamArea2/>
+
+           
         {/* Center-aligned button using Gatsby's Link */}
-        <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <div style={{ textAlign: "center", marginBottom: "20px" }}>
             <Link
                 to="/gallery"
                 style={{
@@ -113,7 +110,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 Visit Gallery
             </Link>
         </div>
-  
+        </Col>
         </Row>
         {/* New Section for Images */}
    

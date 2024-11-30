@@ -8,7 +8,7 @@ import SectionTitle from "../../../components/title";
 import { TeamSection } from "./style";
 
 const TeamArea = ({ data }) => {
-    console.log(data)
+    console.log("copy",data)
     return (
         <TeamSection>
             <StaticImage
