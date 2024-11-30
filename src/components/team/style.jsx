@@ -83,5 +83,5 @@ export const TeamSocialLink = styled.a`
     }
 `;
 export const SingleTeam = styled.div`
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 `;
