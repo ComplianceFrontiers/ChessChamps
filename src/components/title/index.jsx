@@ -31,9 +31,9 @@ const SectionTitle = ({
                 </Icon>
             )}
             {headingTitle && <Title color={title.color}>{headingTitle}</Title>}
-            {/* {title.dividerBg && (
+            {title.dividerBg && (
                 <DividerBar dividerBg={title.dividerBg}></DividerBar>
-            )} */}
+            )}
         </SectionBox>
     );
 };
