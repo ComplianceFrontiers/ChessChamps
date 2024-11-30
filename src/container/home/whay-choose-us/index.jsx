@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import ChooseUsList from "../../../components/choose-us-list";
-import SectionTitleTwo from "../../../components/title-two1";
+import SectionTitleTwo from "../../../components/title-two";
 import {
     WhyChooseUsSection,
     ChooseUsImage,
