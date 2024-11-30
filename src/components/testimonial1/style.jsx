@@ -23,7 +23,7 @@ export const Quote = styled.span`
 `;
 export const DescriptionText = styled.p`
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1;
     margin-bottom: 40px;
     ${device.medium} {
         font-size: 20px;
