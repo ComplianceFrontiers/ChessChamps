@@ -27,6 +27,7 @@ export const Title = styled.h3``;
 export const ShortDec = styled.div`
 text-align: justify;
 font-size:1.5;
+margin-bottom:10px;
 
 
 `;

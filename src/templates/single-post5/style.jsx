@@ -72,15 +72,15 @@ export const SocialShareCard = styled.div`
 export const SingleBlogContent = styled.div`
     margin-top: 20px;
     h4 {
-        margin-left: 20px; /* Indent headers */
+        // margin-left: 20px; /* Indent headers */
     }
 
     ul {
-        margin-left: 20px; /* Indent unordered lists */
+        // margin-left: 20px; /* Indent unordered lists */
     }
 
     li {
-        margin-left: 15px; /* Indent list items slightly */
+        // margin-left: 15px; /* Indent list items slightly */
     }
 `;
 export const Aside = styled.aside``;

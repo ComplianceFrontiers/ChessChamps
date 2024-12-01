@@ -1,16 +1,16 @@
 {
-    "name": "Roderick3",
+    "name": "Basics of Chess",
     "image": {
-        "src": "../../data/images/team/md3.png",
+        "src": "../../data/images/team/md6.jpg",
         "alt": "fdfde"
     },
-    "description": "UI/UX - Designer",
+    "description": "Learn, Play, Master Chess!",
     "bio": "He is a lawyer, podcaster, speaker, and writer. As an educational content director, he helps develop ChessChamps premium training products.",
     "socials": [
         {
             "id": 1,
             "icon": "icofont-facebook",
-            "link": "https://www.facebook.com",
+            "link": "https://www.facebook.com/chess.champs2024",
             "title": "Facebook"
         },
         {
@@ -22,7 +22,7 @@
         {
             "id": 3,
             "icon": "icofont-letter",
-            "link": "https://www.skpe.com",
+            "link": "https://www.chesschamps.us/contact-us",
             "title": "Instagram"
         }
     ]
