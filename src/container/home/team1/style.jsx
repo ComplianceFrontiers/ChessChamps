@@ -4,7 +4,7 @@ import BeforeImge from "../../../data/images/team/shape-bottom.png";
 import AfterImge from "../../../data/images/team/shape-top.png";
 export const TeamSection = styled.section`
 margin-top:150px;
-    padding: 50px 0px;
+    padding: 100px 0px;
     ${device.medium} {
         padding: 150px 0px;
     }
