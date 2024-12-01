@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
@@ -7,13 +8,13 @@ const CaseStudiesGrid = ({ title, thumbImg, category, slug }) => {
     return (
         <CaseCard>
             <Thumb>
-                <Link to={`/case-studies/${slug}`}>
+                {/* <Link to={`/case-studies/${slug}`}> */}
                     <GatsbyImage
                         className="case-shap"
                         image={image}
                         alt={title}
                     />
-                </Link>
+                {/* </Link> */}
             </Thumb>
             <CaseCardContent>
                 {/* <Title>
