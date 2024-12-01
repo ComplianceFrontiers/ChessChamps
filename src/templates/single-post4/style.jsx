@@ -79,9 +79,9 @@ export const SingleBlogContent = styled.div`
         margin-bottom: 20px; /* Indent unordered lists */
     }
 
-    // li {
-    //     margin-left: 15px; /* Indent list items slightly */
-    // }
+    li {
+        margin-left: 15px; /* Indent list items slightly */
+    }
 `;
 export const Aside = styled.aside``;
 
