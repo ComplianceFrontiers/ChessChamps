@@ -85,6 +85,7 @@ export const SingleBlogContent = styled.div`
     }
 
     li {
+    margin-left: 10px;
         margin-bottom: 15px; /* Indent list items slightly */
     }
 `;
