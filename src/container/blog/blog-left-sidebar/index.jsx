@@ -15,7 +15,6 @@ const BlogLeftSidebar = ({ data }) => {
                         <Aside>
                             <ProfileCard />
                             <Categories />
-                            <Tags />
                         </Aside>
                     </Col>
                     <Col lg={8}>
