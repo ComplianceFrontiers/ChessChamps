@@ -236,7 +236,13 @@ const SinglePosts = ({ data, location, pageContext }) => {
         title: data?.article?.title,
         url: baseUrl + "/" + pageContext.slug,
     };
-
+    const tags1=[
+        {
+            "title": "Tournaments",
+            "slug": "tournaments"
+        }
+    ]
+ 
     return (
         <Layout
             data={{
@@ -257,7 +263,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 <Aside>
                     <Author author={data?.article?.author} />
                     <Categories data={data?.article?.categories} />
-                    <Tags data={data?.article?.tags} />
+                    <Tags data={tags1} />
                 </Aside>
             </Col>
             <Col lg={8} md={8}>

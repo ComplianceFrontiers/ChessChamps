@@ -225,6 +225,12 @@ const SinglePosts = ({ data, location, pageContext }) => {
             }
         }
     }
+    const tags1=[
+        {
+            "title": "Tournaments123",
+            "slug": "tournaments"
+        }
+    ]
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     // Social Share
     const baseUrl = "https://pringo.com";
@@ -257,7 +263,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 <Aside>
                     <Author author={data?.article?.author} />
                     <Categories data={data?.article?.categories} />
-                    <Tags data={data?.article?.tags} />
+                    <Tags data={tags1} />
                 </Aside>
             </Col>
             <Col lg={8} md={8}>
