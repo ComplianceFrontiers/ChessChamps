@@ -230,22 +230,25 @@ const SinglePosts = ({ data, location, pageContext }) => {
     const baseUrl = "https://pringo.com";
     const tags1=[
         {
+            "title": "Tournaments",
+            "slug": "tournaments"
+        },
+        {
             "title": "Chess in School",
-            "slug": "tournaments23456"
+            "slug": "chess-in-school"
         },
         {
             "title": "Online Courses",
-            "slug": "tournaments23456"
-        },
-        {
-            "title": "Community Outreach",
-            "slug": "tournaments23456"
+            "slug": "online-courses"
         },
         {
             "title": "Chess Store",
-            "slug": "tournaments23456"
+            "slug": "chess-store"
         },
-         
+        {
+            "title": "Community Outreach",
+            "slug": "community-outreach"
+        }
     ]
 
     // Disqus Comments add

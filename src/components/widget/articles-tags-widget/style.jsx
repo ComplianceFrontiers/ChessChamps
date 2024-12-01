@@ -26,8 +26,8 @@ export const WidgetTags = styled.ul`
         background-color: white;
         border-radius: 5px;
         &:hover {
-            background-image: ${themeGet("colors.gradient")};
-            color: #fff;
+            // background-image: ${themeGet("colors.gradient")};
+            // color: #fff;
         }
     }
 `;

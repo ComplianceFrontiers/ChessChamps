@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -20,7 +21,9 @@ const Author = ({ author }) => {
                     </Link>
                 ))}
             </Socials>
+            <Link to="https://chess-club-frontend.vercel.app/signup">
             <AuthorButton>Register</AuthorButton>
+            </Link>
         </WidgetAuthor>
     );
 };

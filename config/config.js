@@ -1,13 +1,13 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
-    title: "Pringo",
-    titleTemplate: "ChessChamps",
+    title: "ChessChamps",
+    titleTemplate: "",
     description: "React Gatsby",
-    author: "pringo",
-    twitterUsername: "@pringo",
-    keywords: ["bootstrap", "html", "react", "gatsby", "Pringo", "ChessChamps"],
+    author: "",
+    twitterUsername: "@ChessChamps",
+    keywords: ["bootstrap", "html", "react", "gatsby", "ChessChamps", "ChessChamps"],
     image: "",
-    siteUrl: "https://pringo.com",
+    siteUrl: "https://ChessChamps.com",
     pathPrefix: "/",
     localUrl: "http://localhost:8000",
     canonical: "",
@@ -18,7 +18,7 @@ module.exports = {
     },
     siteLanguage: "en",
     favicon: "src/assets/images/favicon.png", // Used for manifest favicon generation
-    shortName: "Pringo", // shortname for manifest. *Must* be shorter than 12 characters
+    shortName: "ChessChamps", // shortname for manifest. *Must* be shorter than 12 characters
     themeColor: "#5E60E7",
     backgroundColor: "#fff",
 };

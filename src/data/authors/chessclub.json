@@ -10,19 +10,19 @@
         {
             "id": 1,
             "icon": "icofont-facebook",
-            "link": "https://www.facebook.com",
+            "link": "https://www.facebook.com/chess.champs2024",
             "title": "Facebook"
         },
         {
             "id": 2,
             "icon": "icofont-instagram",
-            "link": "https://www.twitter.com",
+            "link": "https://www.instagram.com/chesschamps.us",
             "title": "Twitter"
         },
         {
             "id": 3,
             "icon": "icofont-letter",
-            "link": "https://www.skpe.com",
+            "link": "https://www.chesschamps.us/contact-us",
             "title": "Instagram"
         }
     ]

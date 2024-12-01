@@ -1,28 +1,28 @@
 {
-    "name": "Roderick5",
+    "name": "Chess Tournaments ",
     "image": {
-        "src": "../../data/images/team/md3.png",
+        "src": "../../data/images/team/md5.png",
         "alt": "fdfde"
     },
-    "description": "UI/UX - Designer",
+    "description": "510 Duncan Rd; Wilmington, Delaware - 19709",
     "bio": "He is a lawyer, podcaster, speaker, and writer. As an educational content director, he helps develop ChessChamps premium training products.",
     "socials": [
         {
             "id": 1,
             "icon": "icofont-facebook",
-            "link": "https://www.facebook.com",
+            "link": "https://www.facebook.com/chess.champs2024",
             "title": "Facebook"
         },
         {
             "id": 2,
             "icon": "icofont-instagram",
-            "link": "https://www.twitter.com",
+            "link": "https://www.instagram.com/chesschamps.us",
             "title": "Twitter"
         },
         {
             "id": 3,
             "icon": "icofont-letter",
-            "link": "https://www.skpe.com",
+            "link": "https://www.chesschamps.us/contact-us",
             "title": "Instagram"
         }
     ]
