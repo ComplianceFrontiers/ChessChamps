@@ -24,11 +24,11 @@ tags:
 
 Our Chess in Schools program is dedicated to making the benefits of chess accessible to students directly in their learning environments. We work closely with schools to integrate chess into their extracurricular offerings, helping students develop essential cognitive and life skills through this timeless game.
 
-#### Why Chess in Schools?
+### Why Chess in Schools?
 
 Chess is more than just a game—it’s a powerful educational tool that enhances students’ cognitive abilities, focus, and strategic thinking. Studies have shown that children who play chess demonstrate improved problem-solving skills, higher concentration, and better academic performance in subjects like math and reading. By introducing chess to students in a school setting, we aim to nurture these skills early, giving students a foundation for lifelong learning and success.
 
-#### Our Approach
+### Our Approach
 
 Our program is tailored to fit the needs and goals of each school, ensuring that chess becomes an enjoyable and meaningful experience for students. With expert instructors and a carefully structured curriculum, we teach students the basics of chess, develop their understanding of strategy, and foster a supportive environment where they can learn and grow at their own pace.
 
