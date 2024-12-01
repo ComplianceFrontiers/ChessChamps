@@ -23,7 +23,7 @@ const SectionTitleTwo = ({
         showSubTitle: showSubTitle || false,
     };
     const d1 = `
-    Founded by <strong> Siddharth Bose (Sid)</strong>, a passionate middle-schooler, <strong> Chess Champs </strong> started as a small chess club in Delaware in January 2024 with just 11 members. The goal was to create a safe and engaging environment for kids to learn and enjoy chess, starting with the community outreach initiative ‘Chess for Kids.‘ Since then, we’ve grown into a thriving community of over 200 members. Our programs now encompass comprehensive chess training, afterschool activities, and tournaments spanning multiple states. Our mission remains simple yet impactful: to empower young minds through the game of chess.
+    Founded by <strong> Siddharth Bose (Sid)</strong>, a passionate middle-schooler, <strong> Chess Champs </strong> started as a small chess club in Delaware in January 2024 with just 11 members. The goal was to create a safe and engaging environment for kids to learn and enjoy chess, starting with the community outreach initiative <strong>‘Chess for Kids.‘ </strong> Since then, we’ve grown into a thriving community of over <strong>200 members.</strong> Our programs now encompass comprehensive chess training, afterschool activities, and tournaments spanning multiple states. Our mission remains simple yet impactful: to empower young minds through the game of chess.
 `;
  
 
