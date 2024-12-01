@@ -12,7 +12,7 @@ const rotation = keyframes`
 export const Thumb = styled.div`
     position: relative;
     text-align: center;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     .social-hover {
         top: 50%;
         left: 50%;
@@ -83,5 +83,5 @@ export const TeamSocialLink = styled.a`
     }
 `;
 export const SingleTeam = styled.div`
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 `;
