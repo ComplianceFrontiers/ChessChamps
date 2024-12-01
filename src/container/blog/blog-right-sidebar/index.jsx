@@ -32,7 +32,6 @@ const BlogRightSidebar = ({ data }) => {
                         <Aside>
                             <ProfileCard />
                             <Categories />
-                            <Tags />
                         </Aside>
                     </Col>
                 </Row>
