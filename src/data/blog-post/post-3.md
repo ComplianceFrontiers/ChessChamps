@@ -10,6 +10,7 @@ critical thinking, strategy, and
 lifelong learning."
 link: "/chess-in-school"
 categories:
+    - Program Benefits for School
     - Enhanced School Reputation 
     - Improved Academic Performance
     - Community Engagement
