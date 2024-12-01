@@ -1,7 +1,7 @@
 {
     "name": "Roderick",
     "image": {
-        "src": "../../data/images/team/2.png",
+        "src": "../../data/images/team/md3.png",
         "alt": "fdfde"
     },
     "description": "UI/UX - Designer",
@@ -15,13 +15,13 @@
         },
         {
             "id": 2,
-            "icon": "icofont-twitter",
+            "icon": "icofont-instagram",
             "link": "https://www.twitter.com",
             "title": "Twitter"
         },
         {
             "id": 3,
-            "icon": "icofont-skype",
+            "icon": "icofont-letter",
             "link": "https://www.skpe.com",
             "title": "Instagram"
         }

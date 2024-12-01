@@ -30,24 +30,25 @@ Our Chess Club is the heart of Chess Champs—a welcoming space for players of a
 
 #### Why Join Our Club?
 
-##### Inclusive Community
-We’re proud to be a diverse group of chess enthusiasts, open to members of all ages, backgrounds, and skill levels. Our club provides a friendly, non-intimidating environment where every player is encouraged to grow.
+###### • Inclusive Community
+- We’re proud to be a diverse group of chess enthusiasts, open to members of all ages, backgrounds, and skill levels. Our club provides a friendly, non-intimidating environment where every player is encouraged to grow.
 
-##### Consistent Practice
-With regular club sessions, members have plenty of opportunities to play, learn, and practice. From casual games to friendly club matches, you’ll always find a chance to test your strategies and hone your skills.
+###### • Consistent Practice
+- With regular club sessions, members have plenty of opportunities to play, learn, and practice. From casual games to friendly club matches, you’ll always find a chance to test your strategies and hone your skills.
 
-##### Guided Learning
-Our experienced coaches are available at each session to help members learn new tactics, discuss strategies, and provide feedback. We also offer structured lessons and practice activities tailored to help players progress through different game levels.
+###### • Guided Learning
+- Our experienced coaches are available at each session to help members learn new tactics, discuss strategies, and provide feedback. We also offer structured lessons and practice activities tailored to help players progress through different game levels.
+
 
 ### Getting Started
 
-##### Who Can Join?
-Our club welcomes players of all ages and skill levels—from absolute beginners to advanced players looking to sharpen their competitive edge. Whether you’re a young student, a working professional, or a senior, you’ll find a home at Delaware Chess Champs.
+###### • Who Can Join?
+- Our club welcomes players of all ages and skill levels—from absolute beginners to advanced players looking to sharpen their competitive edge. Whether you’re a young student, a working professional, or a senior, you’ll find a home at Delaware Chess Champs.
 
-##### Location
-We meet weekly at the Bellevue Community Center in Delaware. Our accessible location offers a comfortable and spacious environment for club activities, with easy parking and amenities.
+###### • Location
+- We meet weekly at the Bellevue Community Center in Delaware. Our accessible location offers a comfortable and spacious environment for club activities, with easy parking and amenities.
 
-##### Membership Fees
-At Chess Champs, we believe that chess should be accessible to everyone. That’s why our club membership is completely free! Join us without any fees or financial commitment and enjoy full access to our sessions, coaching support, resources, and community events. Whether you’re here to play casually, learn from coaches, or compete in tournaments, our club is open to all who share a passion for the game.
+###### • Membership Fees
+- At Chess Champs, we believe that chess should be accessible to everyone. That’s why our club membership is completely free! Join us without any fees or financial commitment and enjoy full access to our sessions, coaching support, resources, and community events. Whether you’re here to play casually, learn from coaches, or compete in tournaments, our club is open to all who share a passion for the game.
 
 
