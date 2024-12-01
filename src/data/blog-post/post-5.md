@@ -39,8 +39,8 @@ At Delaware Chess Champs, we believe that every child deserves the opportunity t
 - • **Scholarship Opportunities**  
   To ensure every child has a chance to learn, we provide free or subsidized chess coaching and club memberships for students who need them the most.
 
-### Why Chess Outreach Matters
+#### Why Chess Outreach Matters
 Chess is more than just a game—it’s a tool for empowerment. It builds critical thinking, strategic planning, patience, and resilience, skills that are essential for success both in school and in life. Our Chess Outreach Program breaks down barriers, giving children the tools to excel while fostering a stronger, more inclusive community.
 
-### Get Involved
+#### Get Involved
 Join us in bringing the magic of chess to every corner of Delaware and beyond. Whether you’re a school, a local leader, or a passionate volunteer, your support can help us inspire the next generation of thinkers and leaders.
