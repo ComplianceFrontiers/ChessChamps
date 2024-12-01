@@ -27,33 +27,26 @@ Our tournaments are designed to **challenge**, **inspire**, and **nurture** ches
 ### Tournament Types
 
 ##### Casual Tournaments 
+<ul>
+  <li><strong>• Enhanced Focus</strong><br>Playing chess requires students to stay concentrated and think critically, skills that improve their focus in academics and daily activities.</li>
 
-- • **Enhanced Focus**  
-  Playing chess requires students to stay concentrated and think critically, skills that improve their focus in academics and daily activities.
+  <li><strong>• Strategic Thinking</strong><br>Chess helps students learn to plan, evaluate, and make decisions—skills that are essential in both school and life.</li>
 
-- • **Strategic Thinking**  
-  Chess helps students learn to plan, evaluate, and make decisions—skills that are essential in both school and life.
+  <li><strong>• Improved Academic Performance</strong><br>Research indicates that chess players often perform better in subjects like math and reading due to improved reasoning and analytical skills.</li>
 
-- • **Improved Academic Performance**  
-  Research indicates that chess players often perform better in subjects like math and reading due to improved reasoning and analytical skills.
-
-- • **Increased Confidence**  
-  Each game of chess is a chance for students to challenge themselves, celebrate progress, and gain confidence in their abilities.
-
+  <li><strong>• Increased Confidence</strong><br>Each game of chess is a chance for students to challenge themselves, celebrate progress, and gain confidence in their abilities.</li>
+</ul>
 
 ##### Rated Tournaments
-- • **Serious Competition for Skill & Ranking Advancement**  
-  For players interested in competitive play and improving their official USCF rating, our rated tournaments offer a professionally organized environment with a focus on high-quality competition. These tournaments follow USCF guidelines and provide players with the opportunity to gain points, hone their skills, and work toward reaching their chess goals.
+<ul>
+  <li><strong>• Serious Competition for Skill & Ranking Advancement</strong><br>For players interested in competitive play and improving their official USCF rating, our rated tournaments offer a professionally organized environment with a focus on high-quality competition. These tournaments follow USCF guidelines and provide players with the opportunity to gain points, hone their skills, and work toward reaching their chess goals.</li>
 
-- • **USCF-Rated Rounds**  
-  Each match is rated, allowing players to build their official rating and track their progress.
+  <li><strong>• USCF-Rated Rounds</strong><br>Each match is rated, allowing players to build their official rating and track their progress.</li>
 
-- • **Structured for Skill Development**  
-  Rated tournaments are a great way to measure and improve your chess skills over time.
+  <li><strong>• Structured for Skill Development</strong><br>Rated tournaments are a great way to measure and improve your chess skills over time.</li>
 
-- • **5-Round Swiss Format**  
-  Our rated events use a 5-round Swiss format, providing players with multiple matches against competitors of similar skill levels.
-
+  <li><strong>• 5-Round Swiss Format</strong><br>Our rated events use a 5-round Swiss format, providing players with multiple matches against competitors of similar skill levels.</li>
+</ul>
 
 
 > Whether you’re new to the game or a dedicated chess player, our tournaments provide the perfect opportunity to sharpen your skills, meet other players, and experience the excitement of competitive chess in a friendly environment. Our events include both casual and rated tournaments, so players can choose the level of competition that suits them best.
