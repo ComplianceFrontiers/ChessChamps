@@ -4,7 +4,7 @@ image:
   src: "../../data/images/blog/2.png"
   alt: "Hello"
 date: "2022-03-05"
-author: "Roderick5"
+author: "Chess Tournaments"
 quote_text: >
   From beginner competitions to USCF-rated tournaments, our events offer players of all ages an exciting and enriching chess experience.
 link: "/tournaments"
@@ -26,9 +26,9 @@ Our tournaments are designed to **challenge**, **inspire**, and **nurture** ches
 
 ### Tournament Types
 
-#### Casual Tournaments
+#### Casual Tournaments 
 
-- • **Relaxed Competition for Fun & Practice**: Our casual tournaments are perfect for beginners and those looking to enjoy a relaxed, social atmosphere. These tournaments encourage friendly competition without the pressure of official ratings, making them ideal for players who want to play just for fun, develop new strategies, and build confidence on the board.
+- •**Relaxed Competition for Fun & Practice**: Our casual tournaments are perfect for beginners and those looking to enjoy a relaxed, social atmosphere. These tournaments encourage friendly competition without the pressure of official ratings, making them ideal for players who want to play just for fun, develop new strategies, and build confidence on the board.
 
 - • **For All Ages and Levels**: Casual tournaments are open to all, providing an inclusive environment where beginners and intermediate players feel at home.
 
@@ -38,7 +38,7 @@ Our tournaments are designed to **challenge**, **inspire**, and **nurture** ches
 
 
 
-### Rated Tournaments
+#### Rated Tournaments
 
 - • **Serious Competition for Skill & Ranking Advancement**: For players interested in competitive play and improving their official USCF rating, our rated tournaments offer a professionally organized environment with a focus on high-quality competition. These tournaments follow USCF guidelines and provide players with the opportunity to gain points, hone their skills, and work toward reaching their chess goals.
 
