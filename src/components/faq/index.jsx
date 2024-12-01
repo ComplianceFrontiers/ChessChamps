@@ -11,11 +11,11 @@ const FaqList = ({ numberItem, title, imageSrc, description }) => {
             <Accordion.Item eventKey={`${numberItem}`}>
                 <Accordion.Header>
                     {/* Display the image using StaticImage */}
-                    <StaticImage
+                    {/* <StaticImage
                         src={imageSrc} // The path to the static image
                         alt={`Image for ${title}`}
                         style={{ width: "50px", height: "50px", marginRight: "10px" }}
-                    />
+                    /> */}
                     <span>
                         {numberItem}. {title}
                     </span>
