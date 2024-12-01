@@ -2,7 +2,7 @@
 title: "Community Outreach"
 image: { src: "../../data/images/blog/5.png", alt: "Rankings" }
 date: "2022-03-02"
-author: "Roderick"
+author: "Roderick2"
 quote_text: "Through outreach
 programs, we unite kids and
 mentors, fostering growth,

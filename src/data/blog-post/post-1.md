@@ -2,7 +2,7 @@
 title: "Chess Club"
 image: { src: "../../data/images/blog/1.png", alt: "Rankings" }
 date: "2022-03-06"
-author: "MPE Chess Program"
+author: "Roderick6"
 quote_text: "Our
 Chess Clubs inspire young minds to
 learn, play, and grow together in a

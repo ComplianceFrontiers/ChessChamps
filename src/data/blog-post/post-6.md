@@ -2,7 +2,7 @@
 title: "Chess Store"
 image: { src: "../../data/images/blog/6.png", alt: "Rankings" }
 date: "2022-03-01"
-author: "Roderick"
+author: "Roderick1"
 quote_text: "Our Chess Online Store
 features exclusive merchandise
 designed to make chess
