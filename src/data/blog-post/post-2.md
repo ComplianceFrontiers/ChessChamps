@@ -4,7 +4,7 @@ image:
   src: "../../data/images/blog/2.png"
   alt: "Hello"
 date: "2022-03-05"
-author: "Chess Tournaments"
+author: "Roderick5"
 quote_text: >
   From beginner competitions to USCF-rated tournaments, our events offer players of all ages an exciting and enriching chess experience.
 link: "/tournaments"

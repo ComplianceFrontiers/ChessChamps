@@ -2,7 +2,7 @@
 title: "Online Courses"
 image: { src: "../../data/images/blog/4.png", alt: "Rankings" }
 date: "2022-03-03"
-author: "Roderick"
+author: "Roderick3"
 quote_text: "Our Online Courses offer
 interactive lessons and
 exercises, empowering young

@@ -2,7 +2,7 @@
 title: "Chess in School"
 image: { src: "../../data/images/blog/3.png", alt: "Rankings" }
 date: "2022-03-04"
-author: "Roderick"
+author: "Roderick4"
 quote_text: "Our Chess in Schools
 program brings the joy of chess
 into classrooms, fostering
