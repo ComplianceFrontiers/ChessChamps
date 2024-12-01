@@ -24,9 +24,7 @@ export const SubTitle = styled.h5`
     position: relative;
 `;
 export const Title = styled.h2``;
-export const ShortDec = styled.p`
-font-size:1.5rem;
-line-height: 1.5;
+export const ShortDec = styled.div`
 text-align: justify;
 
 
