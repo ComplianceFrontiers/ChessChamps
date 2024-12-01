@@ -228,6 +228,25 @@ const SinglePosts = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     // Social Share
     const baseUrl = "https://pringo.com";
+    const tags1=[
+        {
+            "title": "Chess in School",
+            "slug": "tournaments23456"
+        },
+        {
+            "title": "Online Courses",
+            "slug": "tournaments23456"
+        },
+        {
+            "title": "Community Outreach",
+            "slug": "tournaments23456"
+        },
+        {
+            "title": "Chess Store",
+            "slug": "tournaments23456"
+        },
+         
+    ]
 
     // Disqus Comments add
     const disqusShorttname = "mitech-1";
@@ -257,7 +276,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 <Aside>
                     <Author author={data?.article?.author} />
                     <Categories data={data?.article?.categories} />
-                    {/* <Tags data={data?.article?.tags} /> */}
+                    <Tags data={tags1} />
                 </Aside>
             </Col>
             <Col lg={8} md={8}>

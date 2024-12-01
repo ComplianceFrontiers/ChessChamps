@@ -71,7 +71,7 @@ const BlogGrid = ({ data }) => {
                 }
             },
             {
-                "title": "Header: Compete, Learn, and Rise with Every Game!",
+                "title": "Compete, Learn, and Rise with Every Game!",
                 "slug": "header-compete-learn-and-rise-with-every-game",
                 "excerpt": "…",
                 "quote_text": "From beginner competitions to USCF-rated tournaments, our events offer players of all ages an exciting and enriching chess experience.\n",
