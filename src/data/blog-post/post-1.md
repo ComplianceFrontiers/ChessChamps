@@ -2,7 +2,7 @@
 title: "Chess Club"
 image: { src: "../../data/images/blog/1.png", alt: "Rankings" }
 date: "2022-03-06"
-author: "Roderick6"
+author: "Club Meeting: Thursdays – 7:00 pm onwards"
 quote_text: "Our
 Chess Clubs inspire young minds to
 learn, play, and grow together in a
