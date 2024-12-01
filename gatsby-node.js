@@ -39,6 +39,12 @@ exports.createPages = ({ actions, graphql }) => {
         casesPost: path.resolve("src/templates/case-studies-details/index.jsx"),
         servicesPost: path.resolve("src/templates/services-details/index.jsx"),
         singleArticles: path.resolve("src/templates/single-post/index.jsx"),
+        singleArticles1: path.resolve("src/templates/single-post1/index.jsx"),
+        singleArticles2: path.resolve("src/templates/single-post2/index.jsx"),
+        singleArticles3: path.resolve("src/templates/single-post3/index.jsx"),
+        singleArticles4: path.resolve("src/templates/single-post4/index.jsx"),
+        singleArticles5: path.resolve("src/templates/single-post5/index.jsx"),
+        singleArticles6: path.resolve("src/templates/single-post6/index.jsx"),
         tagPosts: path.resolve("src/templates/tag-post/index.jsx"),
         categoriePosts: path.resolve("src/templates/categories-post/index.jsx"),
         authorPage: path.resolve("src/templates/author-post/index.jsx"),
@@ -98,15 +104,32 @@ exports.createPages = ({ actions, graphql }) => {
 
         // Create Single Blog Post Page
         const articles = res.data.allArticle.edges;
-        articles.forEach(({ node }) => {
-            createPage({
+        articles.forEach(({ node }, index) => {
+            // Determine which template to use based on the node index
+            const component =
+                index === 0
+                    ? templates.singleArticles1
+                    : index === 1
+                    ? templates.singleArticles2
+                    : index === 2
+                    ? templates.singleArticles3
+                    : index === 3
+                    ? templates.singleArticles4
+                    : index === 4
+                    ? templates.singleArticles5
+                    : templates.singleArticles6;
+                    createPage({
                 path: `/${node.slug}`,
-                component: templates.singleArticles,
+                component: component,
                 context: {
                     slug: node.slug,
                 },
             });
         });
+        
+        
+        
+        
 
         // Create Tags, categories, authors Page
         let tags = [];
