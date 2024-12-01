@@ -22,7 +22,7 @@ const Tags = ({data}) => {
             <Title>Our programs</Title>
             <WidgetTags>
                 {tagsData.map((cat) => (
-                    <Link key={cat.slug} to={`/tags/${cat.slug}`}>
+                    <Link key={cat.slug} to={`/${cat.slug}`}>
                         {cat.title}
                     </Link>
                 ))}

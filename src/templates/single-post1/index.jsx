@@ -243,19 +243,19 @@ const SinglePosts = ({ data, location, pageContext }) => {
         },
         {
             "title": "Chess in School",
-            "slug": "tournaments"
+            "slug": "chess-in-school"
         },
         {
             "title": "Online Courses",
-            "slug": "tournaments"
-        },
-        {
-            "title": "Community Outreach",
-            "slug": "tournaments"
+            "slug": "online-courses"
         },
         {
             "title": "Chess Store",
-            "slug": "tournaments"
+            "slug": "chess-store"
+        },
+        {
+            "title": "Community Outreach",
+            "slug": "community-outreach"
         }
     ]
  
