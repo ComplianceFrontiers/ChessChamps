@@ -51,4 +51,6 @@ Our Chess Club is the heart of Chess Champs—a welcoming space for players of a
 ###### • Membership Fees
 - At Chess Champs, we believe that chess should be accessible to everyone. That’s why our club membership is completely free! Join us without any fees or financial commitment and enjoy full access to our sessions, coaching support, resources, and community events. Whether you’re here to play casually, learn from coaches, or compete in tournaments, our club is open to all who share a passion for the game.
 
+> Whether you’re new to the game or a dedicated chess player, our tournaments provide the perfect opportunity to sharpen your skills, meet other players, and experience the excitement of competitive chess in a friendly environment. Our events include both casual and rated tournaments, so players can choose the level of competition that suits them best.
+
 

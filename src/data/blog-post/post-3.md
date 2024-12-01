@@ -2,7 +2,7 @@
 title: "Chess in School"
 image: { src: "../../data/images/blog/3.png", alt: "Rankings" }
 date: "2022-03-04"
-author: "Mount Pleasant Elementary"
+author: "After School Chess Program"
 quote_text: "Our Chess in Schools
 program brings the joy of chess
 into classrooms, fostering
@@ -10,6 +10,7 @@ critical thinking, strategy, and
 lifelong learning."
 link: "/chess-in-school"
 categories:
+    - Program Benifits For School
     - Enhanced School Reputation 
     - Improved Academic Performance
     - Community Engagement
