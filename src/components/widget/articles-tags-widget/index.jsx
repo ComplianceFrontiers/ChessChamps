@@ -11,11 +11,11 @@ const Tags = ({data}) => {
         <SidebarWidget>
             <Title>Our programs</Title>
             <WidgetTags>
-                {data.map((cat) => (
+                {/* {data.map((cat) => (
                     <Link key={cat.slug} to={`/tags/${cat.slug}`}>
                         {cat.title}
                     </Link>
-                ))}
+                ))} */}
             </WidgetTags>
         </SidebarWidget>
     );
