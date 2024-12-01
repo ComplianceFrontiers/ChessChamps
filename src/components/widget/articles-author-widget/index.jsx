@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { WidgetAuthor, Title, Description, Socials } from "./style";
+import {  AuthorButton,WidgetAuthor, Title, Description, Socials } from "./style";
 
 const Author = ({ author }) => {
     return (
@@ -20,6 +20,7 @@ const Author = ({ author }) => {
                     </Link>
                 ))}
             </Socials>
+            <AuthorButton>Register</AuthorButton>
         </WidgetAuthor>
     );
 };
