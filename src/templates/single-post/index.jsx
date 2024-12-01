@@ -65,7 +65,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 <Aside>
                     <Author author={data?.article?.author} />
                     <Categories data={data?.article?.categories} />
-                    <Tags data={data?.article?.tags} />
+                    {/* <Tags data={data?.article?.tags} /> */}
                 </Aside>
             </Col>
             <Col lg={8} md={8}>
