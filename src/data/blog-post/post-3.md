@@ -2,7 +2,7 @@
 title: "Chess in School"
 image: { src: "../../data/images/blog/3.png", alt: "Rankings" }
 date: "2022-03-04"
-author: "Roderick4"
+author: "Mount Pleasant Elementary"
 quote_text: "Our Chess in Schools
 program brings the joy of chess
 into classrooms, fostering
@@ -18,8 +18,8 @@ categories:
 tags:
     - Other programs
 ---
-### Chess in School
 
+### Chess in School
 
 Our Chess in Schools program is dedicated to making the benefits of chess accessible to students directly in their learning environments. We work closely with schools to integrate chess into their extracurricular offerings, helping students develop essential cognitive and life skills through this timeless game.
 
@@ -31,11 +31,9 @@ Chess is more than just a game—it’s a powerful educational tool that enhance
 
 Our program is tailored to fit the needs and goals of each school, ensuring that chess becomes an enjoyable and meaningful experience for students. With expert instructors and a carefully structured curriculum, we teach students the basics of chess, develop their understanding of strategy, and foster a supportive environment where they can learn and grow at their own pace.
 
-
-
 ##### Key elements of our approach include:
 
-  1. Engaging Lessons: Each session is designed to be interactive and fun, ensuring students are actively participating and excited to learn.
+1. Engaging Lessons: Each session is designed to be interactive and fun, ensuring students are actively participating and excited to learn.
 
 2. Skill Progression: We focus on gradual skill development, from understanding the rules and moves to applying more advanced strategies and tactics.
 
@@ -52,4 +50,4 @@ Our program is tailored to fit the needs and goals of each school, ensuring that
 3. Improved Academic Performance: Research indicates that chess players often perform better in subjects like math and reading due to improved reasoning and analytical skills.
 4. Increased Confidence: Each game of chess is a chance for students to challenge themselves, celebrate progress, and gain confidence in their abilities.
 
->Chess is more than just a game—it’s a powerful educational tool that enhances students’ cognitive abilities, focus, and strategic thinking. Studies have shown that children who play chess demonstrate improved problem-solving skills, higher concentration, and better academic performance in subjects like math and reading. By introducing chess to students in a school setting, we aim to nurture these skills early, giving students a foundation for lifelong learning and success.
+> Chess is more than just a game—it’s a powerful educational tool that enhances students’ cognitive abilities, focus, and strategic thinking. Studies have shown that children who play chess demonstrate improved problem-solving skills, higher concentration, and better academic performance in subjects like math and reading. By introducing chess to students in a school setting, we aim to nurture these skills early, giving students a foundation for lifelong learning and success.
