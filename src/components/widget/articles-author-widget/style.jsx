@@ -25,7 +25,7 @@ export const Title = styled.h5`
     margin-bottom: 10px; /* Adjusted spacing */
 `;
 
-export const Description = styled.p`
+export const Description = styled.div`
     font-weight: 600; /* Slightly reduced font weight for better readability */
     color: #6a6a6a; /* Updated color for better contrast */
     text-transform: none; /* Changed to none for readability */
