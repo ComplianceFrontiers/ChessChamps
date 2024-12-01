@@ -240,6 +240,22 @@ const SinglePosts = ({ data, location, pageContext }) => {
         {
             "title": "Tournaments",
             "slug": "tournaments"
+        },
+        {
+            "title": "Chess in School",
+            "slug": "tournaments"
+        },
+        {
+            "title": "Online Courses",
+            "slug": "tournaments"
+        },
+        {
+            "title": "Community Outreach",
+            "slug": "tournaments"
+        },
+        {
+            "title": "Chess Store",
+            "slug": "tournaments"
         }
     ]
  
