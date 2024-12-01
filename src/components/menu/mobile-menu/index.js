@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Link } from "gatsby";
@@ -130,20 +131,23 @@ const MobileNavMenu = ({ MobilemenuData, ofcanvasOpen, ofcanvasHandaler }) => {
 
                 
 
-                <Button
-    sx={{
-        mt: "20px",
-        width: "100%", // Ensure the button takes full width in mobile view
-        textAlign: "center", // Center-align text
-        whiteSpace: "normal", // Allow text to wrap if needed
-        padding: "1px", // Add padding for better readability
-    }}
-    size="medium"
-    shape="rounded10"
-    path="/"
->
-    Chess Champs Academy
-</Button>
+                <a href="https://chess-in-school.vercel.app/portalhome" style={{ textDecoration: 'none' }}>
+    <Button
+        sx={{
+            mt: "20px",
+            width: "100%", // Ensure the button takes full width in mobile view
+            textAlign: "center", // Center-align text
+            whiteSpace: "normal", // Allow text to wrap if needed
+            padding: "1px", // Add padding for better readability
+        }}
+        size="medium"
+        shape="rounded10"
+    >
+        Chess Champs Academy
+    </Button>
+</a>
+
+
 
             </Navbar>
         </MobileMenuContent>
