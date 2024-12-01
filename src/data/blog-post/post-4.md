@@ -2,7 +2,7 @@
 title: "Online Courses"
 image: { src: "../../data/images/blog/4.png", alt: "Rankings" }
 date: "2022-03-03"
-author: "Roderick3"
+author: "Basics of Chess"
 quote_text: "Our Online Courses offer
 interactive lessons and
 exercises, empowering young
@@ -11,7 +11,12 @@ chess at their own pace."
 link: "/online-courses"
 is_featured: true
 categories:
-    - Email Marketing
+    - Course Highlights
+    - Perfect for Beginners
+    - Interactive Learning
+    - Expert Instruction
+    - Flexible Access
+    - Certificate of Completion
 tags:
     - Other programs
 ---
