@@ -286,7 +286,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
 
            
         {/* Center-aligned button using Gatsby's Link */}
-        <div style={{ textAlign: "center", marginBottom: "20px" }}>
+        <div style={{ textAlign: "center", marginBottom: "20px",marginTop:"20px" }}>
             <Link
                 to="/case-studies"
                 style={{

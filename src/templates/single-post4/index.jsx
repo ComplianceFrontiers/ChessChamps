@@ -286,7 +286,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
 
            
         {/* Center-aligned button using Gatsby's Link */}
-        <div style={{ textAlign: "center", marginBottom: "20px" }}>
+        <div style={{ textAlign: "center", marginBottom: "20px",marginTop:"20px" }}>
             <Link
                 to="/case-studies"
                 style={{
@@ -302,7 +302,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 onMouseOver={(e) => (e.target.style.backgroundColor = "#0056b3")}
                 onMouseOut={(e) => (e.target.style.backgroundColor = "#007BFF")}
             >
-                Visit Gallery4
+                Visit Gallery
             </Link>
         </div>
         </Col>
