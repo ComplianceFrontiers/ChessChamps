@@ -131,15 +131,20 @@ const MobileNavMenu = ({ MobilemenuData, ofcanvasOpen, ofcanvasHandaler }) => {
                 
 
                 <Button
-                    sx={{
-                        mt: "30px",
-                    }}
-                    size="large"
-                    shape="rounded10"
-                    path="/"
-                >
-                    Chess Champs Academy
-                 </Button>
+    sx={{
+        mt: "20px",
+        width: "100%", // Ensure the button takes full width in mobile view
+        textAlign: "center", // Center-align text
+        whiteSpace: "normal", // Allow text to wrap if needed
+        padding: "1px", // Add padding for better readability
+    }}
+    size="medium"
+    shape="rounded10"
+    path="/"
+>
+    Chess Champs Academy
+</Button>
+
             </Navbar>
         </MobileMenuContent>
     );
