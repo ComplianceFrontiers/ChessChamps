@@ -54,7 +54,7 @@ export const Socials = styled.div`
         transition: all 0.3s ease; /* Added transition for smoother hover effect */
         &:hover {
             background-image: ${themeGet("colors.gradient")};
-            color: #fff;
+            // color: #fff;
             transform: translateY(-5px); /* Added lift effect on hover */
         }
     }

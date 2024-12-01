@@ -9,7 +9,7 @@ quote_text: >
   From beginner competitions to USCF-rated tournaments, our events offer players of all ages an exciting and enriching chess experience.
 link: "/tournaments"
 categories:
-  - Club Activities
+  - Tournament Highlights
   - Structured Formats
   - Exciting Categories
   - Attractive Rewards
