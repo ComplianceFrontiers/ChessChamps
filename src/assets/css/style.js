@@ -199,7 +199,7 @@ export const GlobalCSS = () => {
                     overflow: hidden;
                     margin: 0;
                     padding: 0;
-                    line-height: ${theme.lineHeights.body};
+                    line-height: 1.5;
                     -webkit-font-smoothing: antialiased;
                     -moz-osx-font-smoothing: grayscale;
                     font-family: ${theme.fonts.body};
