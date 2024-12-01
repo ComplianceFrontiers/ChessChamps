@@ -27,7 +27,7 @@ Our tournaments are designed to **challenge**, **inspire**, and **nurture** ches
 ### Tournament Types
 
 ##### Casual Tournaments 
-<ul>
+<ul style="color: grey;">
   <li><strong>• Enhanced Focus</strong><br>Playing chess requires students to stay concentrated and think critically, skills that improve their focus in academics and daily activities.</li>
 
   <li><strong>• Strategic Thinking</strong><br>Chess helps students learn to plan, evaluate, and make decisions—skills that are essential in both school and life.</li>
