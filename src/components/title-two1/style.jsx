@@ -23,9 +23,10 @@ export const SubTitle = styled.h5`
     -webkit-text-fill-color: transparent;
     position: relative;
 `;
-export const Title = styled.h2``;
+export const Title = styled.h3``;
 export const ShortDec = styled.div`
 text-align: justify;
+font-size:1.5;
 
 
 `;
