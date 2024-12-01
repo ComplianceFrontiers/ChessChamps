@@ -76,7 +76,7 @@ export const SingleBlogContent = styled.div`
     }
 
     h4 {
-        margin-left: 10px; /* Indent headers */
+        margin-left: 20px; /* Indent headers */
         margin-bottom: 10px;
     }
 
