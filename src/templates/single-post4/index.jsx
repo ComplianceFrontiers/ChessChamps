@@ -227,7 +227,23 @@ const SinglePosts = ({ data, location, pageContext }) => {
     }
     const tags1=[
         {
-            "title": "Tournaments123",
+            "title": "Tournaments",
+            "slug": "tournaments"
+        },
+        {
+            "title": "Chess in School",
+            "slug": "tournaments"
+        },
+        {
+            "title": "Online Courses",
+            "slug": "tournaments"
+        },
+        {
+            "title": "Chess Store",
+            "slug": "tournaments"
+        },
+        {
+            "title": "Community Outreach",
             "slug": "tournaments"
         }
     ]
