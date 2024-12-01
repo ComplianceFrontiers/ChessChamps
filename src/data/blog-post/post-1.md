@@ -17,7 +17,6 @@ categories:
     - Chess Tournaments
 
 tags:
-    - Our Programs
     - Tournaments
     - Chess in School
     - Online Courses
