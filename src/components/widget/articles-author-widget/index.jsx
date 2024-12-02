@@ -7,11 +7,16 @@ const Author = ({ author }) => {
     console.log("tring1", author.name);
 
     // Conditional logic for the button text and link
-    const isCommunityOutreach = author.name === "Community Outreach";
-    const buttonText = isCommunityOutreach ? "Visit Gallery" : "Register";
-    const buttonLink = isCommunityOutreach
-        ? "/case-studies"
-        : "https://chess-club-frontend.vercel.app/signup";
+    let buttonText = "Register";
+    let buttonLink = "https://chess-club-frontend.vercel.app/signup";
+
+    if (author.name === "Community Outreach") {
+        buttonText = "Visit Gallery";
+        buttonLink = "/case-studies";
+    } else if (author.name === "Basics of Chess") {
+        buttonText = "Online Store";
+        buttonLink = "/online-store";
+    }
 
     return (
         <WidgetAuthor>
