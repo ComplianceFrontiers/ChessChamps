@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
@@ -5,6 +6,7 @@ import { graphql } from "gatsby";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import FAQArea from "../container/faq";
 import { normalizedData } from "@utils/functions";
+import image1 from "../data/images/online/image1.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -20,9 +22,26 @@ const FAQPage = ({ data, location, pageContext }) => {
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="Comming Soon"
+                title="Online Store"
             />
-            {/* <FAQArea data={content["FAQ-section"]} /> */}
+            <div
+            style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom:"20px",
+            }}
+        >
+            <img
+                src={image1}
+                alt="FAQ Illustration"
+                style={{
+                    maxWidth: "auto",
+                    height: "auto",
+                    borderRadius: "8px",
+                    
+                }}
+            />
+        </div>
         </Layout>
     );
 };
