@@ -1,10 +1,18 @@
-/* eslint-disable prettier/prettier */
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import {  AuthorButton,WidgetAuthor, Title, Description, Socials } from "./style";
+import { AuthorButton, WidgetAuthor, Title, Description, Socials } from "./style";
 
 const Author = ({ author }) => {
+    console.log("tring1", author.name);
+
+    // Conditional logic for the button text and link
+    const isCommunityOutreach = author.name === "Community Outreach";
+    const buttonText = isCommunityOutreach ? "Visit Gallery" : "Register";
+    const buttonLink = isCommunityOutreach
+        ? "/case-studies"
+        : "https://chess-club-frontend.vercel.app/signup";
+
     return (
         <WidgetAuthor>
             <GatsbyImage
@@ -21,8 +29,8 @@ const Author = ({ author }) => {
                     </Link>
                 ))}
             </Socials>
-            <Link to="https://chess-club-frontend.vercel.app/signup">
-            <AuthorButton>Register</AuthorButton>
+            <Link to={buttonLink}>
+                <AuthorButton>{buttonText}</AuthorButton>
             </Link>
         </WidgetAuthor>
     );
