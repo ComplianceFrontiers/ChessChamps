@@ -38,17 +38,24 @@ const LatestBlogArea = ({ data }) => {
 
                     {/* Second Column with the next three images */}
                     <Col lg={6} md={12}>
-                        {nextThreeItems?.map((item, i) => (
-                            <Link key={i} to={item.link}>
-                                <BlogThumb>
-                                    <GatsbyImage
-                                        image={getImage(item.image.src)}
-                                        alt={`Blog image ${i + 4}`}
-                                    />
-                                </BlogThumb>
-                            </Link>
-                        ))}
-                    </Col>
+    {nextThreeItems?.map((item, i) => {
+        // Check if the current item is the last in the array
+        const isLastItem = i === nextThreeItems.length - 1;
+        const itemLink = isLastItem ? "/online-store" : item.link;
+
+        return (
+            <Link key={i} to={itemLink}>
+                <BlogThumb>
+                    <GatsbyImage
+                        image={getImage(item.image.src)}
+                        alt={`Blog image ${i + 4}`}
+                    />
+                </BlogThumb>
+            </Link>
+        );
+    })}
+</Col>
+
                 </Row>
             </Container>
         </LatestBlogSection>
