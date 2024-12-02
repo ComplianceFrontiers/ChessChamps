@@ -6,6 +6,8 @@ import { graphql } from "gatsby";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import BlogGrid1 from "../container/blog/blog-grid1";
 import { normalizedData } from "@utils/functions";
+import image1 from "../data/images/online/image2.png";
+
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -23,11 +25,32 @@ const FAQPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="Events"
             />
- <BlogGrid1
+               <div
+    style={{
+        display: "flex",
+        justifyContent: "center",
+        marginBottom: "20px",
+    }}
+>
+    <a href="https://chess-champs-tournaments.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <img
+            src={image1}
+            alt="FAQ Illustration"
+            style={{
+                maxWidth: "auto",
+                height: "auto",
+                borderRadius: "8px",
+            }}
+        />
+    </a>
+</div>
+
+ {/* <BlogGrid1
                 data={ 
                     ["tring","tring"]
                 }
-            />        </Layout>
+            />       */}
+              </Layout>
     );
 };
 
