@@ -8,7 +8,7 @@ const Author = ({ author }) => {
 
     // Conditional logic for the button text and link
     let buttonText = "Register";
-    let buttonLink = "https://chess-club-frontend.vercel.app/signup";
+    let buttonLink = "https://chess-champs-tournaments.vercel.app/";
 
     if (author.name === "Community Outreach") {
         buttonText = "Visit Gallery";
