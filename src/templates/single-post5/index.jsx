@@ -233,7 +233,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
     const disqusShorttname = "mitech-1";
     const disquscConfig = {
         identifier: data?.article?.id,
-        title: data?.article?.title,
+        title: data?.article?.author,
         url: baseUrl + "/" + pageContext.slug,
     };
     const tags1=[
@@ -258,7 +258,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
             "slug": "community-outreach"
         }
     ]
-
+console.log("httt", data?.article?.title)
     return (
         <Layout
             data={{
@@ -303,25 +303,26 @@ const SinglePosts = ({ data, location, pageContext }) => {
 
            
         {/* Center-aligned button using Gatsby's Link */}
-        <div style={{ textAlign: "center", marginBottom: "20px",marginTop:"20px" }}>
-            <Link
-                to="/case-studies"
-                style={{
-                    display: "inline-block",
-                    padding: "10px 20px",
-                    fontSize: "16px",
-                    color: "#fff",
-                    backgroundColor: "#007BFF",
-                    borderRadius: "5px",
-                    textDecoration: "none",
-                    transition: "background-color 0.3s ease",
-                }}
-                onMouseOver={(e) => (e.target.style.backgroundColor = "#0056b3")}
-                onMouseOut={(e) => (e.target.style.backgroundColor = "#007BFF")}
-            >
-                Visit Gallery
-            </Link>
-        </div>
+        <div style={{ textAlign: "center", marginBottom: "20px", marginTop: "20px" }}>
+    <Link
+        to={data?.article?.title === "Online Courses" ? "/online-store" : "/case-studies"}
+        style={{
+            display: "inline-block",
+            padding: "10px 20px",
+            fontSize: "16px",
+            color: "#fff",
+            backgroundColor: "#007BFF",
+            borderRadius: "5px",
+            textDecoration: "none",
+            transition: "background-color 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.target.style.backgroundColor = "#0056b3")}
+        onMouseOut={(e) => (e.target.style.backgroundColor = "#007BFF")}
+    >
+        {data?.article?.title === "Online Courses" ? "Purchase Now" : "Visit Gallery"}
+    </Link>
+</div>
+
         </Col>
         </Row>
    
