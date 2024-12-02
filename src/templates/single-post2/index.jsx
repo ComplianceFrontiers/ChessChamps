@@ -236,6 +236,28 @@ const SinglePosts = ({ data, location, pageContext }) => {
         title: data?.article?.title,
         url: baseUrl + "/" + pageContext.slug,
     };
+    const tags1=[
+        {
+            "title": "Tournaments",
+            "slug": "tournaments"
+        },
+        {
+            "title": "Chess in School",
+            "slug": "chess-in-school"
+        },
+        {
+            "title": "Online Courses",
+            "slug": "online-courses"
+        },
+        {
+            "title": "Chess Store",
+            "slug": "chess-store"
+        },
+        {
+            "title": "Community Outreach",
+            "slug": "community-outreach"
+        }
+    ]
 
     return (
         <Layout
@@ -257,7 +279,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 <Aside>
                     <Author author={data?.article?.author} />
                     <Categories data={data?.article?.categories} />
-                    {/* <Tags data={data?.article?.tags} /> */}
+                    <Tags data={tags1} />
                 </Aside>
             </Col>
             <Col lg={8} md={8}>

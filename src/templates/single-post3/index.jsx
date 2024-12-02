@@ -229,6 +229,22 @@ const SinglePosts = ({ data, location, pageContext }) => {
         {
             "title": "Tournaments",
             "slug": "tournaments"
+        },
+        {
+            "title": "Chess in School",
+            "slug": "chess-in-school"
+        },
+        {
+            "title": "Online Courses",
+            "slug": "online-courses"
+        },
+        {
+            "title": "Chess Store",
+            "slug": "chess-store"
+        },
+        {
+            "title": "Community Outreach",
+            "slug": "community-outreach"
         }
     ]
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
