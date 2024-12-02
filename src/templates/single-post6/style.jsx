@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { themeGet, device } from "@theme/utils";
 
 export const BlogDetailsArea = styled.section`
@@ -72,20 +73,13 @@ export const SocialShareCard = styled.div`
 export const SingleBlogContent = styled.div`
     margin-top: 20px;
     h3 {
-        margin-bottom: 10px; /* Indent headers */
-    }
+margin-top: 30px    }
 
     h4 {
-        margin-left: 10px; /* Indent headers */
-        margin-bottom: 10px;
-    }
-
-    ul {
-    margin-left: 0px;
+        margin-top: 30px
     }
 
     li {
-    margin-left: 10px;
         margin-bottom: 15px; /* Indent list items slightly */
     }
 `;
