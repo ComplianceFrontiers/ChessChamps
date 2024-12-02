@@ -20,11 +20,11 @@ const FAQPage = ({ data, location, pageContext }) => {
             }}
         >
             <SEO title="Events" pathname="/" />
-            <PageBreadcrumb
+            {/* <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
                 title="Events"
-            />
+            /> */}
                <div
     style={{
         display: "flex",
