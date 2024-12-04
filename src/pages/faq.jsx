@@ -46,7 +46,7 @@ const FAQPage = ({ data, location, pageContext }) => {
         />
     </a>
 </div>
-<div
+{/* <div
             style={{
                 display: "flex",
                 justifyContent: "center",
@@ -80,7 +80,7 @@ const FAQPage = ({ data, location, pageContext }) => {
             >
                 Join Our Club
             </button>
-        </div>
+        </div> */}
  {/* <BlogGrid1
                 data={ 
                     ["tring","tring"]

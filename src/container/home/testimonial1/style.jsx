@@ -69,8 +69,8 @@ export const ClientsImage = styled.div`
         animation: ${zoomin} 2s infinite alternate;
     }
     &:nth-of-type(6) {
-        right: 220px;
-        bottom: 55px;
+        right: 200px;
+        bottom: 1px;
         animation: ${zoomin} 2.3s infinite alternate;
     }
 `;
