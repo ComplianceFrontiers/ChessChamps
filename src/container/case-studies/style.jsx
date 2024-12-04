@@ -1,7 +1,7 @@
 import styled, { device } from "@theme/utils";
 
 export const CaseStudiesSection = styled.section`
-    padding: 10px 0 60px;
+    padding: 10px 0 60px;  
 
     .show-more-buttons {
         display: flex;

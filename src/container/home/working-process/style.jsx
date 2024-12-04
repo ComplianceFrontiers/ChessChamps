@@ -54,7 +54,7 @@ export const WorkingProcessSection = styled.section`
     }
 
     @media (max-width: 480px) {
-        padding: 40px 0px 30px;
+        padding: 20px 0px 30px;
 
         .image-wrapper {
             max-width: 100px; /* Further reduce size for very small devices */
