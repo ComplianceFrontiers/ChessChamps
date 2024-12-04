@@ -36,7 +36,7 @@ const TestimonialArea = ({ data }) => {
   </ClientsImage>
 
   <ClientsImage>
-    <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer">
+    <a href="https://mpe.brandywineschools.org/" target="_blank" rel="noopener noreferrer">
       <StaticImage
         src="../../../data/images/testimonial/lg12.png"
         alt="images-not_found"
@@ -80,7 +80,6 @@ const TestimonialArea = ({ data }) => {
     </a>
   </ClientsImage>
 </ClientsImageBox>
-
                 <TestimonialContentBox>
                     <ShapBgImg>
                         <StaticImage
