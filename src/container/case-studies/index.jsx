@@ -114,7 +114,7 @@ const CaseStudiesArea = ({ data }) => {
                     </Button> */}
                 </div>
 
-                <Row className="gx-5">
+                {/* <Row className="gx-5">
                     {data?.items &&
                         data?.items.slice(0, visibleItems).map((post, i) => {
                             return (
@@ -127,7 +127,7 @@ const CaseStudiesArea = ({ data }) => {
                                 </Col>
                             );
                         })}
-                </Row>
+                </Row> */}
                 <Row className="gx-5">
                     {imageArray.map((image, index) => (
                         <Col lg={4} md={4} sm={6} key={index} className="mb-4">
