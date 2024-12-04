@@ -10,7 +10,7 @@ learning, and community
 through chess."
 link: "/community-outreach" 
 categories:
-    - Program Benefits for School
+    - Outreach Highlights
     - Promoting Inclusivity
     - Fostering Growth
     - Engaging Partnerships

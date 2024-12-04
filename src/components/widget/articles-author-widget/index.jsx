@@ -16,6 +16,9 @@ const Author = ({ author }) => {
     } else if (author.name === "Basics of Chess") {
         buttonText = "Online Store";
         buttonLink = "/online-store";
+    } else if (author.name === "After School Chess Program") {
+        buttonText = "Register";
+        buttonLink = "https://chesschampsus.vercel.app/mpes";
     }
 
     return (

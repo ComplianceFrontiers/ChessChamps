@@ -4,29 +4,28 @@ import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/title";
 import { WorkingProcessSection } from "./style";
 import SingleBrand from "../../../components/brand";
+import Button from "../../../components/shared/button";
 
 const WorkingProcessArea = ({ data }) => {
     return (
         <WorkingProcessSection>
-            <Container>
+            {/* <Container> */}
                 {data?.section_title && (
                     <SectionTitle
                         headingTitle={data?.section_title.title}
                         {...data.section_title}
                     />
                 )}
-                <div className="image-container">
-                    {data?.items &&
-                        data?.items.map((item, i) => (
-                            <div key={i} className="image-wrapper">
-                                <SingleBrand
-                                    brnadAffterImage={item.images?.[0].src}
-                                     alt={item.images?.[0].alt}
-                                />
-                            </div>
-                        ))}
-                </div>
-            </Container>
+                  <a href="https://chess-in-school.vercel.app/portalhome" style={{ textDecoration: 'none' }}>
+    <Button size="medium" shape="rounded10">
+        Chess Champs Academy
+    </Button>
+</a>
+
+
+
+               
+            {/* </Container> */}
         </WorkingProcessSection>
     );
 };

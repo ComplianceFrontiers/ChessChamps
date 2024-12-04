@@ -14,12 +14,18 @@ const rotation = keyframes`
 
 export const WorkingProcessSection = styled.section`
     background-image: url(${WorkingProcessSectionBg});
-    background-color :#102a45;
+    background-color: #102a45;
     margin-top: 20px;
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
+
     padding: 100px 0px 95px;
+
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
 
     .image-container {
         display: flex;
@@ -34,22 +40,9 @@ export const WorkingProcessSection = styled.section`
         text-align: center;
     }
 
-    .working-process {
-        .working-process-list {
-            margin-bottom: 30px;
-            position: relative;
-            text-align: center;
-        }
-    }
-
     /* Responsive styles */
     @media (max-width: 768px) {
         padding: 60px 0px 50px;
-         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px; /* Space between images */
-        flex-wrap: wrap; /* Allows images to wrap on smaller screens */
 
         .image-wrapper {
             max-width: 120px; /* Reduce size for smaller devices */
@@ -62,11 +55,6 @@ export const WorkingProcessSection = styled.section`
 
     @media (max-width: 480px) {
         padding: 40px 0px 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px; /* Space between images */
-        flex-wrap: wrap; /* Allows images to wrap on smaller screens */
 
         .image-wrapper {
             max-width: 100px; /* Further reduce size for very small devices */
@@ -77,4 +65,5 @@ export const WorkingProcessSection = styled.section`
         }
     }
 `;
+
 
