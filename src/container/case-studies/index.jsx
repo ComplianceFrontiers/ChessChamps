@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
@@ -136,11 +137,7 @@ const CaseStudiesArea = ({ data }) => {
                                     justifyContent: "center",
                                 }}
                             >
-                                <a
-                                    href="https://chess-champs-tournaments.vercel.app/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
+                                 
                                     <img
                                         src={image}
                                         alt={`Image ${index + 1}`}
@@ -150,7 +147,7 @@ const CaseStudiesArea = ({ data }) => {
                                             borderRadius: "8px",
                                         }}
                                     />
-                                </a>
+                              
                             </div>
                         </Col>
                     ))}
