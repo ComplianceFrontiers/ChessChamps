@@ -1,9 +1,8 @@
 /* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { StaticImage } from "gatsby-plugin-image";
-import { Container, Button } from "react-bootstrap"; // Import Button from Bootstrap
-import Swiper, { SwiperSlide } from "@components/shared/swiper"; // Ensure Swiper is imported
-import TeamMember from "../../../components/team";
+import { Container } from "react-bootstrap"; // Import Container from Bootstrap
+import { Link } from "gatsby"; // Import Link from Gatsby for navigation
 import SectionTitle from "../../../components/title";
 import { TeamSection } from "./style";
 
@@ -16,7 +15,6 @@ const TeamArea1 = ({ data }) => {
                 alt=""
             />
             <Container>
-            
                 {data?.section_title && (
                     <SectionTitle
                         headingTitle={
@@ -27,10 +25,12 @@ const TeamArea1 = ({ data }) => {
                                 </span>
                                 <br />
                                 
-                                
+                                {/* Wrap the button with Gatsby Link */}
                                 <div className="button-wrapper">
-                    <button className="shop-now-button">Our Programs</button>
-                </div>
+                                    <Link to="/blog-grid">
+                                        <button className="shop-now-button">Our Programs</button>
+                                    </Link>
+                                </div>
                             </div>
                         }
                         {...data.section_title}

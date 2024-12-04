@@ -1,9 +1,12 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/title";
 import Swiper, { SwiperSlide } from "@components/shared/swiper";
 import Testimonial from "../../../components/testimonial";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
+
 import {
     TestimonialSection,
     TestimonialContentBox,
@@ -22,44 +25,62 @@ const TestimonialArea = ({ data }) => {
                 />
             )}
             <Container className="position-relative">
-                <ClientsImageBox>
-                    <ClientsImage>
-                        <StaticImage
-                            src="../../../data/images/testimonial/lg9.png"
-                            alt="images-not_found"
-                        />
-                    </ClientsImage>
-                    <ClientsImage>
-                        <StaticImage
-                            src="../../../data/images/testimonial/lg12.png"
-                            alt="images-not_found"
-                        />
-                    </ClientsImage>
-                    <ClientsImage>
-                        <StaticImage
-                            src="../../../data/images/testimonial/lg11.png"
-                            alt="images-not_found"
-                        />
-                    </ClientsImage>
-                    <ClientsImage>
-                        <StaticImage
-                            src="../../../data/images/testimonial/lg14.png"
-                            alt="images-not_found"
-                        />
-                    </ClientsImage>
-                    <ClientsImage>
-                        <StaticImage
-                            src="../../../data/images/testimonial/lg13.png"
-                            alt="images-not_found"
-                        />
-                    </ClientsImage>
-                    <ClientsImage>
-                        <StaticImage
-                            src="../../../data/images/testimonial/lg10.png"
-                            alt="images-not_found"
-                        />
-                    </ClientsImage>
-                </ClientsImageBox>
+            <ClientsImageBox>
+  <ClientsImage>
+    <a href="https://www.bellevuecc.org/" target="_blank" rel="noopener noreferrer">
+      <StaticImage
+        src="../../../data/images/testimonial/lg9.png"
+        alt="images-not_found"
+      />
+    </a>
+  </ClientsImage>
+
+  <ClientsImage>
+    <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer">
+      <StaticImage
+        src="../../../data/images/testimonial/lg12.png"
+        alt="images-not_found"
+      />
+    </a>
+  </ClientsImage>
+
+  <ClientsImage>
+    <a href="https://www.lionsclubs.org/en" target="_blank" rel="noopener noreferrer">
+      <StaticImage
+        src="../../../data/images/testimonial/lg11.png"
+        alt="images-not_found"
+      />
+    </a>
+  </ClientsImage>
+
+  <ClientsImage>
+    <a href="https://www.siegeljcc.org/" target="_blank" rel="noopener noreferrer">
+      <StaticImage
+        src="../../../data/images/testimonial/lg14.png"
+        alt="images-not_found"
+      />
+    </a>
+  </ClientsImage>
+
+  <ClientsImage>
+    <a href="https://lombardy.brandywineschools.org/" target="_blank" rel="noopener noreferrer">
+      <StaticImage
+        src="../../../data/images/testimonial/lg13.png"
+        alt="images-not_found"
+      />
+    </a>
+  </ClientsImage>
+
+  <ClientsImage>
+    <a href="https://delawarechessassociation.org/" target="_blank" rel="noopener noreferrer">
+      <StaticImage
+        src="../../../data/images/testimonial/lg10.png"
+        alt="images-not_found"
+      />
+    </a>
+  </ClientsImage>
+</ClientsImageBox>
+
                 <TestimonialContentBox>
                     <ShapBgImg>
                         <StaticImage
