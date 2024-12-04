@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Button from "../../components/shared/button";
 import { NewsLetterBox, Form, Input } from "./style";
-import Model from "../../components/Model";  // Import Model component
+import Model from "../model";
 
 const NewsLetter = () => {
     const [email, setEmail] = useState("");
