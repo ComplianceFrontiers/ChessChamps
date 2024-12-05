@@ -87,13 +87,8 @@ const CaseStudiesArea = ({ data }) => {
         image27,
         image28,
         image29,
-        image30,
-        image31,
         image32,
-        image33,
         image34,
-        image35,
-        image36,
     ];
     
 
