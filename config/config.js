@@ -2,7 +2,7 @@
 module.exports = {
     title: "ChessChamps",
     titleTemplate: "",
-    description: "React Gatsby",
+    description: "",
     author: "",
     twitterUsername: "@ChessChamps",
     keywords: ["bootstrap", "html", "react", "gatsby", "ChessChamps", "ChessChamps"],
