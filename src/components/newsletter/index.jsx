@@ -23,6 +23,13 @@ const NewsLetter = () => {
                 },
                 body: JSON.stringify({ email, Website: true }),
             });
+            const response1 = await fetch("https://backend-chess-tau.vercel.app/send-email-form-website-joined", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email }),
+            });
 
             if (response.ok) {
                 const data = await response.json();
