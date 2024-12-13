@@ -10,6 +10,7 @@ module.exports = {
         titleTemplate: config.titleTemplate,
         description: config.description,
         image: config.image,
+        logo: config.logo,
         siteLanguage: config.siteLanguage,
         author: config.author,
         mainUrl: config.siteUrl,

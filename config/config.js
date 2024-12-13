@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
-    title: "ChessChamps",
+    title: "Chess Champs",
     titleTemplate: "",
-    description: "A website for Chess Champ",
+    description: "A website for the Chess Champs",
     author: "",
     twitterUsername: "@ChessChamps",
     keywords: ["bootstrap", "html", "react", "gatsby", "ChessChamps", "ChessChamps"],
