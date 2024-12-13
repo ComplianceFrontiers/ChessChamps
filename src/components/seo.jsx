@@ -126,7 +126,7 @@ const SEO = ({
             <meta property="og:url" content={canonicalLink} />
             <meta property="og:title" content={siteTitle} />
             <meta property="og:description" content={metaDescription} />
-            <meta property="og:image" content="https://drive.google.com/file/d/1y2O5hJHmKxVFfEhIk_LP4Ahqprx9vxX3/view" />
+            <meta property="og:image" content="https://ibb.co/kDXRgKL" />
             <meta property="og:image:secure_url" content={bannerImage} />
             <meta property="og:image:width" content={`${imgWidth}px`} />
             <meta property="og:image:height" content={`${imgHeight}px`} />
