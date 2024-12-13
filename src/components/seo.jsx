@@ -2,6 +2,7 @@
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import image from "../assets/images/favicon.png"
 
 const SEO = ({
     description,
@@ -47,7 +48,7 @@ const SEO = ({
     const language = lang || site.siteMetadata.siteLanguage;
     const siteUrl = site.siteMetadata.siteUrl.replace(/\/$/, "");
     const mainUrl = site.siteMetadata.mainUrl.replace(/\/$/, "");
-    const bannerImage = "/src/assets/images/favicon.png";
+    const bannerImage = "../assets/images/favicon.png";
     let canonicalLink;
     if (canonical) {
         canonicalLink = `${mainUrl}${canonical}`;
