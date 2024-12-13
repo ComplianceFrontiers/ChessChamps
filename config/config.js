@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
-    title: "Chess Champs",
+    title: "ChessChamps",
     titleTemplate: "",
     description: "A website for the Chess Champs",
     author: "",
