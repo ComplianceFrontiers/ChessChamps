@@ -8,7 +8,7 @@ module.exports = {
     keywords: ["bootstrap", "html", "react", "gatsby", "ChessChamps", "ChessChamps"],
     image: "src/assets/images/favicon.png",
     logo:"src/assets/images/favicon.png",
-    siteUrl: "https://www.chesschamps.us/",
+    siteUrl: "https://www.chesschamps.us",
     pathPrefix: "/",
     localUrl: "http://localhost:8000",
     canonical: "",
