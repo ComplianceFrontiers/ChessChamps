@@ -46,10 +46,7 @@ const SEO = ({
     const language = lang || site.siteMetadata.siteLanguage;
     const siteUrl = site.siteMetadata.siteUrl.replace(/\/$/, "");
     const mainUrl = site.siteMetadata.mainUrl.replace(/\/$/, "");
-    const bannerImage =
-        metaImage && metaImage.src
-            ? `${mainUrl}${metaImage.src}`
-            : `${siteUrl}/${site.siteMetadata.image}`;
+    const bannerImage = "src/assets/images/favicon.png";
     let canonicalLink;
     if (canonical) {
         canonicalLink = `${mainUrl}${canonical}`;
