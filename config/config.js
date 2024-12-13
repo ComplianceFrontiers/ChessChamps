@@ -1,12 +1,12 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
-    title: "ChessChamps",
-    titleTemplate: "",
+    title: "Chess Champs",
+    titleTemplate: "A website for the Chess Champs",
     description: "",
     author: "",
     twitterUsername: "@ChessChamps",
     keywords: ["bootstrap", "html", "react", "gatsby", "ChessChamps", "ChessChamps"],
-    image: "",
+    image: "src/assets/images/favicon.png",
     siteUrl: "https://ChessChamps.com",
     pathPrefix: "/",
     localUrl: "http://localhost:8000",
