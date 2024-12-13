@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import image from "../assets/images/favicon.png"
+import image from "../assets/images/"
 
 const SEO = ({
     description,
@@ -127,7 +127,7 @@ const SEO = ({
             <meta property="og:url" content={canonicalLink} />
             <meta property="og:title" content={siteTitle} />
             <meta property="og:description" content={metaDescription} />
-            <meta property="og:image" content={bannerImage} />
+            <meta property="og:image" content="https://fastly.picsum.photos/id/321/536/354.jpg?hmac=rMro5KiNhbam7A-6Ur5Wi_mB7beay8HM1UpMQaLeAcs" />
             <meta property="og:image:secure_url" content={bannerImage} />
             <meta property="og:image:width" content={`${imgWidth}px`} />
             <meta property="og:image:height" content={`${imgHeight}px`} />
