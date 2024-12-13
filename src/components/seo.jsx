@@ -47,7 +47,7 @@ const SEO = ({
     const language = lang || site.siteMetadata.siteLanguage;
     const siteUrl = site.siteMetadata.siteUrl.replace(/\/$/, "");
     const mainUrl = site.siteMetadata.mainUrl.replace(/\/$/, "");
-    const bannerImage = "/assets/images/favicon.png";
+    const bannerImage = "/src/assets/images/favicon.png";
     let canonicalLink;
     if (canonical) {
         canonicalLink = `${mainUrl}${canonical}`;
