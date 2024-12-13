@@ -2,11 +2,11 @@
 module.exports = {
     title: "ChessChamps",
     titleTemplate: "",
-    description: "A website for the Chess Champs",
+    description: "",
     author: "",
     twitterUsername: "@ChessChamps",
     keywords: ["bootstrap", "html", "react", "gatsby", "ChessChamps", "ChessChamps"],
-    image: "src/assets/images/favicon.png",
+    image: "",
     siteUrl: "https://ChessChamps.com",
     pathPrefix: "/",
     localUrl: "http://localhost:8000",
