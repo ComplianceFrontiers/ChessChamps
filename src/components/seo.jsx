@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
@@ -16,30 +15,30 @@ const SEO = ({
     rootPath,
     isBlogPost,
 }) => {
-    const { site, faviconImage } = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                    description
-                    author
-                    keywords
-                    siteUrl
-                    canonical
-                    siteLanguage
-                    image
-                    titleTemplate
-                    twitterUsername
-                    mainUrl
+    const { site } = useStaticQuery(
+        graphql`
+            query {
+                site {
+                    siteMetadata {
+                        title
+                        description
+                        author
+                        keywords
+                        siteUrl
+                        canonical
+                        siteLanguage
+                        image
+                        titleTemplate
+                        twitterUsername
+                        mainUrl
+                    }
+                    buildTime
                 }
-                buildTime
             }
-            faviconImage: file(relativePath: { eq: "images/favicon.png" }) {
-                publicURL
-            }
-        }
-    `);
+        `
+    );
 
+    let pageUrl;
     const path = pathname.replace(/^\/|\/$/g, "");
     const metaTitle = title || site.siteMetadata.title;
     const template = titleTemplate || site.siteMetadata.titleTemplate;
@@ -47,54 +46,81 @@ const SEO = ({
     const language = lang || site.siteMetadata.siteLanguage;
     const siteUrl = site.siteMetadata.siteUrl.replace(/\/$/, "");
     const mainUrl = site.siteMetadata.mainUrl.replace(/\/$/, "");
-    const bannerImage = faviconImage.publicURL || `${siteUrl}/${site.siteMetadata.image}`;
-    let canonicalLink = canonical ? `${mainUrl}${canonical}` : site.siteMetadata.canonical;
+    const bannerImage = "src/assets/images/favicon.png";
+    let canonicalLink;
+    if (canonical) {
+        canonicalLink = `${mainUrl}${canonical}`;
+    } else {
+        canonicalLink = site.siteMetadata.canonical;
+    }
     const imgWidth = metaImage?.width ? metaImage.width : 875;
     const imgHeight = metaImage?.height ? metaImage.height : 554;
-    let siteTitle = pathname === "/" ? `${site.siteMetadata.titleTemplate} ${site.siteMetadata.title}` : `${template} ${metaTitle}`;
+    pageUrl = `${siteUrl}/${path}`;
+    pageUrl = pageUrl.replace(/^\/+/g, "");
+    const rootUrl = siteUrl + rootPath;
+    const prevLink = prevPage && prevPage !== null && rootUrl + prevPage;
+    const nextLink = nextPage && nextPage !== null && rootUrl + nextPage;
+    let siteTitle;
+    if (pathname === "/") {
+        siteTitle = `${site.siteMetadata.titleTemplate} ${site.siteMetadata.title}`;
+    } else {
+        siteTitle = `${template} ${metaTitle}`;
+    }
+
+    const basSchema = [
+        {
+            "@type": "Organization",
+            "@id": `${siteUrl}/#organization`,
+            name: `${siteTitle}`,
+            url: siteUrl,
+            logo: {
+                "@type": "ImageObject",
+                url: site.siteMetadata.logo,
+            },
+        },
+        {
+            "@type": "WebSite",
+            "@id": `${siteUrl}/#website`,
+            url: siteUrl,
+            name: `${siteTitle}`,
+            publisher: {
+                "@id": `${siteUrl}/#organization`,
+            },
+            inLanguage: language,
+            potentialAction: {
+                "@type": "SearchAction",
+                target: `${siteUrl}/?s={search_term_string}`,
+                "query-input": "required name=search_term_string",
+            },
+        },
+    ];
 
     const schemaOrgWebPage = {
         "@context": "http://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "@id": `${siteUrl}/#organization`,
-                name: siteTitle,
-                url: siteUrl,
-                logo: {
-                    "@type": "ImageObject",
-                    url: site.siteMetadata.logo,
-                },
-            },
-            {
-                "@type": "WebSite",
-                "@id": `${siteUrl}/#website`,
-                url: siteUrl,
-                name: siteTitle,
-                publisher: {
-                    "@id": `${siteUrl}/#organization`,
-                },
-                inLanguage: language,
-                potentialAction: {
-                    "@type": "SearchAction",
-                    target: `${siteUrl}/?s={search_term_string}`,
-                    "query-input": "required name=search_term_string",
-                },
-            },
-        ],
+        "@graph": [...basSchema],
     };
 
     return (
-        <Helmet htmlAttributes={{ lang: language }}>
+        <Helmet
+            htmlAttributes={{
+                lang: language,
+            }}
+        >
+            {/* General tags */}
             <title>{siteTitle}</title>
             <meta name="description" content={metaDescription} />
             <meta name="image" content={bannerImage} />
             <link rel="canonical" href={canonicalLink} />
-            <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-            {prevPage && <link rel="prev" href={`${rootPath}${prevPage}`} />}
-            {nextPage && <link rel="next" href={`${rootPath}${nextPage}`} />}
+            <meta
+                name="robots"
+                content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+            />
+            {prevLink && <link rel="prev" href={prevLink} />}
+            {nextLink && <link rel="next" href={nextLink} />}
+
+            {/* OpenGraph tags */}
             <meta property="og:locale" content={language} />
-            {isBlogPost && <meta property="og:type" content="article" />}
+            {isBlogPost ? <meta property="og:type" content="article" /> : null}
             <meta property="og:type" content="website" />
             <meta property="og:url" content={canonicalLink} />
             <meta property="og:title" content={siteTitle} />
@@ -105,12 +131,20 @@ const SEO = ({
             <meta property="og:image:height" content={`${imgHeight}px`} />
             <meta property="og:image:alt" content={siteTitle} />
             <meta property="og:image:type" content="image/png" />
+
+            {/* Twitter Card tags */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:creator" content={site.siteMetadata.twitterUsername} />
+            <meta
+                name="twitter:creator"
+                content={site.siteMetadata.twitterUsername}
+            />
             <meta name="twitter:title" content={siteTitle} />
             <meta name="twitter:description" content={metaDescription} />
             <meta name="twitter:image" content={bannerImage} />
-            <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>
+
+            <script type="application/ld+json">
+                {JSON.stringify(schemaOrgWebPage)}
+            </script>
         </Helmet>
     );
 };
@@ -134,8 +168,8 @@ SEO.propTypes = {
 };
 
 SEO.defaultProps = {
-    lang: "en",
-    description: "",
+    lang: `en`,
+    description: ``,
     pathname: "/",
 };
 
