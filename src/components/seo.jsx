@@ -2,7 +2,6 @@
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import image from "../assets/images/"
 
 const SEO = ({
     description,
