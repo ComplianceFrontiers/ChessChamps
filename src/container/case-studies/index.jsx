@@ -44,6 +44,26 @@ import image37 from "../../data/images/online/37.png";
 import image38 from "../../data/images/online/38.png";
 import image39 from "../../data/images/online/39.png";
 import image40 from "../../data/images/online/40.png";
+import image41 from "../../data/images/blog/chessclubgallery/IMG_3031.png";
+import image42 from "../../data/images/blog/chessclubgallery/IMG_3032.png";
+import image43 from "../../data/images/blog/chessclubgallery/IMG_3033.png";
+import image44 from "../../data/images/blog/chessclubgallery/IMG_3034.png";
+import image45 from "../../data/images/blog/chessclubgallery/IMG_3035.png";
+import image46 from "../../data/images/blog/chessclubgallery/IMG_3036.png";
+import image47 from "../../data/images/blog/chessclubgallery/IMG_3037.png";
+import image48 from "../../data/images/blog/chessclubgallery/IMG_3038.png";
+import image49 from "../../data/images/blog/chessclubgallery/IMG_3039.png";
+import image50 from "../../data/images/blog/chessclubgallery/IMG_3040.png";
+import image51 from "../../data/images/blog/chessclubgallery/IMG_3041.png";
+import image52 from "../../data/images/blog/chessclubgallery/IMG_3042.png";
+import image53 from "../../data/images/blog/chessclubgallery/IMG_3043.png";
+import image54 from "../../data/images/blog/chessclubgallery/IMG_3044.png";
+import image55 from "../../data/images/blog/chessclubgallery/IMG_3045.png";
+import image56 from "../../data/images/blog/chessclubgallery/IMG_3046.png";
+import image57 from "../../data/images/blog/chessclubgallery/IMG_3047.png";
+import image58 from "../../data/images/blog/chessclubgallery/IMG_3048.png";
+import image59 from "../../data/images/blog/chessclubgallery/IMG_3049.png";
+import image60 from "../../data/images/blog/chessclubgallery/IMG_3050.png";
 
 
 const CaseStudiesArea = ({ data }) => {
@@ -89,6 +109,26 @@ const CaseStudiesArea = ({ data }) => {
         image29,
         image32,
         image34,
+        image41,
+        image42,
+        image43,
+        image44,
+        image45,
+        image46,
+        image47,
+        image48,
+        image49,
+        image50,
+        image51,
+        image52,
+        image53,
+        image54,
+        image55,
+        image56,
+        image57,
+        image58,
+        image59,
+        image50,
     ];
     
 
