@@ -7,6 +7,7 @@ import SEO from "@components/seo";
 import PageBreadcrumb from "@components/pagebreadcrumb";
 import image1 from "../../data/images/blog/1.png"
 import TeamArea2 from "../../container/home/team2";
+import TeamArea3 from "../../container/home/team3";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql, Link } from "gatsby";
 import { Row, Container, Col } from "react-bootstrap";
@@ -35,7 +36,7 @@ import {
 const SinglePosts = ({ data, location, pageContext }) => {
     const data1={
         "section": "team-members-section",
-        "items": [
+       "items": [
             {
                 "id": "team-members-1",
                 "headings": [
@@ -51,6 +52,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                             "childImageSharp": {
                                 "gatsbyImageData": {
                                     "layout": "constrained",
+                                    
                                     "images": {
                                         "fallback": {
                                             "src": "/static/a3b8ecfe8268718e19beb304dd1f5d68/d9f11/image1.webp",
@@ -122,6 +124,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
                             "childImageSharp": {
                                 "gatsbyImageData": {
                                     "layout": "constrained",
+                                    
                                     "images": {
                                         "fallback": {
                                             "src": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp",
@@ -154,13 +157,35 @@ const SinglePosts = ({ data, location, pageContext }) => {
                     {
                         "alt": null,
                         "src": {
+                            
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade 5 - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-2",
+                "headings": [
+                    {
+                        "content": "Thanvish Reddy2",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
                             "childImageSharp": {
                                 "gatsbyImageData": {
                                     "layout": "constrained",
+                                    
                                     "images": {
                                         "fallback": {
-                                            "src": "/static/81561245e1be1478863d9d9d0370f85e/d9f11/image4.webp",
-                                            "srcSet": "/static/81561245e1be1478863d9d9d0370f85e/89c34/image4.webp 1008w,\n/static/81561245e1be1478863d9d9d0370f85e/bc146/image4.webp 2016w,\n/static/81561245e1be1478863d9d9d0370f85e/d9f11/image4.webp 4032w",
+                                            "src": "/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp",
+                                            "srcSet": "/static/71c9409b0df756f683c9bf6e58a105eb/89c34/image2.webp 1008w,\n/static/71c9409b0df756f683c9bf6e58a105eb/bc146/image2.webp 2016w,\n/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp 4032w",
                                             "sizes": "(min-width: 4032px) 4032px, 100vw"
                                         },
                                         "sources": []
@@ -169,6 +194,470 @@ const SinglePosts = ({ data, location, pageContext }) => {
                                     "height": 3024
                                 }
                             }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade K - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-3",
+                "headings": [
+                    {
+                        "content": "Bill Truemam3",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp",
+                                            "srcSet": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/89c34/image3.webp 1008w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/bc146/image3.webp 2016w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Mentor & Head Coach",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-4",
+                "headings": [
+                    {
+                        "content": "Jatin Joshi4",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade 5 - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-2",
+                "headings": [
+                    {
+                        "content": "Thanvish Reddy5",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp",
+                                            "srcSet": "/static/71c9409b0df756f683c9bf6e58a105eb/89c34/image2.webp 1008w,\n/static/71c9409b0df756f683c9bf6e58a105eb/bc146/image2.webp 2016w,\n/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade K - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-3",
+                "headings": [
+                    {
+                        "content": "Bill Truemam6",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp",
+                                            "srcSet": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/89c34/image3.webp 1008w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/bc146/image3.webp 2016w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Mentor & Head Coach",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-4",
+                "headings": [
+                    {
+                        "content": "Jatin Joshi7",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade 5 - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-1",
+                "headings": [
+                    {
+                        "content": "31",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/a3b8ecfe8268718e19beb304dd1f5d68/d9f11/image1.webp",
+                                            "srcSet": "/static/a3b8ecfe8268718e19beb304dd1f5d68/89c34/image1.webp 1008w,\n/static/a3b8ecfe8268718e19beb304dd1f5d68/bc146/image1.webp 2016w,\n/static/a3b8ecfe8268718e19beb304dd1f5d68/d9f11/image1.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade 7 - Talley Middle School",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-2",
+                "headings": [
+                    {
+                       "content": "32",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp",
+                                            "srcSet": "/static/71c9409b0df756f683c9bf6e58a105eb/89c34/image2.webp 1008w,\n/static/71c9409b0df756f683c9bf6e58a105eb/bc146/image2.webp 2016w,\n/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade K - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-3",
+                "headings": [
+                    {
+                      "content": "33",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp",
+                                            "srcSet": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/89c34/image3.webp 1008w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/bc146/image3.webp 2016w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Mentor & Head Coach",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-4",
+                "headings": [
+                    {
+                      "content": "34",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade 5 - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-2",
+                "headings": [
+                    {
+                        "content": "35",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp",
+                                            "srcSet": "/static/71c9409b0df756f683c9bf6e58a105eb/89c34/image2.webp 1008w,\n/static/71c9409b0df756f683c9bf6e58a105eb/bc146/image2.webp 2016w,\n/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade K - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-3",
+                "headings": [
+                    {"content": "36",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp",
+                                            "srcSet": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/89c34/image3.webp 1008w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/bc146/image3.webp 2016w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Mentor & Head Coach",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-4",
+                "headings": [
+                    {
+                       "content": "37",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade 5 - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-2",
+                "headings": [
+                    {
+                       "content": "38",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp",
+                                            "srcSet": "/static/71c9409b0df756f683c9bf6e58a105eb/89c34/image2.webp 1008w,\n/static/71c9409b0df756f683c9bf6e58a105eb/bc146/image2.webp 2016w,\n/static/71c9409b0df756f683c9bf6e58a105eb/d9f11/image2.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Grade K - Claymont Elementary",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-3",
+                "headings": [
+                    {
+                        "content": "39",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            "childImageSharp": {
+                                "gatsbyImageData": {
+                                    "layout": "constrained",
+                                    
+                                    "images": {
+                                        "fallback": {
+                                            "src": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp",
+                                            "srcSet": "/static/5a8ea80ae5a159ed6f6f04041f36d69f/89c34/image3.webp 1008w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/bc146/image3.webp 2016w,\n/static/5a8ea80ae5a159ed6f6f04041f36d69f/d9f11/image3.webp 4032w",
+                                            "sizes": "(min-width: 4032px) 4032px, 100vw"
+                                        },
+                                        "sources": []
+                                    },
+                                    "width": 4032,
+                                    "height": 3024
+                                }
+                            }
+                        }
+                    }
+                ],
+                "description": null,
+                "designation": "Mentor & Head Coach",
+                "icon": null,
+                
+            },
+            {
+                "id": "team-members-4",
+                "headings": [
+                    {
+                        "content": "40",
+                        "level": "h4"
+                    }
+                ],
+                "images": [
+                    {
+                        "alt": null,
+                        "src": {
+                            
                         }
                     }
                 ],
@@ -276,8 +765,11 @@ console.log("httt", data?.article?.title)
                 <PostDetailsContentWrap>
                     <PostDetailsBody>
                         <Thumb>
-                        <TeamArea2 data={data1}/>
-                        </Thumb>
+     {data?.article?.title !== 'Chess in School' ? 
+  <TeamArea2 data={data1} /> 
+  : 
+  <TeamArea3 data={data1} />
+  }                        </Thumb>
                         <Content>
                             <SingleBlogContent
                                 dangerouslySetInnerHTML={{
