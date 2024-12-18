@@ -766,8 +766,10 @@ const SinglePosts = ({ data, location, pageContext }) => {
                         <Thumb>
                             
                         {data?.article?.title !== 'Chess in School' ? 
-  <TeamArea2 data={data1} /> : 
-  <TeamArea3 data={data1} />}
+  <TeamArea2 data={data1} /> 
+  : 
+  <TeamArea3 data={data1} />
+  }
 
                         </Thumb>
                         <Content>

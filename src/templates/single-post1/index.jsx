@@ -7,6 +7,7 @@ import SEO from "@components/seo";
 import PageBreadcrumb from "@components/pagebreadcrumb";
 import image1 from "../../data/images/blog/1.png"
 import TeamArea2 from "../../container/home/team2";
+import TeamArea3 from "../../container/home/team3";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql, Link } from "gatsby";
 import { Row, Container, Col } from "react-bootstrap";
@@ -286,7 +287,11 @@ const SinglePosts = ({ data, location, pageContext }) => {
                 <PostDetailsContentWrap>
                     <PostDetailsBody>
                         <Thumb>
-                        <TeamArea2 data={data1}/>
+                        {data?.article?.title !== 'Chess in School' ? 
+  <TeamArea2 data={data1} /> 
+  : 
+  <TeamArea3 data={data1} />
+  }
                         </Thumb>
                         <Content>
                             <SingleBlogContent
