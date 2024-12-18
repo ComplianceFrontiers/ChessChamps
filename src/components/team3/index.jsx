@@ -267,8 +267,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={400}
+          height={400}
         />
       );
       break;

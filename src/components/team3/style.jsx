@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { device, themeGet, keyframes } from "@theme/utils";
 
 const rotation = keyframes`
