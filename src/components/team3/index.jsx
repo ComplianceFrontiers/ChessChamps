@@ -15,8 +15,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -27,8 +27,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -39,8 +39,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -51,8 +51,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -63,8 +63,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -75,8 +75,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -87,8 +87,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -99,8 +99,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -111,8 +111,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -123,8 +123,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -135,8 +135,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -147,8 +147,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -159,8 +159,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -171,8 +171,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -183,8 +183,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -195,8 +195,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -207,8 +207,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -219,8 +219,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -231,8 +231,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -243,8 +243,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -255,8 +255,8 @@ const TeamMember3 = ({ title }) => {
           alt={title}
           placeholder="blurred"
           layout="constrained"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
         />
       );
       break;
@@ -266,9 +266,9 @@ const TeamMember3 = ({ title }) => {
           src="../../data/images/blog/chessclubgallery/IMG_3031.png"
           alt={title}
           placeholder="blurred"
-          layout="constrained"
-          width={400}
-          height={400}
+        //   layout="constrained"
+          width={500}
+          height={500}
         />
       );
       break;
