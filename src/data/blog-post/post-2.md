@@ -33,7 +33,7 @@ Our tournaments are designed to **challenge**, **inspire**, and **nurture** ches
 
   <li><strong>Strategic Thinking</strong><br>Chess helps students learn to plan, evaluate, and make decisions—skills that are essential in both school and life.</li>
 
-  <li><strong>Improved Academic Performance</strong><br>Research indicates that chess players often perform better in subjects like math and reading due to improved reasoning and analytical skills.</li>
+  <li><strong>Academic Excellence</strong><br>Research indicates that chess players often perform better in subjects like math and reading due to improved reasoning and analytical skills.</li>
 
   <li><strong>Increased Confidence</strong><br>Each game of chess is a chance for students to challenge themselves, celebrate progress, and gain confidence in their abilities.</li>
 </ul>
