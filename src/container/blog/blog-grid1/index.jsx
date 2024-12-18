@@ -136,7 +136,7 @@ const BlogGrid = ({ data }) => {
                         "slug": "enhanced-school-reputation"
                     },
                     {
-                        "title": "Improved Academic Performance",
+                        "title": "Academic Excellence",
                         "slug": "improved-academic-performance"
                     },
                     {
