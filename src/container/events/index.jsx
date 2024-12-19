@@ -1,10 +1,11 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import { Col, Container, Row, Accordion } from "react-bootstrap";
-import FaqList from "../../components/faq";
+import FaqList from "../../components/events";
 import Categories from "../../components/widget/articles-categories-widget";
 import { FaqSection, FaqContentBox } from "./style";
 const FAQArea = ({ data }) => {
-    console.log(data)
+    console.log(data);
     return (
         <FaqSection>
             <Container>
@@ -12,7 +13,6 @@ const FAQArea = ({ data }) => {
                     <Col lg={8}>
                         <FaqContentBox>
                             <Accordion defaultActiveKey="1">
-                                
                                 {data?.items &&
                                     data?.items.map((item, i) => {
                                         return (
@@ -42,7 +42,7 @@ FAQArea.propTypes = {
             title: PropTypes.string,
             subtitle: PropTypes.string,
             description: PropTypes.string,
-            imageSrc:PropTypes.string,
+            imageSrc: PropTypes.string,
             icon: PropTypes.shape({
                 src: PropTypes.oneOfType([
                     PropTypes.string,

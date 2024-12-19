@@ -4,7 +4,6 @@ import Layout from "@layout";
 import SEO from "@components/seo";
 import { graphql } from "gatsby";
 import PageBreadcrumb from "../components/pagebreadcrumb";
-import FAQArea from "../container/faq";
 import { normalizedData } from "@utils/functions";
 import image1 from "../data/images/online/image1.png";
 

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Col, Container, Row, Accordion } from "react-bootstrap";
-import FaqList from "../../components/faq";
+import FaqList from "../../components/events";
 import Categories from "../../components/widget/articles-categories-widget";
 import { FaqSection, FaqContentBox } from "./style";
 const FAQArea = ({ data }) => {

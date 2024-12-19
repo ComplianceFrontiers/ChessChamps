@@ -2,7 +2,7 @@
 module.exports = {
     title: "Chess Champs",
     titleTemplate: "",
-    description: "A website for the Chess Champs",
+    description: "Chess for Kids",
     author: "",
     twitterUsername: "@ChessChamps",
     keywords: ["bootstrap", "html", "react", "gatsby", "ChessChamps", "ChessChamps"],

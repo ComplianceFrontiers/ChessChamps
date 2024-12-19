@@ -1,6 +1,6 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
-import Button from "../../components/shared/button";
+import Button from "../shared/button";
 import {
     ServiceCard,
     ServiceIcon,
