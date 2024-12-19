@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
 import PageBreadcrumb from "../components/pagebreadcrumb";
-import CaseStudiesArea from "../container/case-studies";
+import CaseStudiesArea from "../container/gallery";
 import { normalizedData } from "@utils/functions";
 import { graphql } from "gatsby";
 const CaseStudiesPage = ({ data, location, pageContext }) => {

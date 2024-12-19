@@ -1,7 +1,13 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { AuthorButton, WidgetAuthor, Title, Description, Socials } from "./style";
+import {
+    AuthorButton,
+    WidgetAuthor,
+    Title,
+    Description,
+    Socials,
+} from "./style";
 
 const Author = ({ author }) => {
     console.log("tring1", author.name);
@@ -12,7 +18,7 @@ const Author = ({ author }) => {
 
     if (author.name === "Community Outreach") {
         buttonText = "Visit Gallery";
-        buttonLink = "/case-studies";
+        buttonLink = "/gallery";
     } else if (author.name === "Basics of Chess") {
         buttonText = "Online Store";
         buttonLink = "/online-store";
