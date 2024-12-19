@@ -20,15 +20,18 @@ const TeamArea1 = ({ data }) => {
                         headingTitle={
                             <div style={{ textAlign: "center" }}>
                                 <span style={{ fontSize: "0.8em" }}>
-                                    Chess is more than a game; it’s a mental fitness regime, just like any sport or physical
-                                    fitness program.
+                                    Chess is more than a game; it’s a mental
+                                    fitness regime, just like any sport or
+                                    physical fitness program.
                                 </span>
                                 <br />
-                                
+
                                 {/* Wrap the button with Gatsby Link */}
                                 <div className="button-wrapper">
-                                    <Link to="/blog-grid">
-                                        <button className="shop-now-button">Our Programs</button>
+                                    <Link to="/programs">
+                                        <button className="shop-now-button">
+                                            Our Programs
+                                        </button>
                                     </Link>
                                 </div>
                             </div>
@@ -46,7 +49,10 @@ TeamArea1.propTypes = {
         section_title: PropTypes.shape({
             title: PropTypes.string,
             icon: PropTypes.shape({
-                src: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]).isRequired,
+                src: PropTypes.oneOfType([
+                    PropTypes.string,
+                    PropTypes.shape({}),
+                ]).isRequired,
                 alt: PropTypes.string,
             }),
         }),
