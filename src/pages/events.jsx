@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
 import { graphql } from "gatsby";
-import PageBreadcrumb from "../components/pagebreadcrumb";
-import BlogGrid1 from "../container/blog/blog-grid1";
 import { normalizedData } from "@utils/functions";
 import image1 from "../data/images/online/image2.png";
 

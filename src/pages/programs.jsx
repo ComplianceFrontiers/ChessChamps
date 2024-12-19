@@ -4,7 +4,7 @@ import Layout from "@layout";
 import SEO from "@components/seo";
 import { graphql } from "gatsby";
 import PageBreadcrumb from "../components/pagebreadcrumb";
-import BlogGrid from "../container/blog/blog-grid";
+import BlogGrid from "../container/blog/programs";
 import { normalizedData } from "@utils/functions";
 
 const BlogGridPage = ({ data, location, pageContext }) => {
