@@ -10,7 +10,7 @@
         {
             "id": "menu-2",
             "text": "About Us",
-            "link": "/services"
+            "link": "/aboutUs"
         },
         {
             "id": "menu-3",
@@ -20,25 +20,22 @@
         {
             "id": "menu-4",
             "text": "Events",
-            "link": "/faq"
+            "link": "/events"
         },
         {
             "id": "menu-5",
             "text": "Gallery",
             "link": "/case-studies"
-            
         },
         {
             "id": "menu-6",
             "text": "Online Store",
             "link": "/online-store"
-           
         },
         {
             "id": "menu-6",
             "text": "Contact Us",
             "link": "/contact-us"
-           
         }
     ]
 }

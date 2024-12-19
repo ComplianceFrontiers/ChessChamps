@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
-import ServicesItem from "../../components/services";
+import ServicesItem from "../../components/aboutUs";
 import { ServicesSection } from "./style";
 const ServicsArea = ({ data }) => {
     return (
