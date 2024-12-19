@@ -8,7 +8,7 @@ import Hero from "../container/home/hero";
 import BrandArea from "../container/home/brand";
 import WorkingProcessArea from "../container/home/working-process";
 import WhyChooseUsArea from "../container/home/whay-choose-us";
-import CaseStudiesArea from "../container/home/case-studies";
+import CaseStudiesArea from "../container/home/gallery";
 import TeamArea from "../container/home/team";
 import TestimonialArea from "../container/home/testimonial";
 import LatestBlogArea from "../container/home/blog";
