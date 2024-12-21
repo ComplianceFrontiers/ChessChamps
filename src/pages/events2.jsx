@@ -5,9 +5,9 @@ import Layout from "@layout";
 import SEO from "@components/seo";
 import { graphql } from "gatsby";
 import { normalizedData } from "@utils/functions";
-import image2 from "../data/images/online/image3.png";
-import image3 from "../data/images/online/image4.png";
-import image4 from "../data/images/online/image5.png";
+import image2 from "../data/images/online/image6.png";
+import image3 from "../data/images/online/image7.png";
+import image4 from "../data/images/online/image8.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -32,24 +32,24 @@ const FAQPage = ({ data, location, pageContext }) => {
                     marginBottom: "20px",
                 }}
             >
-                <a href="https://chess-champs-tournaments.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image2}
                         alt="FAQ Illustration 2"
                         style={{
-                            width: "1000px", // Default for mobile
+                            width: "900px", // Default for mobile
                             height: "auto",
                             borderRadius: "8px",
                         }}
                         className="responsive-image"
                     />
                 </a>
-                <a href="/events2" target="_blank" rel="noopener noreferrer">
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image3}
                         alt="FAQ Illustration 3"
                         style={{
-                            width: "1000px",
+                            width: "900px",
                             height: "auto",
                             borderRadius: "8px",
                         }}
@@ -61,7 +61,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         src={image4}
                         alt="FAQ Illustration 4"
                         style={{
-                            width: "1000px",
+                            width: "900px",
                             height: "auto",
                             borderRadius: "8px",
                         }}
