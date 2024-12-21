@@ -44,7 +44,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </a>
-                <a href="/events2" target="_blank" rel="noopener noreferrer">
+                <a href="/newjersy" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image3}
                         alt="FAQ Illustration 3"
