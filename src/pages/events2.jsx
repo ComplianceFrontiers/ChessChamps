@@ -32,7 +32,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     marginBottom: "20px",
                 }}
             >
-                <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <a href="/events2" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image2}
                         alt="FAQ Illustration 2"
@@ -44,7 +44,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </a>
-                <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <a href="/events2" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image3}
                         alt="FAQ Illustration 3"
@@ -56,7 +56,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </a>
-                <a href="/events" target="_blank" rel="noopener noreferrer">
+                <a href="/events2" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image4}
                         alt="FAQ Illustration 4"
