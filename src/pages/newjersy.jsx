@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
+import PageBreadcrumb from "../components/pagebreadcrumb";
 import { graphql } from "gatsby";
 import { normalizedData } from "@utils/functions";
 import image2 from "../data/images/online/image6.png";
@@ -22,6 +23,11 @@ const FAQPage = ({ data, location, pageContext }) => {
             }}
         >
             <SEO title="Events" pathname="/" />
+            <PageBreadcrumb
+                pageContext={pageContext}
+                location={location}
+                title="New Jersy"
+            />
             
             <div
                 style={{
@@ -32,7 +38,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     marginBottom: "20px",
                 }}
             >
-                <a href="/events2" target="_blank" rel="noopener noreferrer">
+                <a href="/events" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image2}
                         alt="FAQ Illustration 2"
@@ -44,7 +50,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </a>
-                <a href="/events2" target="_blank" rel="noopener noreferrer">
+                <a href="/events" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image3}
                         alt="FAQ Illustration 3"
@@ -56,7 +62,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </a>
-                <a href="/events2" target="_blank" rel="noopener noreferrer">
+                <a href="/events" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image4}
                         alt="FAQ Illustration 4"
