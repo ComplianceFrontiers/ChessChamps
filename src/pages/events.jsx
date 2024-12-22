@@ -76,24 +76,32 @@ const FAQPage = ({ data, location, pageContext }) => {
                 </a>
             </div>
             <style>
-                {`
-                .responsive-image {
-                    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-                }
-                @media (min-width: 768px) {
-                    .responsive-image {
-                        width: 80%; /* Larger size for tablets */
-                        height: auto;
-                    }
-                }
-                @media (min-width: 1024px) {
-                    .responsive-image {
-                        width: 70%; /* Larger size for desktops */
-                        height: auto;
-                    }
-                }
-                `}
-            </style>
+    {`
+    .responsive-image {
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    }
+    @media (max-width: 768px) {
+        .responsive-image {
+            width: 100%; /* Adjusted for smaller screens */
+            height: auto;
+            padding: 15px; /* Add padding for mobile view */
+        }
+    }
+    @media (min-width: 768px) {
+        .responsive-image {
+            width: 80%; /* Larger size for tablets */
+            height: auto;
+        }
+    }
+    @media (min-width: 1024px) {
+        .responsive-image {
+            width: 70%; /* Larger size for desktops */
+            height: auto;
+        }
+    }
+    `}
+</style>
+
         </Layout>
     );
 };
