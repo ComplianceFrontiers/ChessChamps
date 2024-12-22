@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
+import PageBreadcrumb from "../components/pagebreadcrumb";
 import { graphql } from "gatsby";
 import { normalizedData } from "@utils/functions";
 import image2 from "../data/images/online/image3.png";
@@ -22,6 +23,11 @@ const FAQPage = ({ data, location, pageContext }) => {
             }}
         >
             <SEO title="Events" pathname="/" />
+            <PageBreadcrumb
+                pageContext={pageContext}
+                location={location}
+                title="Events"
+            />
             
             <div
                 style={{
@@ -32,9 +38,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                     marginBottom: "20px",
                 }}
             >
-                <a href="https://chess-champs-tournaments.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <a href="/events" target="_blank" rel="noopener noreferrer">
                     <img
-                        src={image2}
+                        src={image4}
                         alt="FAQ Illustration 2"
                         style={{
                             width: "1000px", // Default for mobile
@@ -56,9 +62,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </a>
-                <a href="/events" target="_blank" rel="noopener noreferrer">
+                <a href="https://chess-champs-tournaments.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <img
-                        src={image4}
+                        src={image2}
                         alt="FAQ Illustration 4"
                         style={{
                             width: "1000px",
