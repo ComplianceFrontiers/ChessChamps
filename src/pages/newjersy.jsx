@@ -84,7 +84,8 @@ const FAQPage = ({ data, location, pageContext }) => {
         .responsive-image {
             width: 100%; /* Adjusted for smaller screens */
             height: auto;
-            padding: 15px; /* Add padding for mobile view */
+            padding-left:10px;
+             padding-right:10px;
         }
     }
     @media (min-width: 768px) {
