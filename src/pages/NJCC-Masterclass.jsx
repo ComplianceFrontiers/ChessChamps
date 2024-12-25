@@ -49,55 +49,74 @@ const FAQPage = ({ data, location, pageContext }) => {
             </Link>
             {/* Buttons Section */}
             <div
+    style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        position: "relative", // Added to position buttons inside the image
+        marginBottom: "30px",
+    }}
+>
+    {/* Image */}
+    <img
+        src={image1}
+        alt="FAQ Illustration"
+        style={{
+            maxWidth: "90%",
+        }}
+    />
+
+    {/* Buttons */}
+    <div
+        style={{
+            position: "absolute", // Position buttons over the image
+            display: "flex",
+            justifyContent: "center",
+            gap: "20px", // Space between the buttons
+        }}
+    >
+        {/* Skill Levels Button */}
+        <Link to="/training-curriculum">
+            <button
                 style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "20px",
-                    marginBottom: "50px", // Adjusts space between buttons and footer
+                    padding: "10px 20px",
+                    backgroundColor: "#007BFF",
+                    color: "#FFF",
+                    border: "none",
+                    borderRadius: "5px",
+                    cursor: "pointer",
+                    fontWeight: "bold",
+                    fontSize: "16px",
                 }}
             >
-                {/* Skill Levels Button */}
-                <Link to="/training-curriculum">
-                    <button
-                        style={{
-                            padding: "10px 20px",
-                            backgroundColor: "#007BFF",
-                            color: "#FFF",
-                            border: "none",
-                            borderRadius: "5px",
-                            cursor: "pointer",
-                            fontWeight: "bold",
-                            fontSize: "16px",
-                        }}
-                    >
-                        Skill Levels
-                    </button>
-                </Link>
+                Skill Levels
+            </button>
+        </Link>
 
-                {/* Register Button */}
-                <a
-                    href="https://buy.stripe.com/dR6eYa9C28ricaA4gq"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <button
-                        style={{
-                            padding: "10px 20px",
-                            backgroundColor: "#28A745",
-                            color: "#FFF",
-                            border: "none",
-                            borderRadius: "5px",
-                            cursor: "pointer",
-                            fontWeight: "bold",
-                            fontSize: "16px",
-                        }}
-                    >
-                        Register
-                    </button>
-                </a>
-            </div>
+        {/* Register Button */}
+        <a
+            href="https://buy.stripe.com/dR6eYa9C28ricaA4gq"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <button
+                style={{
+                    padding: "10px 20px",
+                    backgroundColor: "#28A745",
+                    color: "#FFF",
+                    border: "none",
+                    borderRadius: "5px",
+                    cursor: "pointer",
+                    fontWeight: "bold",
+                    fontSize: "16px",
+                }}
+            >
+                Register
+            </button>
+        </a>
+    </div>
+</div>
+
         </Layout>
     );
 };
