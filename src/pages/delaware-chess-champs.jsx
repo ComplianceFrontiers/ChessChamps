@@ -5,7 +5,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
@@ -19,9 +19,37 @@ import image2 from "../data/images/delaware-chess-champs/14.png";
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page.content || []);
-  
-   
+    const [isMobile, setIsMobile] = useState(false);
 
+    // Detect mobile screen size
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // Set mobile flag based on width
+        };
+
+        handleResize(); // Check size on component mount
+        window.addEventListener("resize", handleResize); // Listen for window resizing
+
+        return () => {
+            window.removeEventListener("resize", handleResize); // Cleanup event listener
+        };
+    }, []);
+
+    const buttonStyle = {
+        padding: isMobile ? "5px 5px" : "10px 20px", // Smaller padding for mobile
+        fontSize: isMobile ? "9px" : "16px", // Smaller font size for mobile
+        backgroundColor: "#007BFF",
+        color: "#FFF",
+        border: "none",
+        borderRadius: "5px",
+        cursor: "pointer",
+        fontWeight: "bold",
+    };
+
+    const registerButtonStyle = {
+        ...buttonStyle,
+        backgroundColor: "#28A745", // Different background for the register button
+    };
 
     return (
         <Layout
@@ -53,67 +81,40 @@ const FAQPage = ({ data, location, pageContext }) => {
             </div>
 
             <div
-    style={{
-        position: "relative",
-        display: "flex",
-        justifyContent: "center",
-        marginBottom: "20px",
-    }}
->
-    <img
-        src={image2}
-        alt="FAQ Illustration"
-        style={{
-            maxWidth: "90%",
-        }}
-    />
-    {/* Buttons inside the image */}
-    <div
-        style={{
-            position: "absolute",
-            bottom: "50px", // Places the buttons at the bottom of the image
-            left: "50%", // Centers the buttons horizontally
-            transform: "translateX(-50%)", // Adjusts position to perfectly center
-            display: "flex",
-            gap: "50px",
-            fontSize: "20px",
-        }}
-    >
-        <Link  href="/training-curriculum">
-        <button
-            style={{
-                padding: "10px 20px",
-                backgroundColor: "#007BFF",
-                color: "#FFF",
-                border: "none",
-                borderRadius: "5px",
-                cursor: "pointer",
-                fontWeight: "bold",
-           
-            }}
-        >
-            Training Curriculum
-        </button>
-        </Link > 
-        <Link  href="https://chesschampsus.vercel.app/JCC_ChessChamps">
-        <button
-            style={{
-                padding: "10px 20px",
-                backgroundColor: "#28A745",
-                color: "#FFF",
-                border: "none",
-                borderRadius: "5px",
-                cursor: "pointer",
-                fontWeight: "bold",
-            }}
-        >
-            Register
-        </button>
-        </Link>
-    </div>
-</div>
-
-
+                style={{
+                    position: "relative",
+                    display: "flex",
+                    justifyContent: "center",
+                    marginBottom: "20px",
+                }}
+            >
+                <img
+                    src={image2}
+                    alt="FAQ Illustration"
+                    style={{
+                        maxWidth: "90%",
+                    }}
+                />
+                {/* Buttons inside the image */}
+                <div
+                    style={{
+                        position: "absolute",
+                        bottom: isMobile ? '10px' : '20px', // Places the buttons at the bottom of the image
+                        left: "50%", // Centers the buttons horizontally
+                        transform: "translateX(-50%)", // Adjusts position to perfectly center
+                        display: "flex",
+                        gap: isMobile ? "15px" : "50px", // Smaller gap on mobile
+                        fontSize: isMobile ? "14px" : "20px", // Smaller font size on mobile
+                    }}
+                >
+                    <Link to="/training-curriculum">
+                        <button style={buttonStyle}>Training Curriculum</button>
+                    </Link>
+                    <Link to="https://chesschampsus.vercel.app/JCC_ChessChamps">
+                        <button style={registerButtonStyle}>Register</button>
+                    </Link>
+                </div>
+            </div>
         </Layout>
     );
 };
