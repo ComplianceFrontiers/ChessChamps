@@ -26,7 +26,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="New Jersey Chess Champs"
             />
-
+  <Link href="/NJCC-Masterclass">
              <div
                             style={{
                                 display: "flex",
@@ -35,6 +35,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                                 marginBottom:"30px"
                             }}
                         >
+                          
                             <img
                                 src={image1}
                                 alt="FAQ Illustration"
@@ -42,7 +43,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                                     maxWidth: "90%",
                                 }}
                             />
+                           
                         </div>
+                        </Link>
         </Layout>
     );
 };
