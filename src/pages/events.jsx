@@ -39,7 +39,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     marginBottom: "20px",
                 }}
             >
-                <a href="/events" target="_blank" rel="noopener noreferrer">
+                <a href="/celebrating-nationals-win" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image4}
                         alt="FAQ Illustration 2"
