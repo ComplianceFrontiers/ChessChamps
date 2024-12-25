@@ -19,8 +19,11 @@ const Layout = ({ data, children }) => {
                 <GlobalCSS />
                 <Header data={data} />
                 {children}
-                {/* Hide Footer on the /events and /newjersy/ pages */}
-                {(location.pathname !== "/events" && location.pathname !== "/events"  && location.pathname !== "/newjersy/" && location.pathname !== "/newjersy" )&& <Footer data={data} />}
+                {/* Hide Footer on the /events and /NJCC/ pages */}
+                {location.pathname !== "/events" &&
+                    location.pathname !== "/events" &&
+                    location.pathname !== "/NJCC/" &&
+                    location.pathname !== "/NJCC" && <Footer data={data} />}
                 <ScrollToTop />
             </div>
         </ThemeProvider>

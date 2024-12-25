@@ -29,7 +29,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="Events"
             />
-            
+
             <div
                 style={{
                     display: "flex",
@@ -51,31 +51,11 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </a>
-                <a href="/newjersy" target="_blank" rel="noopener noreferrer">
-                    <img
-                        src={image3}
-                        alt="FAQ Illustration 3"
-                        style={{
-                            width: "1000px",
-                            height: "auto",
-                            borderRadius: "8px",
-                        }}
-                        className="responsive-image"
-                    />
-                </a>
-                <a href="https://chess-champs-tournaments.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <img
-                        src={image2}
-                        alt="FAQ Illustration 4"
-                        style={{
-                            width: "1000px",
-                            height: "auto",
-                            borderRadius: "8px",
-                        }}
-                        className="responsive-image"
-                    />
-                </a>
-                <a href="/delaware-chess-champs" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="/delaware-chess-champs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <img
                         src={image9}
                         alt="FAQ Illustration 2"
@@ -87,9 +67,37 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </a>
+                <a href="/NJCC" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src={image3}
+                        alt="FAQ Illustration 3"
+                        style={{
+                            width: "1000px",
+                            height: "auto",
+                            borderRadius: "8px",
+                        }}
+                        className="responsive-image"
+                    />
+                </a>
+                <a
+                    href="https://chess-champs-tournaments.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src={image2}
+                        alt="FAQ Illustration 4"
+                        style={{
+                            width: "1000px",
+                            height: "auto",
+                            borderRadius: "8px",
+                        }}
+                        className="responsive-image"
+                    />
+                </a>
             </div>
             <style>
-    {`
+                {`
     .responsive-image {
         transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
     }
@@ -114,8 +122,7 @@ const FAQPage = ({ data, location, pageContext }) => {
         }
     }
     `}
-</style>
-
+            </style>
         </Layout>
     );
 };
