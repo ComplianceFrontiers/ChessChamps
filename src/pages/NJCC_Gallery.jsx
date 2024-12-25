@@ -42,7 +42,6 @@ const FAQPage = ({ data, location, pageContext }) => {
                     display: "flex",
                     flexWrap: "wrap", // Allows images to wrap to the next line
                     justifyContent: "center",
-                    gap: "20px", // Space between images
                 }}
             >
                 {/* Display each image one after the other */}
@@ -51,7 +50,6 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 9"
                     style={{
                         maxWidth: "90%",
-                        marginBottom: "20px", // Space between images
                     }}
                 />
                 <img
@@ -59,7 +57,6 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 10"
                     style={{
                         maxWidth: "90%",
-                        marginBottom: "20px",
                     }}
                 />
                 <img
@@ -67,7 +64,6 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 11"
                     style={{
                         maxWidth: "90%",
-                        marginBottom: "20px",
                     }}
                 />
                 <img
@@ -75,7 +71,6 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 12"
                     style={{
                         maxWidth: "90%",
-                        marginBottom: "20px",
                     }}
                 />
                 <img
@@ -83,7 +78,6 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 13"
                     style={{
                         maxWidth: "90%",
-                        marginBottom: "20px",
                     }}
                 />
 

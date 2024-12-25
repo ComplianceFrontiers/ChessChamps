@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
 import PageBreadcrumb from "../components/pagebreadcrumb";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby"; // Importing Link from Gatsby
 import { normalizedData } from "@utils/functions";
 import image2 from "../data/images/online/image3.png";
 import image3 from "../data/images/online/image4.png";
@@ -39,7 +39,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     marginBottom: "20px",
                 }}
             >
-                <a href="/celebrating-nationals-win" target="_blank" rel="noopener noreferrer">
+                <Link to="/celebrating-nationals-win">
                     <img
                         src={image4}
                         alt="FAQ Illustration 1"
@@ -50,12 +50,8 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                     />
-                </a>
-                <a
-                    href="/delaware-chess-champs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                </Link>
+                <Link to="/delaware-chess-champs">
                     <img
                         src={image9}
                         alt="FAQ Illustration 2"
@@ -66,8 +62,8 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                     />
-                </a>
-                <a href="/NJCC" target="_blank" rel="noopener noreferrer">
+                </Link>
+                <Link to="/NJCC">
                     <img
                         src={image3}
                         alt="FAQ Illustration 3"
@@ -78,12 +74,8 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                     />
-                </a>
-                <a
-                    href="https://chess-champs-tournaments.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                </Link>
+                <Link to="https://chess-champs-tournaments.vercel.app/">
                     <img
                         src={image2}
                         alt="FAQ Illustration 4"
@@ -94,7 +86,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                     />
-                </a>
+                </Link>
             </div>
             <style>
                 {`
