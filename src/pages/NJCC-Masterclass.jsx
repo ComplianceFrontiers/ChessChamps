@@ -27,13 +27,13 @@ const FAQPage = ({ data, location, pageContext }) => {
                 title="Basics of Chess"
             />
  
-            {/* Buttons Section */}
-            <div
+           {/* Image and Buttons Section */}
+<div
     style={{
         display: "flex",
+        flexDirection: "column", // Stack image and buttons vertically
         justifyContent: "center",
         alignItems: "center",
-        position: "relative", // Added to position buttons inside the image
         marginBottom: "30px",
     }}
 >
@@ -49,10 +49,10 @@ const FAQPage = ({ data, location, pageContext }) => {
     {/* Buttons */}
     <div
         style={{
-            position: "absolute", // Position buttons over the image
             display: "flex",
             justifyContent: "center",
             gap: "20px", // Space between the buttons
+            marginTop: "20px", // Space between the image and buttons
         }}
     >
         {/* Skill Levels Button */}
@@ -96,6 +96,7 @@ const FAQPage = ({ data, location, pageContext }) => {
         </a>
     </div>
 </div>
+
 
         </Layout>
     );
