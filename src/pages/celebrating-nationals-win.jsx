@@ -9,22 +9,22 @@ import React from "react";
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
-import { Link } from "gatsby"; // Importing Gatsby's Link component
 import { graphql } from "gatsby";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import { normalizedData } from "@utils/functions";
 
-// Import images dynamically (images 9.png to 15.png)
-import images from "../data/images/celebrating-nationals-win/";
+// Import images for 9.png to 15.png
+import image9 from "../data/images/celebrating-nationals-win/9.png";
+import image10 from "../data/images/celebrating-nationals-win/10.png";
+import image11 from "../data/images/celebrating-nationals-win/11.png";
+import image12 from "../data/images/celebrating-nationals-win/12.png";
+import image13 from "../data/images/celebrating-nationals-win/13.png";
+import image14 from "../data/images/celebrating-nationals-win/14.png";
+import image15 from "../data/images/celebrating-nationals-win/15.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page.content || []);
-
-    // Array of image file names
-    const imageFiles = [
-        "9.png", "10.png", "11.png", "12.png", "13.png", "14.png", "15.png"
-    ];
 
     return (
         <Layout
@@ -47,19 +47,63 @@ const FAQPage = ({ data, location, pageContext }) => {
                     gap: "20px", // Space between images
                 }}
             >
-                {/* Map through image files and display each image */}
-                {imageFiles.map((imageFile, index) => (
-                    <img
-                        key={index}
-                        src={images[imageFile]}
-                        alt={`Image ${index + 9}`}
-                        style={{
-                            maxWidth: "90%",
-                            marginBottom: "20px", // Space between images
-                            borderRadius: "10px", // Optional: rounded corners for a cleaner look
-                        }}
-                    />
-                ))}
+                {/* Display each image one after the other */}
+                <img
+                    src={image9}
+                    alt="Image 9"
+                    style={{
+                        maxWidth: "90%",
+                        marginBottom: "20px", // Space between images
+                    }}
+                />
+                <img
+                    src={image10}
+                    alt="Image 10"
+                    style={{
+                        maxWidth: "90%",
+                        marginBottom: "20px",
+                    }}
+                />
+                <img
+                    src={image11}
+                    alt="Image 11"
+                    style={{
+                        maxWidth: "90%",
+                        marginBottom: "20px",
+                    }}
+                />
+                <img
+                    src={image12}
+                    alt="Image 12"
+                    style={{
+                        maxWidth: "90%",
+                        marginBottom: "20px",
+                    }}
+                />
+                <img
+                    src={image13}
+                    alt="Image 13"
+                    style={{
+                        maxWidth: "90%",
+                        marginBottom: "20px",
+                    }}
+                />
+                <img
+                    src={image14}
+                    alt="Image 14"
+                    style={{
+                        maxWidth: "90%",
+                        marginBottom: "20px",
+                    }}
+                />
+                <img
+                    src={image15}
+                    alt="Image 15"
+                    style={{
+                        maxWidth: "90%",
+                        marginBottom: "20px",
+                    }}
+                />
             </div>
         </Layout>
     );
