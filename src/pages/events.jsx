@@ -42,7 +42,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                 <a href="/celebrating-nationals-win" target="_blank" rel="noopener noreferrer">
                     <img
                         src={image4}
-                        alt="FAQ Illustration 2"
+                        alt="FAQ Illustration 1"
                         style={{
                             width: "1000px", // Default for mobile
                             height: "auto",
