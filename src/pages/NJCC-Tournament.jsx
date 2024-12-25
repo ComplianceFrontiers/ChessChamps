@@ -6,7 +6,7 @@ import SEO from "@components/seo";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import { graphql, Link } from "gatsby";
 import { normalizedData } from "@utils/functions";
-import image1 from "../data/images/basics-of-chess/1.png";
+import image1 from "../data/images/online/image6.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -20,13 +20,13 @@ const FAQPage = ({ data, location, pageContext }) => {
                 ...globalContent["footer"],
             }}
         >
-            <SEO title="Events" pathname="/" />
+            <SEO title="Chess Tournament - NJCC" pathname="/" />
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="Basics of Chess"
+                title="Chess Tournament - NJCC"
             />
- <Link href="/NJCC-Tournament">
+ <Link href="/NJCC-Masterclass">
             {/* Image Section */}
             <div
                 style={{
@@ -47,57 +47,6 @@ const FAQPage = ({ data, location, pageContext }) => {
               
             </div>
             </Link>
-            {/* Buttons Section */}
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "20px",
-                    marginBottom: "50px", // Adjusts space between buttons and footer
-                }}
-            >
-                {/* Skill Levels Button */}
-                <Link to="/training-curriculum">
-                    <button
-                        style={{
-                            padding: "10px 20px",
-                            backgroundColor: "#007BFF",
-                            color: "#FFF",
-                            border: "none",
-                            borderRadius: "5px",
-                            cursor: "pointer",
-                            fontWeight: "bold",
-                            fontSize: "16px",
-                        }}
-                    >
-                        Skill Levels
-                    </button>
-                </Link>
-
-                {/* Register Button */}
-                <a
-                    href="https://buy.stripe.com/dR6eYa9C28ricaA4gq"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <button
-                        style={{
-                            padding: "10px 20px",
-                            backgroundColor: "#28A745",
-                            color: "#FFF",
-                            border: "none",
-                            borderRadius: "5px",
-                            cursor: "pointer",
-                            fontWeight: "bold",
-                            fontSize: "16px",
-                        }}
-                    >
-                        Register
-                    </button>
-                </a>
-            </div>
         </Layout>
     );
 };
