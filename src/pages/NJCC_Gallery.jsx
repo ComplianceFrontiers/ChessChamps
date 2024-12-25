@@ -14,11 +14,11 @@ import PageBreadcrumb from "../components/pagebreadcrumb";
 import { normalizedData } from "@utils/functions";
 
 // Import images for 9.png to 15.png
-import image9 from "../data/images/celebrating-nationals-win/16.png";
-import image10 from "../data/images/celebrating-nationals-win/17.png";
-import image11 from "../data/images/celebrating-nationals-win/18.png";
-import image12 from "../data/images/celebrating-nationals-win/19.png";
-import image13 from "../data/images/celebrating-nationals-win/20.png";
+import image9 from "../data/images/NJCC_Gallery/16.png";
+import image10 from "../data/images/NJCC_Gallery/17.png";
+import image11 from "../data/images/NJCC_Gallery/18.png";
+import image12 from "../data/images/NJCC_Gallery/19.png";
+import image13 from "../data/images/NJCC_Gallery/20.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
