@@ -1,0 +1,93 @@
+/* eslint-disable prettier/prettier */
+import PropTypes from "prop-types";
+import Layout from "@layout";
+import SEO from "@components/seo";
+import { Link } from "gatsby"; // Importing Gatsby's Link component
+import { graphql } from "gatsby";
+import PageBreadcrumb from "../components/pagebreadcrumb";
+import { normalizedData } from "@utils/functions";
+import image1 from "../data/images/delaware-chess-champs/13.png";
+import image2 from "../data/images/delaware-chess-champs/14.png";
+
+const images = [image1, image2];
+
+const FAQPage = ({ data, location, pageContext }) => {
+    const globalContent = normalizedData(data?.allGeneral?.nodes || []);
+    return (
+        <Layout
+            data={{
+                ...globalContent["menu"],
+                ...globalContent["footer"],
+            }}
+        >
+            <SEO title="Delaware Chess Champs" pathname="/" />
+            <PageBreadcrumb
+                pageContext={pageContext}
+                location={location}
+                title="Delaware Chess Champs"
+            />
+
+            <div
+                style={{
+                    display: "flex",
+                    flexWrap: "wrap", // Allows images to wrap to the next line
+                    justifyContent: "center",
+                    marginBottom: "20px",
+                }}
+            >
+                {images.map((img, index) => (
+                    <img
+                        key={index}
+                        src={img}
+                        alt={`Delaware-Chess-Champs ${index + 1}`}
+                        style={{
+                           maxWidth:"90%"
+                        }}
+                        
+                    />
+                ))}
+            </div>
+        </Layout>
+    );
+};
+
+ 
+FAQPage.propTypes = {
+    location: PropTypes.object,
+    pageContext: PropTypes.object,
+    data: PropTypes.shape({
+        allGeneral: PropTypes.shape({
+            nodes: PropTypes.arrayOf(PropTypes.shape({})),
+        }),
+        page: PropTypes.shape({
+            content: PropTypes.arrayOf(PropTypes.shape({})),
+        }),
+    }),
+};
+
+export const query = graphql`
+    query FAQPageQuery {
+        allGeneral {
+            nodes {
+                section
+                id
+                menu {
+                    ...Menu
+                }
+                footer {
+                    ...Footer
+                }
+            }
+        }
+        page(title: { eq: "FAQPage" }, pageType: { eq: innerpage }) {
+            content {
+                ...PageContentAll
+                section_title {
+                    ...SectionTitle
+                }
+            }
+        }
+    }
+`;
+
+export default FAQPage;

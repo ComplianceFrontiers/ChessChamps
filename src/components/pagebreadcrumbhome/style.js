@@ -17,7 +17,7 @@ export const PageBreadcrumbWrap = styled.div`
     }
     
     ${device.large} {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
        
     }
         .page-breadcrumb-title {
