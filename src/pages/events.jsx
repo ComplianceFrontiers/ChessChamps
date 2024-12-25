@@ -9,6 +9,7 @@ import { normalizedData } from "@utils/functions";
 import image2 from "../data/images/online/image3.png";
 import image3 from "../data/images/online/image4.png";
 import image4 from "../data/images/online/image5.png";
+import image9 from "../data/images/online/image9.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -68,6 +69,18 @@ const FAQPage = ({ data, location, pageContext }) => {
                         alt="FAQ Illustration 4"
                         style={{
                             width: "1000px",
+                            height: "auto",
+                            borderRadius: "8px",
+                        }}
+                        className="responsive-image"
+                    />
+                </a>
+                <a href="/delaware-chess-champs" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src={image9}
+                        alt="FAQ Illustration 2"
+                        style={{
+                            width: "1000px", // Default for mobile
                             height: "auto",
                             borderRadius: "8px",
                         }}
