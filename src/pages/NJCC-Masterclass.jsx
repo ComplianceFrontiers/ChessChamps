@@ -26,27 +26,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="Basics of Chess"
             />
- <Link href="/NJCC-Tournament">
-            {/* Image Section */}
-            <div
-                style={{
-                    display: "flex",
-                    flexWrap: "wrap", // Allows images to wrap to the next line
-                    justifyContent: "center",
-                    marginBottom: "30px",
-                }}
-            >
-               
-                    <img
-                        src={image1}
-                        alt="FAQ Illustration"
-                        style={{
-                            maxWidth: "90%",
-                        }}
-                    />
-              
-            </div>
-            </Link>
+ 
             {/* Buttons Section */}
             <div
     style={{
