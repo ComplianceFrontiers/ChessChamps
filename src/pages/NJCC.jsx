@@ -113,7 +113,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         textAlign: "center",
                     }}
                 >
-                    <p>Coming Soon</p>
+                    <p>Launching Soon</p>
                     <button
                         style={{
                             marginTop: "10px",
