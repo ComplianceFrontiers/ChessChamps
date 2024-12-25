@@ -24,7 +24,7 @@ const FAQPage = ({ data, location, pageContext }) => {
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="New Jersey Chess Champs"
+                title="Basics of Chess"
             />
  <Link href="/NJCC-Masterclass">
             {/* Image Section */}
