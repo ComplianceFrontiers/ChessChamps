@@ -10,6 +10,7 @@ import { normalizedData } from "@utils/functions";
 import image1 from "../data/images/online/image10.png";
 import image2 from "../data/images/online/image11.png";
 import image3 from "../data/images/online/image12.png";
+import image4 from "../data/images/online/image111.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -37,6 +38,24 @@ const FAQPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="New Jersey Chess Champs"
             />
+              <Link href="/NJCC_Gallery">
+                <div
+                    style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "center",
+                        marginBottom: "30px",
+                    }}
+                >
+                    <img
+                        src={image4}
+                        alt="FAQ Illustration"
+                        style={{
+                            maxWidth: "90%",
+                        }}
+                    />
+                </div>
+            </Link>
 
             {/* Image 1 */}
             <Link href="/NJCC-Masterclass">
