@@ -6,7 +6,9 @@ import SEO from "@components/seo";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import { graphql, Link } from "gatsby";
 import { normalizedData } from "@utils/functions";
-import image1 from "../data/images/online/image6.png";
+import image1 from "../data/images/online/image10.png";
+import image2 from "../data/images/online/image11.png";
+import image3 from "../data/images/online/image12.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -38,6 +40,46 @@ const FAQPage = ({ data, location, pageContext }) => {
                           
                             <img
                                 src={image1}
+                                alt="FAQ Illustration"
+                                style={{
+                                    maxWidth: "90%",
+                                }}
+                            />
+                           
+                        </div>
+                        </Link>
+                        <Link href="/NJCC-Masterclass">
+             <div
+                            style={{
+                                display: "flex",
+                                flexWrap: "wrap", // Allows images to wrap to the next line
+                                justifyContent: "center",
+                                marginBottom:"30px"
+                            }}
+                        >
+                          
+                            <img
+                                src={image2}
+                                alt="FAQ Illustration"
+                                style={{
+                                    maxWidth: "90%",
+                                }}
+                            />
+                           
+                        </div>
+                        </Link>
+                        <Link href="/NJCC-Masterclass">
+             <div
+                            style={{
+                                display: "flex",
+                                flexWrap: "wrap", // Allows images to wrap to the next line
+                                justifyContent: "center",
+                                marginBottom:"30px"
+                            }}
+                        >
+                          
+                            <img
+                                src={image3}
                                 alt="FAQ Illustration"
                                 style={{
                                     maxWidth: "90%",
