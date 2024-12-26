@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
@@ -23,7 +26,13 @@ const FAQPage = ({ data, location, pageContext }) => {
           child_first_name: "",
           child_last_name: "",
           phone: "", // Add phone field
+          category:"",
+          section:"",
+          uscf_id:"",
+          uscf_expiration_date:"",
+          byes:"",
           redirect_status: "Not started",
+          Bear_Middletown_Chess_Tournament:"true"
       });
      
   
@@ -64,7 +73,7 @@ const FAQPage = ({ data, location, pageContext }) => {
               const response1 = await axios.post("https://backend-chess-tau.vercel.app/send_email_api_to_online_purchase_user", {
                   email: formData.email,
               });
-              window.location.href = "https://buy.stripe.com/dR6eYa9C28ricaA4gq"; // Redirect to Stripe after successful submission
+              window.location.href = "https://buy.stripe.com/dR65nAbKa5f60rS6oz"; // Redirect to Stripe after successful submission
               setIsPopupVisible(false); // Close the pop-up after submission
           } catch (error) {
               console.error("Error submitting form:", error);
@@ -130,6 +139,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         position: "relative",
                         display: "inline-block",
                     }}
+                    onClick={handleImageClick}
                 >
                     <img
                         src={image1}
@@ -153,70 +163,69 @@ const FAQPage = ({ data, location, pageContext }) => {
                             gap: "15px",
                         }}
                     >
-                        {/* Skill Levels Button */}
-                        <Link to="/training-curriculum">
-                            <button style={buttonStyle}>Skill Levels</button>
-                        </Link>
-
-                       <Link>
-                            <button style={registerButtonStyle}  onClick={handleImageClick}>Register</button>
-                        </Link>
+                        
                     </div>
                 </div>
             </div>
             {isPopupVisible && (
-                <div
-                    style={{
-                        position: "fixed",
-                        top: "0",
-                        left: "0",
-                        right: "0",
-                        bottom: "0",
-                        backgroundColor: "rgba(0, 0, 0, 0.5)",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        zIndex: "1000", // Ensure the popup is on top of other elements
-                        overflow: "auto", // Allow scrolling if the popup content overflows
-                    }}
-                    onClick={() => setIsPopupVisible(false)} // Close on outside click
-                >
-                    <div
-                        style={{
-                            background: "#fff",
-                            padding: "30px",
-                            borderRadius: "12px",
-                            width: "100%",
-                            maxWidth: "500px",
-                            maxHeight: "80vh", // Limit the height of the popup
-                            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                            fontFamily: "'Roboto', sans-serif",
-                            overflowY: "auto", // Allow vertical scrolling if content exceeds the height
-                            position: "relative",
-                        }}
-                        onClick={(e) => e.stopPropagation()} // Prevent closing pop-up when clicking inside the form
-                    >
-                        <button
-                            onClick={() => setIsPopupVisible(false)}
-                            style={{
-                                position: "absolute",
-                                top: "10px",
-                                right: "10px",
-                                background: "none",
-                                border: "none",
-                                color: "#000",
-                                fontSize: "20px",
-                                cursor: "pointer",
-                            }}
-                        >
-                            ×
-                        </button>
-                        <h3 style={{ fontSize: "24px", fontWeight: "600", marginBottom: "20px", textAlign: "center" }}>
-                            Online Purchase Form
-                        </h3>
-                        <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "0 auto" }}>
-    {/* First Name Field */}
-    <div style={{ marginBottom: "15px" }}>
+  <div
+    style={{
+      position: "fixed",
+      top: "0",
+      left: "0",
+      right: "0",
+      bottom: "0",
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      zIndex: "1000",
+      overflow: "auto",
+    }}
+    onClick={() => setIsPopupVisible(false)}
+  >
+    <div
+      style={{
+        background: "#fff",
+        padding: "30px",
+        borderRadius: "12px",
+        width: "100%",
+        maxWidth: "500px",
+        maxHeight: "80vh",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+        fontFamily: "'Roboto', sans-serif",
+        overflowY: "auto",
+        position: "relative",
+      }}
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        onClick={() => setIsPopupVisible(false)}
+        style={{
+          position: "absolute",
+          top: "10px",
+          right: "10px",
+          background: "none",
+          border: "none",
+          color: "#000",
+          fontSize: "20px",
+          cursor: "pointer",
+        }}
+      >
+        ×
+      </button>
+      <h3
+        style={{
+          fontSize: "24px",
+          fontWeight: "600",
+          marginBottom: "20px",
+          textAlign: "center",
+        }}
+      >
+        Online Purchase Form
+      </h3>
+      <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "0 auto" }}>
+      <div style={{ marginBottom: "15px" }}>
         <label
             style={{
                 fontWeight: "500",
@@ -333,11 +342,180 @@ const FAQPage = ({ data, location, pageContext }) => {
             }}
         />
     </div>
+       
+         <div style={{ marginBottom: "15px" }}>
+  <label
+    style={{
+      fontWeight: "500",
+      fontSize: "16px",
+      marginBottom: "8px",
+      display: "block",
+    }}
+  >
+    Category: <span style={{ color: "red" }}>*</span>
+  </label>
+  <select
+    name="category"
+    value={formData.category}
+    onChange={(e) => {
+      const { name, value } = e.target;
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+        section: "", // Reset section whenever category changes
+      }));
+    }}
+    required
+    style={{
+      width: "100%",
+      padding: "10px",
+      borderRadius: "8px",
+      border: "1px solid #ccc",
+      fontSize: "14px",
+    }}
+  >
+    <option value="">Select</option>
+    <option value="Rated">Rated</option>
+    <option value="Casual">Casual</option>
+  </select>
+</div>
 
-    {/* Submit Button */}
-    <button
-        type="submit"
-        style={{
+{/* Section Field */}
+{formData.category && (
+  <div style={{ marginBottom: "15px" }}>
+    <label
+      style={{
+        fontWeight: "500",
+        fontSize: "16px",
+        marginBottom: "8px",
+        display: "block",
+      }}
+    >
+      Section: <span style={{ color: "red" }}>*</span>
+    </label>
+    <select
+      name="section"
+      value={formData.section}
+      onChange={handleInputChange}
+      required
+      style={{
+        width: "100%",
+        padding: "10px",
+        borderRadius: "8px",
+        border: "1px solid #ccc",
+        fontSize: "14px",
+      }}
+    >
+      <option value="">Select</option>
+      {formData.category === "Rated" ? (
+        <>
+          <option value="K-12">K-12</option>
+          <option value="Open">Open</option>
+        </>
+      ) : (
+        <>
+          <option value="K-5">K-5</option>
+          <option value="K-12">K-12</option>
+        </>
+      )}
+    </select>
+  </div>
+)}
+
+
+        {/* USCF ID Field */}
+        <div style={{ marginBottom: "15px" }}>
+          <label
+            style={{
+              fontWeight: "500",
+              fontSize: "16px",
+              marginBottom: "8px",
+              display: "block",
+            }}
+          >
+            USCF ID: <span style={{ color: "red" }}>*</span>
+          </label>
+          <input
+            type="text"
+            name="uscf_id"
+            value={formData.uscf_id}
+            onChange={handleInputChange}
+            required
+            style={{
+              width: "100%",
+              padding: "10px",
+              borderRadius: "8px",
+              border: "1px solid #ccc",
+              fontSize: "14px",
+            }}
+          />
+        </div>
+
+        {/* USCF Expiration Date Field */}
+        <div style={{ marginBottom: "15px" }}>
+          <label
+            style={{
+              fontWeight: "500",
+              fontSize: "16px",
+              marginBottom: "8px",
+              display: "block",
+            }}
+          >
+            USCF Expiration Date: <span style={{ color: "red" }}>*</span>
+          </label>
+          <input
+            type="date"
+            name="uscf_expiration_date"
+            value={formData.uscf_expiration_date}
+            onChange={handleInputChange}
+            required
+            style={{
+              width: "100%",
+              padding: "10px",
+              borderRadius: "8px",
+              border: "1px solid #ccc",
+              fontSize: "14px",
+            }}
+          />
+        </div>
+
+        {/* Byes Field */}
+        <div style={{ marginBottom: "15px" }}>
+          <label
+            style={{
+              fontWeight: "500",
+              fontSize: "16px",
+              marginBottom: "8px",
+              display: "block",
+            }}
+          >
+            Byes: <span style={{ color: "red" }}>*</span>
+          </label>
+          <select
+            name="byes"
+            value={formData.byes}
+            onChange={handleInputChange}
+            required
+            style={{
+              width: "100%",
+              padding: "10px",
+              borderRadius: "8px",
+              border: "1px solid #ccc",
+              fontSize: "14px",
+            }}
+          >
+            <option value="">Select</option>
+            <option value="Round 1">Round 1</option>
+            <option value="Round 2">Round 2</option>
+            <option value="Round 3">Round 3</option>
+            <option value="Round 4">Round 4</option>
+          </select>
+        </div>
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          style={{
             backgroundColor: "#4CAF50",
             color: "white",
             padding: "10px 15px",
@@ -345,17 +523,15 @@ const FAQPage = ({ data, location, pageContext }) => {
             borderRadius: "8px",
             fontSize: "16px",
             cursor: "pointer",
-            alignItems:"center",
-            justifyContent: "center",
-        }}
-    >
-        Procced to Payment
-    </button>
-</form>
+          }}
+        >
+          Proceed to Payment
+        </button>
+      </form>
+    </div>
+  </div>
+)}
 
-                    </div>
-                </div>
-            )}
         </Layout>
     );
 };
