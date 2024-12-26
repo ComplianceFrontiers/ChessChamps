@@ -24,6 +24,7 @@ const FAQPage = ({ data, location, pageContext }) => {
           child_last_name: "",
           phone: "", // Add phone field
           redirect_status: "Not started",
+          New_Jersey_Masterclass:true
       });
      
   
