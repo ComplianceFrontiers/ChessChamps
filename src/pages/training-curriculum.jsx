@@ -43,12 +43,16 @@ const FAQPage = ({ data, location, pageContext }) => {
             >
                 {images.map((img, index) => (
                     <img
-                        key={index}
-                        src={img}
-                        alt={`Training Curriculum ${index + 1}`}
-                        style={{
-                            maxWidth:"90%"
-                         }}
+                    key={index}
+                    src={img}
+                    alt={`Training Curriculum ${index + 1}`}
+                    style={{
+                        maxWidth: "90%",
+                        height: "auto", // Ensures proper aspect ratio
+                        objectFit: "contain", // Keeps the image within its container without distortion
+                    }}
+               
+                
                          
                         
                     />

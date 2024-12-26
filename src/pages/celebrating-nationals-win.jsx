@@ -33,17 +33,18 @@ const FAQPage = ({ data, location, pageContext }) => {
                 ...globalContent["footer"],
             }}
         >
-            <SEO title="Celebrating Nationals Win" pathname="/" />
+            <SEO title="DE State Team Achievement " pathname="/" />
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="Celebrating Nationals Win"
+                title="DE State Team Achievement "
             />
             <div
                 style={{
                     display: "flex",
                     flexWrap: "wrap", // Allows images to wrap to the next line
                     justifyContent: "center",
+                    marginBottom:"40px"
                 }}
             >
                 {/* Display each image one after the other */}
