@@ -66,9 +66,9 @@ const FAQPage = ({ data, location, pageContext }) => {
         try {
             const response = await axios.post("https://backend-chess-tau.vercel.app/new_online_purchase_user", formData);
             console.log(response.data); // Handle success/failure based on response
-            const response1 = await axios.post("https://backend-chess-tau.vercel.app/send_email_api_to_online_purchase_user", {
-                email: formData.email,
-            });
+            // const response1 = await axios.post("https://backend-chess-tau.vercel.app/send_email_api_to_online_purchase_user", {
+            //     email: formData.email,
+            // });
             window.location.href = "https://buy.stripe.com/test_aEU28JcBC9tAfeM146"; // Redirect to Stripe after successful submission
             setIsPopupVisible(false); // Close the pop-up after submission
         } catch (error) {
