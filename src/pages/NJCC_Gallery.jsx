@@ -42,6 +42,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     display: "flex",
                     flexWrap: "wrap", // Allows images to wrap to the next line
                     justifyContent: "center",
+                    marginBottom:"30px",
                 }}
             >
                 {/* Display each image one after the other */}
