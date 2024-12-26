@@ -44,7 +44,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         display: "flex",
                         flexWrap: "wrap",
                         justifyContent: "center",
-                        marginBottom: "30px",
+                        marginBottom: "10px",
                     }}
                 >
                     <img
@@ -64,7 +64,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         display: "flex",
                         flexWrap: "wrap",
                         justifyContent: "center",
-                        marginBottom: "30px",
+                        marginBottom: "10px",
                     }}
                 >
                     <img
@@ -84,7 +84,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         display: "flex",
                         flexWrap: "wrap",
                         justifyContent: "center",
-                        marginBottom: "30px",
+                        marginBottom: "10px",
                     }}
                 >
                     <img
@@ -103,7 +103,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     display: "flex",
                     flexWrap: "wrap",
                     justifyContent: "center",
-                    marginBottom: "30px",
+                    marginBottom: "10px",
                 }}
             >
                 <img

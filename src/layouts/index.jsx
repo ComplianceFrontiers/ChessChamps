@@ -23,7 +23,9 @@ const Layout = ({ data, children }) => {
                 {location.pathname !== "/events" &&
                     location.pathname !== "/events" &&
                     location.pathname !== "/NJCC/" &&
-                    location.pathname !== "/NJCC" && <Footer data={data} />}
+                    location.pathname !== "/NJCC" && 
+                    location.pathname !== "/NJCC-Masterclass/" &&
+                    location.pathname !== "/NJCC-Masterclass" &&<Footer data={data} />}
                 <ScrollToTop />
             </div>
         </ThemeProvider>
