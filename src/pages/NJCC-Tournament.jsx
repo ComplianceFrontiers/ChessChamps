@@ -319,7 +319,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                                         display: "block",
                                     }}
                                 >
-                                Phone:
+                                Phone: <span style={{ color: "red" }}>*</span>
                                 </label>
                                 <input
                                     type="tel"
