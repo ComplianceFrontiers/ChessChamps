@@ -11,6 +11,8 @@ import image3 from "../data/images/online/image4.png";
 import image4 from "../data/images/online/image5.png";
 import image9 from "../data/images/online/image9.png";
 import image1 from "../data/images/online/image112.png";
+import image5 from "../data/images/online/image113.png";
+import image6 from "../data/images/online/image114.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -52,7 +54,32 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </Link>
-                <Link to="/delaware-chess-champs">
+               
+                <Link to="/DCC-Tournament">
+                    <img
+                        src={image5}
+                        alt="FAQ Illustration 2"
+                        style={{
+                            width: "1000px", // Default for mobile
+                            height: "auto",
+                            borderRadius: "8px",
+                        }}
+                        className="responsive-image"
+                    />
+                </Link>
+                <Link to="/DCC-Tournament">
+                    <img
+                        src={image6}
+                        alt="FAQ Illustration 2"
+                        style={{
+                            width: "1000px", // Default for mobile
+                            height: "auto",
+                            borderRadius: "8px",
+                        }}
+                        className="responsive-image"
+                    />
+                </Link>
+                {/* <Link to="/delaware-chess-champs">
                     <img
                         src={image9}
                         alt="FAQ Illustration 2"
@@ -63,7 +90,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                     />
-                </Link>
+                </Link> */}
                 <Link to="/DCC-Tournament">
                     <img
                         src={image1}
