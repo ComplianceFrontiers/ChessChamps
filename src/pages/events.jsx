@@ -55,7 +55,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     />
                 </Link>
                
-                <Link to="/DCC-Tournament">
+                <Link to="/Wilmington-Chess-Program">
                     <img
                         src={image5}
                         alt="FAQ Illustration 2"
