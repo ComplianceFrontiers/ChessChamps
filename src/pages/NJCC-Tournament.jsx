@@ -11,13 +11,15 @@ import { graphql, Link } from "gatsby";
 import { normalizedData } from "@utils/functions";
 import image1 from "../data/images/online/image6.png";
 import axios from "axios"; // For API calls
+import Loading from "../data/loading/loading.gif"
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page.content || []);
     const [isHovered, setIsHovered] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-      // State to manage pop-up visibility and form data
+    const [loading, setLoading] = useState(false);
+    
     const [isPopupVisible, setIsPopupVisible] = useState(false);
     const [formData, setFormData] = useState({
         email: "",
@@ -65,16 +67,17 @@ const FAQPage = ({ data, location, pageContext }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
         try {
             const response = await axios.post("https://backend-chess-tau.vercel.app/new_online_purchase_user", formData);
             console.log(response.data); // Handle success/failure based on response
-            //   const response1 = await axios.post("https://backend-chess-tau.vercel.app/send_email_api_to_online_purchase_user", {
-            //       email: formData.email,
-            //   });
+          
               window.location.href = "https://buy.stripe.com/dR66rE01s6ja4I8dR2"; // Redirect to Stripe after successful submission
             setIsPopupVisible(false); // Close the pop-up after submission
         } catch (error) {
             console.error("Error submitting form:", error);
+        } finally {
+            setLoading(false); // Hide loading gif after the request is complete
         }
     };
 
@@ -211,7 +214,12 @@ const FAQPage = ({ data, location, pageContext }) => {
                             Online Purchase Form
                         </h3>
                         <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "0 auto" }}>
-                            {/* Parent First Name */}
+                           {loading ? (
+                                  <div style={{ textAlign: "center", marginBottom: "20px" }}>
+                                      <img src={Loading} alt="Loading..." />
+                                  </div>
+                              ) : (
+                                  <>
                             <div style={{ marginBottom: "15px" }}>
                                 <label
                                     style={{
@@ -523,13 +531,15 @@ const FAQPage = ({ data, location, pageContext }) => {
             borderRadius: "8px",
             fontSize: "16px",
             cursor: "pointer",
-            alignItems:"center",
-            justifyContent: "center",
+           
                                     }}
+                                    disabled={loading}
                                 >
         Sumbit and Pay
                                 </button>
                             </div>
+                            </>
+    )}
                         </form>
                     </div>
                 </div>
