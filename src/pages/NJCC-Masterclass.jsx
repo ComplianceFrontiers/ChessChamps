@@ -149,11 +149,11 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                     >
                         <Link to="/training-curriculum">
-                            <button style={buttonStyle}>Skill Levels</button>
+                          <button className="faq-button">Skill Levels</button>
                         </Link>
 
                         <Link>
-                            <button style={registerButtonStyle} onClick={handleImageClick}>Register</button>
+                    <button className="faq-button register" onClick={handleImageClick}>Register</button>
                         </Link>
                     </div>
                 </div>

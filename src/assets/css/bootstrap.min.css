@@ -9451,3 +9451,54 @@ fieldset:disabled .btn {
         display: none !important;
     }
 }
+/* faq-page.css */
+
+/* Container for the buttons */
+.faq-buttons-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+}
+
+/* Button wrapper with spacing */
+.faq-buttons-wrapper {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style for the buttons */
+.faq-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-button.register {
+    background-color: #28A745;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .faq-buttons-wrapper {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .faq-button {
+        padding: 5px 5px;
+        font-size: 9px;
+    }
+
+    .faq-buttons-container {
+        bottom: 5px;
+    }
+}

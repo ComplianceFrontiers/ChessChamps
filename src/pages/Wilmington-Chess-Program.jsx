@@ -35,22 +35,6 @@ const FAQPage = ({ data, location, pageContext }) => {
         };
     }, []);
 
-    const buttonStyle = {
-        padding: isMobile ? "5px 5px" : "10px 20px", // Smaller padding for mobile
-        fontSize: isMobile ? "9px" : "16px", // Smaller font size for mobile
-        backgroundColor: "#007BFF",
-        color: "#FFF",
-        border: "none",
-        borderRadius: "5px",
-        cursor: "pointer",
-        fontWeight: "bold",
-    };
-
-    const registerButtonStyle = {
-        ...buttonStyle,
-        backgroundColor: "#28A745", // Different background for the register button
-    };
-
     return (
         <Layout
             data={{
@@ -108,10 +92,10 @@ const FAQPage = ({ data, location, pageContext }) => {
                     }}
                 >
                     <Link to="/training-curriculum">
-                        <button style={buttonStyle}>Training Curriculum</button>
+                        <button className="faq-button">Training Curriculum</button>
                     </Link>
                     <Link to="https://chesschampsus.vercel.app/JCC_ChessChamps">
-                        <button style={registerButtonStyle}>Register</button>
+                        <button className="faq-button register">Register</button>
                     </Link>
                 </div>
             </div>
