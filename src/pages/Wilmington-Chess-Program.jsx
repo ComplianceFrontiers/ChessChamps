@@ -58,11 +58,11 @@ const FAQPage = ({ data, location, pageContext }) => {
                 ...globalContent["footer"],
             }}
         >
-            <SEO title="Delaware Chess Champs" pathname="/" />
+            <SEO title="Chess Champs Academy - Wilmington" pathname="/" />
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="Delaware Chess Champs"
+                title="Chess Champs Academy - Wilmington"
             />
             <div
                 style={{
