@@ -99,11 +99,7 @@ const FAQPage = ({ data, location, pageContext }) => {
         fontWeight: "bold",
     };
 
-    const registerButtonStyle = {
-        ...buttonStyle,
-        backgroundColor: "#28A745", // Different background for the register button
-    };
-
+    
     return (
         <Layout
             data={{
@@ -132,6 +128,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     style={{
                         position: "relative",
                         display: "inline-block",
+                        cursor:"pointer"
                     }}
                     onClick={handleImageClick}
                 >
@@ -296,7 +293,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                                 />
                             </div>
 
-                            {/* Phone Field (Optional) */}
+                           
                             <div style={{ marginBottom: "15px" }}>
                                 <label
                                     style={{
@@ -306,13 +303,15 @@ const FAQPage = ({ data, location, pageContext }) => {
                                         display: "block",
                                     }}
                                 >
-                                    Phone:
+                                Phone:<span style={{ color: "red" }}>*</span>
                                 </label>
                                 <input
                                     type="tel"
                                     name="phone"
                                     value={formData.phone}
                                     onChange={handleInputChange}
+                                    required
+
                                     style={{
                                         width: "100%",
                                         padding: "10px",
@@ -327,69 +326,80 @@ const FAQPage = ({ data, location, pageContext }) => {
 
                             {/* Category (Rated or Casual) */}
                             <div style={{ marginBottom: "15px" }}>
-                                <label
-                                    style={{
-                                        fontWeight: "500",
-                                        fontSize: "16px",
-                                        marginBottom: "8px",
-                                        display: "block",
-                                    }}
-                                >
-                                    Category: <span style={{ color: "red" }}>*</span>
-                                </label>
-                                <select
-                                    name="category"
-                                    value={formData.category}
-                                    onChange={handleInputChange}
-                                    required
-                                    style={{
-                                        width: "100%",
-                                        padding: "10px",
-                                        borderRadius: "8px",
-                                        border: "1px solid #ccc",
-                                        fontSize: "14px",
-                                        outline: "none",
-                                        transition: "border-color 0.3s",
-                                    }}
-                                >
-                                    <option value="">Select Category</option>
-                                    <option value="Rated">Rated</option>
-                                    <option value="Casual">Casual</option>
-                                </select>
-                            </div>
+    <label
+        style={{
+            fontWeight: "500",
+            fontSize: "16px",
+            marginBottom: "8px",
+            display: "block",
+        }}
+    >
+        Category: <span style={{ color: "red" }}>*</span>
+    </label>
+    <select
+        name="category"
+        value={formData.category}
+        onChange={handleInputChange}
+        required
+        style={{
+            width: "100%",
+            padding: "10px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "14px",
+            outline: "none",
+            transition: "border-color 0.3s",
+        }}
+    >
+        <option value="">Select Category</option>
+        <option value="Rated">Rated</option>
+        <option value="Casual">Casual</option>
+    </select>
+</div>
 
-                            {/* Section */}
-                            <div style={{ marginBottom: "15px" }}>
-                                <label
-                                    style={{
-                                        fontWeight: "500",
-                                        fontSize: "16px",
-                                        marginBottom: "8px",
-                                        display: "block",
-                                    }}
-                                >
-                                    Section:
-                                </label>
-                                <select
-                                    name="section"
-                                    value={formData.section}
-                                    onChange={handleInputChange}
-                                    style={{
-                                        width: "100%",
-                                        padding: "10px",
-                                        borderRadius: "8px",
-                                        border: "1px solid #ccc",
-                                        fontSize: "14px",
-                                        outline: "none",
-                                        transition: "border-color 0.3s",
-                                    }}
-                                >
-                                    <option value="">Select Section</option>
-                                    <option value="U8">Under 8</option>
-                                    <option value="U10">Under 10</option>
-                                    <option value="U12">Under 12</option>
-                                </select>
-                            </div>
+{/* Section */}
+<div style={{ marginBottom: "15px" }}>
+    <label
+        style={{
+            fontWeight: "500",
+            fontSize: "16px",
+            marginBottom: "8px",
+            display: "block",
+        }}
+    >
+        Section: <span style={{ color: "red" }}>*</span>
+    </label>
+    <select
+        name="section"
+        value={formData.section}
+        onChange={handleInputChange}
+        required
+        style={{
+            width: "100%",
+            padding: "10px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "14px",
+            outline: "none",
+            transition: "border-color 0.3s",
+        }}
+    >
+        <option value="">Select Section</option>
+        {formData.category === "Rated" && (
+            <>
+                <option value="K-12">K-12</option>
+                <option value="Open">Open</option>
+            </>
+        )}
+        {formData.category === "Casual" && (
+            <>
+                <option value="K-5">K-5</option>
+                <option value="K-12">K-12</option>
+            </>
+        )}
+    </select>
+</div>
+
 
                             {/* USCF ID Field */}
                             {formData.category === "Rated" && (
@@ -457,43 +467,59 @@ const FAQPage = ({ data, location, pageContext }) => {
 
                             {/* Byes Field */}
                             <div style={{ marginBottom: "15px" }}>
-                                <label
-                                    style={{
-                                        fontWeight: "500",
-                                        fontSize: "16px",
-                                        marginBottom: "8px",
-                                        display: "block",
-                                    }}
-                                >
-                                    Byes (Optional):
-                                </label>
-                                <input
-                                    type="text"
-                                    name="byes"
-                                    value={formData.byes}
-                                    onChange={handleInputChange}
-                                    style={{
-                                        width: "100%",
-                                        padding: "10px",
-                                        borderRadius: "8px",
-                                        border: "1px solid #ccc",
-                                        fontSize: "14px",
-                                        outline: "none",
-                                        transition: "border-color 0.3s",
-                                    }}
-                                />
-                            </div>
+    <label
+        style={{
+            fontWeight: "500",
+            fontSize: "16px",
+            marginBottom: "8px",
+            display: "block",
+        }}
+    >
+        Byes (Optional):
+    </label>
+    <select
+        name="byes"
+        value={formData.byes}
+        onChange={handleInputChange}
+        style={{
+            width: "100%",
+            padding: "10px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "14px",
+            outline: "none",
+            transition: "border-color 0.3s",
+            backgroundColor: "#fff",
+        }}
+    >
+        <option value="" disabled>
+            Select Round
+        </option>
+        <option value="Round 1">Round 1</option>
+        <option value="Round 2">Round 2</option>
+        <option value="Round 3">Round 3</option>
+        <option value="Round 4">Round 4</option>
+    </select>
+</div>
+
 
                             {/* Submit Button */}
                             <div style={{ textAlign: "center" }}>
                                 <button
                                     type="submit"
                                     style={{
-                                        ...buttonStyle,
-                                        backgroundColor: "#28A745", // Green for register button
+            backgroundColor: "#4CAF50",
+            color: "white",
+            padding: "10px 15px",
+            border: "none",
+            borderRadius: "8px",
+            fontSize: "16px",
+            cursor: "pointer",
+            alignItems:"center",
+            justifyContent: "center",
                                     }}
                                 >
-                                    Register
+        Sumbit and Pay
                                 </button>
                             </div>
                         </form>
