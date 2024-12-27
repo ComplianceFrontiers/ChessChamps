@@ -14,10 +14,12 @@ import PageBreadcrumb from "../components/pagebreadcrumb";
 import { normalizedData } from "@utils/functions";
 import image1 from "../data/images/online/image1.png";
 import axios from "axios"; // For API calls
+import Loading from "../data/loading/loading.gif"; // Import the loading gif
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page.content || []);
+    const [loading, setLoading] = useState(false); // New loading state
     
     // State to manage pop-up visibility and form data
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -63,6 +65,7 @@ const FAQPage = ({ data, location, pageContext }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true); 
         try {
             const response = await axios.post("https://backend-chess-tau.vercel.app/new_online_purchase_user", formData);
             console.log(response.data); // Handle success/failure based on response
@@ -73,6 +76,8 @@ const FAQPage = ({ data, location, pageContext }) => {
             setIsPopupVisible(false); // Close the pop-up after submission
         } catch (error) {
             console.error("Error submitting form:", error);
+        } finally {
+            setLoading(false); // Hide loading gif after the request is complete
         }
     };
 
@@ -157,9 +162,22 @@ const FAQPage = ({ data, location, pageContext }) => {
                         >
                             ×
                         </button>
-                        <h3 style={{ fontSize: "24px", fontWeight: "600", marginBottom: "20px", textAlign: "center" }}>
+                        <h3
+                            style={{
+                                fontSize: "24px",
+                                fontWeight: "600",
+                                marginBottom: "20px",
+                                textAlign: "center",
+                            }}
+                        >
                             Online Purchase Form
                         </h3>
+                        {/* Show loading or form based on loading state */}
+                                                {loading ? (
+                                                    <div style={{ textAlign: "center" }}>
+                                                        <img src={Loading} alt="Loading..."  />
+                                                    </div>
+                                                ) : (
                         <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "0 auto" }}>
     {/* First Name Field */}
     <div style={{ marginBottom: "15px" }}>
@@ -295,9 +313,10 @@ const FAQPage = ({ data, location, pageContext }) => {
             justifyContent: "center",
         }}
     >
-        Procced to Payment
+      Submit and Pay
     </button>
 </form>
+ )}
 
                     </div>
                 </div>

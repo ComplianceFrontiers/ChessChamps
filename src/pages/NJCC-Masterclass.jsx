@@ -8,71 +8,68 @@ import { graphql, Link } from "gatsby";
 import { normalizedData } from "@utils/functions";
 import image1 from "../data/images/basics-of-chess/1.png";
 import axios from "axios"; // For API calls
+import Loading from "../data/loading/loading.gif"; // Import the loading gif
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page.content || []);
     const [isHovered, setIsHovered] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-      // State to manage pop-up visibility and form data
-      const [isPopupVisible, setIsPopupVisible] = useState(false);
-      const [formData, setFormData] = useState({
-          email: "",
-          parent_first_name: "",
-          parent_last_name: "",
-          child_first_name: "",
-          child_last_name: "",
-          phone: "", // Add phone field
-          redirect_status: "Not started",
-          New_Jersey_Masterclass:true
-      });
-     
-  
-      const handleInputChange = (e) => {
-          const { name, value } = e.target;
-  
-          // Sync parent and child names
-          if (name === "parent_first_name") {
-              setFormData({
-                  ...formData,
-                  parent_first_name: value,
-                  child_first_name: value, // Sync with parent's first name
-              });
-          } else if (name === "parent_last_name") {
-              setFormData({
-                  ...formData,
-                  parent_last_name: value,
-                  child_last_name: value, // Sync with parent's last name
-              });
-          } else {
-              setFormData({
-                  ...formData,
-                  [name]: value,
-              });
-          }
-      };
-      const handleImageClick = () => {
-          setIsPopupVisible(true);
-      };
-  
-      
-  
-      const handleSubmit = async (e) => {
-          e.preventDefault();
-          try {
-              const response = await axios.post("https://backend-chess-tau.vercel.app/new_online_purchase_user", formData);
-              console.log(response.data); // Handle success/failure based on response
-            //   const response1 = await axios.post("https://backend-chess-tau.vercel.app/send_email_api_to_online_purchase_user", {
-            //       email: formData.email,
-            //   });
-              window.location.href = "https://buy.stripe.com/dR6eYa9C28ricaA4gq"; // Redirect to Stripe after successful submission
-              setIsPopupVisible(false); // Close the pop-up after submission
-          } catch (error) {
-              console.error("Error submitting form:", error);
-          }
-      };
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+    const [loading, setLoading] = useState(false); // New loading state
+    const [formData, setFormData] = useState({
+        email: "",
+        parent_first_name: "",
+        parent_last_name: "",
+        child_first_name: "",
+        child_last_name: "",
+        phone: "",
+        redirect_status: "Not started",
+        New_Jersey_Masterclass:true
+    });
 
-    // Detect mobile screen size
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        if (name === "parent_first_name") {
+            setFormData({
+                ...formData,
+                parent_first_name: value,
+                child_first_name: value, // Sync with parent's first name
+            });
+        } else if (name === "parent_last_name") {
+            setFormData({
+                ...formData,
+                parent_last_name: value,
+                child_last_name: value, // Sync with parent's last name
+            });
+        } else {
+            setFormData({
+                ...formData,
+                [name]: value,
+            });
+        }
+    };
+
+    const handleImageClick = () => {
+        setIsPopupVisible(true);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true); // Set loading state to true when form is submitted
+        try {
+            const response = await axios.post("https://backend-chess-tau.vercel.app/new_online_purchase_user", formData);
+            console.log(response.data); // Handle success/failure based on response
+            // Redirect to Stripe after successful submission
+            window.location.href = "https://buy.stripe.com/dR6eYa9C28ricaA4gq";
+            setIsPopupVisible(false); // Close the pop-up after submission
+        } catch (error) {
+            console.error("Error submitting form:", error);
+        } finally {
+            setLoading(false); // Hide loading gif after the request is complete
+        }
+    };
+
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768); // Set mobile flag based on width
@@ -125,7 +122,6 @@ const FAQPage = ({ data, location, pageContext }) => {
                     textAlign: "center",
                 }}
             >
-                {/* Image */}
                 <div
                     style={{
                         position: "relative",
@@ -142,8 +138,6 @@ const FAQPage = ({ data, location, pageContext }) => {
                             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                         }}
                     />
-
-                    {/* Buttons Inside Image */}
                     <div
                         style={{
                             position: "absolute",
@@ -154,17 +148,17 @@ const FAQPage = ({ data, location, pageContext }) => {
                             gap: "15px",
                         }}
                     >
-                        {/* Skill Levels Button */}
                         <Link to="/training-curriculum">
                             <button style={buttonStyle}>Skill Levels</button>
                         </Link>
 
-                       <Link>
-                            <button style={registerButtonStyle}  onClick={handleImageClick}>Register</button>
+                        <Link>
+                            <button style={registerButtonStyle} onClick={handleImageClick}>Register</button>
                         </Link>
                     </div>
                 </div>
             </div>
+
             {isPopupVisible && (
                 <div
                     style={{
@@ -177,8 +171,8 @@ const FAQPage = ({ data, location, pageContext }) => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        zIndex: "1000", // Ensure the popup is on top of other elements
-                        overflow: "auto", // Allow scrolling if the popup content overflows
+                        zIndex: "1000",
+                        overflow: "auto",
                     }}
                     onClick={() => setIsPopupVisible(false)} // Close on outside click
                 >
@@ -189,10 +183,10 @@ const FAQPage = ({ data, location, pageContext }) => {
                             borderRadius: "12px",
                             width: "100%",
                             maxWidth: "500px",
-                            maxHeight: "80vh", // Limit the height of the popup
+                            maxHeight: "80vh",
                             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                             fontFamily: "'Roboto', sans-serif",
-                            overflowY: "auto", // Allow vertical scrolling if content exceeds the height
+                            overflowY: "auto",
                             position: "relative",
                         }}
                         onClick={(e) => e.stopPropagation()} // Prevent closing pop-up when clicking inside the form
@@ -212,39 +206,54 @@ const FAQPage = ({ data, location, pageContext }) => {
                         >
                             ×
                         </button>
-                        <h3 style={{ fontSize: "24px", fontWeight: "600", marginBottom: "20px", textAlign: "center" }}>
+                        <h3
+                            style={{
+                                fontSize: "24px",
+                                fontWeight: "600",
+                                marginBottom: "20px",
+                                textAlign: "center",
+                            }}
+                        >
                             Online Purchase Form
                         </h3>
-                        <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "0 auto" }}>
-    {/* First Name Field */}
-    <div style={{ marginBottom: "15px" }}>
-        <label
-            style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                marginBottom: "8px",
-                display: "block",
-            }}
-        >
-            First Name: <span style={{ color: "red" }}>*</span>
-        </label>
-        <input
-            type="text"
-            name="parent_first_name"
-            value={formData.parent_first_name}
-            onChange={handleInputChange}
-            required
-            style={{
-                width: "100%",
-                padding: "10px",
-                borderRadius: "8px",
-                border: "1px solid #ccc",
-                fontSize: "14px",
-                outline: "none",
-                transition: "border-color 0.3s",
-            }}
-        />
-    </div>
+
+                        {/* Show loading or form based on loading state */}
+                        {loading ? (
+                            <div style={{ textAlign: "center" }}>
+                                <img src={Loading} alt="Loading..."  />
+                            </div>
+                        ) : (
+                            <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "0 auto" }}>
+                                {/* Form fields here */}
+                                {/* Example: */}
+                                <div style={{ marginBottom: "15px" }}>
+                                    <label
+                                        style={{
+                                            fontWeight: "500",
+                                            fontSize: "16px",
+                                            marginBottom: "8px",
+                                            display: "block",
+                                        }}
+                                    >
+                                        First Name: <span style={{ color: "red" }}>*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="parent_first_name"
+                                        value={formData.parent_first_name}
+                                        onChange={handleInputChange}
+                                        required
+                                        style={{
+                                            width: "100%",
+                                            padding: "10px",
+                                            borderRadius: "8px",
+                                            border: "1px solid #ccc",
+                                            fontSize: "14px",
+                                            outline: "none",
+                                            transition: "border-color 0.3s",
+                                        }}
+                                    />
+                                </div>
 
     {/* Last Name Field */}
     <div style={{ marginBottom: "15px" }}>
@@ -336,24 +345,24 @@ const FAQPage = ({ data, location, pageContext }) => {
     </div>
 
     {/* Submit Button */}
-    <button
-        type="submit"
-        style={{
-            backgroundColor: "#4CAF50",
-            color: "white",
-            padding: "10px 15px",
-            border: "none",
-            borderRadius: "8px",
-            fontSize: "16px",
-            cursor: "pointer",
-            alignItems:"center",
-            justifyContent: "center",
-        }}
-    >
-        Procced to Payment
-    </button>
-</form>
-
+                                <button
+                                    type="submit"
+                                    style={{
+                                        backgroundColor: "#4CAF50",
+                                        color: "white",
+                                        padding: "10px 15px",
+                                        border: "none",
+                                        borderRadius: "8px",
+                                        fontSize: "16px",
+                                        cursor: "pointer",
+                                        alignItems:"center",
+                                        justifyContent: "center",
+                                    }}
+                                >
+                                    Submit and Pay
+                                </button>
+                            </form>
+                        )}
                     </div>
                 </div>
             )}
