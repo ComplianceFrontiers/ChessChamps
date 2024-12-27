@@ -52,49 +52,77 @@ const FAQPage = ({ data, location, pageContext }) => {
                     src={image9}
                     alt="Image 9"
                     style={{
-                        maxWidth: "90%",
+                        
+maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
                     src={image10}
                     alt="Image 10"
                     style={{
-                        maxWidth: "90%",
+                        
+maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
                     src={image11}
                     alt="Image 11"
                     style={{
-                        maxWidth: "90%",
+                        
+maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
                     src={image12}
                     alt="Image 12"
                     style={{
-                        maxWidth: "90%",
+                        
+maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
                     src={image13}
                     alt="Image 13"
                     style={{
-                        maxWidth: "90%",
+                        
+maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
                     src={image14}
                     alt="Image 14"
                     style={{
-                        maxWidth: "90%",
+                        
+maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
                     src={image15}
                     alt="Image 15"
                     style={{
-                        maxWidth: "90%",
+                        
+maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
             </div>
