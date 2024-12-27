@@ -51,6 +51,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 9"
                     style={{
                         maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
@@ -58,6 +61,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 10"
                     style={{
                         maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
@@ -65,6 +71,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 11"
                     style={{
                         maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
@@ -72,6 +81,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 12"
                     style={{
                         maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
                 <img
@@ -79,6 +91,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                     alt="Image 13"
                     style={{
                         maxWidth: "90%",
+height: "auto",
+        maxHeight: "1000px",
+        objectFit: "contain",
                     }}
                 />
 
