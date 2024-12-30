@@ -58,7 +58,10 @@ const FAQPage = ({ data, location, pageContext }) => {
                 ...globalContent["footer"],
             }}
         >
-            <SEO title="Chess Champs Academy – Bear & Middletown" pathname="/" />
+            <SEO
+                title="Chess Champs Academy – Bear & Middletown"
+                pathname="/"
+            />
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
@@ -99,7 +102,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                 <div
                     style={{
                         position: "absolute",
-                        bottom: isMobile ? '10px' : '20px', // Places the buttons at the bottom of the image
+                        bottom: isMobile ? "10px" : "20px", // Places the buttons at the bottom of the image
                         left: "50%", // Centers the buttons horizontally
                         transform: "translateX(-50%)", // Adjusts position to perfectly center
                         display: "flex",
@@ -108,10 +111,14 @@ const FAQPage = ({ data, location, pageContext }) => {
                     }}
                 >
                     <Link to="/training-curriculum">
-                    <button className="faq-button">Training Curriculum</button>
+                        <button className="faq-button">
+                            Training Curriculum
+                        </button>
                     </Link>
-                    <Link to="https://chesschampsus.vercel.app/Bear-and-middletown">
-                    <button className="faq-button register">Register</button>
+                    <Link to="https://chesschampsus.vercel.app/Middletown">
+                        <button className="faq-button register">
+                            Register
+                        </button>
                     </Link>
                 </div>
             </div>
