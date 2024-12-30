@@ -54,7 +54,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </Link>
-               
+
                 <Link to="/Wilmington-Chess-Program">
                     <img
                         src={image5}
@@ -67,7 +67,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </Link>
-                <Link to="/Bear-and-middletown">
+                <Link to="/Middletown">
                     <img
                         src={image6}
                         alt="FAQ Illustration 2"
