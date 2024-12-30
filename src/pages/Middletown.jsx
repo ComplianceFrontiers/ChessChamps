@@ -115,7 +115,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                             Training Curriculum
                         </button>
                     </Link>
-                    <Link to="https://chesschampsus.vercel.app/Bear-and-middletownn">
+                    <Link to="https://chesschampsus.vercel.app/Bear-and-middletown">
                         <button className="faq-button register">
                             Register
                         </button>
