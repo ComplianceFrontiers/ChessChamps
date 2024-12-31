@@ -33,7 +33,7 @@ const FAQPage = ({ data, location, pageContext }) => {
         uscf_expiration_date: "",
         byes: "",
         redirect_status: "Not started",
-        Bear_Middletown_Chess_Tournament: "true"
+        Bear_Middletown_Chess_Tournament: true
     });
 
     const handleInputChange = (e) => {
