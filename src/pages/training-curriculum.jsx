@@ -50,7 +50,8 @@ const FAQPage = ({ data, location, pageContext }) => {
                 maxWidth: "90%", // Make images take full width of their container
                 height: "auto", // Ensures proper aspect ratio
                 objectFit: "contain", // Keeps the image within its container without distortion
-                margin: 0, // Removes any space around images
+                maxWidth: "90%",
+                        maxHeight: "1000px",
             }}
         />
     ))}
