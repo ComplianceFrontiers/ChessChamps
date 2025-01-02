@@ -32,32 +32,31 @@ const FAQPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="Training Curriculum"
             />
+ 
+<div
+    style={{
+        display: "flex",
+        flexWrap: "wrap", // Allows images to wrap to the next line
+        justifyContent: "center",
+        marginBottom: "20px",
+    }}
+>
+    {images.map((img, index) => (
+        <img
+            key={index}
+            src={img}
+            alt={`Training Curriculum ${index + 1}`}
+            style={{
+                maxWidth: "90%", // Make images take full width of their container
+                height: "auto", // Ensures proper aspect ratio
+                objectFit: "contain", // Keeps the image within its container without distortion
+                margin: 0, // Removes any space around images
+            }}
+        />
+    ))}
+</div>
+ 
 
-            <div
-                style={{
-                    display: "flex",
-                    flexWrap: "wrap", // Allows images to wrap to the next line
-                    justifyContent: "center",
-                    marginBottom: "20px",
-                }}
-            >
-                {images.map((img, index) => (
-                    <img
-                    key={index}
-                    src={img}
-                    alt={`Training Curriculum ${index + 1}`}
-                    style={{
-                        maxWidth: "90%",
-                        height: "auto", // Ensures proper aspect ratio
-                        objectFit: "contain", // Keeps the image within its container without distortion
-                    }}
-               
-                
-                         
-                        
-                    />
-                ))}
-            </div>
         </Layout>
     );
 };
