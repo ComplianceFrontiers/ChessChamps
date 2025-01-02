@@ -2,23 +2,14 @@
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
-import { Link } from "gatsby"; // Importing Gatsby's Link component
 import { graphql } from "gatsby";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import { normalizedData } from "@utils/functions";
-import image1 from "../data/images/trainingCurriculum/1.png";
-import image2 from "../data/images/trainingCurriculum/2.png";
-import image3 from "../data/images/trainingCurriculum/3.png";
-import image4 from "../data/images/trainingCurriculum/4.png";
-import image5 from "../data/images/trainingCurriculum/5.png";
-import image6 from "../data/images/trainingCurriculum/6.png";
-import image7 from "../data/images/trainingCurriculum/7.png";
-import image8 from "../data/images/trainingCurriculum/8.png";
-
-const images = [image1, image2, image3, image4, image5, image6, image7, image8];
+import image1 from "../data/images/trainingCurriculum/11.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
+    
     return (
         <Layout
             data={{
@@ -33,36 +24,27 @@ const FAQPage = ({ data, location, pageContext }) => {
                 title="Training Curriculum"
             />
  
-<div
-    style={{
-        display: "flex",
-        flexWrap: "wrap", // Allows images to wrap to the next line
-        justifyContent: "center",
-        marginBottom: "20px",
-    }}
->
-    {images.map((img, index) => (
-        <img
-            key={index}
-            src={img}
-            alt={`Training Curriculum ${index + 1}`}
-            style={{
-                maxWidth: "90%", // Make images take full width of their container
-                height: "auto", // Ensures proper aspect ratio
-                objectFit: "contain", // Keeps the image within its container without distortion
-                maxWidth: "90%",
-                        maxHeight: "1000px",
-            }}
-        />
-    ))}
-</div>
- 
-
+            <div
+                style={{
+                    display: "flex",
+                    flexWrap: "wrap", // Allows images to wrap to the next line
+                    justifyContent: "center",
+                    marginBottom: "20px",
+                }}
+            >
+                <img
+                    src={image1}
+                    alt="Training Curriculum"
+                    style={{
+                        maxWidth: "90%",
+                        // maxHeight: "1000px", // Optional: limit max height if needed
+                    }}
+                />
+            </div>
         </Layout>
     );
 };
 
- 
 FAQPage.propTypes = {
     location: PropTypes.object,
     pageContext: PropTypes.object,
