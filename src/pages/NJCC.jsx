@@ -78,7 +78,7 @@ const FAQPage = ({ data, location, pageContext }) => {
             </Link>
 
             {/* Image 2 */}
-       {/* //     <Link href="/NJCC-Tournament"> */}
+       //     <Link href="/NJCC-Tournament">
                 <div
                     style={{
                         display: "flex",
@@ -93,10 +93,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                         style={{
                             maxWidth: "90%",
                         }}
-                        onClick={handleThirdImageClick}
                     />
                 </div>
-            {/* // </Link> */}
+            // </Link>
 
             {/* Image 3 */}
             <div
