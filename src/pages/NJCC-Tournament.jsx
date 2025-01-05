@@ -535,7 +535,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                                     }}
                                     disabled={loading}
                                 >
-        Sumbit and Pay
+        Submit and Pay
                                 </button>
                             </div>
                             </>
