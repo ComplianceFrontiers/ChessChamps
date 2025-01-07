@@ -94,7 +94,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     <Link to="/training-curriculum">
                         <button className="faq-button">Training Curriculum</button>
                     </Link>
-                    <Link to="https://chesschampsus.vercel.app/JCC_ChessChamps">
+                    <Link to="https://chesschampsus.vercel.app/Wilmington">
                         <button className="faq-button register">Register</button>
                     </Link>
                 </div>
