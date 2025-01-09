@@ -1,4 +1,6 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from "react";
+import axios from "axios";
 import {
     FormWrapper,
     FormTitle,
@@ -9,13 +11,14 @@ import {
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
-        parentFirstName: "",
-        parentLastName: "",
-        childFirstName: "",
-        childLastName: "",
+        parent_first_name: "",
+        parent_last_name: "",
+        child_first_name: "",
+        child_last_name: "",
         email: "",
         phone: "",
         location: "",
+        WhatsApp: true, // WhatsApp field
     });
 
     const handleChange = (e) => {
@@ -23,10 +26,25 @@ const ContactForm = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
-        // Add any additional submission logic here
+
+        // Prepare the data to send to the backend, including the WhatsApp field
+         
+
+        try {
+            const response = await axios.post(
+                "https://backend-chess-tau.vercel.app/new_online_purchase_user", // Replace with the correct API endpoint URL if needed
+                formData
+            );
+
+            window.location.href = "https://chat.whatsapp.com/DVS9leavkGO187Pmd8V2QM";
+
+            
+        } catch (error) {
+            console.error("Error during form submission:", error);
+            alert("There was an error submitting the form. Please try again.");
+        }
     };
 
     return (
@@ -35,33 +53,33 @@ const ContactForm = () => {
             <Form onSubmit={handleSubmit}>
                 <Input
                     type="text"
-                    name="parentFirstName"
+                    name="parent_first_name"
                     placeholder="Parent's First Name"
-                    value={formData.parentFirstName}
+                    value={formData.parent_first_name}
                     onChange={handleChange}
                     required
                 />
                 <Input
                     type="text"
-                    name="parentLastName"
+                    name="parent_last_name"
                     placeholder="Parent's Last Name"
-                    value={formData.parentLastName}
+                    value={formData.parent_last_name}
                     onChange={handleChange}
                     required
                 />
                 <Input
                     type="text"
-                    name="childFirstName"
+                    name="child_first_name"
                     placeholder="Child's First Name"
-                    value={formData.childFirstName}
+                    value={formData.child_first_name}
                     onChange={handleChange}
                     required
                 />
                 <Input
                     type="text"
-                    name="childLastName"
+                    name="child_last_name"
                     placeholder="Child's Last Name"
-                    value={formData.childLastName}
+                    value={formData.child_last_name}
                     onChange={handleChange}
                     required
                 />
@@ -89,13 +107,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     required
                 />
-                {/* Use an <a> tag styled as a button for better compatibility */}
-                <RedirectButton
-                    as="a"
-                    href="https://chat.whatsapp.com/DVS9leavkGO187Pmd8V2QM"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <RedirectButton type="submit">
                     Submit and Join WhatsApp Group
                 </RedirectButton>
             </Form>
