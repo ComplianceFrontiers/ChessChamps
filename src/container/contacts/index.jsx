@@ -57,7 +57,6 @@ const ContactForm = () => {
                     placeholder="Parent's First Name"
                     value={formData.parent_first_name}
                     onChange={handleChange}
-                    required
                 />
                 <Input
                     type="text"
@@ -65,7 +64,6 @@ const ContactForm = () => {
                     placeholder="Parent's Last Name"
                     value={formData.parent_last_name}
                     onChange={handleChange}
-                    required
                 />
                 <Input
                     type="text"
@@ -73,7 +71,6 @@ const ContactForm = () => {
                     placeholder="Child's First Name"
                     value={formData.child_first_name}
                     onChange={handleChange}
-                    required
                 />
                 <Input
                     type="text"
@@ -81,7 +78,6 @@ const ContactForm = () => {
                     placeholder="Child's Last Name"
                     value={formData.child_last_name}
                     onChange={handleChange}
-                    required
                 />
                 <Input
                     type="email"
@@ -89,7 +85,6 @@ const ContactForm = () => {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
-                    required
                 />
                 <Input
                     type="tel"
@@ -105,7 +100,6 @@ const ContactForm = () => {
                     placeholder="Location"
                     value={formData.location}
                     onChange={handleChange}
-                    required
                 />
                 <RedirectButton type="submit">
                     Submit and Join WhatsApp Group
