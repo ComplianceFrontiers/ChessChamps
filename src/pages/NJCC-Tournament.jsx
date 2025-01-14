@@ -70,7 +70,7 @@ const FAQPage = ({ data, location, pageContext }) => {
         setLoading(true);
         try {
             const response = await axios.post(
-                "https://backend-chess-tau.vercel.app/new_online_purchase_user",
+                "https://backend-chess-tau.vercel.app/form_New_Jersey_Chess_Tournament_bp_submit",
                 formData
             );
             console.log(response.data); // Handle success/failure based on response
