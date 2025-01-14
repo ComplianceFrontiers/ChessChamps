@@ -32,7 +32,6 @@ const FAQPage = ({ data, location, pageContext }) => {
         uscf_id: "",
         uscf_expiration_date: "",
         byes: "",
-        redirect_status: "Not started",
         Bear_Middletown_Chess_Tournament: true
     });
 
@@ -68,7 +67,7 @@ const FAQPage = ({ data, location, pageContext }) => {
         e.preventDefault();
         setLoading(true); // Set loading state to true
         try {
-            const response = await axios.post("https://backend-chess-tau.vercel.app/new_online_purchase_user", formData);
+            const response = await axios.post("https://backend-chess-tau.vercel.app/form_Bear_Middletown_Chess_Tournament_bp_submit", formData);
             console.log(response.data); // Handle success/failure based on response
             window.location.href = "https://buy.stripe.com/dR65nAbKa5f60rS6oz"; // Redirect to Stripe after successful submission
             setIsPopupVisible(false); // Close the pop-up after submission
