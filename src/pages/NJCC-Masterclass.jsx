@@ -24,7 +24,6 @@ const FAQPage = ({ data, location, pageContext }) => {
         child_first_name: "",
         child_last_name: "",
         phone: "",
-        redirect_status: "Not started",
         New_Jersey_Masterclass: true,
     });
 
