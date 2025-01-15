@@ -1,13 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from "react";
 import axios from "axios";
-import {
-    FormWrapper,
-    FormTitle,
-    Form,
-    Input,
-    RedirectButton,
-} from "./style";
+import { FormWrapper, FormTitle, Form, Input, RedirectButton } from "./style";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -30,17 +24,15 @@ const ContactForm = () => {
         e.preventDefault();
 
         // Prepare the data to send to the backend, including the WhatsApp field
-         
 
         try {
             const response = await axios.post(
-                "https://backend-chess-tau.vercel.app/new_online_purchase_user", // Replace with the correct API endpoint URL if needed
+                "https://backend-chess-tau.vercel.app/form_Basics_Of_Chess_bp_submit", // Replace with the correct API endpoint URL if needed
                 formData
             );
 
-            window.location.href = "https://chat.whatsapp.com/DVS9leavkGO187Pmd8V2QM";
-
-            
+            window.location.href =
+                "https://chat.whatsapp.com/DVS9leavkGO187Pmd8V2QM";
         } catch (error) {
             console.error("Error during form submission:", error);
             alert("There was an error submitting the form. Please try again.");

@@ -20,7 +20,7 @@ const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page.content || []);
     const [loading, setLoading] = useState(false); // New loading state
-    
+
     // State to manage pop-up visibility and form data
     const [isPopupVisible, setIsPopupVisible] = useState(false);
     const [formData, setFormData] = useState({
@@ -32,7 +32,6 @@ const FAQPage = ({ data, location, pageContext }) => {
         phone: "", // Add phone field
         redirect_status: "Not started",
     });
-   
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -61,13 +60,14 @@ const FAQPage = ({ data, location, pageContext }) => {
         setIsPopupVisible(true);
     };
 
-    
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setLoading(true); 
+        setLoading(true);
         try {
-            const response = await axios.post("https://backend-chess-tau.vercel.app/new_online_purchase_user", formData);
+            const response = await axios.post(
+                "https://backend-chess-tau.vercel.app/form_Basics_Of_Chess_bp_submit",
+                formData
+            );
             console.log(response.data); // Handle success/failure based on response
             // const response1 = await axios.post("https://backend-chess-tau.vercel.app/send_email_api_to_online_purchase_user", {
             //     email: formData.email,
@@ -173,151 +173,156 @@ const FAQPage = ({ data, location, pageContext }) => {
                             Online Purchase Form
                         </h3>
                         {/* Show loading or form based on loading state */}
-                                                {loading ? (
-                                                    <div style={{ textAlign: "center" }}>
-                                                        <img src={Loading} alt="Loading..."  />
-                                                    </div>
-                                                ) : (
-                        <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "0 auto" }}>
-    {/* First Name Field */}
-    <div style={{ marginBottom: "15px" }}>
-        <label
-            style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                marginBottom: "8px",
-                display: "block",
-            }}
-        >
-            First Name: <span style={{ color: "red" }}>*</span>
-        </label>
-        <input
-            type="text"
-            name="parent_first_name"
-            value={formData.parent_first_name}
-            onChange={handleInputChange}
-            required
-            style={{
-                width: "100%",
-                padding: "10px",
-                borderRadius: "8px",
-                border: "1px solid #ccc",
-                fontSize: "14px",
-                outline: "none",
-                transition: "border-color 0.3s",
-            }}
-        />
-    </div>
+                        {loading ? (
+                            <div style={{ textAlign: "center" }}>
+                                <img src={Loading} alt="Loading..." />
+                            </div>
+                        ) : (
+                            <form
+                                onSubmit={handleSubmit}
+                                style={{ maxWidth: "400px", margin: "0 auto" }}
+                            >
+                                {/* First Name Field */}
+                                <div style={{ marginBottom: "15px" }}>
+                                    <label
+                                        style={{
+                                            fontWeight: "500",
+                                            fontSize: "16px",
+                                            marginBottom: "8px",
+                                            display: "block",
+                                        }}
+                                    >
+                                        First Name:{" "}
+                                        <span style={{ color: "red" }}>*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="parent_first_name"
+                                        value={formData.parent_first_name}
+                                        onChange={handleInputChange}
+                                        required
+                                        style={{
+                                            width: "100%",
+                                            padding: "10px",
+                                            borderRadius: "8px",
+                                            border: "1px solid #ccc",
+                                            fontSize: "14px",
+                                            outline: "none",
+                                            transition: "border-color 0.3s",
+                                        }}
+                                    />
+                                </div>
 
-    {/* Last Name Field */}
-    <div style={{ marginBottom: "15px" }}>
-        <label
-            style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                marginBottom: "8px",
-                display: "block",
-            }}
-        >
-            Last Name: <span style={{ color: "red" }}>*</span>
-        </label>
-        <input
-            type="text"
-            name="parent_last_name"
-            value={formData.parent_last_name}
-            onChange={handleInputChange}
-            required
-            style={{
-                width: "100%",
-                padding: "10px",
-                borderRadius: "8px",
-                border: "1px solid #ccc",
-                fontSize: "14px",
-                outline: "none",
-                transition: "border-color 0.3s",
-            }}
-        />
-    </div>
+                                {/* Last Name Field */}
+                                <div style={{ marginBottom: "15px" }}>
+                                    <label
+                                        style={{
+                                            fontWeight: "500",
+                                            fontSize: "16px",
+                                            marginBottom: "8px",
+                                            display: "block",
+                                        }}
+                                    >
+                                        Last Name:{" "}
+                                        <span style={{ color: "red" }}>*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="parent_last_name"
+                                        value={formData.parent_last_name}
+                                        onChange={handleInputChange}
+                                        required
+                                        style={{
+                                            width: "100%",
+                                            padding: "10px",
+                                            borderRadius: "8px",
+                                            border: "1px solid #ccc",
+                                            fontSize: "14px",
+                                            outline: "none",
+                                            transition: "border-color 0.3s",
+                                        }}
+                                    />
+                                </div>
 
-    {/* Email Field (Required) */}
-    <div style={{ marginBottom: "15px" }}>
-        <label
-            style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                marginBottom: "8px",
-                display: "block",
-            }}
-        >
-            Email: <span style={{ color: "red" }}>*</span>
-        </label>
-        <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            required
-            style={{
-                width: "100%",
-                padding: "10px",
-                borderRadius: "8px",
-                border: "1px solid #ccc",
-                fontSize: "14px",
-                outline: "none",
-                transition: "border-color 0.3s",
-            }}
-        />
-    </div>
+                                {/* Email Field (Required) */}
+                                <div style={{ marginBottom: "15px" }}>
+                                    <label
+                                        style={{
+                                            fontWeight: "500",
+                                            fontSize: "16px",
+                                            marginBottom: "8px",
+                                            display: "block",
+                                        }}
+                                    >
+                                        Email:{" "}
+                                        <span style={{ color: "red" }}>*</span>
+                                    </label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleInputChange}
+                                        required
+                                        style={{
+                                            width: "100%",
+                                            padding: "10px",
+                                            borderRadius: "8px",
+                                            border: "1px solid #ccc",
+                                            fontSize: "14px",
+                                            outline: "none",
+                                            transition: "border-color 0.3s",
+                                        }}
+                                    />
+                                </div>
 
-    {/* Phone Field (Optional) */}
-    <div style={{ marginBottom: "15px" }}>
-        <label
-            style={{
-                fontWeight: "500",
-                fontSize: "16px",
-                marginBottom: "8px",
-                display: "block",
-            }}
-        >
-            Phone (Optional):
-        </label>
-        <input
-            type="text"
-            name="phone"
-            value={formData.phone}
-            onChange={handleInputChange}
-            style={{
-                width: "100%",
-                padding: "10px",
-                borderRadius: "8px",
-                border: "1px solid #ccc",
-                fontSize: "14px",
-                outline: "none",
-                transition: "border-color 0.3s",
-            }}
-        />
-    </div>
+                                {/* Phone Field (Optional) */}
+                                <div style={{ marginBottom: "15px" }}>
+                                    <label
+                                        style={{
+                                            fontWeight: "500",
+                                            fontSize: "16px",
+                                            marginBottom: "8px",
+                                            display: "block",
+                                        }}
+                                    >
+                                        Phone (Optional):
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleInputChange}
+                                        style={{
+                                            width: "100%",
+                                            padding: "10px",
+                                            borderRadius: "8px",
+                                            border: "1px solid #ccc",
+                                            fontSize: "14px",
+                                            outline: "none",
+                                            transition: "border-color 0.3s",
+                                        }}
+                                    />
+                                </div>
 
-    {/* Submit Button */}
-    <button
-        type="submit"
-        style={{
-            backgroundColor: "#4CAF50",
-            color: "white",
-            padding: "10px 15px",
-            border: "none",
-            borderRadius: "8px",
-            fontSize: "16px",
-            cursor: "pointer",
-            alignItems:"center",
-            justifyContent: "center",
-        }}
-    >
-      Submit and Pay
-    </button>
-</form>
- )}
-
+                                {/* Submit Button */}
+                                <button
+                                    type="submit"
+                                    style={{
+                                        backgroundColor: "#4CAF50",
+                                        color: "white",
+                                        padding: "10px 15px",
+                                        border: "none",
+                                        borderRadius: "8px",
+                                        fontSize: "16px",
+                                        cursor: "pointer",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                    }}
+                                >
+                                    Submit and Pay
+                                </button>
+                            </form>
+                        )}
                     </div>
                 </div>
             )}
