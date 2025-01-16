@@ -68,7 +68,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                 { email: formData.email }
             );
             // Redirect to Stripe after successful submission
-            window.location.href = "https://buy.stripe.com/dR6eYa9C28ricaA4gq";
+            // window.location.href = "https://buy.stripe.com/dR6eYa9C28ricaA4gq";
             setIsPopupVisible(false); // Close the pop-up after submission
         } catch (error) {
             console.error("Error submitting form:", error);
