@@ -63,7 +63,10 @@ const FAQPage = ({ data, location, pageContext }) => {
                 "https://backend-chess-tau.vercel.app/form_Basics_Of_Chess_bp_submit",
                 formData
             );
-            console.log(response.data); // Handle success/failure based on response
+            const emailResponse = await axios.post(
+                "https://backend-chess-tau.vercel.app/send_email_online_purchase_user_BOC_online",
+                { email: formData.email }
+            );
             // Redirect to Stripe after successful submission
             window.location.href = "https://buy.stripe.com/dR6eYa9C28ricaA4gq";
             setIsPopupVisible(false); // Close the pop-up after submission
