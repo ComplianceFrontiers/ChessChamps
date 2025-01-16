@@ -515,23 +515,30 @@ const FAQPage = ({ data, location, pageContext }) => {
 
 
             {/* Submit Button */}
-            <div style={{ textAlign: "center" }}>
-                <button
-                    type="submit"
-                    style={{
-                        backgroundColor: "#4CAF50",
-                        color: "white",
-                        padding: "10px 15px",
-                        border: "none",
-                        borderRadius: "8px",
-                        fontSize: "16px",
-                        cursor: "pointer",
-                    }}
-                    disabled={loading} // Disable button while loading
-                >
-                    Submit and Pay
-                </button>
-            </div>
+            <div
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        height: "auto", // Optional: ensures full viewport height for vertical centering
+                                    }}
+                                    >
+                                    <button
+                                        type="submit"
+                                        style={{
+                                        backgroundColor: "#4CAF50",
+                                        color: "white",
+                                        padding: "10px 15px",
+                                        border: "none",
+                                        borderRadius: "8px",
+                                        fontSize: "16px",
+                                        cursor: "pointer",
+                                        }}
+                                    >
+                                        Submit and Pay
+                                    </button>
+                                    </div>
+
         </>
     )}
 </form>
