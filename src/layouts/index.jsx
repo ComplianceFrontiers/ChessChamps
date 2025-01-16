@@ -25,6 +25,8 @@ const Layout = ({ data, children }) => {
                     location.pathname !== "/NJCC/" &&
                     location.pathname !== "/NJCC" && 
                     location.pathname !== "/NJCC-Masterclass/" &&
+                    location.pathname !== "/online-store/" &&
+                    location.pathname !== "/online-store" &&
                     location.pathname !== "/NJCC-Masterclass" &&<Footer data={data} />}
                 <ScrollToTop />
             </div>
