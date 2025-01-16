@@ -9485,6 +9485,10 @@ fieldset:disabled .btn {
 .faq-button.register {
     background-color: #28A745;
 }
+.faq-button.register1 {
+    font-size: 22px;
+    background-color: #28A745;
+}
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
