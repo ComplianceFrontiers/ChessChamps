@@ -305,9 +305,17 @@ const FAQPage = ({ data, location, pageContext }) => {
                                 </div>
 
                                 {/* Submit Button */}
-                                <button
-                                    type="submit"
+                                <div
                                     style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        height: "auto", // Optional: ensures full viewport height for vertical centering
+                                    }}
+                                    >
+                                    <button
+                                        type="submit"
+                                        style={{
                                         backgroundColor: "#4CAF50",
                                         color: "white",
                                         padding: "10px 15px",
@@ -315,12 +323,12 @@ const FAQPage = ({ data, location, pageContext }) => {
                                         borderRadius: "8px",
                                         fontSize: "16px",
                                         cursor: "pointer",
-                                        alignItems: "center",
-                                        justifyContent: "center",
-                                    }}
-                                >
-                                    Submit and Pay
-                                </button>
+                                        }}
+                                    >
+                                        Submit and Pay
+                                    </button>
+                                    </div>
+
                             </form>
                         )}
                     </div>
