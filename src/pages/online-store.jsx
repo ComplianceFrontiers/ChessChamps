@@ -24,7 +24,8 @@ const FAQPage = ({ data, location, pageContext }) => {
         child_first_name: "",
         child_last_name: "",
         phone: "",
-        New_Jersey_Masterclass: true,
+        BasicsOfChess_Online: true,
+        SchoolName:"online",
         onlinePurchase:false,
     });
 
@@ -64,7 +65,7 @@ const FAQPage = ({ data, location, pageContext }) => {
             );
             console.log(response.data); // Handle success/failure based on response
             // Redirect to Stripe after successful submission
-            window.location.href = "https://buy.stripe.com/dR6eYa9C28ricaA4gq";
+            window.location.href = "https://buy.stripe.com/00gg2DboddF50DudQQ";
             setIsPopupVisible(false); // Close the pop-up after submission
         } catch (error) {
             console.error("Error submitting form:", error);

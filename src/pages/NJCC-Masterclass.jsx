@@ -25,6 +25,7 @@ const FAQPage = ({ data, location, pageContext }) => {
         child_last_name: "",
         phone: "",
         New_Jersey_Masterclass: true,
+        SchoolName:"online",
         onlinePurchase:false,
     });
 
