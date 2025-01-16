@@ -160,7 +160,7 @@ const FAQPage = ({ data, location, pageContext }) => {
 
                         <Link>
                             <button
-                                className="faq-button register"
+                                className="faq-button register1"
                                 onClick={handleImageClick}
                             >
                                 Register
