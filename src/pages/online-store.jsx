@@ -6,7 +6,7 @@ import SEO from "@components/seo";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import { graphql, Link } from "gatsby";
 import { normalizedData } from "@utils/functions";
-import image1 from "../data/images/basics-of-chess/1.png";
+import image1 from "../data/images/online/image1.png";
 import axios from "axios"; // For API calls
 import Loading from "../data/loading/loading.gif"; // Import the loading gif
 
