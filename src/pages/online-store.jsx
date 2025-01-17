@@ -161,7 +161,7 @@ const FAQPage = ({ data, location, pageContext }) => {
 >
     <Link>
         <button
-            className="faq-button register1"
+            className="faq-button register3"
             onClick={handleImageClick}
         >
             Register
