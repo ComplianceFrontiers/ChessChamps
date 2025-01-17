@@ -151,12 +151,12 @@ const FAQPage = ({ data, location, pageContext }) => {
                 <div
     style={{
         position: "absolute",
-        bottom: window.innerWidth <= 768 ? "1%" : "2%", // Adjust bottom position for mobile
+        bottom:isMobile <= 768 ? "1%" : "2%", // Adjust bottom position for mobile
         left: "50%",
         transform: "translateX(-50%)",
         display: "flex",
-        flexDirection: window.innerWidth <= 768 ? "column" : "row", // Stack buttons vertically for mobile
-        gap: window.innerWidth <= 768 ? "10px" : "15px", // Reduce gap for mobile
+        flexDirection:isMobile <= 768 ? "column" : "row", // Stack buttons vertically for mobile
+        gap:isMobile <= 768 ? "10px" : "15px", // Reduce gap for mobile
     }}
 >
     <Link>
