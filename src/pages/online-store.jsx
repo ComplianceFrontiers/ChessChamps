@@ -151,7 +151,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                 <div
     style={{
         position: "absolute",
-        bottom: window.innerWidth <= 768 ? "-8%" : "2%", // Adjust bottom position for mobile
+        bottom: window.innerWidth <= 768 ? "1%" : "2%", // Adjust bottom position for mobile
         left: "50%",
         transform: "translateX(-50%)",
         display: "flex",
