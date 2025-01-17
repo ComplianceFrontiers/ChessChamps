@@ -16,7 +16,7 @@ const NewsLetter = () => {
         }
 
         try {
-            const response = await fetch("https://backend-chess-tau.vercel.app/signup_bulk_only_email", {
+            const response = await fetch("https://backend-chess-tau.vercel.app/masterlist_bp_submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
