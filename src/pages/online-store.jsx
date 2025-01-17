@@ -146,28 +146,29 @@ const FAQPage = ({ data, location, pageContext }) => {
                             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                         }}
                     />
-                    <div
-                        style={{
-                            position: "absolute",
-                            bottom: "2%",
-                            left: "50%",
-                            transform: "translateX(-50%)",
-                            display: "flex",
-                            gap: "15px",
-                        }}
-                    >
-                        
-
-                        <Link>
-                            <button
-                                className="faq-button register1"
-                                onClick={handleImageClick}
-                            >
-                                Register
-                            </button>
-                        </Link>
-                    </div>
+                    
                 </div>
+                <div
+    style={{
+        position: "absolute",
+        bottom: window.innerWidth <= 768 ? "-8%" : "2%", // Adjust bottom position for mobile
+        left: "50%",
+        transform: "translateX(-50%)",
+        display: "flex",
+        flexDirection: window.innerWidth <= 768 ? "column" : "row", // Stack buttons vertically for mobile
+        gap: window.innerWidth <= 768 ? "10px" : "15px", // Reduce gap for mobile
+    }}
+>
+    <Link>
+        <button
+            className="faq-button register1"
+            onClick={handleImageClick}
+        >
+            Register
+        </button>
+    </Link>
+</div>
+
             </div>
 
             {isPopupVisible && (
