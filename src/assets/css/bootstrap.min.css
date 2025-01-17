@@ -9505,7 +9505,7 @@ fieldset:disabled .btn {
     .faq-buttons-container {
         bottom: 5px;
     }
-    .faq-button {
+    .faq-button3 {
         padding: 5px 15px;
         font-size: 12px;
         background-color: #007BFF;
@@ -9517,7 +9517,7 @@ fieldset:disabled .btn {
         transition: all 0.3s ease-in-out;
         z-index: 10;
     }
-    .faq-button.register1 {
+    .faq-button.register3 {
         font-size: 9px;
         background-color: #28A745;
         margin-top: 70px;
