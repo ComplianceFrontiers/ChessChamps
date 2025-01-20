@@ -1,12 +1,14 @@
 /* eslint-disable prettier/prettier */
 import { useState } from "react";
 import Button from "../../components/shared/button";
-import { NewsLetterBox, Form, Input } from "./style";
+import { NewsLetterBox, Form, Input, LoadingContainer } from "./style";
 import Model from "../model";
+import Loading from "../../data/loading/loading.gif";
 
 const NewsLetter = () => {
     const [email, setEmail] = useState("");
     const [showModel, setShowModel] = useState(false); // State to control Model visibility
+    const [loading, setLoading] = useState(false); // State for loading indicator
 
     const handleSubmit = async (e) => {
         e.preventDefault(); // Prevent the default form submission
@@ -14,6 +16,8 @@ const NewsLetter = () => {
             alert("Please enter your email");
             return;
         }
+
+        setLoading(true); // Show loading GIF
 
         try {
             const response = await fetch("https://backend-chess-tau.vercel.app/masterlist_bp_submit", {
@@ -41,6 +45,8 @@ const NewsLetter = () => {
         } catch (error) {
             console.error("Error:", error);
             alert("Something went wrong. Please try again later.");
+        } finally {
+            setLoading(false); // Hide loading GIF
         }
     };
 
@@ -63,10 +69,18 @@ const NewsLetter = () => {
                     type="submit" // Set type as submit to trigger form submission
                     shape="rounded10"
                     className="btn-absolute"
+                    disabled={loading} // Disable button while loading
                 >
-                    Join Us
+                    {loading ? "Submitting..." : "Join Us"}
                 </Button>
             </Form>
+
+            {/* Display loading GIF */}
+            {loading && (
+                <LoadingContainer>
+                    <img src={Loading} alt="Loading..." />
+                </LoadingContainer>
+            )}
 
             {/* Conditionally render the Model component */}
             {showModel && <Model onClose={closeModal} />}
