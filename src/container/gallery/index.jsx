@@ -2,8 +2,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import CaseStudiesGrid from "../../components/case-studies-grid";
-import { CaseStudiesSection } from "./style";
+ import { CaseStudiesSection } from "./style";
 import image1 from "../../data/images/online/1.png";
 import image2 from "../../data/images/online/2.png";
 import image3 from "../../data/images/online/3.png";

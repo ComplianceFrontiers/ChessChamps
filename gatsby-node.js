@@ -36,8 +36,7 @@ exports.createResolvers = createResolvers;
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
     const templates = {
-        casesPost: path.resolve("src/templates/case-studies-details/index.jsx"),
-        servicesPost: path.resolve("src/templates/services-details/index.jsx"),
+         servicesPost: path.resolve("src/templates/services-details/index.jsx"),
         singleArticles: path.resolve("src/templates/single-post/index.jsx"),
         singleArticles1: path.resolve("src/templates/single-post1/index.jsx"),
         singleArticles2: path.resolve("src/templates/single-post2/index.jsx"),
@@ -80,15 +79,7 @@ exports.createPages = ({ actions, graphql }) => {
 
         //  Case StudiesJson Details Page
         const caseStudies = res.data.allCaseStudies.nodes;
-        caseStudies.forEach((node) => {
-            createPage({
-                path: `/case-studies/${node.slug}`,
-                component: templates.casesPost,
-                context: {
-                    slug: node.slug,
-                },
-            });
-        });
+         
 
         //  Services Details Page
         const servicesPosts = res.data.allServices.nodes;

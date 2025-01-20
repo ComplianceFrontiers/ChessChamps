@@ -6,8 +6,7 @@ import PropTypes from "prop-types";
 const CaseStudiesItem = ({ title, thumbImg, category, slug }) => {
     const image = getImage(thumbImg);
 
-    return (
-        <Link to={`/case-studies/${slug}`}>
+    return ( 
             <GatsbyImage
                 className="case-shap"
                 image={image}
@@ -15,8 +14,7 @@ const CaseStudiesItem = ({ title, thumbImg, category, slug }) => {
                 style={{
                     borderRadius: "50px", // Add rounded edges
                 }}
-            />
-        </Link>
+            /> 
     );
 };
 
