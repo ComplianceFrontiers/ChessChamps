@@ -5,6 +5,7 @@ import Swiper, { SwiperSlide } from "@components/shared/swiper";
 import SectionTitle from "../../../components/title";
  import { CaseStudiesSection } from "./style";
 import { Link } from "gatsby"; // Importing Gatsby's Link component
+import CaseStudiesItem from "../../../components/case-studies-item";
 
 const CaseStudiesArea = ({ data }) => {
     return (
@@ -51,7 +52,12 @@ const CaseStudiesArea = ({ data }) => {
                         data.items?.map((post, i) => {
                             return (
                                 <SwiperSlide key={i}>
-                                    
+                                     <CaseStudiesItem
+                                        title={post.title}
+                                        thumbImg={post.images[0].src}
+                                        category={post.category}
+                                        slug={post.slug}
+                                    />
                                 </SwiperSlide>
                             );
                         })}
