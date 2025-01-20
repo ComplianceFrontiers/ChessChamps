@@ -7,6 +7,21 @@ export const NewsLetterBox = styled.div`
     position: relative;
 `;
 
+export const LoadingContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+`;
+
+
 export const Form = styled.form`
     display: flex;
     flex-direction: row; /* Default for larger screens */
