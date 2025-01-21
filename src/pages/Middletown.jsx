@@ -81,7 +81,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     src={image1}
                     alt="FAQ Illustration"
                     style={{
-                        maxWidth: "90%",
+                        maxWidth:isMobile ? "80%":"50%",
                     }}
                 />
                 {/* Buttons inside the image */}

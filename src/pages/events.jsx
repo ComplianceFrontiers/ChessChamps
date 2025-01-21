@@ -77,8 +77,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                 </Link>
 
                 <Link to="/Middletown">
-                    <img
-                        onClick={handleThirdImageClick}
+                    <img 
                         src={image6}
                         alt="FAQ Illustration 3"
                         style={{
