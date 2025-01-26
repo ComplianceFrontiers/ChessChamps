@@ -76,7 +76,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     />
                 </Link>
 
-                <Link to="/Middletown">
+                {/* <Link to="/Middletown">
                     <img 
                         src={image6}
                         alt="FAQ Illustration 3"
@@ -88,7 +88,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                      />
-                </Link>
+                </Link> */}
                 
 
                 
