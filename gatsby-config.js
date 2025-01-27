@@ -132,5 +132,19 @@ module.exports = {
                 ],
             },
         },
+        {
+            resolve: `gatsby-plugin-google-gtag`,
+            options: {
+                trackingIds: [
+                    "G-WHBBFC45RY", // Replace with your tracking ID
+                ],
+                pluginConfig: {
+                    head: true, // Place tracking script in the head
+                    respectDNT: true, // Respect users' Do Not Track settings
+                },
+            },
+        },
     ],
 };
+
+
