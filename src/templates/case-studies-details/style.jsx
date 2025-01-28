@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { device } from "@theme/utils";
 export const CaseStudiesDetailsArea = styled.section`
     padding: 60px 0;

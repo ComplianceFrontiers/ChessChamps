@@ -8,19 +8,14 @@ const CaseStudiesGrid = ({ title, thumbImg, category, slug }) => {
     return (
         <CaseCard>
             <Thumb>
-                {/* <Link to={`/case-studies/${slug}`}> */}
-                    <GatsbyImage
+                     <GatsbyImage
                         className="case-shap"
                         image={image}
                         alt={title}
-                    />
-                {/* </Link> */}
+                    /> 
             </Thumb>
             <CaseCardContent>
-                {/* <Title>
-                    <Link to={`/case-studies/${slug}`}>{title}</Link>
-                </Title> */}
-                {/* <Desination>{category}</Desination> */}
+               
             </CaseCardContent>
         </CaseCard>
     );

@@ -5,3 +5,10 @@
  */
 
 // You can delete this file if you're not using it
+export const onRouteUpdate = ({ location }) => {
+    if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "page_view", {
+            page_path: location.pathname,
+        });
+    }
+};
