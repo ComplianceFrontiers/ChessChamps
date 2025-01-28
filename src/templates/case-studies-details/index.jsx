@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import PropTypes from "prop-types";
@@ -8,7 +9,6 @@ import { Row, Container, Col } from "react-bootstrap";
 import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import AboutUsBanner from "../../components/about-banner";
-import SectionArea from "../../container/case-studies-destails/layout-one";
 import { normalizedData } from "../../utils/functions";
 import {
     CaseStudiesDetailsArea,
@@ -113,30 +113,6 @@ const CaseStudiesPosts = ({ data, location, pageContext }) => {
                                 {data?.caseStudies?.title}
                             </CaseStudiesTitle>
                         )}
-
-                        <SectionArea
-                            data={content["case-studies-hero-section"]}
-                        />
-                        <Row className="gx-5 mt-5">
-                            <Col lg={3}>
-                                <AboutUsBanner />
-                            </Col>
-                            <Col lg={9}>
-                                <SectionArea
-                                    data={
-                                        content[
-                                            "case-studies-description-section"
-                                        ]
-                                    }
-                                />
-                            </Col>
-                        </Row>
-                        <SectionArea
-                            data={content["case-studies-how-it-Work-section"]}
-                        />
-                        <SectionArea
-                            data={content["case-studies-results-section"]}
-                        />
                     </CaseStudiesDetailsContent>
                 </Container>
             </CaseStudiesDetailsArea>

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Layout from "@layout";
@@ -75,9 +76,8 @@ const FAQPage = ({ data, location, pageContext }) => {
                     />
                 </Link>
 
-                <div>
-                    <img
-                        onClick={handleThirdImageClick}
+                {/* <Link to="/Middletown">
+                    <img 
                         src={image6}
                         alt="FAQ Illustration 3"
                         style={{
@@ -88,7 +88,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                      />
-                </div>
+                </Link> */}
                 
 
                 
