@@ -9517,13 +9517,8 @@ fieldset:disabled .btn {
         transition: all 0.3s ease-in-out;
         z-index: 10;
     }
-<<<<<<< HEAD
     .faq-button.register1 {
         font-size: 8px;
-=======
-    .faq-button.register3 {
-        font-size: 9px;
->>>>>>> 73bae9f7a06615e3fc50fff7d9331b8ebcd7dca0
         background-color: #28A745;
         margin-top: 70px;
         
