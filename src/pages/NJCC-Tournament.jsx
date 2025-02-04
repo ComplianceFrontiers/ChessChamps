@@ -9,7 +9,7 @@ import SEO from "@components/seo";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import { graphql, Link } from "gatsby";
 import { normalizedData } from "@utils/functions";
-import image1 from "../data/images/online/image6.png";
+import image1 from "../data/images/online/image66.png";
 import axios from "axios"; // For API calls
 import Loading from "../data/loading/loading.gif";
 
@@ -75,7 +75,7 @@ const FAQPage = ({ data, location, pageContext }) => {
             );
             console.log(response.data); // Handle success/failure based on response
 
-            window.location.href = "https://buy.stripe.com/fZe7vI5lM4b2a2s5kz"; // Redirect to Stripe after successful submission
+            window.location.href = "https://buy.stripe.com/dR66rE01s6ja4I8dR2"; // Redirect to Stripe after successful submission
             setIsPopupVisible(false); // Close the pop-up after submission
         } catch (error) {
             console.error("Error submitting form:", error);
@@ -150,7 +150,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         src={image1}
                         alt="FAQ Illustration"
                         style={{
-                            maxWidth: "90%",
+                            maxWidth: "70%",
                             height: "auto",
                             borderRadius: "10px",
                             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
