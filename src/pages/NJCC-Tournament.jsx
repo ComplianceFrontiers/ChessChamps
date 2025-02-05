@@ -509,9 +509,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                                                 }}
                                             >
                                                 USCF Expiration Date:{" "}
-                                                <span style={{ color: "red" }}>
-                                                    *
-                                                </span>
+                                                
                                             </label>
                                             <input
                                                 type="date"
@@ -520,10 +518,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                                                     formData.uscf_expiration_date
                                                 }
                                                 onChange={handleInputChange}
-                                                required={
-                                                    formData.category ===
-                                                    "Rated"
-                                                }
+                                               
                                                 style={{
                                                     width: "100%",
                                                     padding: "10px",
