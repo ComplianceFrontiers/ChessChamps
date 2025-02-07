@@ -9,6 +9,7 @@ import { normalizedData } from "@utils/functions";
 import image2 from "../data/images/online/image3.png";
 import image3 from "../data/images/online/image4.png";
 import image41 from "../data/images/online/image41.png";
+import imagepa from "../data/images/online/imagepa.png";
 import image4 from "../data/images/online/image5.png";
 import image9 from "../data/images/online/image9.png";
 import image1 from "../data/images/online/image112.png";
@@ -91,7 +92,18 @@ const FAQPage = ({ data, location, pageContext }) => {
                      />
                 </Link> */}
                 
-
+                <Link to="https://chess-champs-tournaments.vercel.app/PA">
+                    <img
+                        src={imagepa}
+                        alt="FAQ Illustration 5"
+                        style={{
+                            width: "1000px",
+                            height: "auto",
+                            borderRadius: "8px",
+                        }}
+                        className="responsive-image"
+                    />
+                </Link>
                 
                 {/* <Link to="/DCC-Tournament">
                     <img
@@ -142,6 +154,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </Link>
+                
             </div>
 
             {isPopupVisible && (
