@@ -8,6 +8,7 @@ import { graphql, Link } from "gatsby";
 import { normalizedData } from "@utils/functions";
 import image2 from "../data/images/online/image3.png";
 import image3 from "../data/images/online/image4.png";
+import image41 from "../data/images/online/image41.png";
 import image4 from "../data/images/online/image5.png";
 import image9 from "../data/images/online/image9.png";
 import image1 from "../data/images/online/image112.png";
@@ -104,6 +105,18 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </Link> */}
+                 <Link to="/NJCC-Tournament">
+                    <img
+                        src={image41}
+                        alt="NJCC-Tournament"
+                        style={{
+                            width: "1000px",
+                            height: "auto",
+                            borderRadius: "8px",
+                        }}
+                        className="responsive-image"
+                    />
+                </Link>
                 {/* <Link to="/NJCC">
                     <img
                         src={image3}
