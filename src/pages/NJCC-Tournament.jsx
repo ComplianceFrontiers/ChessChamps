@@ -73,6 +73,10 @@ const FAQPage = ({ data, location, pageContext }) => {
                 "https://backend-chess-tau.vercel.app/form_New_Jersey_Chess_Tournament_bp_submit",
                 formData
             );
+                    await axios.post(
+                "https://backend-chess-tau.vercel.app/send_confirm_njcc_reg_email",
+                { email: formData.email }
+            );
             console.log(response.data); // Handle success/failure based on response
 
             window.location.href = "https://buy.stripe.com/dR66rE01s6ja4I8dR2"; // Redirect to Stripe after successful submission
