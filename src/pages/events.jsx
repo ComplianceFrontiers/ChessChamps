@@ -117,7 +117,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </Link> */}
-                 <Link to="/NJCC-Tournament">
+                 {/* <Link to="/NJCC-Tournament">
                     <img
                         src={image41}
                         alt="NJCC-Tournament"
@@ -128,7 +128,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                     />
-                </Link>
+                </Link> */}
                 {/* <Link to="/NJCC">
                     <img
                         src={image3}
