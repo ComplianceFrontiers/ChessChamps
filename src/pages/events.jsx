@@ -93,7 +93,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                      />
                 </Link>
                 
-                <Link to="https://chess-champs-tournaments.vercel.app/PA">
+                {/* <Link to="https://chess-champs-tournaments.vercel.app/PA">
                     <img
                         src={imagepa}
                         alt="FAQ Illustration 5"
@@ -104,7 +104,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                     />
-                </Link>
+                </Link> */}
                 
                 {/* <Link to="/DCC-Tournament">
                     <img
