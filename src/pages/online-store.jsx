@@ -52,7 +52,7 @@ const FAQPage = ({ data, location, pageContext }) => {
     };
 
     const handleImageClick = () => {
-        setIsPopupVisible(true);
+        window.location.href = " https://stan.store/ChessChamps/p/basics-of-chess";
     };
 
     const handleSubmit = async (e) => {
