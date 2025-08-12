@@ -15,6 +15,7 @@ import image9 from "../data/images/online/image9.png";
 import image1 from "../data/images/online/image112.png";
 import image5 from "../data/images/online/image113.png";
 import image6 from "../data/images/online/image114.png";
+import image7 from "../data/images/online/image115.png";
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -78,9 +79,9 @@ const FAQPage = ({ data, location, pageContext }) => {
                     />
                 </Link> */}
 
-                {/* <Link to="/Middletown">
-                    <img 
-                        src={image6}
+                <Link to="https://chess-champs-tournaments.vercel.app/CTTCS">
+                <img 
+                        src={image7}
                         alt="FAQ Illustration 3"
                         style={{
                             width: "1000px", // Default for mobile
@@ -90,7 +91,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                      />
-                </Link> */}
+                </Link>
                 
                 <Link to="https://chess-champs-tournaments.vercel.app/PA">
                     <img
