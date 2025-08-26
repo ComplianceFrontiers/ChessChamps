@@ -24,7 +24,7 @@ const Author = ({ author }) => {
         buttonLink = "/online-store";
     } else if (author.name === "After School Chess Program") {
         buttonText = "Register";
-        buttonLink = "https://chesschampsus.vercel.app/mpes";
+        buttonLink = "https://docs.google.com/forms/d/e/1FAIpQLSf6NwH3ge31FNQvv1SlYoIXH89qPw8nXM8d31Q6N7c-r3K70w/viewform";
     }
 
     return (
