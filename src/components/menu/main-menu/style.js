@@ -35,7 +35,7 @@ export const Navitem = styled.li`
     a {
         display: block;
         color: #000000;
-        padding: 30px 2px;
+        // padding: 30px 2px;
         position: relative;
         font-size: 16px;
         font-weight: 500;

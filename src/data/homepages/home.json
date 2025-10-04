@@ -358,41 +358,7 @@
         ],
         "designation": "Grade K - Claymont Elementary"
     },
-    {
-        "id": "team-members-3",
-        "images": [
-            {
-                "src": "../../data/images/team/3.png"
-            }
-        ],
-        "socials": [
-            {
-                "id": 1,
-                "icon": "icofont-facebook",
-                "link": "https://www.facebook.com",
-                "title": "Facebook"
-            },
-            {
-                "id": 2,
-                "icon": "icofont-twitter",
-                "link": "https://www.twitter.com",
-                "title": "Twitter"
-            },
-            {
-                "id": 3,
-                "icon": "icofont-skype",
-                "link": "https://www.skype.com",
-                "title": "Instagram"
-            }
-        ],
-        "headings": [
-            {
-                "level": "h4",
-                "content": "Bill Truemam"
-            }
-        ],
-        "designation": "Mentor & Head Coach"
-    },
+  
     {
         "id": "team-members-4",
         "images": [
