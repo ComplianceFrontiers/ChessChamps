@@ -29,13 +29,26 @@ const WhyChooseUsArea = ({ data }) => {
             <Container className="container-max">
                 <Row className="align-items-center">
                     <Col lg={6}>
-                        <ChooseUsImage>
-                            <StaticImage
+                    <ChooseUsImage>
+                    {/* <StaticImage
                                 src="../../../data/images/about/1.png"
                                 alt="Chess Community Image"
                                 className="choose-us-img"
-                            />
-                        </ChooseUsImage>
+                            /> */}
+    <iframe
+        width="100%"
+        height="415"
+        src="https://www.youtube.com/embed/vaC_lF3pVjw?autoplay=1&mute=1&loop=1&playlist=vaC_lF3pVjw"
+
+        // src="https://youtu.be/Vj2Q_11tol0?si=rTDUTfrR8fzHU-cQ"
+        title="YouTube video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        className="choose-us-img"
+    ></iframe>
+</ChooseUsImage>
+
                     </Col>
                     <Col lg={6}>
                         <WhyChooseUsOffset>
