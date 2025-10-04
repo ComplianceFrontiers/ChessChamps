@@ -779,22 +779,6 @@
                     "designation": "Fostering Community Engagement and Learning"
                 },
                 {
-                    "id": "testimonial-3",
-                    "images": [
-                        {
-                            "src": "../../data/images/testimonial/lg10.png"
-                        }
-                    ],
-                    "description": "Partnering with the Delaware Chess Association has helped us organize competitive tournaments and expand chess opportunities across the state. With their support, we’re able to offer rated tournaments, foster chess talent, and create a thriving chess culture in Delaware.",
-                    "headings": [
-                        {
-                            "level": "h4",
-                            "content": "Delaware Chess Association"
-                        }
-                    ],
-                    "designation": "Promoting Chess Excellence Across Delaware!"
-                },
-                {
                     "id": "testimonial-2",
                     "images": [
                         {

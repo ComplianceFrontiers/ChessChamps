@@ -15,7 +15,7 @@ const Testimonial1 = ({ image, description, name, designation }) => {
 
     // Mapping of names to their respective links
     const nameToLink = {
-        "Delaware Chess Association": "https://delawarechessassociation.org/",
+        // "Delaware Chess Association": "https://delawarechessassociation.org/",
         "Lions International": "https://www.lionsclubs.org/en",
         "Seigel JCC Delaware": "https://www.siegeljcc.org/",
         "Lombardy Elementary School": "https://lombardy.brandywineschools.org/",
