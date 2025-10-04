@@ -31,7 +31,7 @@ const d2 = `
 `;
 
 const d3 = `
-    Since its inception, <strong>Chess Champs</strong> has grown into a vibrant <strong>200-member</strong> community, serving Delaware, New Jersey, and Pennsylvania as a premier hub for youth chess. It provides club facilities, school programs, tournaments, and personalized coaching for young players. Under Sid’s visionary leadership, <strong>Chess Champs</strong> is poised to inspire and empower the next generation of thinkers and strategists.
+    Since its inception, <strong>Chess Champs</strong> has grown into a vibrant <strong>350-member</strong> community, serving Delaware, New Jersey, and Pennsylvania as a premier hub for youth chess. It provides club facilities, school programs, tournaments, and personalized coaching for young players. Under Sid’s visionary leadership, <strong>Chess Champs</strong> is poised to inspire and empower the next generation of thinkers and strategists.
 `;
 
 return (

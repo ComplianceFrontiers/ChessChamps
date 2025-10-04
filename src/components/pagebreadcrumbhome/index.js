@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 const PageBreadcrumbHome = ({ title }) => {
     const stats = [
         { id: 1, value: 1000, label: "Tournament Experience" },
-        { id: 2, value: 200, label: "Registered Club Members" },
+        { id: 2, value: 350, label: "Registered Club Members" },
         { id: 3, value: 50, label: "Years of Experience" }
     ];
 
