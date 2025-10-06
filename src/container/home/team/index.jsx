@@ -21,9 +21,9 @@ const TeamArea = ({ data }) => {
                     <SectionTitle
                         headingTitle={
                             <div>
-                                <span style={{ fontSize: "0.5em" }}>Proud Trainers of Lions International</span>
+                                <span style={{ fontSize: "0.5em" }}>Proud Trainers of Lions International Sponsored</span>
                                 <br />
-                                <span style={{ fontSize: "0.8em" }}>Sponsored Delaware Junior Chess Team</span>
+                                <span style={{ fontSize: "0.8em" }}>Delaware Junior Chess Team</span>
                             </div>
                         }
                         {...data.section_title}

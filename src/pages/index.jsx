@@ -14,6 +14,7 @@ import TestimonialArea from "../container/home/testimonial";
 import LatestBlogArea from "../container/home/blog";
 import { normalizedData } from "@utils/functions";
 import PageBreadcrumbHome from "../components/pagebreadcrumbhome";
+import PopupAfterLogin from "../components/PopupAfterLogin";
 
 const IndexPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -30,6 +31,7 @@ const IndexPage = ({ data, location, pageContext }) => {
             <PageBreadcrumbHome
                 title="Home page"
             />
+            <PopupAfterLogin />
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
 
             {/* <BrandArea data={content["brand-section"]} /> */}
