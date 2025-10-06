@@ -32,12 +32,28 @@ export const WhyChooseUsSection = styled.section`
         padding: 10px 0px;
     }
 `;
-
 export const ChooseUsImage = styled.div`
-    // margin-bottom: 30px;
-    // animation: ${move} 0.8s infinite alternate;
-    text-align: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+    // background-color: white; /* Or transparent */
+  }
+
+  /* For mobile view */
+  @media (max-width: 768px) {
+    iframe {
+      background-color: white !important; /* Change to 'transparent' if you prefer none */
+      height: auto;
+    }
+  }
 `;
+
 
 export const ChooseListWrpa = styled.div`
     margin-top: 30px;

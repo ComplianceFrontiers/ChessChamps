@@ -15,7 +15,7 @@ const BlogRightSidebar = ({ data }) => {
                             {data?.items &&
                                 data?.items.map((blog, i) => {
                                     return (
-                                        <Col lg={6} md={6} key={i}>
+                                        <Col lg={3} md={3} key={i}>
                                             <BlogCardTwo
                                                 title={blog.title}
                                                 thume_image={blog?.image?.src}
