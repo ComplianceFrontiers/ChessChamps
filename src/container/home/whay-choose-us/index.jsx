@@ -30,19 +30,27 @@ const WhyChooseUsArea = ({ data }) => {
                 <Row className="align-items-center">
                     <Col lg={6}>
                     <ChooseUsImage>
-    <iframe
+    <video
         width="100%"
-        height="415"
-        src="https://www.youtube.com/embed/vaC_lF3pVjw?autoplay=1&mute=1&loop=1&playlist=vaC_lF3pVjw"
+        // height="415"
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls
+        // style={{
+        //     borderRadius: "12px",
+        //     boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
+        // }}
+    >
+        <source
+            src="/videos/Facebook Video - Leo Chess Club.mp4"
+            type="video/mp4"
+        />
+        Your browser does not support the video tag.
+    </video>
 
-        // src="https://youtu.be/Vj2Q_11tol0?si=rTDUTfrR8fzHU-cQ"
-        title="YouTube video"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        // className="choose-us-img"
-        style={{ backgroundColor: 'white' }}
-    ></iframe>
+
 </ChooseUsImage>
 
                     </Col>
