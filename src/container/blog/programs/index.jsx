@@ -13,7 +13,7 @@ const BlogGrid = ({ data }) => {
                             // Add console.log here
                             console.log(blog);
                             return (
-                                <Col lg={4} md={6} key={i}>
+                                <Col lg={4} md={3} key={i}>
                                     <BlogCardTwo
                                         title={blog.title}
                                         thume_image={blog?.image?.src}

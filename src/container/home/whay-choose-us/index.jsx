@@ -30,11 +30,6 @@ const WhyChooseUsArea = ({ data }) => {
                 <Row className="align-items-center">
                     <Col lg={6}>
                     <ChooseUsImage>
-                    {/* <StaticImage
-                                src="../../../data/images/about/1.png"
-                                alt="Chess Community Image"
-                                className="choose-us-img"
-                            /> */}
     <iframe
         width="100%"
         height="415"
@@ -45,7 +40,8 @@ const WhyChooseUsArea = ({ data }) => {
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="choose-us-img"
+        // className="choose-us-img"
+        style={{ backgroundColor: 'white' }}
     ></iframe>
 </ChooseUsImage>
 

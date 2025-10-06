@@ -11,6 +11,7 @@ import image3 from "../data/images/online/image4.png";
 import image41 from "../data/images/online/image41.png";
 import imagepa from "../data/images/online/imagepa.png";
 import image4 from "../data/images/online/image5.png";
+import performanceTraining from "../data/images/online/performancetraining.png";
 import image9 from "../data/images/online/image9.png";
 import image1 from "../data/images/online/image112.png";
 import image5 from "../data/images/online/image113.png";
@@ -65,6 +66,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         className="responsive-image"
                     />
                 </Link>
+               
 
                 {/* <Link to="/Wilmington-Chess-Program">
                     <img
@@ -91,6 +93,18 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                      />
+                </Link>
+                <Link to="/performance-training">
+                    <img
+                        src={performanceTraining}
+                        alt="FAQ Illustration 1"
+                        style={{
+                            width: "1000px", // Default for mobile
+                            height: "auto",
+                            borderRadius: "8px",
+                        }}
+                        className="responsive-image"
+                    />
                 </Link>
                 
                 {/* <Link to="https://chess-champs-tournaments.vercel.app/PA">
