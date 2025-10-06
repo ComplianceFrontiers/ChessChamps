@@ -64,7 +64,7 @@ const CaseStudiesArea = ({ data }) => {
                 </Swiper>
                 <div className="button-wrapper">
                      <Link to="/online-store" className="shop-now-button">
-                        Shop Now
+                        Visit
                     </Link>
                 </div>
             </Container>

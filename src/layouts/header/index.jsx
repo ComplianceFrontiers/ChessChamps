@@ -9,7 +9,7 @@ import Logo from "../../components/logo";
 import MainMenu from "../../components/menu/main-menu";
 import Button from "../../components/shared/button";
 import MobileNavMenu from "../../components/menu/mobile-menu";
-import vedio from "../../assets/vedios/mpesvedio.mp4";
+
 import { useSticky } from "../../hooks";
 import {
     VideoWrapper,

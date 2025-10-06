@@ -32,7 +32,7 @@ const FAQPage = ({ data, location, pageContext }) => {
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="performance-coaching"
+                title="Performance Coaching"
             />
             <div
                 style={{
