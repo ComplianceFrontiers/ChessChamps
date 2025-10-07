@@ -4,14 +4,9 @@ import { flatDeep, slugify, containsObject } from "@utils/functions";
 import PropTypes from "prop-types";
 import { SidebarWidget, Title, WidgetTags } from "./style";
 
-const Tags = ({data}) => {
-    console.log("hhhhhhhhhh",data)
-    const defaultData = [
-        {
-            title: "Tournaments",
-            slug: "tournaments",
-        },
-    ];
+const Tags = ({ data }) => {
+    console.log("hhhhhhhhhh", data);
+    const defaultData = [];
 
     const tagsData = data && data.length > 0 ? data : defaultData;
 

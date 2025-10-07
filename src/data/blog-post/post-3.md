@@ -17,11 +17,11 @@ categories:
     - Chess Tournaments
 
 tags:
-    - Tournaments
-    - Chess in School
-    - Online Courses
+    # - Tournaments
+    - Chess Training
+    # - Online Courses
     - Community Outreach
-    - Chess Store
+    # - Chess Store
 ---
 ### Chess Club
 
