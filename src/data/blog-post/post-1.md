@@ -8,7 +8,7 @@ features exclusive merchandise
 designed to make chess
 engaging and enjoyable for
 players of all levels."
-link: "/chess-store"
+link: "https://chesschamps.academy"
 categories:
     - Email Marketing
 tags:
