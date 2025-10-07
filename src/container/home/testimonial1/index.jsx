@@ -71,14 +71,14 @@ const TestimonialArea = ({ data }) => {
     </a>
   </ClientsImage>
 
-  <ClientsImage>
+  {/* <ClientsImage>
     <a href="https://delawarechessassociation.org/" target="_blank" rel="noopener noreferrer">
       <StaticImage
         src="../../../data/images/testimonial/lg10.png"
         alt="images-not_found"
       />
     </a>
-  </ClientsImage>
+  </ClientsImage> */}
 </ClientsImageBox>
                 <TestimonialContentBox>
                     <ShapBgImg>

@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
 import PageBreadcrumb from "../components/pagebreadcrumb";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { normalizedData } from "@utils/functions";
-import image1 from "../data/images/online/Blogimage.png";
-import axios from "axios"; // For API calls
-import Loading from "../data/loading/loading.gif"; // Import the loading gif
+import image1 from "../data/images/online/blog2.png";
+import image2 from "../data/images/online/blog2Read.png";
+
 
 const FAQPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
@@ -16,7 +16,8 @@ const FAQPage = ({ data, location, pageContext }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const [isPopupVisible, setIsPopupVisible] = useState(false);
-    const [loading, setLoading] = useState(false); // New loading state
+    const [loading, setLoading] = useState(false);
+
     const [formData, setFormData] = useState({
         email: "",
         parent_first_name: "",
@@ -25,86 +26,31 @@ const FAQPage = ({ data, location, pageContext }) => {
         child_last_name: "",
         phone: "",
         BasicsOfChess_Online: true,
-        SchoolName:"online",
-        onlinePurchase:false,
+        SchoolName: "online",
+        onlinePurchase: false,
     });
-
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        if (name === "parent_first_name") {
-            setFormData({
-                ...formData,
-                parent_first_name: value,
-                child_first_name: value, // Sync with parent's first name
-            });
-        } else if (name === "parent_last_name") {
-            setFormData({
-                ...formData,
-                parent_last_name: value,
-                child_last_name: value, // Sync with parent's last name
-            });
-        } else {
-            setFormData({
-                ...formData,
-                [name]: value,
-            });
-        }
-    };
-
-    const handleImageClick = () => {
-        window.location.href = " https://stan.store/ChessChamps/p/basics-of-chess";
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setLoading(true); // Set loading state to true when form is submitted
-        try {
-            const response = await axios.post(
-                "https://backend-chess-tau.vercel.app/form_Basics_Of_Chess_bp_submit",
-                formData
-            );
-            const emailResponse = await axios.post(
-                "https://backend-chess-tau.vercel.app/send_email_online_purchase_user_BOC_online",
-                { email: formData.email }
-            );
-            console.log(response.data); // Handle success/failure based on response
-            // Redirect to Stripe after successful submission
-            window.location.href = "https://buy.stripe.com/00gg2DboddF50DudQQ";
-            setIsPopupVisible(false); // Close the pop-up after submission
-        } catch (error) {
-            console.error("Error submitting form:", error);
-        } finally {
-            setLoading(false); // Hide loading gif after the request is complete
-        }
-    };
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768); // Set mobile flag based on width
+            setIsMobile(window.innerWidth <= 768);
         };
-
-        handleResize(); // Check size on component mount
-        window.addEventListener("resize", handleResize); // Listen for window resizing
-
-        return () => {
-            window.removeEventListener("resize", handleResize); // Cleanup event listener
-        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     const buttonStyle = {
-        padding: isMobile ? "2px 4px" : "10px 20px", // Smaller padding for mobile
-        fontSize: isMobile ? "9px" : "16px", // Smaller font size for mobile
+        padding: isMobile ? "6px 10px" : "10px 20px",
+        fontSize: isMobile ? "12px" : "16px",
         backgroundColor: "#007BFF",
         color: "#FFF",
         border: "none",
-        borderRadius: "5px",
+        borderRadius: "8px",
         cursor: "pointer",
         fontWeight: "bold",
-    };
-
-    const registerButtonStyle = {
-        ...buttonStyle,
-        backgroundColor: "#28A745", // Different background for the register button
+        marginTop: "15px",
+        marginBottom: "15px",
+        transition: "background-color 0.3s ease",
     };
 
     return (
@@ -115,25 +61,22 @@ const FAQPage = ({ data, location, pageContext }) => {
             }}
         >
             <SEO title="Blog" pathname="/" />
-            <PageBreadcrumb
-                pageContext={pageContext}
-                location={location}
-                title="Blog"
-            />
+            <PageBreadcrumb pageContext={pageContext} location={location} title="Blog" />
+
             <div
                 style={{
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    marginBottom: "30px",
                     textAlign: "center",
                 }}
             >
+                {/* IMAGE SECTION */}
                 <div
                     style={{
                         position: "relative",
-                        display: "inline-block",
+                        // display: "inline-block",
                     }}
                 >
                     <img
@@ -141,14 +84,50 @@ const FAQPage = ({ data, location, pageContext }) => {
                         alt="FAQ Illustration"
                         style={{
                             maxWidth: "90%",
-                            height: "auto",
+                            // height: "auto",
                             borderRadius: "10px",
-                            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                            // boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
                         }}
                     />
-                    
                 </div>
-                </div>
+
+                {/* TITLE AND PARAGRAPH SECTION */}
+                <h2
+                    style={{
+                        marginTop: "25px",
+                        fontSize: isMobile ? "20px" : "28px",
+                        fontWeight: "700",
+                        color: "#222",
+                    }}
+                >
+                    Building Youth Leaders Through Chess
+                </h2>
+
+                <p
+                    style={{
+                        maxWidth: "700px",
+                        lineHeight: "1.6",
+                        fontSize: isMobile ? "14px" : "17px",
+                        color: "#444",
+                        marginTop: "10px",
+                        padding: "0 15px",
+                    }}
+                >
+                    The Leo Club of Chess Chums promotes love, karma, learning, and friendship through chess, nurturing empathy, discipline, strategy, and confidence in youth.
+                </p>
+
+                {/* READ MORE BUTTON */}
+                {/* READ MORE BUTTON */}
+<button
+    style={buttonStyle}
+    onClick={() => window.open(image2, "_blank")}
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+>
+    Read More
+</button>
+
+            </div>
         </Layout>
     );
 };
