@@ -5,22 +5,36 @@ import PropTypes from "prop-types";
 import { SidebarWidget, Title, WidgetTags } from "./style";
 
 const Tags = ({ data }) => {
-    console.log("hhhhhhhhhh", data);
     const defaultData = [];
 
     const tagsData = data && data.length > 0 ? data : defaultData;
-
-    console.log("Data being rendered:", tagsData);
 
     return (
         <SidebarWidget>
             <Title>Our programs</Title>
             <WidgetTags>
-                {tagsData.map((cat) => (
-                    <Link key={cat.slug} to={`/${cat.slug}`}>
-                        {cat.title}
-                    </Link>
-                ))}
+                {tagsData.map((cat) => {
+                    if (cat.title === "Chess Training") {
+                        // External redirect for Chess Training
+                        return (
+                            <a
+                                key={cat.slug}
+                                href="https://chesschamps.academy/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {cat.title}
+                            </a>
+                        );
+                    } else {
+                        // Internal link for other tags
+                        return (
+                            <Link key={cat.slug} to={`/${cat.slug}`}>
+                                {cat.title}
+                            </Link>
+                        );
+                    }
+                })}
             </WidgetTags>
         </SidebarWidget>
     );
@@ -34,7 +48,9 @@ Tags.propTypes = {
         })
     ).isRequired,
 };
+
 Tags.defaultProps = {
-    data: [], // Default value for the prop
+    data: [],
 };
+
 export default Tags;
