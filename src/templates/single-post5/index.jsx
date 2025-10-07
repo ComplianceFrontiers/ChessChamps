@@ -682,8 +682,8 @@ const SinglePosts = ({ data, location, pageContext }) => {
     };
     const tags1 = [
         {
-            title: "Chess in School",
-            slug: "chess-in-school",
+            title: "Chess Club",
+            slug: "chess-club",
         },
 
         {
