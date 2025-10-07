@@ -11,11 +11,13 @@ import {
     TeamSocialLink,
 } from "./style";
 
-// Import images
-import image1 from "../../data/images/blog/chessclubgallery/image1.png";
-import image2 from "../../data/images/blog/chessclubgallery/image2.png";
-import image3 from "../../data/images/blog/chessclubgallery/image3.png";
-import image4 from "../../data/images/blog/chessclubgallery/image4.png";
+// Import images community images changed here
+import image1 from "../../data/images/online/community1.png";
+import image2 from "../../data/images/online/community2.png";
+import image3 from "../../data/images/online/community3.png";
+import image4 from "../../data/images/online/community4.png";
+import image5 from "../../data/images/online/community5.png";
+import image6 from "../../data/images/online/community6.png";
 
 const TeamMember = ({ title, designation, socials, level }) => {
     // Determine the image based on the title

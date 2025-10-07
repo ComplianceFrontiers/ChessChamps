@@ -674,19 +674,12 @@ const SinglePosts = ({ data, location, pageContext }) => {
     const baseUrl = "https://pringo.com";
     const tags1 = [
         {
-            title: "Tournaments",
-            slug: "tournaments",
-        },
-        {
             title: "Chess in School",
             slug: "chess-in-school",
         },
+
         {
-            title: "Online Courses",
-            slug: "online-courses",
-        },
-        {
-            title: "Chess Store",
+            title: "Chess Training",
             slug: "chess-store",
         },
         {

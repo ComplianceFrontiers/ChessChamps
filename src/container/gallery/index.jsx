@@ -3,12 +3,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
  import { CaseStudiesSection } from "./style";
-import image1 from "../../data/images/online/1.png";
-import image2 from "../../data/images/online/2.png";
-import image3 from "../../data/images/online/3.png";
-import image4 from "../../data/images/online/4.png";
-import image5 from "../../data/images/online/5.png";
-import image6 from "../../data/images/online/6.png";
+
 import image7 from "../../data/images/online/7.png";
 import image8 from "../../data/images/online/8.png";
 import image9 from "../../data/images/online/9.png";
@@ -32,17 +27,8 @@ import image26 from "../../data/images/online/26.png";
 import image27 from "../../data/images/online/27.png";
 import image28 from "../../data/images/online/28.png";
 import image29 from "../../data/images/online/29.png";
-import image30 from "../../data/images/online/30.png";
-import image31 from "../../data/images/online/31.png";
 import image32 from "../../data/images/online/32.png";
-import image33 from "../../data/images/online/33.png";
 import image34 from "../../data/images/online/34.png";
-import image35 from "../../data/images/online/35.png";
-import image36 from "../../data/images/online/36.png";
-import image37 from "../../data/images/online/37.png";
-import image38 from "../../data/images/online/38.png";
-import image39 from "../../data/images/online/39.png";
-import image40 from "../../data/images/online/40.png";
 import image41 from "../../data/images/blog/chessclubgallery/IMG_3031.png";
 import image42 from "../../data/images/blog/chessclubgallery/IMG_3032.png";
 import image43 from "../../data/images/blog/chessclubgallery/IMG_3033.png";
@@ -77,10 +63,10 @@ const CaseStudiesArea = ({ data }) => {
     };
 
     const imageArray = [
-        image1,
-        image2,
-        image3,
-        image4,
+        // image1,
+        // image2,
+        // image3,
+        // image4,
         image5,
         image6,
         image7,
