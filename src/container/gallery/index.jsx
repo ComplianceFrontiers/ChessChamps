@@ -51,7 +51,7 @@ import image59 from "../../data/images/blog/chessclubgallery/IMG_3049.png";
 import image60 from "../../data/images/blog/chessclubgallery/IMG_3050.png";
 
 const CaseStudiesArea = () => {
-    const [selectedSection, setSelectedSection] = useState("photos"); // default: photos
+    const [selectedSection, setSelectedSection] = useState("videos"); // ✅ Default: videos
 
     const imageArray = [
         image7, image8, image9, image10, image11, image12,
@@ -74,23 +74,7 @@ const CaseStudiesArea = () => {
                         marginBottom: "20px",
                     }}
                 >
-                    <button
-                        onClick={() => setSelectedSection("photos")}
-                        style={{
-                            backgroundColor:
-                                selectedSection === "photos" ? "#2f80ed" : "#e0e0e0",
-                            color: selectedSection === "photos" ? "#fff" : "#333",
-                            border: "none",
-                            borderRadius: "8px",
-                            padding: "10px 25px",
-                            marginRight: "10px",
-                            fontWeight: 600,
-                            cursor: "pointer",
-                            transition: "0.3s",
-                        }}
-                    >
-                        Photos
-                    </button>
+                    {/* ✅ First button: Videos */}
                     <button
                         onClick={() => setSelectedSection("videos")}
                         style={{
@@ -100,6 +84,7 @@ const CaseStudiesArea = () => {
                             border: "none",
                             borderRadius: "8px",
                             padding: "10px 25px",
+                            marginRight: "10px",
                             fontWeight: 600,
                             cursor: "pointer",
                             transition: "0.3s",
@@ -107,7 +92,65 @@ const CaseStudiesArea = () => {
                     >
                         Videos
                     </button>
+
+                    {/* ✅ Second button: Photos */}
+                    <button
+                        onClick={() => setSelectedSection("photos")}
+                        style={{
+                            backgroundColor:
+                                selectedSection === "photos" ? "#2f80ed" : "#e0e0e0",
+                            color: selectedSection === "photos" ? "#fff" : "#333",
+                            border: "none",
+                            borderRadius: "8px",
+                            padding: "10px 25px",
+                            fontWeight: 600,
+                            cursor: "pointer",
+                            transition: "0.3s",
+                        }}
+                    >
+                        Photos
+                    </button>
                 </div>
+
+                {/* ===== Videos Section ===== */}
+                {selectedSection === "videos" && (
+                    <div
+                        style={{
+                            width: "100%",
+                            maxWidth: "1200px",
+                            margin: "0 auto",
+                            borderRadius: "12px",
+                            overflow: "hidden",
+                            boxShadow: "0 2px 12px rgba(0,0,0,0.15)",
+                        }}
+                    >
+                        <div
+                            style={{
+                                position: "relative",
+                                paddingBottom: "56.25%", // 16:9
+                                height: 0,
+                                overflow: "hidden",
+                                borderRadius: "12px",
+                            }}
+                        >
+                            <iframe
+                                src="https://www.youtube.com/embed/TN1hgYjM-so?autoplay=1&mute=0&rel=0"
+                                title="Chess Champs 2025 Highlights"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                style={{
+                                    position: "absolute",
+                                    top: 0,
+                                    left: 0,
+                                    width: "100%",
+                                    height: "100%",
+                                    borderRadius: "12px",
+                                }}
+                            ></iframe>
+                        </div>
+                    </div>
+                )}
 
                 {/* ===== Photos Section ===== */}
                 {selectedSection === "photos" && (
@@ -129,47 +172,6 @@ const CaseStudiesArea = () => {
                             </Col>
                         ))}
                     </Row>
-                )}
-
-                {/* ===== Videos Section ===== */}
-                {selectedSection === "videos" && (
-                    <div
-                        style={{
-                            width: "100%",
-                            maxWidth: "1200px",
-                            margin: "0 auto",
-                            borderRadius: "12px",
-                            overflow: "hidden",
-                            boxShadow: "0 2px 12px rgba(0,0,0,0.15)",
-                        }}
-                    >
-                       <div
-  style={{
-    position: "relative",
-    paddingBottom: "56.25%", // 16:9 aspect ratio
-    height: 0,
-    overflow: "hidden",
-    borderRadius: "12px",
-  }}
->
-  <iframe
-    src="https://www.youtube.com/embed/TN1hgYjM-so?autoplay=1&mute=0&rel=0"
-    title="Chess Champs 2025 Highlights"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-    style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      borderRadius: "12px",
-    }}
-  ></iframe>
-</div>
-
-                    </div>
                 )}
             </Container>
         </CaseStudiesSection>
