@@ -4,8 +4,6 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { CaseStudiesSection } from "./style";
 
-import videoFile from "../../assets/vedios/JCC_10252025.mp4";
-
 import image7 from "../../data/images/online/7.png";
 import image8 from "../../data/images/online/8.png";
 import image9 from "../../data/images/online/9.png";
@@ -145,17 +143,32 @@ const CaseStudiesArea = () => {
                             boxShadow: "0 2px 12px rgba(0,0,0,0.15)",
                         }}
                     >
-                        <video
-                            src={videoFile}
-                            controls
-                            autoPlay
-                            style={{
-                                width: "100%",
-                                height: "80vh",
-                                objectFit: "cover",
-                                borderRadius: "12px",
-                            }}
-                        />
+                       <div
+  style={{
+    position: "relative",
+    paddingBottom: "56.25%", // 16:9 aspect ratio
+    height: 0,
+    overflow: "hidden",
+    borderRadius: "12px",
+  }}
+>
+  <iframe
+    src="https://www.youtube.com/embed/TN1hgYjM-so?autoplay=1&mute=0&rel=0"
+    title="Chess Champs 2025 Highlights"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      borderRadius: "12px",
+    }}
+  ></iframe>
+</div>
+
                     </div>
                 )}
             </Container>
