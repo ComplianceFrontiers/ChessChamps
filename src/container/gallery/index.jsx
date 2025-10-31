@@ -2,7 +2,9 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
- import { CaseStudiesSection } from "./style";
+import { CaseStudiesSection } from "./style";
+
+import videoFile from "../../assets/vedios/JCC_10252025.mp4";
 
 import image7 from "../../data/images/online/7.png";
 import image8 from "../../data/images/online/8.png";
@@ -50,114 +52,71 @@ import image58 from "../../data/images/blog/chessclubgallery/IMG_3048.png";
 import image59 from "../../data/images/blog/chessclubgallery/IMG_3049.png";
 import image60 from "../../data/images/blog/chessclubgallery/IMG_3050.png";
 
-
-const CaseStudiesArea = ({ data }) => {
-    const [visibleItems, setVisibleItems] = useState(6); // Show first 6 items initially
-
-    const handleShowMore = () => {
-        setVisibleItems((prev) => prev + 6); // Load 6 more items
-    };
-
-    const handleFirstButtonRedirect = () => {
-        window.location.href = "https://photos.app.goo.gl/9dXrw3e2BXKL2PJfA"; // Redirects to the link in the same tab
-    };
+const CaseStudiesArea = () => {
+    const [selectedSection, setSelectedSection] = useState("photos"); // default: photos
 
     const imageArray = [
-        // image1,
-        // image2,
-        // image3,
-        // image4,
-        image5,
-        image6,
-        image7,
-        image8,
-        image9,
-        image10,
-        image11,
-        image12,
-        image13,
-        image14,
-        image15,
-        image16,
-        image17,
-        image18,
-        image19,
-        image20,
-        image21,
-        image22,
-        image23,
-        image24,
-        image25,
-        image26,
-        image27,
-        image28,
-        image29,
-        image32,
-        image34,
-        image41,
-        image42,
-        image43,
-        image44,
-        image45,
-        image46,
-        image47,
-        image48,
-        image49,
-        image50,
-        image51,
-        image52,
-        image53,
-        image54,
-        image55,
-        image56,
-        image57,
-        image58,
-        image59,
-        image50,
+        image7, image8, image9, image10, image11, image12,
+        image13, image14, image15, image16, image17, image18,
+        image19, image20, image21, image22, image23, image24,
+        image25, image26, image27, image28, image29, image32,
+        image34, image41, image42, image43, image44, image45,
+        image46, image47, image48, image49, image50, image51,
+        image52, image53, image54, image55, image56, image57,
+        image58, image59, image60
     ];
-    
 
     return (
         <CaseStudiesSection>
             <Container>
-                <div className="show-more-buttons">
-                   { /* Redirect button opens link in the same tab */ }
-                    {/* <Button onClick={handleFirstButtonRedirect} className="me-2">
-                        Tournament
-                    </Button>
-                    {/* Load more items */}
-                    {/* <Button onClick={handleShowMore} className="me-2">
-                        Show More
-                    </Button>
-                    <Button onClick={handleShowMore}>
-                        Show More
-                    </Button> */}
+                {/* ===== Buttons Section ===== */}
+                <div
+                    style={{
+                        textAlign: "center",
+                        marginBottom: "20px",
+                    }}
+                >
+                    <button
+                        onClick={() => setSelectedSection("photos")}
+                        style={{
+                            backgroundColor:
+                                selectedSection === "photos" ? "#2f80ed" : "#e0e0e0",
+                            color: selectedSection === "photos" ? "#fff" : "#333",
+                            border: "none",
+                            borderRadius: "8px",
+                            padding: "10px 25px",
+                            marginRight: "10px",
+                            fontWeight: 600,
+                            cursor: "pointer",
+                            transition: "0.3s",
+                        }}
+                    >
+                        Photos
+                    </button>
+                    <button
+                        onClick={() => setSelectedSection("videos")}
+                        style={{
+                            backgroundColor:
+                                selectedSection === "videos" ? "#2f80ed" : "#e0e0e0",
+                            color: selectedSection === "videos" ? "#fff" : "#333",
+                            border: "none",
+                            borderRadius: "8px",
+                            padding: "10px 25px",
+                            fontWeight: 600,
+                            cursor: "pointer",
+                            transition: "0.3s",
+                        }}
+                    >
+                        Videos
+                    </button>
                 </div>
 
-                {/* <Row className="gx-5">
-                    {data?.items &&
-                        data?.items.slice(0, visibleItems).map((post, i) => {
-                            return (
-                                <Col lg={4} md={4} sm={6} key={i}>
-                                    <CaseStudiesGrid
-                                        title={post.title}
-                                        thumbImg={post.images[0].src}
-                                        slug={post.slug}
-                                    />
-                                </Col>
-                            );
-                        })}
-                </Row> */}
-                <Row className="gx-5">
-                    {imageArray.map((image, index) => (
-                        <Col lg={4} md={4} sm={6} key={index} className="mb-4">
-                            <div
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                }}
-                            >
-                                 
+                {/* ===== Photos Section ===== */}
+                {selectedSection === "photos" && (
+                    <Row className="gx-5">
+                        {imageArray.map((image, index) => (
+                            <Col lg={4} md={4} sm={6} key={index} className="mb-4">
+                                <div style={{ display: "flex", justifyContent: "center" }}>
                                     <img
                                         src={image}
                                         alt={`Image ${index + 1}`}
@@ -165,14 +124,40 @@ const CaseStudiesArea = ({ data }) => {
                                             width: "100%",
                                             height: "auto",
                                             borderRadius: "8px",
+                                            boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
                                         }}
                                     />
-                              
-                            </div>
-                        </Col>
-                    ))}
-                </Row>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                )}
 
+                {/* ===== Videos Section ===== */}
+                {selectedSection === "videos" && (
+                    <div
+                        style={{
+                            width: "100%",
+                            maxWidth: "1200px",
+                            margin: "0 auto",
+                            borderRadius: "12px",
+                            overflow: "hidden",
+                            boxShadow: "0 2px 12px rgba(0,0,0,0.15)",
+                        }}
+                    >
+                        <video
+                            src={videoFile}
+                            controls
+                            autoPlay
+                            style={{
+                                width: "100%",
+                                height: "80vh",
+                                objectFit: "cover",
+                                borderRadius: "12px",
+                            }}
+                        />
+                    </div>
+                )}
             </Container>
         </CaseStudiesSection>
     );
@@ -180,15 +165,7 @@ const CaseStudiesArea = ({ data }) => {
 
 CaseStudiesArea.propTypes = {
     data: PropTypes.shape({
-        items: PropTypes.arrayOf(
-            PropTypes.shape({
-                id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-                fields: PropTypes.shape({
-                    slug: PropTypes.string,
-                }),
-                alt: PropTypes.string,
-            })
-        ),
+        items: PropTypes.arrayOf(PropTypes.shape({})),
     }),
 };
 

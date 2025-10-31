@@ -1,4 +1,6 @@
 /* eslint-disable prettier/prettier */
+
+//temp commenting 2-5 min pop up email enter thing
 import React, { useEffect, useState } from "react";
 import {
   PopupOverlay,

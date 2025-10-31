@@ -1,13 +1,17 @@
+/* eslint-disable prettier/prettier */
 import PropTypes from "prop-types";
 import Layout from "@layout";
 import SEO from "@components/seo";
 import PageBreadcrumb from "../components/pagebreadcrumb";
+import VideosArea from "../container/videos";
 import CaseStudiesArea from "../container/gallery";
 import { normalizedData } from "@utils/functions";
 import { graphql } from "gatsby";
+
 const CaseStudiesPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page.content || []);
+
     return (
         <Layout
             data={{
@@ -15,12 +19,13 @@ const CaseStudiesPage = ({ data, location, pageContext }) => {
                 ...globalContent["footer"],
             }}
         >
-            <SEO title="Case Studies Page" pathname="/" />
+            <SEO title="Gallery Page" pathname="/" />
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
                 title="Gallery"
             />
+
             <CaseStudiesArea
                 data={{
                     ...content["casestudies-section"],
@@ -30,6 +35,7 @@ const CaseStudiesPage = ({ data, location, pageContext }) => {
         </Layout>
     );
 };
+
 export const query = graphql`
     query casestudiesPageQuery {
         allGeneral {
@@ -62,6 +68,7 @@ export const query = graphql`
         }
     }
 `;
+
 CaseStudiesPage.propTypes = {
     location: PropTypes.object,
     pageContext: PropTypes.object,

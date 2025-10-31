@@ -31,7 +31,7 @@ const IndexPage = ({ data, location, pageContext }) => {
             <PageBreadcrumbHome
                 title="Home page"
             />
-            <PopupAfterLogin />
+            {/* <PopupAfterLogin /> */}
             <WhyChooseUsArea data={content["why-choose-us-section"]} />
 
             {/* <BrandArea data={content["brand-section"]} /> */}
