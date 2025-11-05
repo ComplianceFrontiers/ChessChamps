@@ -81,7 +81,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                     />
                 </Link> */}
 
-                <Link to="https://chess-champs-tournaments.vercel.app/CTTCS">
+                {/* <Link to="https://chess-champs-tournaments.vercel.app/CTTCS">
                 <img 
                         src={image7}
                         alt="FAQ Illustration 3"
@@ -93,8 +93,8 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                      />
-                </Link>
-                <Link to="/performance-coaching">
+                </Link> */}
+                {/* <Link to="/performance-coaching">
                     <img
                         src={performanceTraining}
                         alt="FAQ Illustration 1"
@@ -105,7 +105,7 @@ const FAQPage = ({ data, location, pageContext }) => {
                         }}
                         className="responsive-image"
                     />
-                </Link>
+                </Link> */}
                 
                 {/* <Link to="https://chess-champs-tournaments.vercel.app/PA">
                     <img
